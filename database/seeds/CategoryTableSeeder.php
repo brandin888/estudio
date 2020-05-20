@@ -23,6 +23,10 @@ class CategoryTableSeeder extends Seeder
             ['name' => 'TVs', 'slug' => 'tvs', 'created_at' => $now, 'updated_at' => $now],
             ['name' => 'Digital Cameras', 'slug' => 'digital-cameras', 'created_at' => $now, 'updated_at' => $now],
             ['name' => 'Appliances', 'slug' => 'appliances', 'created_at' => $now, 'updated_at' => $now],
+            ['name' => 'Planes en casa', 'slug' => 'planes-en-casa', 'created_at' => $now, 'updated_at' => $now],
+            ['name' => 'Zapatos', 'slug' => 'zapatos', 'created_at' => $now, 'updated_at' => $now],
+            ['name' => 'Deportes', 'slug' => 'deportes', 'created_at' => $now, 'updated_at' => $now],
+            ['name' => 'Accesorios', 'slug' => 'accesorios', 'created_at' => $now, 'updated_at' => $now],
         ]);
     }
 }
