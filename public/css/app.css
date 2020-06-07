@@ -271,7 +271,7 @@ strong {
 }
 
 .breadcrumbs {
-  background: #F5F5F5;
+  
   border-bottom: 1px solid #CDCDCD;
   padding: 24px 0;
 }
@@ -338,6 +338,13 @@ strong {
   margin: 44px auto;
 }
 
+.sidebar{
+  text-align: left;
+
+
+}
+
+
 .sidebar h3 {
   font-weight: bold;
   margin-bottom: 16px;
@@ -347,6 +354,13 @@ strong {
   line-height: 2;
   margin-bottom: 20px;
 }
+.sidebar li {
+  margin-right: 15%;
+} 
+.sidebar li:hover {
+  background: #90E0EF;
+}
+
 
 .might-like-section {
   padding: 40px 0 70px;
@@ -867,9 +881,7 @@ header.with-background .top-nav ul a:hover {
 }
 
 header.with-background .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
+
   padding-top: 20px;
   padding-bottom: 84px;
 }
@@ -1468,14 +1480,15 @@ h1.checkout-heading {
 }
 
 .auth-pages .auth-button {
-  background: #212121;
-  color: #e9e9e9;
+  background: #1565C0;
+  color: rgba(255, 255, 255, 0.9);
+
   border-radius: 5px;
   padding: 12px 50px;
 }
 
 .auth-pages .auth-button:hover {
-  background: #3b3b3b;
+  background: #2196F3;
 }
 
 .auth-pages .auth-button-hollow {
@@ -1487,8 +1500,8 @@ h1.checkout-heading {
 }
 
 .auth-pages .auth-button-hollow:hover {
-  background: #212121;
-  color: #e9e9e9;
+  background: #1565C0;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .auth-pages .auth-right {
@@ -1564,6 +1577,8 @@ h1.checkout-heading {
   max-width: 140px;
   margin-right: 24px;
 }
+
+
 
 @-webkit-keyframes bs-notify-fadeOut {
   0% {
@@ -2063,4 +2078,5 @@ select.selectpicker {
 
 .a {
   text-decoration: none !important;
+
 }

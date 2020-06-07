@@ -1,5 +1,5 @@
 (function() {
-    var client = algoliasearch('P53SZUIML8', '19f54cccab5efbeb0d351b307326a864');
+    var client = algoliasearch('W5XL431LAE', 'ff92f78014bba098bfe0bc577e70e9fa');
     var index = client.initIndex('products');
     var enterPressed = false;
     //initialize autocomplete on search input (ID selector must match)
@@ -28,7 +28,7 @@
                     return markup;
                 },
                 empty: function (result) {
-                    return 'Sorry, we did not find any results for "' + result.query + '"';
+                    return 'Disculpe , no se encuentran resustados para: "' + result.query + '"';
                 }
             }
         }).on('autocomplete:selected', function (event, suggestion, dataset) {

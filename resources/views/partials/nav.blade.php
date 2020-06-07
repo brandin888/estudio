@@ -1,4 +1,4 @@
-<header>
+<header class="cyan lighten-2">
     <div class="top-nav container">
       <div class="top-nav-left">
           <div class="logo"><a href="/">Ecommerce</a></div>

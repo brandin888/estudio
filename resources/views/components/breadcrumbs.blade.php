@@ -1,4 +1,4 @@
-<div class="breadcrumbs">
+<div class="breadcrumbs cyan lighten-2">
     <div class="breadcrumbs-container container">
         <div>
             {{ $slot }}
