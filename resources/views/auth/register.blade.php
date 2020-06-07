@@ -19,7 +19,7 @@
                 </ul>
             </div>
             @endif
-            <h2>Create Account</h2>
+            <h2>Crear Cuenta</h2>
             <div class="spacer"></div>
 
             <form method="POST" action="{{ route('register') }}">
@@ -35,10 +35,10 @@
                     required>
 
                 <div class="login-container">
-                    <button type="submit" class="auth-button">Create Account</button>
+                    <button type="submit" class="auth-button">Crear Cuenta</button>
                     <div class="already-have-container">
-                        <p><strong>Already have an account?</strong></p>
-                        <a href="{{ route('login') }}">Login</a>
+                        <p><strong>¿Usted ya tiene una cuenta?</strong></p>
+                        <a href="{{ route('login') }}">Iniciar Sesión</a>
                     </div>
                 </div>
 
@@ -46,15 +46,15 @@
         </div>
 
         <div class="auth-right">
-            <h2>New Customer</h2>
+            <h2>Nuevo Cliente</h2>
             <div class="spacer"></div>
-            <p><strong>Save time now.</strong></p>
-            <p>Creating an account will allow you to checkout faster in the future, have easy access to order history and customize your experience to suit your preferences.</p>
+            <p><strong>Ahorra tiempo.</strong></p>
+            <p>Creando una cuenta podras ordenar más rápido en el futuro, facil acceso a tu historial de órdenes.</p>
 
             &nbsp;
             <div class="spacer"></div>
-            <p><strong>Loyalty Program</strong></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt debitis, amet magnam accusamus nisi distinctio eveniet ullam. Facere, cumque architecto.</p>
+            <p><strong>Beneficios</strong></p>
+            <p>Podrás recibir promociones de nuestros nuevos productos.</p>
         </div>
     </div> <!-- end auth-pages -->
 </div>

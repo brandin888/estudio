@@ -156,7 +156,9 @@ section#action, section#action-transparent {
 .fixed_p {
     background-attachment: fixed !important;
 }
-
+.cyan.lighten-2 {
+  background-color: #4dd0e1 !important;
+}
 
 </style>
 
@@ -222,9 +224,9 @@ Somos una empresa <strong>mayorista</strong> de productos del hogar, nos encontr
             
 
              @component('components.breadcrumbs')
-        <a href="/">Home</a>
+        <a href="/">Inicio</a>
         <i class="fa fa-chevron-right breadcrumb-separator"></i>
-        <span>Shop</span>
+        <span>Tienda</span>
     @endcomponent
      <div class="container">
         @if (session()->has('success_message'))

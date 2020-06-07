@@ -9,9 +9,9 @@
 @section('content')
 
     @component('components.breadcrumbs')
-        <a href="/">Home</a>
+        <a href="/">Inicio</a>
         <i class="fa fa-chevron-right breadcrumb-separator"></i>
-        <span>Shop</span>
+        <span>Tienda</span>
     @endcomponent
 
     <div class="container">
@@ -34,7 +34,7 @@
 
     <div class="products-section container">
         <div class="sidebar">
-            <h3>By Category</h3>
+            <h3>Categorías</h3>
             <ul>
                 @foreach ($categories as $category)
                     <li class="{{ setActiveCategory($category->slug) }}"><a href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
@@ -45,9 +45,9 @@
             <div class="products-header">
                 <h1 class="stylish-heading">{{ $categoryName }}</h1>
                 <div>
-                    <strong>Price: </strong>
-                    <a href="{{ route('shop.index', ['category'=> request()->category, 'sort' => 'low_high']) }}">Low to High</a> |
-                    <a href="{{ route('shop.index', ['category'=> request()->category, 'sort' => 'high_low']) }}">High to Low</a>
+                    <strong>Precio: </strong>
+                    <a href="{{ route('shop.index', ['category'=> request()->category, 'sort' => 'low_high']) }}">Menor a Mayor</a> |
+                    <a href="{{ route('shop.index', ['category'=> request()->category, 'sort' => 'high_low']) }}">Mayor a Menor</a>
 
                 </div>
             </div>
@@ -60,7 +60,7 @@
                         <div class="product-price">{{ $product->presentPrice() }}</div>
                     </div>
                 @empty
-                    <div style="text-align: left">No items found</div>
+                    <div style="text-align: left">No se encontraron productos</div>
                 @endforelse
             </div> <!-- end products -->
 

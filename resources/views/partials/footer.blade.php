@@ -27,7 +27,7 @@
     background-image: url("img/parallax/pa.jpg");
 }
 #action-parallax4 {
-    background-image: url("img/parallax/pa.jpg");
+    background-image: url("img/parallax/parallax2.jpg");
 }
 #action-parallax5 {
     background-image: url("../images/cover-portal-empleado.jpg");
@@ -70,7 +70,7 @@
 }
 </style>
 
-<footer data-type="background" data-speed="4" class="parallax fixed_p" id="action-parallax2" style="background-position: 50% 33.75px;
+<footer data-type="background" data-speed="4" class="parallax fixed_p" id="action-parallax4" style="background-position: 50% 33.75px;
  z-index: 1; height: 200px;
 
 "><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn;"><div class="row"><div class="col-lg-10 col-lg-offset-1 text-center">
