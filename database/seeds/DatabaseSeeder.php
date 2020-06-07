@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
 
 
 
-//$this->call(LocalsTableSeeder::class);
+        $this->call(LocalsTableSeeder::class);
        
    
         $this->call(DataTypesTableSeeder::class);

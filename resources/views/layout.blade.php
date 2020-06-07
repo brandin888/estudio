@@ -24,6 +24,14 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
+        
+
+
+        
+
+        
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
         @yield('extra-css')
     </head>
 
@@ -34,6 +42,13 @@
     @yield('content')
 
     @include('partials.footer')
+
+
+   
+    <script type="text/javascript" src="{{ asset('js/scripts.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyC4yN2BPmYWLa-GjR-5Z8V5YfkKgwygEF8"></script>
+    <script src="{{ asset('js/gmaps.js')}}"></script>
 
     @yield('extra-js')
 

@@ -47,3 +47,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/my-orders', 'OrdersController@index')->name('orders.index');
     Route::get('/my-orders/{order}', 'OrdersController@show')->name('orders.show');
 });
+
+
+Route::resource('contactanos', 'ContactoController');
+
+Route::get('cargar-mapa/{id}', 'ContactoController@cargar');
