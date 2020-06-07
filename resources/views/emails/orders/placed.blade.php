@@ -1,32 +1,29 @@
 @component('mail::message')
-# Order Received
+# Pedido Recibido
 
-Thank you for your order.
+Hola {{ $order->billing_name }}, gracias por realizar su pedido en EL MAYORISTA
 
-**Order ID:** {{ $order->id }}
+**Numero de Pedido:** {{ $order->id }}
 
-**Order Email:** {{ $order->billing_email }}
+**Monto Total:** S/ {{ round($order->billing_total / 100, 2) }}
 
-**Order Name:** {{ $order->billing_name }}
+**Relacion de Productos**
 
-**Order Total:** ${{ round($order->billing_total / 100, 2) }}
-
-**Items Ordered**
-
+@component('mail::table')
+| Producto            | Precio x Unidad(S/)                      | Cantidad                           |                              Precio Total                         |
+|:-------------------:|:----------------------------------------:|:----------------------------------:|:-----------------------------------------------------------------:|
 @foreach ($order->products as $product)
-Name: {{ $product->name }} <br>
-Price: ${{ round($product->price / 100, 2)}} <br>
-Quantity: {{ $product->pivot->quantity }} <br>
+| {{$product->name}}  | {{round($product->price / 100, 2)}}      | {{$product->pivot->quantity}}      | {{$product->pivot->quantity * round($product->price / 100, 2)}}   |
 @endforeach
-
-You can get further details about your order by logging into our website.
-
-@component('mail::button', ['url' => config('app.url'), 'color' => 'green'])
-Go to Website
 @endcomponent
 
-Thank you again for choosing us.
 
-Regards,<br>
+Puede obtener más detalles sobre su pedido iniciando sesión en nuestro sitio web.
+
+@component('mail::button', ['url' => config('app.url'), 'color' => 'blue'])
+El Mayorista
+@endcomponent
+
+Saludos,<br>
 {{ config('app.name') }}
 @endcomponent

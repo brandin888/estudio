@@ -29,8 +29,9 @@ class CheckoutRequest extends FormRequest
             'email' => $emailValidation,
             'name' => 'required',
             'address' => 'required',
-            'city' => 'required',
-            'province' => 'required',
+            'department' => 'required|min:2',
+            'province' => 'required|min:2',
+            'district' => 'required|min:2',
             'postalcode' => 'required',
             'phone' => 'required',
         ];

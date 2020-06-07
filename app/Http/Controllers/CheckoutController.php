@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Order;
 use App\Product;
 use App\OrderProduct;
+use App\Department;
+use App\Province;
+use App\District;
 use App\Mail\OrderPlaced;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -30,21 +33,21 @@ class CheckoutController extends Controller
             return redirect()->route('checkout.index');
         }
 
-        $gateway = new \Braintree\Gateway([
-            'environment' => config('services.braintree.environment'),
-            'merchantId' => config('services.braintree.merchantId'),
-            'publicKey' => config('services.braintree.publicKey'),
-            'privateKey' => config('services.braintree.privateKey')
-        ]);
+        // $gateway = new \Braintree\Gateway([
+        //     'environment' => config('services.braintree.environment'),
+        //     'merchantId' => config('services.braintree.merchantId'),
+        //     'publicKey' => config('services.braintree.publicKey'),
+        //     'privateKey' => config('services.braintree.privateKey')
+        // ]);
 
-        try {
-            $paypalToken = $gateway->ClientToken()->generate();
-        } catch (\Exception $e) {
-            $paypalToken = null;
-        }
+        // try {
+        //     $paypalToken = $gateway->ClientToken()->generate();
+        // } catch (\Exception $e) {
+        //     $paypalToken = null;
+        // }
 
         return view('checkout')->with([
-            'paypalToken' => $paypalToken,
+            // 'paypalToken' => $paypalToken,
             'discount' => getNumbers()->get('discount'),
             'newSubtotal' => getNumbers()->get('newSubtotal'),
             'newTax' => getNumbers()->get('newTax'),
@@ -61,6 +64,7 @@ class CheckoutController extends Controller
      */
     public function store(CheckoutRequest $request)
     {
+        // dd($request);
         // Check race condition when there are less items available to purchase
         if ($this->productsAreNoLongerAvailable()) {
             return back()->withErrors('Sorry! One of the items in your cart is no longer avialble.');
@@ -71,18 +75,18 @@ class CheckoutController extends Controller
         })->values()->toJson();
 
         try {
-            $charge = Stripe::charges()->create([
-                'amount' => getNumbers()->get('newTotal') / 100,
-                'currency' => 'CAD',
-                'source' => $request->stripeToken,
-                'description' => 'Order',
-                'receipt_email' => $request->email,
-                'metadata' => [
-                    'contents' => $contents,
-                    'quantity' => Cart::instance('default')->count(),
-                    'discount' => collect(session()->get('coupon'))->toJson(),
-                ],
-            ]);
+            // $charge = Stripe::charges()->create([
+            //     'amount' => getNumbers()->get('newTotal') / 100,
+            //     'currency' => 'CAD',
+            //     'source' => $request->stripeToken,
+            //     'description' => 'Order',
+            //     'receipt_email' => $request->email,
+            //     'metadata' => [
+            //         'contents' => $contents,
+            //         'quantity' => Cart::instance('default')->count(),
+            //         'discount' => collect(session()->get('coupon'))->toJson(),
+            //     ],
+            // ]);
 
             $order = $this->addToOrdersTables($request, null);
             Mail::send(new OrderPlaced($order));
@@ -95,6 +99,7 @@ class CheckoutController extends Controller
 
             return redirect()->route('confirmation.index')->with('success_message', 'Thank you! Your payment has been successfully accepted!');
         } catch (CardErrorException $e) {
+            dd('OK');
             $this->addToOrdersTables($request, $e->getMessage());
             return back()->withErrors('Error! ' . $e->getMessage());
         }
@@ -167,7 +172,7 @@ class CheckoutController extends Controller
             'billing_email' => $request->email,
             'billing_name' => $request->name,
             'billing_address' => $request->address,
-            'billing_city' => $request->city,
+            'billing_city' => $request->department,
             'billing_province' => $request->province,
             'billing_postalcode' => $request->postalcode,
             'billing_phone' => $request->phone,
@@ -192,6 +197,16 @@ class CheckoutController extends Controller
         return $order;
     }
 
+    
+    public function tables()
+    {
+        $departments = Department::orderBy('description')->get();
+        $provinces = Province::orderBy('description')->get();
+        $districts = District::orderBy('description')->get();
+
+        return compact('departments', 'provinces', 'districts');
+    }
+    
     protected function addToOrdersTablesPaypal($email, $name, $error)
     {
         // Insert into orders table

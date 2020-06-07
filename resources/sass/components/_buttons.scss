@@ -22,7 +22,8 @@
     background: $primary;
     color: white !important;
     padding: 12px 40px;
-
+    text-decoration: none;
+    
     &:hover {
         background: darken($primary, 7%);
     }

@@ -6,6 +6,7 @@
  */
 
 require('./bootstrap');
+require('../../node_modules/bootstrap-select/dist/js/bootstrap-select');
 
 window.Vue = require('vue');
 
@@ -15,9 +16,9 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example').default);
-Vue.component('blog-posts', require('./components/BlogPosts').default);
+// Vue.component('example', require('./components/Example').default);
+// Vue.component('blog-posts', require('./components/BlogPosts').default);
 
-const app = new Vue({
-    el: '#app'
-});
+// const app = new Vue({
+//     el: '#app'
+// });

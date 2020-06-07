@@ -1,6 +1,6 @@
 <div class="might-like-section">
     <div class="container">
-        <h2>You might also like...</h2>
+        <h2 style="font-weight: normal;">Productos <strong>que te pueden interesar</strong></h2>
         <div class="might-like-grid">
             @foreach ($mightAlsoLike as $product)
                 <a href="{{ route('shop.show', $product->slug) }}" class="might-like-product">

@@ -25,8 +25,8 @@ function productImage($path)
 function getNumbers()
 {
     $tax = config('cart.tax') / 100;
-    $discount = session()->get('coupon')['discount'] ?? 0;
-    $code = session()->get('coupon')['name'] ?? null;
+    $discount = 0;
+    $code = null;
     $newSubtotal = (Cart::subtotal() - $discount);
     if ($newSubtotal < 0) {
         $newSubtotal = 0;

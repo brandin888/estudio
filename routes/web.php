@@ -18,6 +18,7 @@ Route::post('/coupon', 'CouponsController@store')->name('coupon.store');
 Route::delete('/coupon', 'CouponsController@destroy')->name('coupon.destroy');
 
 Route::get('/checkout', 'CheckoutController@index')->name('checkout.index')->middleware('auth');
+Route::get('/checkout/tables', 'CheckoutController@tables');
 Route::post('/checkout', 'CheckoutController@store')->name('checkout.store');
 Route::post('/paypal-checkout', 'CheckoutController@paypalCheckout')->name('checkout.paypal');
 
