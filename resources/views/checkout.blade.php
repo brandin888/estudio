@@ -83,12 +83,12 @@
                     <div class="half-form">
                         <div class="form-group">
                             <label for="department">Departamento</label>
-                            <select id="department" name="department" class="form-control">
+                            <select id="department" name="department" class="form-control" value="{{ old('department') }}">
                             </select>                
                         </div>
                         <div class="form-group">
                             <label for="province">Provincia</label>
-                            <select id="province" name="province" class="form-control">
+                            <select id="province" name="province" class="form-control" value="{{ old('province') }}">
                             </select>                
                         </div>
                     </div> <!-- end half-form -->
@@ -96,7 +96,7 @@
                     <div class="half-form">
                         <div class="form-group">
                             <label for="district">Distrito</label>
-                            <select id="district" name="district" class="form-control">
+                            <select id="district" name="district" class="form-control" value="{{ old('district') }}">
                             </select>                    
                         </div>
                     </div>

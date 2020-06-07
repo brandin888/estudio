@@ -64,7 +64,7 @@ return [
         'string'  => 'The :attribute must be at least :min characters.',
         'array'   => 'The :attribute must have at least :min items.',
     ],
-    'not_in'               => 'The selected :attribute is invalid.',
+    'not_in'               => 'The :attribute is invalid.',
     'numeric'              => 'The :attribute must be a number.',
     'present'              => 'The :attribute field must be present.',
     'regex'                => 'The :attribute format is invalid.',
@@ -87,6 +87,7 @@ return [
     'unique'               => 'The :attribute has already been taken.',
     'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'The :attribute format is invalid.',
+    'requiredcheckout'     => 'The :attribute is required!!.',
 
     /*
     |--------------------------------------------------------------------------
@@ -103,6 +104,15 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        'department' => [
+            'not_in' => 'Debe seleccionar algún :attribute.',
+        ],
+        'province' => [
+            'not_in' => 'Debe seleccionar alguna :attribute.',
+        ],
+        'district' => [
+            'not_in' => 'Debe seleccionar algún :attribute.',
+        ],
     ],
 
     /*
@@ -116,6 +126,10 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'department' => 'Departamento',
+        'province' => 'Provincia',
+        'district' => 'Distrito',
+    ],
 
 ];

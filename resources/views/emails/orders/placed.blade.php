@@ -17,6 +17,7 @@ Hola {{ $order->billing_name }}, gracias por realizar su pedido en EL MAYORISTA
 @endforeach
 @endcomponent
 
+**Dirección:** {{$order->billing_city}} - {{$order->billing_province}} - {{$order->billing_district}}
 
 Puede obtener más detalles sobre su pedido iniciando sesión en nuestro sitio web.
 

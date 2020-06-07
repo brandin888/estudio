@@ -36,7 +36,7 @@
 
     <div class="product-section container">
         <div>
-            <div class="product-section-image">
+            <div class="product-section-image bg-white">
                 <img src="{{ productImage($product->image) }}" alt="product" class="active" id="currentImage">
             </div>
             <div class="product-section-images">
