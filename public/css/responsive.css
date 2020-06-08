@@ -2,7 +2,7 @@
 
 @media only screen and (max-width: 1200px) {
   .container {
-    max-width: 960px;
+    
   }
 }
 
@@ -46,7 +46,7 @@
   }
 
   .featured-section .products {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .products-header {
@@ -91,7 +91,7 @@
   }
 
   .products-section {
-    grid-template-columns: 1fr;
+    
   }
 
   .products-section .sidebar {
@@ -99,7 +99,7 @@
   }
 
   .products-section .products {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .product-section {
@@ -107,7 +107,7 @@
   }
 
   .might-like-section .might-like-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .cart-section {

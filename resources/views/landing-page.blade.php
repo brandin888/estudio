@@ -2,10 +2,17 @@
 
 <style type="text/css">
     div.polaroid {
-  width: 80%;
+  width: 100%;
   background-color: white;
-  padding: 20px;
+  padding: 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media only screen and (max-width: 1200px) {
+  .products-section .products {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-gap: 30px 30px;
+  }
 }
 
 img {width: 100%}

@@ -1,13 +1,13 @@
 <style type="text/css">
   .cyan.lighten-2 {
-  background-color: #4dd0e1 !important;
+  background-color: #edf6ff !important;
 
 }
 .blue.darken-4 {
-    background-color: #0D47A1 !important;
+    background-color: #01579b !important;
 }
 </style>
-<header class="">
+<header class="blue darken-4">
     <div class="top-nav container ">
       <div class="top-nav-left ">
           <div class="logo"><a href="/">El Mayorista</a></div>

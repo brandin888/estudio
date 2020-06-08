@@ -294,8 +294,8 @@ strong {
 }
 
 .button:hover {
-  color: #e9e9e9;
-  background: #212121;
+  color: rgba(255, 255, 255, 0.9);
+  background: #1565C0;
 }
 
 .button-white {
@@ -358,7 +358,9 @@ strong {
   margin-right: 15%;
 } 
 .sidebar li:hover {
-  background: #90E0EF;
+  line-height: 2.5;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 
@@ -873,7 +875,7 @@ header.with-background .top-nav .logo {
 }
 
 header.with-background .top-nav ul a {
-  color: #e9e9e9;
+  color: #ffffff;
 }
 
 header.with-background .top-nav ul a:hover {
@@ -937,7 +939,7 @@ header .top-nav ul li:last-child {
 }
 
 header .top-nav ul a {
-  color: #e9e9e9;
+  color: #ffffff;
 }
 
 header .top-nav ul a:hover {
@@ -1002,7 +1004,7 @@ footer {
 .featured-section .products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 60px 30px;
+  grid-gap: 60px 0px;
 }
 
 .featured-section .products .product-price {
@@ -1039,7 +1041,7 @@ footer {
 .products-section {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  margin: 80px auto 80px;
+  margin: 50px auto 50px;
 }
 
 .products-section .sidebar li.active {
@@ -1048,8 +1050,8 @@ footer {
 
 .products-section .products {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 60px 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px 30px;
 }
 
 .products-section .products .product-price {

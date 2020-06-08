@@ -1,3 +1,165 @@
+
+<style type="text/css">
+    div.polaroid {
+  width: 100%;
+  background-color: white;
+  padding: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {width: 100%}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.polaroid:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 140, 186, 0.5);
+  
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+section#action, section#action-transparent {
+    padding: 70px 0;
+}
+#action, #action-parallax, #action-parallax2, #action-parallax3, #action-parallax4, #action-parallax-seo, .action-parallax {
+    background: none repeat scroll 0 0 #1b1f23;
+}
+#action, #action-parallax, #action-parallax2, #action-parallax3, #action-parallax4,#action-parallax-seo, .action-parallax , #action-transparent, #action a, #action-parallax a, #action-parallax-seo a, #action-parallax2 a, #action-parallax3 a, #action-parallax4 a, #action-transparent a {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+#action-parallax, #action-parallax2, #action-parallax3, #action-parallax4,#action-parallax-seo, #action-transparent, .action-parallax {
+    background: none no-repeat scroll 50% 50% / cover rgba(0, 0, 0, 0);
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+#action-parallax {
+    background-image: url("storage/banners/slider2.jpg");
+}
+#action-parallax2 {
+   background-image: url("img/parallax/parallax2.jpg");
+}
+#action-parallax3 {
+    background-image: url("img/parallax/parallax3.jpg");
+}
+#action-parallax4 {
+    background-image: url("img/parallax/parallax5.jpg");
+}
+#action-parallax5 {
+    background-image: url("../images/cover-portal-empleado.jpg");
+}
+#action-parallax-seo {
+    background-image: url("../images/cover-seo.jpg");
+}
+#action-parallax-empleado {
+    background-image: url("../images/parallax-empleado.jpg");
+}
+#action-transparent {
+    background: none repeat scroll 0 0 #1b1f23;
+}
+#action-transparent {
+    background: none repeat scroll 0 0 #1b1f23;
+}
+#action-transparent .overlay-dark {
+    z-index: 0;
+}
+#action-transparent .icon-heading {
+    display: block;
+    line-height: 1px;
+    padding-top: 30px;
+}
+
+.overlay-dark {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+}
+.overlay, .overlay-dark {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.fixed_p {
+    background-attachment: fixed !important;
+}
+.cyan.lighten-2 {
+  background-color: #4dd0e1 !important;
+}
+
+</style>
 @extends('layout')
 
 @section('title', 'Products')
@@ -32,7 +194,7 @@
         @endif
     </div>
 
-    <div class="products-section container">
+    <div class="products-section container" >
         <div class="sidebar">
             <h3>Categorías</h3>
             <ul>
@@ -54,7 +216,9 @@
 
             <div class="products text-center">
                 @forelse ($products as $product)
-                    <div class="product bg-white">
+
+                    <div class="product polaroid">
+
                         <a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a>
                         <a href="{{ route('shop.show', $product->slug) }}"><div class="product-name">{{ $product->name }}</div></a>
                         <div class="product-price">{{ $product->presentPrice() }}</div>

@@ -8,7 +8,7 @@
 
 @section('content')
 
-<div class="breadcrumbs">
+<div class="breadcrumbs" style="background-color: #edf6ff">
     <div class="breadcrumbs-container container">
         <div>
             <div class="d-flex align-items-center">
