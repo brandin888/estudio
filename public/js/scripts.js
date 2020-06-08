@@ -651,7 +651,7 @@ $(document).ready(function(){
 function cargarMapa(id){
   var mapa;
   /* var route = site_url+'cargar-mapa/'+id; */
-  var route = 'http://127.0.0.1:8000/cargar-mapa/'+id;
+  var route = 'http://localhost:8020/elmayorista/public/cargar-mapa/'+id;
   $.ajax({
     url: route,
     data : {},
