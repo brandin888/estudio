@@ -36419,7 +36419,7 @@ select.decorated option:hover {
             </div>
             <div class="form-group col-md-12">
               <label for="exampleInputPassword1">Mensaje</label>
-              <textarea name="mensaje" id="mensaje" class="form-control" rows="5" placeholder="Saludos Odyssey..."></textarea>
+              <textarea name="mensaje" id="mensaje" class="form-control" rows="5" placeholder="Saludos ..."></textarea>
               <label for="mensaje" generated="true" class="error"></label>
 
             </div>

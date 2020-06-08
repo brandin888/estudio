@@ -75,6 +75,6 @@
 
 "><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn;"><div class="row"><div class="col-lg-10 col-lg-offset-1 text-center">
 
-<br><h2>Vamo a calmarno</h2><p class="lead">
+<!-- <br><h2>Vamo a calmarno</h2><p class="lead"> -->
 <strong></strong></p></div></div></div>
 </footer>
