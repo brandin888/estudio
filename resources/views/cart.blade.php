@@ -28,7 +28,7 @@
     </div>
 </div>
 
-<div class="row d-flex justify-content-center mt-3">
+<div class="d-flex justify-content-center mt-3">
         
     @if (session()->has('success_message'))
     <div class="alert alert-success">
@@ -46,15 +46,15 @@
         </div>
         @endif
     </div>
-    <div class="row mr-5 ml-5">
+    <div class="cart-container row mr-5 ml-5">
         @if (Cart::count() > 0)
         <div class="cart-section col-12 col-lg-8">
             <div>  
                 <h2>{{ Cart::count() }} producto(s) en tu Carrito de compras</h2>
                 
-                <div class="cart-table">
+                <div class="table-responsive">
                     <table class="table mb-0 text-center">
-                        <thead class="thead-light font-weight-bold">
+                        <thead class="font-weight-bold text-white" style="background-color:#01579b !important">
                         <tr><strong>
 
                             <th scope="col">Producto</th>
@@ -115,10 +115,10 @@
             
         </div> <!-- end cart-section -->
         
-        <div class="col-12 col-lg-4 mr-auto" style="margin-top:35px">
+        <div class="cart-section-2 col-12 col-lg-4 mr-auto">
             <div class="card-body bg-white mt-5">
-                <div class="cart-totals">
-                    <div class="row pl-3 mb-4 pb-1" style="border-bottom: 1px solid #ddd">
+                <div class="cart-totals text-center">
+                    <div class="mb-3" style="border-bottom: 1px solid #ddd">
                         <h2>Resumen de tu pedido</h2>
                     </div>
                     <div class="row pb-4">
@@ -129,8 +129,8 @@
                                 <span class="cart-totals-total">{{ presentPrice($newTotal) }}</span>
                             </div>
                         </div>
-                        <div class="row pb-2">
-                            <div class="text-center" style="font-size:15px">El costo de envío no esta incluido en el precio de los productos.</div>
+                        <div class="pb-2">
+                            <div style="font-size:15px">El costo de envío no esta incluido en el precio de los productos.</div>
                         </div>
                         <div class="row d-flex justify-content-center">
                             <a href="{{ route('checkout.index') }}" class="button-primary" style="text-decoration:none;">Ir a comprar</a>

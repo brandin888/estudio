@@ -794,9 +794,31 @@ form button[type=submit] {
 
 @media (max-width: 550px) {
   .cart-item-details {
-    font-size: 15px;
+    display: none;
+  }
+  .cart-container {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .cart-section h2{
+    font-size:16px;
+    margin-bottom: 5px !important;
+  }
+  .cart-totals h2, .cart-totals{
+    font-size:16px;
+  }
+  .table {
+    font-size: 14px;
+  }
+  .cart-section-2 {
+    margin-top:0px !important;
   }
 }
+
+.cart-section-2 {
+  margin-top:35px;
+}
+
 .table-responsive {
   display: block;
   width: 100%;
