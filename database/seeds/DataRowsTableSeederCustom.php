@@ -600,7 +600,7 @@ class DataRowsTableSeederCustom extends Seeder
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type' => 'text',
-                'display_name' => 'Billing City',
+                'display_name' => 'Billing Department',
                 'required' => 1,
                 'browse' => 1,
                 'read' => 1,
@@ -628,6 +628,22 @@ class DataRowsTableSeederCustom extends Seeder
             ])->save();
         }
 
+        $dataRow = $this->dataRow($ordersDataType, 'billing_district');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type' => 'text',
+                'display_name' => 'Billing District',
+                'required' => 1,
+                'browse' => 0,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 0,
+                'details' => '',
+                'order' => 8,
+            ])->save();
+        }
+
         $dataRow = $this->dataRow($ordersDataType, 'billing_postalcode');
         if (!$dataRow->exists) {
             $dataRow->fill([
@@ -640,7 +656,7 @@ class DataRowsTableSeederCustom extends Seeder
                 'add' => 1,
                 'delete' => 0,
                 'details' => '',
-                'order' => 8,
+                'order' => 9,
             ])->save();
         }
 
@@ -656,7 +672,7 @@ class DataRowsTableSeederCustom extends Seeder
                 'add' => 1,
                 'delete' => 0,
                 'details' => '',
-                'order' => 9,
+                'order' => 10,
             ])->save();
         }
 
@@ -665,14 +681,14 @@ class DataRowsTableSeederCustom extends Seeder
             $dataRow->fill([
                 'type' => 'text',
                 'display_name' => 'Billing Name On Card',
-                'required' => 1,
+                'required' => 0,
                 'browse' => 1,
                 'read' => 1,
-                'edit' => 1,
-                'add' => 1,
+                'edit' => 0,
+                'add' => 0,
                 'delete' => 0,
                 'details' => '',
-                'order' => 10,
+                'order' => 11,
             ])->save();
         }
 
@@ -688,7 +704,7 @@ class DataRowsTableSeederCustom extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '',
-                'order' => 11,
+                'order' => 12,
             ])->save();
         }
 
@@ -704,7 +720,7 @@ class DataRowsTableSeederCustom extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '',
-                'order' => 12,
+                'order' => 13,
             ])->save();
         }
 
@@ -720,7 +736,7 @@ class DataRowsTableSeederCustom extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '',
-                'order' => 13,
+                'order' => 14,
             ])->save();
         }
 
@@ -736,7 +752,7 @@ class DataRowsTableSeederCustom extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '',
-                'order' => 14,
+                'order' => 15,
             ])->save();
         }
 
@@ -752,7 +768,7 @@ class DataRowsTableSeederCustom extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '',
-                'order' => 15,
+                'order' => 16,
             ])->save();
         }
 
@@ -768,7 +784,7 @@ class DataRowsTableSeederCustom extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '',
-                'order' => 16,
+                'order' => 17,
             ])->save();
         }
 
@@ -784,7 +800,7 @@ class DataRowsTableSeederCustom extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{"on":"Yes","off":"No"}',
-                'order' => 17,
+                'order' => 18,
             ])->save();
         }
 
@@ -800,7 +816,7 @@ class DataRowsTableSeederCustom extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '',
-                'order' => 18,
+                'order' => 19,
             ])->save();
         }
 
@@ -816,7 +832,7 @@ class DataRowsTableSeederCustom extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '',
-                'order' => 19,
+                'order' => 20,
             ])->save();
         }
 
@@ -832,7 +848,7 @@ class DataRowsTableSeederCustom extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '',
-                'order' => 20,
+                'order' => 21,
             ])->save();
         }
     }
