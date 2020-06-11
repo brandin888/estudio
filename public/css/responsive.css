@@ -189,12 +189,7 @@
     margin-bottom: 14px;
   }
 }
-@media (max-width: 700px) {
-  .breadcrumbs .breadcrumbs-container {
-    flex-direction: column !important;
-    height: 130px !important;
-  }
-}
+
 /* Small Devices, Tablets */
 
 /* Extra Small Devices, Phones */

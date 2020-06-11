@@ -4,6 +4,14 @@
 
 @section('extra-css')
 <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
+<style scoped>
+@media (max-width: 700px) {
+  .breadcrumbs .breadcrumbs-container {
+    flex-direction: column !important;
+    height: 130px !important;
+  }
+}
+</style>
 @endsection
 
 @section('content')
