@@ -54,7 +54,7 @@
                 
                 <div class="table-responsive">
                     <table class="table mb-0 text-center">
-                        <thead class="font-weight-bold text-white" style="background-color:#01579b !important">
+                        <thead class="font-weight-bold text-white" style="background-color:#01579b">
                         <tr><strong>
 
                             <th scope="col">Producto</th>
@@ -133,7 +133,7 @@
                             <div style="font-size:15px">El costo de envío no esta incluido en el precio de los productos.</div>
                         </div>
                         <div class="row d-flex justify-content-center">
-                            <a href="{{ route('checkout.index') }}" class="button-primary" style="text-decoration:none;">Ir a comprar</a>
+                            <a href="{{ route('checkout.index') }}" class="button text-white" style="text-decoration:none;background-color:#01579b;border:none">Ir a comprar</a>
                         </div>                        
                     </div> <!-- end cart-totals -->
             </div>
@@ -143,7 +143,7 @@
                 <div class="container mt-5">
                 <h3 class="font-weight-bold">Su carrito esta vacío.</h3>
                     <div class="spacer"></div>
-                    <a href="{{ route('shop.index') }}" class="button">Agregar productos</a>
+                    <a href="{{ route('shop.index') }}" class="button" style="text-decoration: none;">Agregar productos</a>
                     <div class="spacer"></div>
                 </div>    
                     
