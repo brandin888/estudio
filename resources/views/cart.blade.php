@@ -69,14 +69,14 @@
                             @foreach (Cart::content() as $item)
                             <tr style="background-color:white">
                             <!-- <div class="cart-table-row mb-2"> -->
-                                <td class="d-flex align-items-center cart-table-row-left">
+                                <td class="d-md-flex align-items-center cart-table-row-left">
                                     <a href="{{ route('shop.show', $item->model->slug) }}"><img src="{{ productImage($item->model->image) }}" alt="item" class="cart-table-img"></a>
-                                    <div class="cart-item-details" style="width:80%">
+                                    <div class="cart-item-details w-100">
                                         <div class="cart-table-item"><a href="{{ route('shop.show', $item->model->slug) }}">{{ $item->model->name }}</a></div>
                                         <div class="cart-table-description">{{ $item->model->details }}</div>
                                     </div>
                                 </td>
-                                <td style="padding-top:8%">
+                                <td style="padding-top:5%">
                                     <select class="quantity" data-id="{{ $item->rowId }}" data-productQuantity="{{ $item->model->quantity }}">
                                         @for ($i = 1; $i < 5 + 1 ; $i++)
                                         <option {{ $item->qty == $i ? 'selected' : '' }}>{{ $i }}</option>
@@ -84,7 +84,7 @@
                                     </select>
                                     <!-- <input class="quantity" min="0" name="quantity" value="1" type="number"> -->         
                                 </td>
-                                <td style="padding-top:8%">
+                                <td style="padding-top:5%">
                                     <div>{{ presentPrice($item->subtotal) }}</div>
                                     <div class="cart-table-actions">
                                         <form action="{{ route('cart.destroy', $item->rowId) }}" method="POST">
@@ -92,7 +92,7 @@
                                             {{ method_field('DELETE') }}
                                             
                                             <!-- <button type="submit" class="cart-options">Quitar</button> -->
-                                            <td style="padding-top:8%"class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                                            <td style="padding-top:5%"class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
                                         </form>
                                         
                                         <!-- <form action="{{ route('cart.switchToSaveForLater', $item->rowId) }}" method="POST">
