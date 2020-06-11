@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Category;
+use App\Product;
 
 class UsersController extends Controller
 {
@@ -55,7 +57,8 @@ class UsersController extends Controller
      */
     public function edit()
     {
-        return view('my-profile')->with('user', auth()->user());
+         $categories = Category::all();
+        return view('my-profile')->with(['user'=> auth()->user(),'categories' => $categories,]);
     }
 
     /**
