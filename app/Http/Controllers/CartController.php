@@ -6,6 +6,7 @@ use App\Product;
 use Illuminate\Http\Request;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Support\Facades\Validator;
+use App\Category;
 
 class CartController extends Controller
 {
@@ -17,6 +18,17 @@ class CartController extends Controller
     public function index()
     {
         $mightAlsoLike = Product::mightAlsoLike()->get();
+        $categories = Category::all();
+
+        if (request()->category) {
+            $products = Product::with('categories')->whereHas('categories', function ($query) {
+                $query->where('slug', request()->category);
+            });
+            $categoryName = optional($categories->where('slug', request()->category)->first())->name;
+        } else {
+            $products = Product::where('featured', true);
+            $categoryName = 'Featured';
+        }
         // dd($mightAlsoLike);
         return view('cart')->with([
             'mightAlsoLike' => $mightAlsoLike,
@@ -24,6 +36,8 @@ class CartController extends Controller
             'newSubtotal' => getNumbers()->get('newSubtotal'),
             'newTax' => getNumbers()->get('newTax'),
             'newTotal' => getNumbers()->get('newTotal'),
+            'categories' => $categories,
+            'categoryName' => $categoryName,
         ]);
     }
 

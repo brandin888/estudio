@@ -55,11 +55,24 @@ class ShopController extends Controller
         $mightAlsoLike = Product::where('slug', '!=', $slug)->mightAlsoLike()->get();
 
         $stockLevel = getStockLevel($product->quantity);
+        $categories = Category::all();
+
+        if (request()->category) {
+            $products = Product::with('categories')->whereHas('categories', function ($query) {
+                $query->where('slug', request()->category);
+            });
+            $categoryName = optional($categories->where('slug', request()->category)->first())->name;
+        } else {
+            $products = Product::where('featured', true);
+            $categoryName = 'Featured';
+        }
 
         return view('product')->with([
             'product' => $product,
             'stockLevel' => $stockLevel,
             'mightAlsoLike' => $mightAlsoLike,
+             'categories' => $categories,
+            'categoryName' => $categoryName,
         ]);
     }
 

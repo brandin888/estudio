@@ -170,7 +170,9 @@
 @section('title', 'Login')
 
 @section('content')
-<div class="container">
+<div class="container" style="
+    margin-top: 100px;
+">
     <div class="auth-pages">
         <div class="auth-left">
             @if (session()->has('success_message'))

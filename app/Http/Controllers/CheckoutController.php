@@ -15,6 +15,7 @@ use App\Http\Requests\CheckoutRequest;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Cartalyst\Stripe\Laravel\Facades\Stripe;
 use Cartalyst\Stripe\Exception\CardErrorException;
+use App\Category;
 
 class CheckoutController extends Controller
 {
@@ -32,7 +33,17 @@ class CheckoutController extends Controller
         if (auth()->user() && request()->is('guestCheckout')) {
             return redirect()->route('checkout.index');
         }
+$categories = Category::all();
 
+        if (request()->category) {
+            $products = Product::with('categories')->whereHas('categories', function ($query) {
+                $query->where('slug', request()->category);
+            });
+            $categoryName = optional($categories->where('slug', request()->category)->first())->name;
+        } else {
+            $products = Product::where('featured', true);
+            $categoryName = 'Featured';
+        }
         // $gateway = new \Braintree\Gateway([
         //     'environment' => config('services.braintree.environment'),
         //     'merchantId' => config('services.braintree.merchantId'),
@@ -52,6 +63,8 @@ class CheckoutController extends Controller
             'newSubtotal' => getNumbers()->get('newSubtotal'),
             'newTax' => getNumbers()->get('newTax'),
             'newTotal' => getNumbers()->get('newTotal'),
+            'categories' => $categories,
+            'categoryName' => $categoryName,
         ]);
     }
 

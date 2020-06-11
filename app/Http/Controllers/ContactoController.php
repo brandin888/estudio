@@ -14,7 +14,8 @@ use Maatwebsite\Excel\Facades\Excel;
 use Validator;
 use Mail;
 use App\Helpers\Frontend\EnviosCorreo as HelperCorreo;
-
+use App\Category;
+use App\Product;
 class ContactoController extends Controller
 {
 
@@ -22,10 +23,21 @@ class ContactoController extends Controller
     {
         //$pulseras = Pulsera::where('estado', 1)->orderBy('orden')->get();
         $locales = Local::where('estado', 1)->get();
+        $categories = Category::all();
+
+        if (request()->category) {
+            $products = Product::with('categories')->whereHas('categories', function ($query) {
+                $query->where('slug', request()->category);
+            });
+            $categories = optional($categories->where('slug', request()->category)->first())->name;
+        } else {
+            $products = Product::where('featured', true);
+            $categoryName = 'Featured';
+        }
 
         //$banner = Banner::where('estado', 1)->where('seccion', 'contacto')->first();
         //return view('frontend.contacto.index',compact('banner', 'locales'));
-        return view('frontend.contacto.index',compact('locales'));
+        return view('frontend.contacto.index',compact('locales','categories','categoryName'));
     }
 
     // public function suscripcion(Request $request)

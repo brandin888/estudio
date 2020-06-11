@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\Category;
+use App\Product;
 
 class LoginController extends Controller
 {
@@ -44,10 +46,27 @@ class LoginController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function showLoginForm()
+
     {
         session()->put('previousUrl', url()->previous());
+        $categories = Category::all();
 
-        return view('auth.login');
+        if (request()->category) {
+            $products = Product::with('categories')->whereHas('categories', function ($query) {
+                $query->where('slug', request()->category);
+            });
+            $categoryName = optional($categories->where('slug', request()->category)->first())->name;
+        } else {
+            $products = Product::where('featured', true);
+            $categoryName = 'Featured';
+        }
+        // dd($mightAlsoLike);
+
+        return view('auth.login')->with([
+          
+            'categories' => $categories,
+            'categoryName' => $categoryName,
+        ]);
     }
 
     // override logout so cart contents remain:

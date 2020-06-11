@@ -3,7 +3,9 @@
 @section('title', 'Sign Up for an Account')
 
 @section('content')
-<div class="container">
+<div class="container" style="
+    margin-top: 100px;
+">
     <div class="auth-pages">
         <div>
             @if (session()->has('success_message'))

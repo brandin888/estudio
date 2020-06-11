@@ -8,7 +8,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Laravel Ecommerce | @yield('title', '')</title>
+        <title>El Mayorista | Tienda Online</title>
 
         <link href="/img/favicon.ico" rel="SHORTCUT ICON" />
 
@@ -49,8 +49,25 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyC4yN2BPmYWLa-GjR-5Z8V5YfkKgwygEF8"></script>
     <script src="{{ asset('js/gmaps.js')}}"></script>
+<script type="text/javascript">
+  //Active Menu
 
+var  pestana = $('#pestana_vista').attr('valor');
+$('#'+pestana).addClass('activo');
+
+//menu responsive
+
+$(document).ready(menu);
+function menu() {
+  $('#menu-icon-shape').on('click', function() {
+    $('#menu-icon-shape').toggleClass('active');
+    $('#top, #middle, #bottom').toggleClass('active');
+    $('#overlay-nav').toggleClass('active');
+  });
+}
+</script>
     @yield('extra-js')
 
 </body>
 </html>
+</script>

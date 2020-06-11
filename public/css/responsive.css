@@ -12,8 +12,11 @@
   header.with-background .top-nav,
   header .top-nav {
     flex-direction: column;
+    padding-top: 50px;
   }
-
+  .hero-buttons{
+  	display: none;
+  }
   header.with-background .top-nav .logo,
   header .top-nav .logo {
     margin: auto;
@@ -27,6 +30,8 @@
   header.with-background .top-nav-left,
   header .top-nav-left {
     flex-direction: column;
+   padding-top: 80px;
+
   }
 
   header.with-background .hero,
@@ -91,7 +96,7 @@
   }
 
   .products-section {
-    
+    grid-template-columns: 1fr ;
   }
 
   .products-section .sidebar {
