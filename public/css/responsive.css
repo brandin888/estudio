@@ -8,7 +8,7 @@
 
 /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 992px) {
+@media (max-width: 992px) {
   header.with-background .top-nav,
   header .top-nav {
     flex-direction: column;
@@ -84,10 +84,6 @@
 
   .breadcrumbs {
     text-align: center;
-  }
-
-  .breadcrumbs .breadcrumbs-container {
-    flex-direction: column;
   }
 
   .search-form {
@@ -193,7 +189,12 @@
     margin-bottom: 14px;
   }
 }
-
+@media (max-width: 700px) {
+  .breadcrumbs .breadcrumbs-container {
+    flex-direction: column !important;
+    height: 130px !important;
+  }
+}
 /* Small Devices, Tablets */
 
 /* Extra Small Devices, Phones */
