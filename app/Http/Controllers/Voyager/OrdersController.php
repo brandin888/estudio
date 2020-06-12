@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Voyager;
 
 use App\Order;
+
 use Validator;
 use App\Product;
 use App\Category;
@@ -12,9 +13,16 @@ use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Events\BreadDataAdded;
 use TCG\Voyager\Events\BreadDataUpdated;
 use TCG\Voyager\Http\Controllers\VoyagerBaseController;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Model;
+use TCG\Voyager\Events\BreadDataDeleted;
+use TCG\Voyager\Events\BreadImagesDeleted;
+use TCG\Voyager\Database\Schema\SchemaManager;
+use TCG\Voyager\Http\Controllers\Traits\BreadRelationshipParser;
+use TCG\Voyager\Models;
 
 class OrdersController extends VoyagerBaseController
-{
+{use BreadRelationshipParser;
     //***************************************
     //                _____
     //               |  __ \
@@ -26,20 +34,30 @@ class OrdersController extends VoyagerBaseController
     //  Read an item of our Data Type B(R)EAD
     //
     //****************************************
-
+    
+    
     public function show(Request $request, $id)
     {
         $slug = $this->getSlug($request);
 
         $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();
 
-        // Compatibility with Model binding.
-        $id = $id instanceof Model ? $id->{$id->getKeyName()} : $id;
+        $isSoftDeleted = false;
 
-        $relationships = $this->getRelationships($dataType);
         if (strlen($dataType->model_name) != 0) {
             $model = app($dataType->model_name);
-            $dataTypeContent = call_user_func([$model->with($relationships), 'findOrFail'], $id);
+
+            // Use withTrashed() if model uses SoftDeletes and if toggle is selected
+            if ($model && in_array(SoftDeletes::class, class_uses_recursive($model))) {
+                $model = $model->withTrashed();
+            }
+            if ($dataType->scope && $dataType->scope != '' && method_exists($model, 'scope'.ucfirst($dataType->scope))) {
+                $model = $model->{$dataType->scope}();
+            }
+            $dataTypeContent = call_user_func([$model, 'findOrFail'], $id);
+            if ($dataTypeContent->deleted_at) {
+                $isSoftDeleted = true;
+            }
         } else {
             // If Model doest exist, get data from table name
             $dataTypeContent = DB::table($dataType->name)->where('id', $id)->first();
@@ -56,6 +74,9 @@ class OrdersController extends VoyagerBaseController
 
         // Check if BREAD is Translatable
         $isModelTranslatable = is_bread_translatable($dataTypeContent);
+
+        // Eagerload Relations
+        $this->eagerLoadRelations($dataTypeContent, $dataType, 'read', $isModelTranslatable);
 
         $view = 'voyager::bread.read';
 
