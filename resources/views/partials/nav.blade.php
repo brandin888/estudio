@@ -121,7 +121,7 @@
 
 #nav-content {
   position: relative;
-  top: 50%;
+  top: 57%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -130,7 +130,7 @@
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  text-align: center;
+  text-align: left;
 }
 
 #nav-content ul li ul.submenu {
@@ -404,6 +404,177 @@
 }
 
 
+
+@import "https://fonts.googleapis.com/css?family=Fira+Sans:300,400";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+* {
+  box-sizing: border-box;
+}
+
+
+body::after {
+  content: '';
+  
+  z-index: 99;
+  
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-top {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 101;
+  padding: 10px 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #188976;
+}
+.nav-top .hamburger {
+  margin-left: auto;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-drill {
+  margin-top: 50px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.nav-is-toggled .nav-drill {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.nav-is-toggled::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-drill {
+  display: -webkit-box;
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: 0.45s;
+  transition: 0.45s;
+}
+.nav-items {
+  -webkit-box-flex: 0;
+          flex: 0 0 100%;
+}
+.nav-item:not(:last-child) {
+  border-bottom: solid 1px #daf9f4;
+}
+.nav-link {
+  display: block;
+  padding: 0.875em 1em;
+  background-color: #fff;
+  color: #4d729c;
+  font-size: 1rem;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+.nav-expand-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  background-color: #daf9f4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  visibility: hidden;
+}
+.nav-expand-content .nav-item:not(:last-child) {
+  border-bottom: solid 1px #1565C0;
+}
+.nav-expand-content .nav-link {
+  background-color: #daf9f4;
+}
+.nav-expand-content .nav-back-link {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  background-color: #1565C0 !important;
+  color: #fff;
+}
+.nav-expand-content .nav-back-link::before {
+  content: "-";
+  margin-right: 0.5em;
+  font-family: "Material Icons";
+}
+.nav-expand-link {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.nav-expand-link::after {
+  content: "+";
+  -webkit-box-flex: 0;
+          flex: 0 1 auto;
+  font-family: "Material Icons";
+}
+.nav-expand.active > .nav-expand-content {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  visibility: visible;
+}
+.nav-expand .nav-expand-content {
+  background-color: #daebf9;
+}
+.nav-expand .nav-expand-content .nav-link {
+  background-color: #daebf9;
+}
+.nav-expand .nav-expand-content .nav-expand-content {
+  background-color: #aff1e6;
+}
+.nav-expand .nav-expand-content .nav-expand-content .nav-link {
+  background-color: #aff1e6;
+}
+.nav-expand .nav-expand-content .nav-expand-content .nav-expand-content {
+  background-color: #84e9d9;
+}
+.nav-expand .nav-expand-content .nav-expand-content .nav-expand-content .nav-link {
+  background-color: #84e9d9;
+}
+.nav-expand .nav-expand-content .nav-expand-content .nav-expand-content .nav-expand-content {
+  background-color: #59e1cb;
+}
+.nav-expand .nav-expand-content .nav-expand-content .nav-expand-content .nav-expand-content .nav-link {
+  background-color: #59e1cb;
+}
+.fa-shopping-bag:before {
+  content: "\F290";
+}
+.fa, .fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
 </style>
 <header class="blue darken-4">
   
@@ -460,6 +631,81 @@
 
 
 <!-- Overlay menu -->
+<nav class="nav-drill">
+  <ul class="nav-items nav-level-1">
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url('/') }}/cart">
+        Carrito  @if (Cart::instance('default')->count() > 0)
+    <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
+    @endif
+      </a>
+
+    </li>
+    <li class="nav-item nav-expand">
+      <a class="nav-link nav-expand-link" href="#">
+        Categorías
+      </a>
+      <ul class="nav-items nav-expand-content">
+      @foreach($categories as $category)
+            <li  class="nav-item"><a class="nav-link" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
+      <li>
+      @endforeach
+      
+        
+       
+        
+      </ul>
+    </li>
+    
+
+    @guest
+    <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Registrarse</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Iniciar Sesión</a></li>
+    @else
+    <li class="nav-item nav-expand">
+        <a class="nav-link nav-expand-link" href="#">Mi cuenta</a>
+
+        <ul class="nav-items nav-expand-content">
+      
+            <li  class="nav-item"><a class="nav-link" href="{{ route('users.edit') }}">Mi Perfil</a></li>
+            <li>
+
+            <li  class="nav-item"><a class="nav-link" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
+            <li>
+      
+        
+
+
+       
+        
+      </ul>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+                     document.getElementById('logout-form').submit();">
+            Salir Sesión
+        </a>
+    </li>
+
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+        {{ csrf_field() }}
+    </form>
+    @endguest
+
+    
+
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url('/') }}/contactanos">
+        Contáctanos
+      </a>
+    </li>
+    
+  </ul>
+</nav>
+
+
 <div id="overlay-nav">
   <div id="nav-content">
     <ul>
@@ -504,17 +750,30 @@
 <script type="text/javascript">
   //Active Menu
 
-var  pestana = $('#pestana_vista').attr('valor');
-$('#'+pestana).addClass('activo');
+</script>
 
-//menu responsive
+<script type="text/javascript">
+console.clear();
 
-$(document).ready(menu);
-function menu() {
-  $('#menu-icon-shape').on('click', function() {
-    $('#menu-icon-shape').toggleClass('active');
-    $('#top, #middle, #bottom').toggleClass('active');
-    $('#overlay-nav').toggleClass('active');
-  });
-}
+const navExpand = [].slice.call(document.querySelectorAll('.nav-expand'));
+const backLink = `<li class="nav-item">
+  <a class="nav-link nav-back-link" href="javascript:;">
+    Volver
+  </a>
+</li>`;
+
+navExpand.forEach(item => {
+  item.querySelector('.nav-expand-content').insertAdjacentHTML('afterbegin', backLink);
+  item.querySelector('.nav-link').addEventListener('click', () => item.classList.add('active'));
+  item.querySelector('.nav-back-link').addEventListener('click', () => item.classList.remove('active'));
+});
+
+
+// ---------------------------------------
+// not-so-important stuff starts here
+
+const ham = document.getElementById('menu-icon-shape');
+ham.addEventListener('click', function () {
+  document.body.classList.toggle('nav-is-toggled');
+});
 </script>

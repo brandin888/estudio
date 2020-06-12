@@ -27,7 +27,7 @@ class LandingPageController extends Controller
             $categoryName = optional($categories->where('slug', request()->category)->first())->name;
         } else {
             $products = Product::where('featured', true);
-            $categoryName = 'Featured';
+            $categoryName = 'Conoce lo más buscado';
         }
 
         if (request()->sort == 'low_high') {
