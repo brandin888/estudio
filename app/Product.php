@@ -40,7 +40,7 @@ class Product extends Model
     public function presentPrice()
     {
         //return money_format('$%i', $this->price / 100);
-        return 'S/'.number_format($this->price / 100, 2);
+        return 'S/ '.number_format($this->price / 100, 2);
     }
 
     public function scopeMightAlsoLike($query)
