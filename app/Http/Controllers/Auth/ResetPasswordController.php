@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 use App\Category;
 use App\Product;
+use Illuminate\Http\Request;
 
 class ResetPasswordController extends Controller
 {
