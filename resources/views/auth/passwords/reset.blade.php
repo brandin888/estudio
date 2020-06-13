@@ -33,13 +33,13 @@
                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password" required>
 
                 <div class="login-container">
-                    <button type="submit" class="auth-button">Reset Password</button>
+                    <button type="submit" class="auth-button">Reiniciar Contraseña</button>
                 </div>
 
             </form>
         </div>
         <div class="auth-right">
-            <h2>Reset Password Information</h2>
+            <h2>Reiniciar Contraseña</h2>
             <div class="spacer"></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dicta obcaecati exercitationem ut atque inventore
                 cum. Magni autem error ut!</p>
