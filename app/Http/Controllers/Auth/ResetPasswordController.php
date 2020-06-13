@@ -38,4 +38,26 @@ class ResetPasswordController extends Controller
     {
         $this->middleware('guest');
     }
+    public function showResetForm(Request $request, $token = null)
+    {
+
+            $categories = Category::all();
+
+        if (request()->category) {
+            $products = Product::with('categories')->whereHas('categories', function ($query) {
+                $query->where('slug', request()->category);
+            });
+            $categoryName = optional($categories->where('slug', request()->category)->first())->name;
+        } else {
+            $products = Product::where('featured', true);
+            $categoryName = 'Conoce lo más buscado';
+        }
+
+        return view('auth.passwords.reset')->with(
+            ['token' => $token, 'email' => $request->email,
+        'products' => $products,
+            'categories' => $categories,
+            'categoryName' => $categoryName,]
+        );
+    }
 }
