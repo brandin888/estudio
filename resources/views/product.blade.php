@@ -13,7 +13,7 @@
         <i class="fa fa-chevron-right breadcrumb-separator"></i>
         <span><a href="{{ route('shop.index') }}">Tienda</a></span>
         <i class="fa fa-chevron-right breadcrumb-separator"></i>
-        <span>{{ $product->name }}</span>
+        <span>{{ $product->name }} </span>
     @endcomponent
 
     <div class="container">
@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="product-section-information">
-            <h1 class="product-section-title">{{ $product->name }}</h1>
+            <h1 class="product-section-title">{{ $product->name }} ( {{ $product->cantidad_caja }} unidades por caja) </h1>
             <div class="product-section-subtitle">{{ $product->details }}</div>
             <div>{!! $stockLevel !!}</div>
             <div class="product-section-price">{{ $product->presentPrice() }}</div>

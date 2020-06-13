@@ -15,7 +15,8 @@
   }
 }
 
-img {width: 100%}
+img {width: 100%;
+max-height: 150;}
 
 div.container {
   text-align: center;
@@ -964,9 +965,10 @@ Somos una empresa <strong>mayorista</strong> de productos del hogar, nos encontr
             <div class="products text-center">
                 @forelse ($products as $product)
                     <div class="product polaroid ">
-                        <a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a>
-                        <a href="{{ route('shop.show', $product->slug) }}"><div class="product-name">{{ $product->name }}</div></a>
-                        <div class="product-price">{{ $product->presentPrice() }}</div>
+                        <div style="height: 80%"><a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a></div>
+                        <div style="height: 20%"><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name">{{ $product->name }}</div></a>
+                        <div class="product-price">{{ $product->presentPrice() }}</div></div>
+                        
 
                     </div>
                 @empty

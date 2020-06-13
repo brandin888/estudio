@@ -37,33 +37,34 @@
 
             <ul>
               <li class="active"><a href="{{ route('users.edit') }}">Mi Perfil</a></li>
-              <li><a href="{{ route('orders.index') }}">Mis ordenes</a></li>
+              <li><a href="{{ route('orders.index') }}">Mis Órdenes</a></li>
             </ul>
         </div> <!-- end sidebar -->
         <div class="my-profile">
             <div class="products-header">
-                <h1 class="stylish-heading">My Profile</h1>
+                <h1 class="stylish-heading">Mi Perfil</h1>
             </div>
 
             <div>
                 <form action="{{ route('users.update') }}" method="POST">
                     @method('patch')
                     @csrf
-                    <div class="form-control">
+                    <div class="">
                         <input id="name" type="text" name="name" value="{{ old('name', $user->name) }}" placeholder="Name" required>
                     </div>
-                    <div class="form-control">
+                    <div class="">
                         <input id="email" type="email" name="email" value="{{ old('email', $user->email) }}" placeholder="Email" required>
+                        <div>Dejar en blanco si no quiere cambiar la contraseña</div>
                     </div>
-                    <div class="form-control">
+                    <div class="">
                         <input id="password" type="password" name="password" placeholder="Password">
-                        <div>Leave password blank to keep current password</div>
+                        
                     </div>
-                    <div class="form-control">
+                    <div class="">
                         <input id="password-confirm" type="password" name="password_confirmation" placeholder="Confirm Password">
                     </div>
                     <div>
-                        <button type="submit" class="my-profile-button">Update Profile</button>
+                        <button type="submit" class="my-profile-button">Actualizar Perfil</button>
                     </div>
                 </form>
             </div>

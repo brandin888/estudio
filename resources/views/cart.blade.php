@@ -66,8 +66,8 @@
                         <tr><strong>
 
                             <th scope="col">Producto</th>
-                            <th scope="col">Cantidad</th>
-                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad (Cajas)</th>
+                            <th scope="col">Precio / Caja</th>
                             <th scope="col"></th>
                             </strong>
 
@@ -80,7 +80,7 @@
                                 <td class="d-md-flex align-items-center cart-table-row-left">
                                     <a href="{{ route('shop.show', $item->model->slug) }}"><img src="{{ productImage($item->model->image) }}" alt="item" class="cart-table-img"></a>
                                     <div class="cart-item-details w-100">
-                                        <div class="cart-table-item"><a href="{{ route('shop.show', $item->model->slug) }}">{{ $item->model->name }}</a></div>
+                                        <div class="cart-table-item"><a href="{{ route('shop.show', $item->model->slug) }}">{{ $item->model->name }} ({{ $item->model->cantidad_caja }} unidades por caja)</a></div>
                                         <div class="cart-table-description">{{ $item->model->details }}</div>
                                     </div>
                                 </td>

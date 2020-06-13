@@ -9,9 +9,9 @@
 @section('content')
 
     @component('components.breadcrumbs')
-        <a href="/">Home</a>
+        <a href="/">Inicio</a>
         <i class="fa fa-chevron-right breadcrumb-separator"></i>
-        <span>My Orders</span>
+        <span>Mis Órdenes</span>
     @endcomponent
 
     <div class="container">
@@ -36,13 +36,13 @@
         <div class="sidebar">
 
             <ul>
-              <li><a href="{{ route('users.edit') }}">My Profile</a></li>
-              <li class="active"><a href="{{ route('orders.index') }}">My Orders</a></li>
+              <li><a href="{{ route('users.edit') }}">Mi Perfil</a></li>
+              <li class="active"><a href="{{ route('orders.index') }}">Mis Órdenes</a></li>
             </ul>
         </div> <!-- end sidebar -->
         <div class="my-profile">
             <div class="products-header">
-                <h1 class="stylish-heading">My Orders</h1>
+                <h1 class="stylish-heading">Mis Órdenes</h1>
             </div>
 
             <div>
@@ -51,11 +51,11 @@
                     <div class="order-header">
                         <div class="order-header-items">
                             <div>
-                                <div class="uppercase font-bold">Order Placed</div>
+                                <div class="uppercase font-bold">Fecha</div>
                                 <div>{{ presentDate($order->created_at) }}</div>
                             </div>
                             <div>
-                                <div class="uppercase font-bold">Order ID</div>
+                                <div class="uppercase font-bold">Id Orden</div>
                                 <div>{{ $order->id }}</div>
                             </div><div>
                                 <div class="uppercase font-bold">Total</div>
@@ -64,7 +64,7 @@
                         </div>
                         <div>
                             <div class="order-header-items">
-                                <div><a href="{{ route('orders.show', $order->id) }}">Order Details</a></div>
+                                <div><a href="{{ route('orders.show', $order->id) }}">Detalle de Orden</a></div>
                                 <div>|</div>
                                 <div><a href="#">Invoice</a></div>
                             </div>

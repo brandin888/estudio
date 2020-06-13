@@ -7,7 +7,8 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-img {width: 100%}
+img {width: 100%;
+max-height: 150;}
 
 div.container {
   text-align: center;
@@ -219,9 +220,9 @@ section#action, section#action-transparent {
 
                     <div class="product polaroid">
 
-                        <a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a>
-                        <a href="{{ route('shop.show', $product->slug) }}"><div class="product-name">{{ $product->name }}</div></a>
-                        <div class="product-price">{{ $product->presentPrice() }}</div>
+                        <div style="height: 80%"><a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a></div>
+                        <div style="height: 20%"><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name">{{ $product->name }}</div></a>
+                        <div class="product-price">{{ $product->presentPrice() }}</div></div>
                     </div>
                 @empty
                     <div style="text-align: left">No se encontraron productos</div>
