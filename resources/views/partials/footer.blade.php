@@ -128,13 +128,30 @@
     text-rendering: auto;
     line-height: 1;
 }
+.lista-footer {
+    padding-top: 30px;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    padding-left: 15px;
+}
+.lista-footer__item::before {
+    content: "\2022";
+    color: #f99300;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+
+}
 </style>
 
 <footer data-type="background" data-speed="4" class="parallax fixed_p" id="action-parallax4" style="background-position: 50% 33.75px;
  z-index: 1; height: 240px;
 
+
+
 "><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn;">
-    <div class="container">
+    <div class="container" style="text-align: left;">
     <div class="row">
       
 
