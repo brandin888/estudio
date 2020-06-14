@@ -158,7 +158,7 @@
                             <img src="{{ productImage($item->model->image) }}" alt="item" class="checkout-table-img">
                             <div class="checkout-item-details" style="width:50%">
                                 <div class="checkout-table-item">{{ $item->model->name }}</div>
-                                <div class="checkout-table-description">{{ $item->model->details }}</div>
+                                
                                 <div class="checkout-table-price">{{ $item->model->presentPrice() }}</div>
                             </div>
                         </div> <!-- end checkout-table -->

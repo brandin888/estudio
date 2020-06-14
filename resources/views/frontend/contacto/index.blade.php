@@ -1,4 +1,9 @@
 @extends('layout')
+@section('extra-css')
+
+<link href="{{ asset('css/contacto.css?v=1.0') }}" rel="stylesheet">
+@endsection
+
 
 @section('content')
 
