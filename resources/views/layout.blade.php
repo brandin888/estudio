@@ -25,6 +25,8 @@
         <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.4') }}">
         <link href="{{ asset('css/all.css?v=1.1') }}" rel="stylesheet">
         
+        <link href="{{ asset('css/contacto.css?v=1.0') }}" rel="stylesheet">
+        
 
 
         
@@ -65,6 +67,9 @@ function menu() {
     $('#overlay-nav').toggleClass('active');
   });
 }
+</script>
+<script type="text/javascript">
+  const site_url = '{{ url('/') }}/';
 </script>
     @yield('extra-js')
 

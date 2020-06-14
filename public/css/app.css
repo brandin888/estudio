@@ -1097,7 +1097,7 @@ footer {
 .product-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 120px;
+  /* grid-gap: 120px; */
   padding: 100px 0 120px;
 }
 

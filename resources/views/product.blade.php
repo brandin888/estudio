@@ -35,7 +35,7 @@
     </div>
 
     <div class="product-section container">
-        <div>
+        <div style="padding-left: 25px">
             <div class="product-section-image bg-white">
                 <img src="{{ productImage($product->image) }}" alt="product" class="active" id="currentImage">
             </div>
@@ -53,7 +53,7 @@
                 @endif
             </div>
         </div>
-        <div class="product-section-information">
+        <div class="product-section-information" style="padding-left: 50px; padding-top: 20px;">
             <h1 class="product-section-title">{{ $product->name }} ( {{ $product->cantidad_caja }} unidades por caja) </h1>
             <div class="product-section-subtitle">{{ $product->details }}</div>
             <div>{!! $stockLevel !!}</div>

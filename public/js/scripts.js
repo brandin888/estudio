@@ -650,8 +650,7 @@ $(document).ready(function(){
 }
 function cargarMapa(id){
   var mapa;
-  /* var route = site_url+'cargar-mapa/'+id; */
-  var route = 'http://localhost:8020/elmayorista/public/cargar-mapa/'+id;
+  var route = site_url+'cargar-mapa/'+id;
   $.ajax({
     url: route,
     data : {},
