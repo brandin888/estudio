@@ -674,7 +674,7 @@ function cargarMapa(id){
         lat:response.local.latitud,
         lng:response.local.longitud,
         title:response.local.nombre,
-        icon: 'images/pin.png',
+        icon: 'img/pin.png',
         infoWindow: {
           content: response.local.iframe
         }
