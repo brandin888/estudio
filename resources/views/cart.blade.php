@@ -81,7 +81,7 @@
                                     <a href="{{ route('shop.show', $item->model->slug) }}"><img src="{{ productImage($item->model->image) }}" alt="item" class="cart-table-img"></a>
                                     <div class="cart-item-details w-100">
                                         <div class="cart-table-item"><a href="{{ route('shop.show', $item->model->slug) }}">{{ $item->model->name }} ({{ $item->model->cantidad_caja }} unidades por caja)</a></div>
-                                        <div class="cart-table-description">{{ $item->model->details }}</div>
+                                        
                                     </div>
                                 </td>
                                 <td style="padding-top:5%">
