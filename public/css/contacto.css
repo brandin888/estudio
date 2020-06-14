@@ -271,7 +271,7 @@
   /* Handle */
   
   .maps__content--bottom--listado::-webkit-scrollbar-thumb {
-    background: #f99300;
+    background: #2dcccd;
   }
   
   /* Handle on hover */
@@ -453,7 +453,7 @@
   }
   
   .ubicaciones__card__datos li i {
-    color: #f99300;
+    color: #2dcccd;
     position: absolute;
     top: 16px;
   }
@@ -635,13 +635,13 @@
     border-radius: 4px;
     height: 47px;
     border: 1px solid #e8e8e8;
-    color: #f99300;
+    color: #2dcccd;
   }
   
   .formulario__content form input:focus {
     -webkit-box-shadow: none;
             box-shadow: none;
-    color: #f99300;
+    color: #2dcccd;
   }
   
   .formulario__content form input::-webkit-input-placeholder {
@@ -669,7 +669,7 @@
   }
   
   .formulario__content form textarea:focus {
-    color: #f99300;
+    color: #2dcccd;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -700,7 +700,7 @@
   }
   
   .formulario__content form select:focus {
-    color: #f99300;
+    color: #2dcccd;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -27839,7 +27839,7 @@
   
   .atras,
   .siguiente {
-    color: #f99300;
+    color: #2dcccd;
     cursor: pointer;
     font-size: 1.3em;
   }
@@ -27990,7 +27990,7 @@
   .carousel-indicators .active {
     width: 12px;
     height: 12px;
-    background-color: #f99300;
+    background-color: #2dcccd;
   }
   
   @media (max-width: 425px) {
@@ -28055,7 +28055,7 @@
   }
   
   .navbar__link:hover {
-    color: #f99300;
+    color: #2dcccd;
     text-decoration: none;
   }
   
@@ -28068,13 +28068,13 @@
   }
   
   .redes__link:hover {
-    color: #f99300;
+    color: #2dcccd;
     text-decoration: none;
   }
   
   .navbar-light .navbar-toggler {
-    color: #f99300;
-    border-color: #f99300;
+    color: #2dcccd;
+    border-color: #2dcccd;
   }
   
   .dropdown-menu {
@@ -28111,7 +28111,7 @@
   }
   
   .menu__responsive .carrito_top a i {
-    color: #f99300;
+    color: #2dcccd;
   }
   
   .menu__responsive .carrito_top a span {
@@ -28415,7 +28415,7 @@
     }
   
     .telefonos-container__content__item .numero i {
-      color: #f99300;
+      color: #2dcccd;
       margin-right: 10px;
     }
   }
@@ -28492,13 +28492,13 @@
   }
   
   .container-pedido__select {
-    border: 1px solid #f99300;
+    border: 1px solid #2dcccd;
     color: white;
   }
   
   .selector-number {
     text-align: center;
-    border: 1px solid #f99300;
+    border: 1px solid #2dcccd;
     border-radius: 4px;
     width: 106px;
     padding: 8px;
@@ -28605,7 +28605,7 @@
   
   .nuestros__productos__tabs li.active a {
     color: #f58508;
-    border-bottom: 1px solid #f99300;
+    border-bottom: 1px solid #2dcccd;
     padding-bottom: 4px;
   }
   
@@ -28725,7 +28725,7 @@
   }
   
   .ubicaciones__card__datos li i {
-    color: #f99300;
+    color: #2dcccd;
     position: absolute;
     top: 16px;
   }
@@ -28871,7 +28871,7 @@
   }
   
   .promociones__item__content--precio {
-    color: #f99300;
+    color: #2dcccd;
     font-family: 'Paytone One', sans-serif;
     margin-top: 43px;
     position: relative;
@@ -29485,7 +29485,7 @@
   /* Handle */
   
   ::-webkit-scrollbar-thumb {
-    background: #f99300;
+    background: #2dcccd;
   }
   
   /* Handle on hover */
@@ -29567,7 +29567,7 @@
   
   .contenedor_carga__giro {
     border: 15px solid #e8e8e8;
-    border-top-color: #f99300;
+    border-top-color: #2dcccd;
     border-top-style: groove;
     height: 100px;
     width: 100px;
@@ -29763,7 +29763,7 @@
   .selector-numero--home .btn-select {
     padding: 12px 16px !important;
     background: transparent !important;
-    border: 1px solid #f99300 !important;
+    border: 1px solid #2dcccd !important;
     color: #ffffff !important;
   }
   
@@ -29774,7 +29774,7 @@
     font-weight: 600 !important;
     font-size: 13px !important;
     background: transparent !important;
-    border: 1px solid #f99300 !important;
+    border: 1px solid #2dcccd !important;
   }
   
   .selector-numero .btn-select {
@@ -29898,7 +29898,7 @@
   }
   
   .wizards__card__item .carro__btn button i {
-    color: #f99300;
+    color: #2dcccd;
   }
   
   .wizards__card__item--top {
@@ -30074,7 +30074,7 @@
   .wizards__content__link__item--top--precio {
     font-family: 'Paytone One', sans-serif;
     font-weight: 400;
-    color: #f99300;
+    color: #2dcccd;
     font-size: 20px;
   }
   
@@ -30250,7 +30250,7 @@
   .wizards__content__birthday__item--top--precio {
     font-family: 'Paytone One', sans-serif;
     font-weight: 400;
-    color: #f99300;
+    color: #2dcccd;
     font-size: 20px;
   }
   
@@ -30378,7 +30378,7 @@
   
   .wizards__content__hora--bg h3 {
     font-family: 'Paytone One', sans-serif;
-    color: #f99300;
+    color: #2dcccd;
     font-size: 35px;
     position: relative;
     padding-top: 21px;
@@ -30428,7 +30428,7 @@
   }
   
   .wizards__content .card__img .precio span {
-    color: #f99300;
+    color: #2dcccd;
     font-family: 'Paytone One', sans-serif;
     font-weight: 500;
     font-size: 40px;
@@ -32180,7 +32180,7 @@
   
   .lista-footer__item::before {
     content: "\2022";
-    color: #f99300;
+    color: #2dcccd;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
@@ -32260,7 +32260,7 @@
   }
   
   .nosotros__content__parrafo span {
-    color: #f99300;
+    color: #2dcccd;
     font-weight: 900;
   }
   
@@ -32725,7 +32725,7 @@
   }
   
   .club__contenido__item--left ul li i {
-    color: #f99300;
+    color: #2dcccd;
     width: 15px;
     position: absolute;
     height: 30px;
@@ -32780,7 +32780,7 @@
   }
   
   .club__contenido2__content__parrafo span {
-    color: #f99300;
+    color: #2dcccd;
     font-weight: 900;
   }
   
@@ -33592,7 +33592,7 @@
     border-radius: 4px;
     height: 47px;
     border: 1px solid #e8e8e8;
-    color: #f99300;
+    color: #2dcccd;
     padding: 16px;
   }
   
@@ -33670,7 +33670,7 @@
     padding: 15px 30px;
     font-family: 'Lato', sans-serif;
     font-size: 0.875rem;
-    color: #f99300;
+    color: #2dcccd;
     border-radius: 8px;
     background: white;
   }
@@ -33686,8 +33686,13 @@
   }
   
   .form-control:focus {
+<<<<<<< Updated upstream
     border-color: #01579b;
     color: black;
+=======
+    border-color: #2dcccd;
+    color: white;
+>>>>>>> Stashed changes
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(1, 87, 155, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(1, 87, 155, 0.6);
