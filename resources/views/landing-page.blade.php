@@ -552,6 +552,8 @@ section#action, section#action-transparent {
     grid-template-columns: 1fr;
     margin: 50px auto 50px;
   }
+   
+
 
 }
 
@@ -768,8 +770,7 @@ a {
             <header class="with-background" style="background-image: url('img/parallax/parallax9.jpg'); background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px">
+  background-size: cover;">
                 <div class="top-nav container">
                     <div class="top-nav-left">
                         <div class="logo">El mayorista</div>
@@ -912,10 +913,10 @@ a {
 
 
 
- <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 180px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn;"><div class="row"><div class="col-lg-10 col-lg-offset-1 text-center">
+ <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 200px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn;"><div class="row"><div class="col-lg-10 col-lg-offset-1 text-center">
 <i class="icon icon-heading ion-pie-graph size-96"></i>
 <br><h2>El Mayorista</h2><p class="lead">
-Somos una empresa <strong>Mayorista</strong> de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en <a style="color: #01579b ; font-weight: bold;" href="{{ url('/') }}/contactanos"> Lima Cercado </a>, visita nuestra página de  <a style="color: #01579b ; font-weight: bold;" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/"> Facebook </a>.</p></div></div></div>
+Somos una empresa <strong>Mayorista</strong> de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en <a style="color: #01579b ; font-weight: bold;" href="{{ url('/') }}/contactanos"> Lima Cercado </a>, visita nuestra página de  <a style="color: #01579b ; font-weight: bold;" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/" target="_blank"> Facebook </a>.</p></div></div></div>
 </section>           
             
 
