@@ -132,11 +132,13 @@
                         <!-- Used to display form errors -->
                         <!-- <div id="card-errors" role="alert"></div>
                     </div> -->
-                    <div class="spacer"></div>
-                    <div class="form-check" style="padding-bottom: 10px;">
+                    
+                    <div class="form-check">
                         <input type="checkbox" class="form-check-input input-check" name="politica">
                         <span class="politica">Al hacer clic en "Realizar Compra" certifico que acepto <a href="#" data-toggle="modal" data-target="#modalPolitica">las Condiciones de Uso y la Política de Privacidad.</a></span>
-                    </div>                    
+                    </div>  
+                    <div class="spacer"></div>
+                                      
 
                     <button type="submit" id="complete-order" class="button-primary full-width">Realizar Compra</button>
 
