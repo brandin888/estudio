@@ -12,7 +12,7 @@ class EnviosCorreo {
 
        Mail::send($template, ['data' => $params_template],  function($message) use ($to_emails, $subject)
       {
-          $message->from('gariasc@uni.pe', 'ElMayorista');
+          $message->from('el-mayorista@el-mayorista.com', 'ElMayorista');
           $message->to($to_emails)->subject($subject);
       });
 
@@ -43,7 +43,7 @@ class EnviosCorreo {
 
    Mail::send($template, ['data' => $params_template], ['data2' => $params_template2], function($message) use ($to_emails, $subject)
    {
-      $message->from('gariasc@uni.pe', 'ElMayorista');
+      $message->from('el-mayorista@el-mayorista.com', 'ElMayorista');
       $message->to($to_emails)->subject($subject)->cc('sspallina@infosis.com.ar')->cc('alejandro@infosis.com.ar');
       // $message->bcc('sspallina@infosis.com.ar', 'alejandro@infosis.com.ar', 'gustavo@infosis.com.ar', 'sebastian@infosis.com.ar' );
    });
