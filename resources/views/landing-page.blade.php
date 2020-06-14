@@ -784,8 +784,8 @@ a {
                         <h1>Tu Tienda Virtual El Mayorista</h1>
                         <p>Ofrecemos productos variados para el hogar.</p>
                         <div class="hero-buttons">
-                            <a href="https://www.youtube.com/playlist?list=PLEhEHUEU3x5oPTli631ZX9cxl6cU_sDaR" class="button button-white">Tienda</a>
-                            <a href="https://github.com/drehimself/laravel-ecommerce-example" class="button button-white">Contáctanos</a>
+                            <a href="{{ url('/') }}/shop" class="button button-white">Tienda</a>
+                            <a href="{{ url('/') }}/contactanos" class="button button-white">Contáctanos</a>
                         </div>
                     </div> <!-- end hero-copy -->
 
@@ -912,10 +912,10 @@ a {
 
 
 
- <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 250px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn;"><div class="row"><div class="col-lg-10 col-lg-offset-1 text-center">
+ <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 180px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn;"><div class="row"><div class="col-lg-10 col-lg-offset-1 text-center">
 <i class="icon icon-heading ion-pie-graph size-96"></i>
 <br><h2>El Mayorista</h2><p class="lead">
-Somos una empresa <strong>mayorista</strong> de productos del hogar, nos encontramos en Lima-Cercado, por favor visítanos.</p></div></div></div>
+Somos una empresa <strong>Mayorista</strong> de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en <a style="color: #01579b ; font-weight: bold;" href="{{ url('/') }}/contactanos"> Lima Cercado </a>, visita nuestra página de  <a style="color: #01579b ; font-weight: bold;" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/"> Facebook </a>.</p></div></div></div>
 </section>           
             
 

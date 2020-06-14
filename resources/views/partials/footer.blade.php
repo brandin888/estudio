@@ -68,13 +68,103 @@
 .fixed_p {
     background-attachment: fixed !important;
 }
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-md-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.footer__titulo {
+    font-size: 0.80rem;
+    font-weight: bold;
+    
+}
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+}
+.lista-footer__item a {
+    font-size: 15px;
+}
+.redes__link {
+    color: white;
+}
+.pl-3, .px-3 {
+    padding-left: 1rem !important;
+}
+.pl-3, .px-3 {
+    padding-left: 1rem!important;
+}
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+}
+.fa, .fas, .far, .fal, .fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
 </style>
 
 <footer data-type="background" data-speed="4" class="parallax fixed_p" id="action-parallax4" style="background-position: 50% 33.75px;
- z-index: 1; height: 200px;
+ z-index: 1; height: 240px;
 
-"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn;"><div class="row"><div class="col-lg-10 col-lg-offset-1 text-center">
+"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn;">
+    <div class="container">
+    <div class="row">
+      
 
-<!-- <br><h2>Vamo a calmarno</h2><p class="lead"> -->
-<strong></strong></p></div></div></div>
+      <div class="col-6 col-md-3">
+        <div class="footer__titulo">
+          ENLACES
+        </div>
+        <ul class="lista-footer">
+          <li class="lista-footer__item pt-0"><a href="{{ url('/') }}/contactanos" class="navbar__link club-odssy pl-0">Contáctanos</a></li>
+          <li class="lista-footer__item"><a href="{{ url('/') }}/contactanos" class="navbar__link pl-0">Ubicación</a></li>
+          <li class="lista-footer__item"><a href="{{ url('/') }}/" class="navbar__link pl-0">Productos populares</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="footer__titulo">
+          SÍGUENOS
+        </div>
+        <ul class="lista-footer lista-footer--padding-min">
+          <li class="lista-footer__item lista-footer__item--nobullet pt-0"><a class="redes__link" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/" target="_blank"><i class="fab fa-facebook-f"></i><span class="pl-3">Facebook</span></a></li>
+          
+    <li class="lista-footer__item lista-footer__item--nobullet"><a class="redes__link" href="   " target="_blank"><i class="fab fa-instagram"></i><span class="pl-3">Instagram</span></a></li>           
+ </ul>
+      </div>
+
+    
+     
+    </div>
+  </div>
+
+</div>
 </footer>
