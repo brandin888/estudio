@@ -1,6 +1,16 @@
 <!doctype html>
 
 <style type="text/css">
+  header {
+    height: 600px;
+
+  }
+  @media (max-width: 992px) {
+    header {
+    height: 450px;
+
+  }
+  }
     div.polaroid {
   width: 100%;
   background-color: white;
@@ -758,7 +768,7 @@ a {
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css?v=1.4') }}">
-        <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.2') }}">
+        <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.4') }}">
         <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
     </head>
     <body style="background-image: url('img/parallax/image.jpg'); 

@@ -221,7 +221,7 @@ section#action, section#action-transparent {
                     <div class="product polaroid">
 
                         <div ><a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a></div>
-                        <div ><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name">{{ $product->name }}</div></a>
+                        <div style="height: 15%; "><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name">{{ $product->name }}</div></a>
                         <div class="product-price">{{ $product->presentPrice() }}</div></div>
                     </div>
                 @empty
