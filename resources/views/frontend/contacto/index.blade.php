@@ -19,7 +19,7 @@
         <div class="formulario__content box">
           <h3><strong>Estamos a su disposición</strong></h3>
 
-          <form class="row" id="formContacto" name="formContacto" method="post" action="{{ url('contacto') }}">
+          <form class="row" id="formContacto" name="formContacto" method="post" action="{{ url('contactanos') }}">
             <input type="hidden" name="_token" id="csrf_toKen2" value="{{ csrf_token() }}">
             <div class="form-group col-md-6">
               <label for="">Nombres y apellido</label>
