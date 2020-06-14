@@ -96,6 +96,21 @@ class ShopController extends Controller
 
     public function searchAlgolia(Request $request)
     {
-        return view('search-results-algolia');
+         $categories = Category::all();
+
+        if (request()->category) {
+            $products = Product::with('categories')->whereHas('categories', function ($query) {
+                $query->where('slug', request()->category);
+            });
+            $categoryName = optional($categories->where('slug', request()->category)->first())->name;
+        } else {
+            $products = Product::where('featured', true);
+            $categoryName = 'Conoce lo más buscado';
+        }
+        return view('search-results-algolia')->with([
+            'products' => $products,
+            'categories' => $categories,
+            'categoryName' => $categoryName,
+        ]);
     }
 }
