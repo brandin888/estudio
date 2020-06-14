@@ -33686,11 +33686,11 @@
   }
   
   .form-control:focus {
-    border-color: #f99300;
-    color: white;
+    border-color: #01579b;
+    color: black;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 191, 99, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 191, 99, 0.6);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(1, 87, 155, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(1, 87, 155, 0.6);
   }
   
   .bg-warning {
