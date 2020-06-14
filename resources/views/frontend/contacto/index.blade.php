@@ -36388,7 +36388,7 @@ select.decorated option:hover {
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-xs-12 col-sm-12">
-        <h2>Escríbenos</h2>
+        <h2><strong>Escríbenos</strong></h2>
       </div>
       <div class="col-md-7">
         <!-- <div data-aos="fade-right" class="formulario__content box"> -->
@@ -36419,7 +36419,7 @@ select.decorated option:hover {
             </div>
             <div class="form-group col-md-12">
               <label for="exampleInputPassword1">Mensaje</label>
-              <textarea name="mensaje" id="mensaje" class="form-control" rows="5" placeholder="Saludos ..."></textarea>
+              <textarea name="mensaje" id="mensaje" class="form-control" rows="5" placeholder="Saludos El Mayorista..."></textarea>
               <label for="mensaje" generated="true" class="error"></label>
 
             </div>
@@ -36437,7 +36437,7 @@ select.decorated option:hover {
         </div>
       </div>
       <div class="col-md-5">
-          <!-- <img src="{{ asset('img/contacto.png') }}" class="contacto__img" alt=""> -->
+          <img src="{{ asset('img/contacto01.png') }}" class="contacto__img" alt="">
       </div>
     </div>
   </div>
