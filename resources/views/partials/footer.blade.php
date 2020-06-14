@@ -148,7 +148,7 @@
 </style>
 
 <footer data-type="background" data-speed="4" class="parallax fixed_p" id="action-parallax4" style="background-position: 50% 33.75px;
- z-index: 1; height: 250px;
+ z-index: 1; height: 320px;
 
 
 

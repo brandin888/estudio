@@ -19,7 +19,7 @@
 
 .menu__responsive .logo__responsive {
   width: 100%;
-  padding: 18px;
+  padding: 10px;
 }
 
 .menu__responsive .logo__responsive img {
@@ -356,7 +356,7 @@
   }
 
   .menu__responsive .logo__responsive {
-    padding: 26px;
+    padding: 16px;
   }
 }
 
@@ -593,8 +593,8 @@ a {
     </div> <!-- end top-nav -->
 </header>
 <div class="menu__responsive">
-  <div class="logo__responsive">
-    
+   <div class="logo__responsive">
+    <a href="{{ url('/') }}/"> <span class="cart-count"><span style="color: #e18604; font-size: 25px; font-weight: bold"> El Mayorista</span></span></a>
   </div>
   <div class="carrito_top">
     <li class="nav-item"><a class="navbar__link" href="{{ route('cart.index') }}"><i class="fas fa-shopping-cart"></i>
@@ -697,7 +697,7 @@ a {
     
 
     <li class="nav-item">
-      <a class="nav-link" href="{{ url('/') }}/contactanos">
+      <a class="nav-link" href="{{ url('/') }}/contacto">
         Contáctanos
       </a>
     </li>
@@ -724,7 +724,7 @@ a {
           <li></li>
          
           <li>.</li>
-          <li><a class="navbar__link" href="{{ url('/') }}/contactanos">Contáctanos</a></li>
+          <li><a class="navbar__link" href="{{ url('/') }}/contacto">Contáctanos</a></li>
         </ul>
       </li>
       <!-- <li class="nav-item">
