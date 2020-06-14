@@ -27,13 +27,13 @@
             <form method="POST" action="{{ route('register') }}">
                 {{ csrf_field() }}
 
-                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Name" required autofocus>
+                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Nombre y Apellido" required autofocus>
 
-                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email" required>
+                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Correo electrónico" required>
 
-                <input id="password" type="password" class="form-control" name="password" placeholder="Password" placeholder="Password" required>
+                <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña" required>
 
-                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password"
+                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirmación de contraseña"
                     required>
 
                 <div class="login-container">

@@ -19,18 +19,18 @@
                 </ul>
             </div>
             @endif
-            <h2>Reset Password</h2>
+            <h2>Restablecer Contraseña</h2>
             <div class="spacer"></div>
             <form class="form-horizontal" method="POST" action="{{ route('password.request') }}">
                 {{ csrf_field() }}
 
                 <input type="hidden" name="token" value="{{ $token }}">
 
-                <input id="email" type="email" class="form-control" name="email" value="{{ $email or old('email') }}" placeholder="Email" required autofocus>
+                <input id="email" type="email" class="form-control" name="email" value="{{ $email or old('email') }}" placeholder="Correo electrónico" required autofocus>
 
-                <input id="password" type="password" class="form-control" name="password" placeholder="Password" required>
+                <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña" required>
 
-                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password" required>
+                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirmación de contraseña" required>
 
                 <div class="login-container">
                     <button type="submit" class="auth-button">Reiniciar Contraseña</button>
@@ -41,11 +41,9 @@
         <div class="auth-right">
             <h2>Reiniciar Contraseña</h2>
             <div class="spacer"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dicta obcaecati exercitationem ut atque inventore
-                cum. Magni autem error ut!</p>
+            <p>Deberá llenar los campos con la contraseña nueva que usted desee</p>
             <div class="spacer"></div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel accusantium quasi necessitatibus rerum fugiat eos,
-                a repudiandae tempore nisi ipsa delectus sunt natus!</p>
+            <p>La contraseña debe tener como mínimo 8 caracteres</p>
         </div>
     </div>
 </div>
