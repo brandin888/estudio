@@ -4,14 +4,15 @@
 
 @section('extra-css')
     <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
-    <style type="text/css">
+   
+@endsection
+
+@section('content')
+ <style type="text/css">
         #action-parallax4 {
     background-image: url(../img/parallax/parallax2.jpg);
 }
     </style>
-@endsection
-
-@section('content')
 
     @component('components.breadcrumbs')
         <a href="/">Inicio</a>
