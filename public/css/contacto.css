@@ -635,13 +635,13 @@
     border-radius: 4px;
     height: 47px;
     border: 1px solid #e8e8e8;
-    color: #2dcccd;
+    color: #212121;
   }
   
   .formulario__content form input:focus {
     -webkit-box-shadow: none;
             box-shadow: none;
-    color: #2dcccd;
+    color: #212121;
   }
   
   .formulario__content form input::-webkit-input-placeholder {
@@ -669,7 +669,7 @@
   }
   
   .formulario__content form textarea:focus {
-    color: #2dcccd;
+    color: #212121;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -700,7 +700,7 @@
   }
   
   .formulario__content form select:focus {
-    color: #2dcccd;
+    color: #212121;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -27838,7 +27838,7 @@
   
   .atras,
   .siguiente {
-    color: #2dcccd;
+    color: #212121;
     cursor: pointer;
     font-size: 1.3em;
   }
@@ -28054,7 +28054,7 @@
   }
   
   .navbar__link:hover {
-    color: #2dcccd;
+    color: #212121;
     text-decoration: none;
   }
   
@@ -28067,12 +28067,12 @@
   }
   
   .redes__link:hover {
-    color: #2dcccd;
+    color: #212121;
     text-decoration: none;
   }
   
   .navbar-light .navbar-toggler {
-    color: #2dcccd;
+    color: #212121;
     border-color: #2dcccd;
   }
   
@@ -28110,7 +28110,7 @@
   }
   
   .menu__responsive .carrito_top a i {
-    color: #2dcccd;
+    color: #212121;
   }
   
   .menu__responsive .carrito_top a span {
@@ -28414,7 +28414,7 @@
     }
   
     .telefonos-container__content__item .numero i {
-      color: #2dcccd;
+      color: #212121;
       margin-right: 10px;
     }
   }
@@ -28747,11 +28747,11 @@
   }
   
   .ubicaciones__card__datos li a:hover {
-    background: #e8542b;
-    background: -webkit-gradient(left top, right top, color-stop(0%, #e8542b), color-stop(100%, #028484 ));
-    background: -webkit-gradient(linear, left top, right top, from(#e8542b), to(#028484 ));
-    background: linear-gradient(to right, #e8542b 0%, #028484  100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8542b', endColorstr='#028484 ', GradientType=1 );
+    background: #01579b;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #01579b), color-stop(100%, #028484 ));
+    background: -webkit-gradient(linear, left top, right top, from(#01579b), to(#028484 ));
+    background: linear-gradient(to right, #01579b 0%, #028484  100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01579b', endColorstr='#028484 ', GradientType=1 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -28870,7 +28870,7 @@
   }
   
   .promociones__item__content--precio {
-    color: #2dcccd;
+    color: #212121;
     font-family: 'Paytone One', sans-serif;
     margin-top: 43px;
     position: relative;
@@ -29897,7 +29897,7 @@
   }
   
   .wizards__card__item .carro__btn button i {
-    color: #2dcccd;
+    color: #212121;
   }
   
   .wizards__card__item--top {
@@ -29956,11 +29956,11 @@
     bottom: 0;
     width: 90px;
     left: 0;
-    background: #e8542b;
-    background: -webkit-gradient(left top, right top, color-stop(0%, #e8542b), color-stop(100%, #028484 ));
-    background: -webkit-gradient(linear, left top, right top, from(#e8542b), to(#028484 ));
-    background: linear-gradient(to right, #e8542b 0%, #028484  100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8542b', endColorstr='#028484 ', GradientType=1 );
+    background: #01579b;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #01579b), color-stop(100%, #028484 ));
+    background: -webkit-gradient(linear, left top, right top, from(#01579b), to(#028484 ));
+    background: linear-gradient(to right, #01579b 0%, #028484  100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01579b', endColorstr='#028484 ', GradientType=1 );
   }
   
   .wizards__content__link:hover .wizards__content__link__item--border {
@@ -30073,7 +30073,7 @@
   .wizards__content__link__item--top--precio {
     font-family: 'Paytone One', sans-serif;
     font-weight: 400;
-    color: #2dcccd;
+    color: #212121;
     font-size: 20px;
   }
   
@@ -30132,11 +30132,11 @@
     bottom: 0;
     width: 90px;
     left: 0;
-    background: #e8542b;
-    background: -webkit-gradient(left top, right top, color-stop(0%, #e8542b), color-stop(100%, #028484 ));
-    background: -webkit-gradient(linear, left top, right top, from(#e8542b), to(#028484 ));
-    background: linear-gradient(to right, #e8542b 0%, #028484  100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8542b', endColorstr='#028484 ', GradientType=1 );
+    background: #01579b;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #01579b), color-stop(100%, #028484 ));
+    background: -webkit-gradient(linear, left top, right top, from(#01579b), to(#028484 ));
+    background: linear-gradient(to right, #01579b 0%, #028484  100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01579b', endColorstr='#028484 ', GradientType=1 );
   }
   
   .wizards__content__birthday:hover .wizards__content__birthday__item--border {
@@ -30249,7 +30249,7 @@
   .wizards__content__birthday__item--top--precio {
     font-family: 'Paytone One', sans-serif;
     font-weight: 400;
-    color: #2dcccd;
+    color: #212121;
     font-size: 20px;
   }
   
@@ -30377,7 +30377,7 @@
   
   .wizards__content__hora--bg h3 {
     font-family: 'Paytone One', sans-serif;
-    color: #2dcccd;
+    color: #212121;
     font-size: 35px;
     position: relative;
     padding-top: 21px;
@@ -30427,7 +30427,7 @@
   }
   
   .wizards__content .card__img .precio span {
-    color: #2dcccd;
+    color: #212121;
     font-family: 'Paytone One', sans-serif;
     font-weight: 500;
     font-size: 40px;
@@ -30568,10 +30568,10 @@
   }
   
   .wizards__content .local__centrado .numero sup {
-    background: #e8542b;
-    background: -webkit-gradient(left top, right top, color-stop(0%, #e8542b), color-stop(100%, #028484 ));
-    background: -webkit-gradient(linear, left top, right top, from(#e8542b), to(#028484 ));
-    background: linear-gradient(to right, #e8542b 0%, #028484  100%);
+    background: #01579b;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #01579b), color-stop(100%, #028484 ));
+    background: -webkit-gradient(linear, left top, right top, from(#01579b), to(#028484 ));
+    background: linear-gradient(to right, #01579b 0%, #028484  100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8542b', endColorstr='#028484 ', GradientType=1 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -32179,7 +32179,7 @@
   
   .lista-footer__item::before {
     content: "\2022";
-    color: #2dcccd;
+    color: #212121;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
@@ -32259,7 +32259,7 @@
   }
   
   .nosotros__content__parrafo span {
-    color: #2dcccd;
+    color: #212121;
     font-weight: 900;
   }
   
@@ -32724,7 +32724,7 @@
   }
   
   .club__contenido__item--left ul li i {
-    color: #2dcccd;
+    color: #212121;
     width: 15px;
     position: absolute;
     height: 30px;
@@ -32779,7 +32779,7 @@
   }
   
   .club__contenido2__content__parrafo span {
-    color: #2dcccd;
+    color: #212121;
     font-weight: 900;
   }
   
@@ -33591,7 +33591,7 @@
     border-radius: 4px;
     height: 47px;
     border: 1px solid #e8e8e8;
-    color: #2dcccd;
+    color: #212121;
     padding: 16px;
   }
   
@@ -33669,7 +33669,7 @@
     padding: 15px 30px;
     font-family: 'Lato', sans-serif;
     font-size: 0.875rem;
-    color: #2dcccd;
+    color: #212121;
     border-radius: 8px;
     background: white;
   }
