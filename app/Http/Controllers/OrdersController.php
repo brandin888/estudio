@@ -56,14 +56,15 @@ $categories = Category::all();
     public function show(Order $order)
     {
         if (auth()->id() !== $order->user_id) {
-            return back()->withErrors('You do not have access to this!');
+            return back()->withErrors('No tienes acceso a esto!');
         }
-
+        $categories = Category::all();
         $products = $order->products;
 
         return view('my-order')->with([
             'order' => $order,
             'products' => $products,
+             'categories' => $categories,
         ]);
     }
 

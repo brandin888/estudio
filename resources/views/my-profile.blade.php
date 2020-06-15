@@ -49,19 +49,19 @@
                 <form action="{{ route('users.update') }}" method="POST">
                     @method('patch')
                     @csrf
-                    <div class="">
-                        <input id="name" type="text" name="name" value="{{ old('name', $user->name) }}" placeholder="Name" required>
+                    <div class="" style="padding-top: 10px;">
+                        <input id="name" type="text" name="name" value="{{ old('name', $user->name) }}" placeholder="Nombre" required>
                     </div>
-                    <div class="">
+                    <div class="" style="padding-top: 10px;">
                         <input id="email" type="email" name="email" value="{{ old('email', $user->email) }}" placeholder="Email" required>
                         <div>Dejar en blanco si no quiere cambiar la contraseña</div>
                     </div>
-                    <div class="">
-                        <input id="password" type="password" name="password" placeholder="Password">
+                    <div class="" style="padding-top: 10px;">
+                        <input id="password" type="password" name="password" placeholder="Contraseña">
                         
                     </div>
-                    <div class="">
-                        <input id="password-confirm" type="password" name="password_confirmation" placeholder="Confirm Password">
+                    <div class="" style="padding-top: 10px;">
+                        <input id="password-confirm" type="password" name="password_confirmation" placeholder="Confirmar Contraseña">
                     </div>
                     <div>
                         <button type="submit" class="my-profile-button">Actualizar Perfil</button>

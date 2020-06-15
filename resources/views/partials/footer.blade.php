@@ -162,8 +162,8 @@
           ENLACES
         </div>
         <ul class="lista-footer">
-          <li class="lista-footer__item pt-0"><a href="{{ url('/') }}/contactanos" class="navbar__link club-odssy pl-0">Contáctanos</a></li>
-          <li class="lista-footer__item"><a href="{{ url('/') }}/contactanos" class="navbar__link pl-0">Ubicación</a></li>
+          <li class="lista-footer__item pt-0"><a href="{{ url('/') }}/contacto" class="navbar__link club-odssy pl-0">Contáctanos</a></li>
+          <li class="lista-footer__item"><a href="{{ url('/') }}/contacto" class="navbar__link pl-0">Ubicación</a></li>
           <li class="lista-footer__item"><a href="{{ url('/') }}/" class="navbar__link pl-0">Productos populares</a></li>
           
         </ul>

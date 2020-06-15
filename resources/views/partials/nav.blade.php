@@ -697,7 +697,7 @@ a {
     
 
     <li class="nav-item">
-      <a class="nav-link" href="{{ url('/') }}/contactanos">
+      <a class="nav-link" href="{{ url('/') }}/contacto">
         Contáctanos
       </a>
     </li>
@@ -724,7 +724,7 @@ a {
           <li></li>
          
           <li>.</li>
-          <li><a class="navbar__link" href="{{ url('/') }}/contactanos">Contáctanos</a></li>
+          <li><a class="navbar__link" href="{{ url('/') }}/contacto">Contáctanos</a></li>
         </ul>
       </li>
       <!-- <li class="nav-item">
