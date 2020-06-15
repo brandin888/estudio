@@ -92,6 +92,16 @@
                                     <td>Total</td>
                                     <td>{{ presentPrice($order->billing_total) }}</td>
                                 </tr>
+
+                                <tr>
+                                    <td>Total</td>
+                                    <td>{{ presentPrice($order->billing_total) }}</td>
+                                </tr>
+
+
+                                
+
+                                
                             </tbody>
                         </table>
 

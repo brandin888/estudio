@@ -61,6 +61,17 @@
                                 <div class="uppercase font-bold">Total</div>
                                 <div>{{ presentPrice($order->billing_total) }}</div>
                             </div>
+                            <div> 
+
+                                @if($order->shipped==1)
+                                    <div class="uppercase font-bold" style="color: #008f39">Enviado</div>
+                                @else 
+                                    <div class="uppercase font-bold" style="color: #cb3234">No Enviado</div>
+                                @endif
+
+                                
+                                
+                            </div>
                         </div>
                         <div>
                             <div class="order-header-items">
