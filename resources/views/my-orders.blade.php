@@ -80,7 +80,7 @@
                                     </div>
                                     <div>Precio por caja :{{ presentPrice($product->price) }}</div>
                                     <div>Cantidad de cajas: {{ $product->pivot->quantity }}</div>
-                                    <div>Unidades por caja: {{ $product->pivot->cantidad_caja }}</
+                                    <div>Unidades por caja: {{ $product->pivot->cantidad_caja }}</div>
                                 </div>
                             </div>
                         @endforeach
@@ -93,6 +93,7 @@
             <div class="spacer"></div>
         </div>
     </div>
+    
 
 @endsection
 
