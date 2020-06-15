@@ -522,7 +522,7 @@ form button[type=submit] {
 .table th,
 .table td {
   padding: 0.75rem;
-  vertical-align: center !important;
+  vertical-align: middle !important;
   border-top: none !important;
 }
 

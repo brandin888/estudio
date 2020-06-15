@@ -84,7 +84,7 @@
                                         
                                     </div>
                                 </td>
-                                <td style="padding-top:5%">
+                                <td>
                                     <select class="quantity" data-id="{{ $item->rowId }}" data-productQuantity="{{ $item->model->quantity }}">
                                         @for ($i = 1; $i < 5 + 1 ; $i++)
                                         <option {{ $item->qty == $i ? 'selected' : '' }}>{{ $i }}</option>
@@ -92,7 +92,7 @@
                                     </select>
                                     <!-- <input class="quantity" min="0" name="quantity" value="1" type="number"> -->         
                                 </td>
-                                <td style="padding-top:5%">
+                                <td>
                                     <div>{{ presentPrice($item->subtotal) }}</div>
                                     <div class="cart-table-actions">
                                         <form action="{{ route('cart.destroy', $item->rowId) }}" method="POST">
@@ -100,7 +100,7 @@
                                             {{ method_field('DELETE') }}
                                             
                                             <!-- <button type="submit" class="cart-options">Quitar</button> -->
-                                            <td style="padding-top:5%"class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
                                         </form>
                                         
                                         <!-- <form action="{{ route('cart.switchToSaveForLater', $item->rowId) }}" method="POST">
