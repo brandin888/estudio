@@ -157,7 +157,7 @@ section#action, section#action-transparent {
     background-attachment: fixed !important;
 }
 .cyan.lighten-2 {
-  background-color: #4dd0e1 !important;
+   background: linear-gradient(to right, #4ec1ffa3 0%, #01579b8f 50%, #003b69ad 100%);
 }
 
 </style>
