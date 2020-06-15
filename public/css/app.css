@@ -274,6 +274,7 @@ strong {
   
   border-bottom: 1px solid #CDCDCD;
   padding: 24px 0;
+  font-weight: bold;
 }
 
 .breadcrumbs .breadcrumb-separator {
