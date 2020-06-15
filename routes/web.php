@@ -50,6 +50,6 @@ Route::middleware('auth')->group(function () {
 });
 
 
-Route::resource('contactanos', 'ContactoController');
+Route::resource('contacto', 'ContactoController');
 
 Route::get('cargar-mapa/{id}', 'ContactoController@cargar');

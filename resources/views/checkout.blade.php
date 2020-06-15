@@ -210,7 +210,7 @@
     <div class="modal-content">
       <div class="modal-body modalIngresar__body d-flex align-items-center">
         <button type="button" class="close modalIngresar__body__icon" data-dismiss="modal" aria-label="Close">
-          <img src="{{ asset('images/icon/close.png') }}" alt="">
+          <img src="{{ asset('img/close.png') }}" alt="">
         </button>
         <div class="container">
           <div class="row">
@@ -241,6 +241,13 @@
                 <strong>Control de su información personal</strong>
                 <p>En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a nuestro sitio web.  Cada vez que se le solicite rellenar un formulario, como el de alta de usuario, puede marcar o desmarcar la opción de recibir información por correo electrónico.  En caso de que haya marcado la opción de recibir nuestro boletín o publicidad usted puede cancelarla en cualquier momento.</p>
                 <p>Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que sea requerido por un juez con un orden judicial.</p>
+              </div>
+              <div class="modal__parrafo">
+                <strong>Entrega del Producto</strong>
+                <p>Las fechas de entrega son aproximadas y estimadas, y no están garantizadas. El Mayorista no será responsable de cualquier daño al Comprador ocasionado por la demora en la entrega.</p>
+                <p>El Mayorista en ningún caso podrá ser responsable de ningún daño especial, incidental, indirecto o consecuencial, incluyengo
+                  , pero no limitandose a las perdidas de beneficios, perdidas de actividad, ahorro, negocio, clientela, datos de cualquier tipo, reclamaciones de terceros o retraso de entrega.
+                </p>
                 <p>El Mayorista Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.</p>
               </div>
             </div>

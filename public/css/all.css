@@ -4554,3 +4554,105 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+
+
+  /* ========Button==================== */
+
+  /* .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  .btn-primary:focus,
+  .btn-primary.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+  
+  .btn-primary.disabled,
+  .btn-primary:disabled {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #0062cc;
+    border-color: #005cbf;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active:focus,
+  .btn-primary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+
+  .btn-primary,
+  .btn-primary:active,
+  .btn-primary:visited,
+  .btn-primary:focus {
+    moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    border: 0;
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    background-size: 300% 100%;
+    text-transform: uppercase;
+    outline: none;
+    background: #2dcccd;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #2dcccd), color-stop(50%, #01579b), color-stop(100%, #003b69 ));
+    background: -webkit-gradient(linear, left top, right top, from(#2dcccd), color-stop(50%, #01579b), to(#003b69 ));
+    background: linear-gradient(to right, #2dcccd 0%, #01579b 50%, #003b69  100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2dcccd', endColorstr='#003b69 ', GradientType=1 );
+  }
+  
+  .btn-primary:hover {
+    background-position: 100% 0;
+    background: #003b69 ;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #003b69 ), color-stop(100%, #01579b));
+    background: -webkit-gradient(linear, left top, right top, from(#003b69 ), to(#01579b));
+    background: linear-gradient(to right, #003b69  0%, #01579b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003b69 ', endColorstr='#01579b', GradientType=1 );
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active:focus,
+  .btn-primary:focus,
+  .btn-primary.focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .formulario__content form .btn__enviar {
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 10px 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+  }
+
+  .btn-primary {
+    padding: 12px !important;
+  }
+
+  .wizards__content__botones .btn-primary {
+    padding: 18px 42px;
+  }
+
+  .wizards__content__botones .btn-primary {
+    padding: 14px 30px;
+  } */
+
+  /* ==================================== */

@@ -56,7 +56,7 @@
         <div class="product-section-information" style="padding-left: 50px; padding-top: 20px;">
             <h1 class="product-section-title">{{ $product->name }} ( {{ $product->cantidad_caja }} unidades por caja) </h1>
             <div class="product-section-subtitle">{{ $product->details }}</div>
-            <div>{!! $stockLevel !!}</div>
+            <!-- <div>{!! $stockLevel !!}</div> -->
             <div class="product-section-price">{{ $product->presentPrice() }}</div>
 
             <p>
@@ -68,7 +68,7 @@
             @if ($product->quantity > 0)
                 <form action="{{ route('cart.store', $product) }}" method="POST">
                     {{ csrf_field() }}
-                    <button type="submit" class="button button-plain">Add to Cart</button>
+                    <button type="submit" class="btn btn-primary btn__enviar">Add to Cart</button>
                 </form>
             @endif
         </div>

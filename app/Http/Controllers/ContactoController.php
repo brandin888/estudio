@@ -87,6 +87,8 @@ class ContactoController extends Controller
           HelperCorreo::sendMailContacto('emails.contacto', $contacto, $emails, $subject);
 
 
+          response()->json(array('msg' => "creado"), 201);
+
           return response()->json(array('msg' => "creado"), 201);
 
     }

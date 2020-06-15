@@ -10,7 +10,7 @@
         instantsearch.widgets.hits({
             container: '#hits',
             templates: {
-                empty: 'No results',
+                empty: 'Productos no encontrados',
                 item: function(item) {
                     return `
                         <a href="${window.location.origin}/shop/${item.slug}">
@@ -42,7 +42,7 @@
     search.addWidget(
         instantsearch.widgets.searchBox({
             container: '#search-box',
-            placeholder: 'Search for products'
+            placeholder: 'Buscar productos'
         })
     );
 

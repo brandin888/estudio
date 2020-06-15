@@ -13,7 +13,7 @@
     @component('components.breadcrumbs')
         <a href="/">Inicio</a>
         <i class="fa fa-chevron-right breadcrumb-separator"></i>
-        <span>Search</span>
+        <span>Buscar Producto</span>
     @endcomponent
 
     <div class="container">
@@ -45,7 +45,20 @@
                 <div id="stats-container"></div>
 
                 <div class="spacer"></div>
-                <h2>Categorías</h2>
+
+
+
+                <div class="sidebar">
+                    <h2>Categorías</h2>
+                    <ul>
+                        @foreach ($categories as $category)
+                            <li class="{{ setActiveCategory($category->slug) }}"><a href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
+                        @endforeach
+                    </ul>
+                </div>
+
+
+
                 <div id="refinement-list">
                     <!-- RefinementList widget will appear here -->
                 </div>
