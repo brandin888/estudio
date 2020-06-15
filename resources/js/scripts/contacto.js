@@ -77,7 +77,7 @@ $("#formContacto").validate({
           'X-CSRF-TOKEN': token.content
       },
       success: function (response) {
-        // alert('Enviado con éxito');
+        alert('Enviado con éxito');
         Swal.fire(
           'Enviado con éxito.',
           'Pronto estaremos en contacto',
