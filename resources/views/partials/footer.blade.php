@@ -27,7 +27,8 @@
     background-image: url("img/parallax/pa.jpg");
 }
 #action-parallax4 {
-    background-image: url("img/parallax/parallax2.jpg");
+    
+    background-image: url("{{ asset('img/parallax/parallax2.jpg') }}");
 }
 #action-parallax5 {
     background-image: url("../images/cover-portal-empleado.jpg");
