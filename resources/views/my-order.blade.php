@@ -118,7 +118,7 @@
                                     <div>{{ presentPrice($product->price) }}</div>
 
                                     <div>Cantidad de cajas: {{ $product->pivot->quantity }}</div>
-                                    <div>Unidades por caja: {{ $product->pivot->cantidad_caja }}</div>
+                                    <div>Unidades por caja: {{ $product->cantidad_caja }}</div>
                                 </div>
                             </div>
                         @endforeach
