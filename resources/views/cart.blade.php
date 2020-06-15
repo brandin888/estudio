@@ -138,7 +138,8 @@
                             </div>
                         </div>
                         <div class="pb-2">
-                            <div style="font-size:15px">El costo de envío no esta incluido en el precio de los productos.</div>
+                            <div style="font-size:15px">El costo de envío no esta incluido en el precio de los productos.<br><br> El pago de los productos y el envío se realiza via depósito, si tiene alguna duda puede comunicarse al siguiente número
+                            </div>
                         </div>
                         <div class="row d-flex justify-content-center">
                             <a href="{{ route('checkout.index') }}" class="button text-white" style="text-decoration:none;background-color:#01579b;border:none">Ir a comprar</a>
