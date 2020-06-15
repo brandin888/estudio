@@ -55,7 +55,7 @@
                                 <div>{{ presentDate($order->created_at) }}</div>
                             </div>
                             <div>
-                                <div class="uppercase font-bold">Id Orden</div>
+                                <div class="uppercase font-bold">Id de Orden</div>
                                 <div>{{ $order->id }}</div>
                             </div><div>
                                 <div class="uppercase font-bold">Total</div>
@@ -66,7 +66,7 @@
                             <div class="order-header-items">
                                 <div><a href="{{ route('orders.show', $order->id) }}">Detalle de Orden</a></div>
                                 <div>|</div>
-                                <div><a href="#">Invoice</a></div>
+                                
                             </div>
                         </div>
                     </div>
@@ -78,8 +78,9 @@
                                     <div>
                                         <a href="{{ route('shop.show', $product->slug) }}">{{ $product->name }}</a>
                                     </div>
-                                    <div>{{ presentPrice($product->price) }}</div>
-                                    <div>Quantity: {{ $product->pivot->quantity }}</div>
+                                    <div>Precio por caja :{{ presentPrice($product->price) }}</div>
+                                    <div>Cantidad de cajas: {{ $product->pivot->quantity }}</div>
+                                    <div>Unidades por caja: {{ $product->pivot->cantidad_caja }}</
                                 </div>
                             </div>
                         @endforeach
