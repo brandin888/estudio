@@ -35,7 +35,16 @@
         <link rel="stylesheet" href="{{ asset('css/app.css?v=1.6') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.4') }}">
         <link href="{{ asset('css/all.css?v=1.1') }}" rel="stylesheet">
-        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169774086-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-169774086-1');
+        </script>
+
         
         
 
