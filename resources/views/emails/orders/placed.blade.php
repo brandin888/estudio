@@ -19,7 +19,7 @@ Hola {{ $order->billing_name }}, gracias por realizar su pedido en EL MAYORISTA
 
 **Dirección:** {{$order->billing_city}} - {{$order->billing_province}} - {{$order->billing_district}}
 
-Se deberá depositar en cualquiera de las siguientes cuentas, para que su pedido sea entregado:<br>
+Se deberá depositar en cualquiera de las siguientes cuentas, para que su pedido sea entregado:<br><br>
 **Nombre del Titular:** Alvic cardenas Ñahuin<br>
 **BCP:** 19135761748076<br>
 **INTERBANK:** 0013129550583<br>
