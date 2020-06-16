@@ -10,7 +10,7 @@
 
 @section('content')
 
-   <div class="thank-you-section">
+   <div class="thank-you-section m-5">
         <h1>¡Gracias por <br> Su pedido!</h1>
        <p>Un correo de confirmación fue enviado</p>
 
