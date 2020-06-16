@@ -150,7 +150,6 @@
 
             <div class="p-4 col-12 col-md-5 offset-md-1 mb-auto bg-white">
                 <h2>Resumen de tu pedido</h2>
-
                 <div class="checkout-table">
                     @foreach (Cart::content() as $item)
                     <div class="checkout-table-row">
