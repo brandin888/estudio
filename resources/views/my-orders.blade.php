@@ -62,12 +62,14 @@
 /* The Close Button */
 .close {
   position: absolute;
-  top: 45px;
+  top: 100px;
   right: 35px;
-  color: #f1f1f1;
+  color: #000000;;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  z-index: 4;
+  opacity: 1;
 }
 
 .close:hover,
