@@ -770,7 +770,7 @@ a {
         <link rel="stylesheet" href="{{ asset('css/app.css?v=1.4') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.4') }}">
         <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
-        <!-- Facebook Pixel Code -->
+       <!-- Facebook Pixel Code -->
         <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -780,11 +780,11 @@ a {
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '620489468811105');
+        fbq('init', '271128407569193');
         fbq('track', 'PageView');
         </script>
         <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=620489468811105&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=271128407569193&ev=PageView&noscript=1"
         /></noscript>
         <!-- End Facebook Pixel Code -->
     </head>
@@ -818,6 +818,9 @@ a {
   logged_in_greeting="Bienvenido a el mayorista. ¿En qué podemos ayudarte?"
   logged_out_greeting="Bienvenido a el mayorista. ¿En qué podemos ayudarte?">
       </div>
+       <!-- Your Chat Plugin code -->
+
+      
         <div id="app" >
             <header class="with-background" style="background-image: url('img/parallax/parallax9.jpg'); background-attachment: fixed;
   background-position: center;
