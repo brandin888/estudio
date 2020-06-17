@@ -82,7 +82,7 @@
                         </div>
                         <div>
                             <div class="order-header-items">
-                                <div><img src="{{ $order->imagen_factura) }}" alt="Product Image">></div>
+                                <div><img src="{{ $order->imagen_factura) }}" alt="Product Image"></div>
                                 <div></div>
                                 
                             </div>
