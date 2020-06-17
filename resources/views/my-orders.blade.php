@@ -17,7 +17,7 @@
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: -2; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -62,7 +62,7 @@
 /* The Close Button */
 .close {
   position: absolute;
-  top: 15px;
+  top: 30px;
   right: 35px;
   color: #f1f1f1;
   font-size: 40px;
@@ -161,7 +161,7 @@
                             </div>
                             @if(isset($order->imagen_factura))
                                 <div class="order-header-items">
-                                <div><img id="myImg" width="100" height="100" src="{{ orderImage($order->imagen_factura) }}" alt="Product Image"></div>
+                                <div><img id="myImg" width="100" height="100" src="{{ orderImage($order->imagen_factura) }}" alt="Comprobante de Pago"></div>
                                 <div id="myModal" class="modal">
                                   <span class="close">&times;</span>
                                   <img class="modal-content" id="img01">
