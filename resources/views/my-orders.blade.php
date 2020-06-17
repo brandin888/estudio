@@ -75,16 +75,22 @@
                         </div>
                         <div>
                             <div class="order-header-items">
-                                <div><img src=" {{ orderImage($order->imagen_factura) }}" alt="Product Image"></div>
-                                
+                                <div><a href="{{ route('orders.show', $order->id) }}">Detalle de Orden</a></div>
+                                <div>|</div>
                                 
                             </div>
+                            @if(isset($material_details->pricing))
+                                <div class="order-header-items">
+                                <div><img src="{{ orderImage($order->imagen_factura) }}" alt="Product Image"></div>
+                                
+                                
+                                </div>
 
-                             <div class="order-header-items">
-                                <div></div>
-                                <div></div>
-                                
-                            </div>
+                            @else
+                             
+                            @endif
+                            
+
 
                         </div>
                     </div>
