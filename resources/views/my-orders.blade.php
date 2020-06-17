@@ -79,7 +79,7 @@
                                 <div>|</div>
                                 
                             </div>
-                            @if(isset($material_details->pricing))
+                            @if(isset($order->imagen_factura))
                                 <div class="order-header-items">
                                 <div><img src="{{ orderImage($order->imagen_factura) }}" alt="Product Image"></div>
                                 
