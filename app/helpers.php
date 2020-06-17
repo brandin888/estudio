@@ -16,6 +16,11 @@ function setActiveCategory($category, $output = 'active')
 {
     return request()->category == $category ? $output : '';
 }
+function orderImage($path)
+{
+    return $path && file_exists('storage/'.$path) ? asset('storage/'.$path) : asset('img/not-found.jpg');
+}
+
 
 function productImage($path)
 {
