@@ -75,17 +75,17 @@
                         </div>
                         <div>
                             <div class="order-header-items">
-                                <div><a href="{{ route('orders.show', $order->id) }}">Detalle de Orden</a></div>
-                                <div>|</div>
+                                <div><img src="{{productImage( $order->imagen_factura) }}" alt="Product Image"></div>
+                                
                                 
                             </div>
-                        </div>
-                        <div>
-                            <div class="order-header-items">
-                                <div><img src="{{ $order->imagen_factura) }}" alt="Product Image"></div>
+
+                             <div class="order-header-items">
+                                <div></div>
                                 <div></div>
                                 
                             </div>
+
                         </div>
                     </div>
                     <div class="order-products">
