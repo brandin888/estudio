@@ -138,7 +138,7 @@
                             </div>
                         </div>
                         <div class="pb-2">
-                            <div style="font-size:15px">El costo de envío no esta incluido en el precio de los productos.<br><br> El pago de los productos y el envío se realiza via depósito, si tiene alguna duda puede comunicarse al siguiente número
+                            <div style="font-size:15px">El costo de envío no esta incluido en el precio de los productos.<br><br> El pago de los productos y el envío se realiza <strong>via depósito</strong>, deberá enviar una foto del voucher respondiendo al correo que le enviaremos <strong>al finalizar su pedido.</strong> Si tiene alguna duda puede comunicarse al siguiente número
                             </div>
                         </div>
                         <div class="row d-flex justify-content-center">

@@ -37,11 +37,12 @@ class LandingPageController extends Controller
         } else {
             $products = $products->paginate($pagination);
         }
-
+        // dd($products);
         return view('landing-page')->with([
             'products' => $products,
             'categories' => $categories,
             'categoryName' => $categoryName,
         ]);
+
     }
 }

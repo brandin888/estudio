@@ -7,7 +7,7 @@ body, body *:not(html):not(style):not(br):not(tr):not(code) {
 
 body {
     background-color: #f5f8fa;
-    color: #74787E;
+    color: #2F3133;
     height: 100%;
     hyphens: auto;
     line-height: 1.4;
@@ -30,7 +30,7 @@ blockquote {
 }
 
 a {
-    color: #3869D4;
+    color: #01579b;
 }
 
 a img {
@@ -64,7 +64,7 @@ h3 {
 }
 
 p {
-    color: #74787E;
+    color: #2F3133;
     font-size: 16px;
     line-height: 1.5em;
     margin-top: 0;
@@ -105,10 +105,12 @@ img {
 .header {
     padding: 25px 0;
     text-align: center;
+    background-color: #01579b;
+    height: 100px;
 }
 
 .header a {
-    color: #bbbfc3;
+    color: #FFFFFF;
     font-size: 19px;
     font-weight: bold;
     text-decoration: none;
@@ -157,14 +159,15 @@ img {
     margin: 0 auto;
     padding: 0;
     text-align: center;
-    width: 570px;
+    width: 100%;
+    background-color: #01579b;
     -premailer-cellpadding: 0;
     -premailer-cellspacing: 0;
-    -premailer-width: 570px;
+    -premailer-width: 100%;
 }
 
 .footer p {
-    color: #AEAEAE;
+    color: #ffffff;
     font-size: 12px;
     text-align: center;
 }
@@ -186,7 +189,7 @@ img {
 }
 
 .table td {
-    color: #74787E;
+    color: #2F3133;
     font-size: 15px;
     line-height: 18px;
     padding: 10px 0;
@@ -219,11 +222,11 @@ img {
 }
 
 .button-blue {
-    background-color: #3097D1;
-    border-top: 10px solid #3097D1;
-    border-right: 18px solid #3097D1;
-    border-bottom: 10px solid #3097D1;
-    border-left: 18px solid #3097D1;
+    background-color: #01579b !important;
+    border-top: 10px solid #01579b;
+    border-right: 18px solid #01579b;
+    border-bottom: 10px solid #01579b;
+    border-left: 18px solid #01579b;
 }
 
 .button-green {

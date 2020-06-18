@@ -1,4 +1,12 @@
-@component('mail::message')
+@component('mail::layout')
+{{-- Header --}}
+@slot('header')
+    @component('mail::header', ['url' => config('app.url')])
+        El Mayorista
+    @endcomponent
+@endslot
+
+{{-- Body --}}
 # Pedido Recibido
 
 Hola {{ $order->billing_name }}, gracias por realizar su pedido en EL MAYORISTA
@@ -20,7 +28,7 @@ Hola {{ $order->billing_name }}, gracias por realizar su pedido en EL MAYORISTA
 **Dirección:** {{$order->billing_city}} - {{$order->billing_province}} - {{$order->billing_district}}
 
 Se deberá depositar en cualquiera de las siguientes cuentas, para que su pedido sea entregado:<br><br>
-**Nombre del Titular:** Alvic cardenas Ñahuin<br>
+**Nombre del Titular:** Alvic Cardenas Ñahuin<br>
 **BCP:** 19135761748076<br>
 **INTERBANK:** 0013129550583<br>
 **BBVA:** 001103460200135069<br>
@@ -32,6 +40,15 @@ Si esta registrado en nuestro sitio web, puede obtener más detalles sobre su pe
 El Mayorista
 @endcomponent
 
+No olvide responder a este correo, enviando una foto del depósito que ha realizado.
+
 Saludos,<br>
-{{ config('app.name') }}
+El Mayorista
+
+{{-- Footer --}}
+@slot('footer')
+    @component('mail::footer')
+         &copy; {{ date('Y') }} El Mayorista. Todos los derechos reservados.
+    @endcomponent
+@endslot
 @endcomponent
