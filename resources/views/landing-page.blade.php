@@ -770,6 +770,27 @@ a {
         <link rel="stylesheet" href="{{ asset('css/app.css?v=1.4') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.4') }}">
         <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
+
+
+         <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script data-ad-client="ca-pub-8718908287387658" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169774086-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-169774086-1');
+          gtag('set', {'user_id': 'USER_ID'}); // Establezca el ID de usuario mediante el user_id con el que haya iniciado sesión.
+          
+        </script>
+
+
+
+
+
+
+
        <!-- Facebook Pixel Code -->
         <script>
         !function(f,b,e,v,n,t,s)
