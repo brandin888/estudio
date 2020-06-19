@@ -788,7 +788,7 @@ a {
         /></noscript>
         <!-- End Facebook Pixel Code -->
     </head>
-    <body style="background-image: url('img/parallax/image.jpg'); 
+    <body style="background-color: white; 
         background-repeat: no-repeat;
          background-size: 100% 100%;
           z-index: -1;
@@ -835,11 +835,11 @@ a {
                         @include('partials.menus.main-right')
                     </div>
                 </div> <!-- end top-nav -->
-                <div class="hero container">
+                <div class="hero container"  >
                     <div class="hero-copy">
-                        <h1>Tu Tienda Virtual El Mayorista</h1>
-                        <p>Ofrecemos productos variados para el hogar.</p>
-                        <div class="hero-buttons">
+                        <h1>El Mayorista</h1>
+                        <h2>Ofrecemos productos variados para el hogar.</h2>
+                        <div class="hero-buttons" style="padding-top: 20px">
                             <a href="{{ url('/') }}/shop" class="button button-white">Tienda</a>
                             <a href="{{ url('/') }}/contacto" class="button button-white">Contáctanos</a>
                         </div>
@@ -851,7 +851,7 @@ a {
 
            <div class="menu__responsive">
   <div class="logo__responsive">
-    <a href="{{ url('/') }}/"> <span class="cart-count"><span style="color: #e18604; font-size: 25px; font-weight: bold"> El Mayorista</span></span></a>
+    <a href="{{ url('/') }}/"> <span class="cart-count"><span style="color:#e18604;  font-size: 25px; font-weight: bold"> El Mayorista</span></span></a>
   </div>
   <div class="carrito_top">
     <li class="nav-item"><a class="navbar__link" href="{{ route('cart.index') }}"><i class="fas fa-shopping-cart"></i>
@@ -968,7 +968,7 @@ a {
 
 
 
- <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 250px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn;"><div class="row"><div class="col-lg-10 col-lg-offset-1 text-center">
+ <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 250px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn; padding-top: 25px;"><div class="row"><div class="col-lg-10 col-lg-offset-1 text-center">
 <i class="icon icon-heading ion-pie-graph size-96"></i>
 <br><h2>El Mayorista</h2><p class="lead">
 Somos una empresa <strong>Mayorista</strong> de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en <a style="color: #01579b ; font-weight: bold;" href="{{ url('/') }}/contacto"> Lima Cercado </a>, visita nuestra página de  <a style="color: #01579b ; font-weight: bold;" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/" target="_blank"> Facebook </a>.</p></div></div></div>

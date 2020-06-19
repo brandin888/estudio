@@ -296,7 +296,7 @@ strong {
 
 .button:hover {
   color: rgba(255, 255, 255, 0.9);
-  background: #e18604 !important;
+  background: linear-gradient(to right, #003b69 0%, #01579b 50%, #003b69 100%);
 }
 
 .button-white {
@@ -305,8 +305,8 @@ strong {
 }
 
 .button-white:hover {
-  color: #212121 !important;
-  background: #e9e9e9;
+  
+ background: linear-gradient(to right, #003b69 0%, #01579b 50%, #003b69 100%);
 }
 
 .button-primary {
