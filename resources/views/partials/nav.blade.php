@@ -470,7 +470,7 @@ a {
   top: 0;
   right: 0;
   width: 250px;
-  height: 100vh;
+  height: 90vh;
   background-color: #fff;
   overflow-y: auto;
   overflow-x: hidden;

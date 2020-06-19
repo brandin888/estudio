@@ -646,7 +646,7 @@ a {
   top: 0;
   right: 0;
   width: 250px;
-  height: 100vh;
+  height: 90vh;
   background-color: #fff;
   overflow-y: auto;
   overflow-x: hidden;
@@ -989,7 +989,7 @@ a {
 
 
 
- <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 250px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn; padding-top: 25px;"><div class="row"><div class="col-lg-10 col-lg-offset-1 text-center">
+ <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 250px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn; padding-top: 18px;"><div class="row"><div class="col-lg-10 col-lg-offset-1 text-center">
 <i class="icon icon-heading ion-pie-graph size-96"></i>
 <br><h2>El Mayorista</h2><p class="lead">
 Somos una empresa <strong>Mayorista</strong> de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en <a style="color: #01579b ; font-weight: bold;" href="{{ url('/') }}/contacto"> Lima Cercado </a>, visita nuestra página de  <a style="color: #01579b ; font-weight: bold;" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/" target="_blank"> Facebook </a>.</p></div></div></div>
