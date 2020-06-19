@@ -36,7 +36,7 @@ Se deberá depositar en cualquiera de las siguientes cuentas, para que su pedido
 
 Si esta registrado en nuestro sitio web, puede obtener más detalles sobre su pedido iniciando sesión.
 
-@component('mail::button', ['url' => config('app.url'), 'color' => 'blue'])
+@component('mail::button', ['url' => 'el-mayorista.com/my-orders', 'color' => 'blue'])
 El Mayorista
 @endcomponent
 

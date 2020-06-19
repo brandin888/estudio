@@ -1,4 +1,10 @@
-@component('mail::message')
+@component('mail::layout')
+{{-- Header --}}
+@slot('header')
+    @component('mail::header', ['url' => config('app.url')])
+        El Mayorista
+    @endcomponent
+@endslot
 {{-- Greeting --}}
 @if (! empty($greeting))
 # {{ $greeting }}
@@ -52,7 +58,7 @@
 @slot('subcopy')
 @lang(
     "Si tienes problemas al apretar clic en \":actionText\", copia y pega esto\n".
-    'en tu navegador: [:actionURL](:actionURL)',
+    'en tu navegador: [:actionURL]',
     [
         'actionText' => $actionText,
         'actionURL' => $actionUrl,
@@ -60,4 +66,9 @@
 )
 @endslot
 @endisset
+@slot('footer')
+    @component('mail::footer')
+        &copy; {{ date('Y') }} El Mayorista. Todos los derechos reservados.
+    @endcomponent
+@endslot
 @endcomponent
