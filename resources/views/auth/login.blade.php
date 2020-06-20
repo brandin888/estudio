@@ -215,13 +215,13 @@
 
         <div class="auth-right">
             <h2>Cliente nuevo</h2>
-            <div class="spacer"></div>
+            <!-- <div class="spacer"></div>
             <p><strong>Ahorra tiempo ahora.</strong></p>
             <p>No necesitas tener una cuenta para hacer tu pedido.</p>
             <div class="spacer"></div>
             <a href="{{ route('guestCheckout.index') }}" class="auth-button-hollow">Continúa como invitado</a>
             <div class="spacer"></div>
-            &nbsp;
+            &nbsp; -->
             <div class="spacer"></div>
             <p><strong>Ahorra tiempo para después.</strong></p>
             <p>Crea una cuenta para ahorrar tiempo por cada pedido.</p>
