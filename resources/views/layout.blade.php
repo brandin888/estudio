@@ -76,6 +76,15 @@
 
 
 <body class="@yield('body-class', '')" >
+    <!-- Load Whatsapp -->
+    <div>
+      <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51975711739&Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?">
+        <img src="{{ asset('img/whatsapp.png') }}" alt="whatsapp">
+      </a> 
+    </div>
+    <!-- end Whatsapp -->
+
+    
      <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>
