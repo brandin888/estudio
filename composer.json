@@ -9,6 +9,7 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
+        "5dmatweblogin/ajaxlogin": "dev-master",
         "algolia/algoliasearch-client-php": "^2.2",
         "braintree/braintree_php": "^3.36",
         "cartalyst/stripe-laravel": "^11.0",
