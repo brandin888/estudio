@@ -814,6 +814,15 @@ a {
          background-size: 100% 100%;
           z-index: -1;
         ">
+
+        <!-- Load Whatsapp -->
+        <div>
+          <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51975711739&Hola!&nbsp;ventas&nbsp;por&nbsp;mayor">
+            <img src="{{ asset('img/whatsapp.png') }}" alt="whatsapp">
+          </a> 
+        </div>
+        <!-- end Whatsapp -->
+        
         <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>
