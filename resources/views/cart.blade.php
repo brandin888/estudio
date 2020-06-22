@@ -16,7 +16,7 @@
 
 @section('content')
 
-<div class="breadcrumbs" style="background: linear-gradient(to right, #4ec1ffa3 0%, #01579b8f 50%, #003b69ad 100%);">
+<div class="breadcrumbs" style="background: linear-gradient(to right, #007cbf 0%, #01579b8f 50%, #007fe2 100%);">
     <div class="breadcrumbs-container container">
         <div>
             <div class="d-flex align-items-center">
@@ -30,7 +30,7 @@
         <div>
             <div class="d-flex align-items-center">
                 <i style="font-size:20px" class="fa fa-reply mr-2"></i>
-                <a class="font-weight-bold" style="text-decoration:none;font-size:16px" href="{{ route('shop.index') }}">Seguir comprando</a>
+                <a class="font-weight-bold" style="text-decoration:none;font-size:16px; color: white" href="{{ route('shop.index') }}">Seguir comprando</a>
             </div>
         </div>
     </div>

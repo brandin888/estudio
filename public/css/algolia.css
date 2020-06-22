@@ -92,3 +92,15 @@
   .ais-hits--item em {
     background-color: rgba(58, 150, 207, 0.3);
   }
+@media (max-width: 991px) {
+  body {
+    margin-top: 58px;
+  }
+ #aa-search-input{
+  width: 280px;
+
+ }
+  #algolia-autocomplete-listbox-0 {
+ 
+  width: 280px;
+ }}

@@ -9,6 +9,10 @@
 /* Medium Devices, Desktops */
 
 @media (max-width: 992px) {
+  #algolia-autocomplete-listbox-0 {
+ 
+  width: 280px;
+ }
   header.with-background .top-nav,
   header .top-nav {
     flex-direction: column;

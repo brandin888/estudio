@@ -539,6 +539,11 @@ section#action, section#action-transparent {
   }
  #aa-search-input{
   width: 280px;
+
+ }
+  #algolia-autocomplete-listbox-0 {
+ 
+  width: 280px;
  }
 
   .menu__responsive {
@@ -1006,9 +1011,9 @@ Somos una empresa <strong>Mayorista</strong> de productos del hogar, hacemos ven
             
 
              @component('components.breadcrumbs')
-        <a href="/">Inicio</a>
-        <i class="fa fa-chevron-right breadcrumb-separator"></i>
-        <span>Tienda</span>
+        <a href="/" style="color: white">Inicio</a>
+        <i class="fa fa-chevron-right breadcrumb-separator" style="color: white"></i>
+        <span style="color: white">Tienda</span>
     @endcomponent
      <div class="container">
         @if (session()->has('success_message'))
