@@ -45,7 +45,10 @@
   font-size: 12px;
   border-radius: 4px;
   box-sizing: border-box;
-  word-wrap: break-word; }
+  word-wrap: break-word; 
+  color: black;
+}
+
 .aa-suggestion {
   padding: 12px;
   border-top: 1px solid rgba(228, 228, 228, 0.6);
@@ -92,15 +95,3 @@
   .ais-hits--item em {
     background-color: rgba(58, 150, 207, 0.3);
   }
-@media (max-width: 991px) {
-  body {
-    margin-top: 58px;
-  }
- #aa-search-input{
-  width: 280px;
-
- }
-  #algolia-autocomplete-listbox-0 {
- 
-  width: 280px;
- }}
