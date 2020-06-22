@@ -822,7 +822,7 @@ a {
 
         <!-- Load Whatsapp -->
         <div>
-          <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51975711739&Hola!&nbsp;ventas&nbsp;por&nbsp;mayor">
+          <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51916284386&Hola!&nbsp;ventas&nbsp;por&nbsp;mayor">
             <img src="{{ asset('img/whatsapp.png') }}" alt="whatsapp">
           </a> 
         </div>
