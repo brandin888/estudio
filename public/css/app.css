@@ -1516,7 +1516,7 @@ h1.checkout-heading {
   background: linear-gradient(to right, #63b9e6a1 0%, #01579b 50%, #003b69 100%);
   color: #fff;
  border-radius: 8px;
-  
+  width: 200px;
 
       text-transform: uppercase;
     margin-top: 20px;
