@@ -222,7 +222,7 @@ section#action, section#action-transparent {
 
                         <div ><a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a></div>
                         <div style="height: 15%; "><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name">{{ $product->name }}</div></a>
-                       <div class="product-price" style="font-weight: bold; color: black;">{{ $product->presentPriceUnidad() }}</div></div>
+                       <div class="product-price" style="font-weight: bold; color: black;">{{ $product->presentPriceUnidad() }}<span>/unidad</span></div></div>
                     </div>
                     @endif
                 @empty

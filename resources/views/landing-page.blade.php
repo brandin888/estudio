@@ -1059,7 +1059,7 @@ Somos una empresa <strong>Mayorista</strong> de productos del hogar, hacemos ven
                     <div class="product polaroid ">
                         <div ><a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a></div>
                         <div ><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name">{{ $product->name }} </div></a>
-                        <div class="product-price" style="font-weight: bold; color: black;">{{ $product->presentPriceUnidad() }}</div></div>
+                        <div class="product-price" style="font-weight: bold; color: black;">{{ $product->presentPriceUnidad() }}<span style="font-weight: normal; font-size: 12px">/unidad</span></div></div>
                     </div>
                   @endif
                 @empty
