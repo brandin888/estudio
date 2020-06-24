@@ -57,8 +57,10 @@
             <h1 class="product-section-title">{{ $product->name }} ( {{ $product->cantidad_caja }} unidades por caja) </h1>
             <div class="product-section-subtitle" style="color:#1e1f00">{{ $product->details }}</div>
             <!-- <div>{!! $stockLevel !!}</div> -->
-            <div class="product-section-price">{{ $product->presentPrice() }}</div>
-
+            <div class="product-section-price">{{ $product->presentPriceUnidad() }}</div>
+            <p>
+               Precio por caja: {!! $product->presentPrice() !!}
+            </p>
             <p>
                 {!! $product->description !!}
             </p>
