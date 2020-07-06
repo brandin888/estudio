@@ -66,8 +66,8 @@
                         <tr><strong>
 
                             <th scope="col">Producto</th>
-                            <th scope="col">Cantidad (Cajas)</th>
-                            <th scope="col">Precio / Caja</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Precio</th>
                             <th scope="col"></th>
                             </strong>
 
