@@ -78,8 +78,8 @@
                                 @foreach (Cart::content() as $item)
                                 <tr style="background-color:white">
                                 <!-- <div class="cart-table-row mb-2"> -->
-                                    <td class="d-md-flex align-items-center cart-table-row-left">
-                                        <a href="{{ route('shop.show', $item->model->slug) }}"><img src="{{ productImage($item->model->image) }}" alt="item" class="cart-table-img w-50"></a>
+                                    <td class="d-md-flex justify-content-around align-items-center cart-table-row-left">
+                                        <a href="{{ route('shop.show', $item->model->slug) }}"><img src="{{ productImage($item->model->image) }}" alt="item" class="cart-table-img" style="max-height:100px"></a>
                                         <div class="cart-item-details text-center">
                                             <div class="cart-table-item"><a href="{{ route('shop.show', $item->model->slug) }}">{{ $item->model->name }}</a></div>
                                             

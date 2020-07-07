@@ -1368,9 +1368,10 @@ h1.checkout-heading {
 .checkout-section .checkout-totals {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #919191;
-  padding: 18px 0;
-  line-height: 2;
+  border-top: 1px solid #919191;
+  padding: 5px 0;
+  margin-top: 10px;
+  /* line-height: 2; */
 }
 
 .checkout-section .checkout-totals .checkout-totals-right {
