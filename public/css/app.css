@@ -206,7 +206,7 @@ h5,
   font-weight: bold;
 }
 .cart-totals {
-  font-family: "Montserrat", Arial, sans-serif;
+  /* font-family: "Montserrat", Arial, sans-serif; */
 }
 
 h1 {
@@ -808,14 +808,14 @@ form button[type=submit] {
     font-size:16px;
     margin-bottom: 5px !important;
   }
-  .cart-totals h2, .cart-totals{
+  .cart-totals h2{
     font-size:16px;
   }
-  .table {
+  .table{
     font-size: 14px;
   }
   .cart-section-2 {
-    margin-top:0px !important;
+    font-size: 14px;
   }
 }
 
@@ -1176,6 +1176,10 @@ footer {
 }
 
 .cart-section h2 {
+  margin-bottom: 30px;
+}
+
+.cart-section-2 h2 {
   margin-bottom: 30px;
 }
 

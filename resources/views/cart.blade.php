@@ -54,98 +54,91 @@
         </div>
         @endif
     </div>
-    <div class="cart-container row mr-5 ml-5">
+    <div class="container">
         @if (Cart::count() > 0)
-        <div class="cart-section col-12 col-lg-8">
-            <div>  
-                <h2>{{ Cart::count() }} producto(s) en tu Carrito de compras</h2>
-                
-                <div class="table-responsive">
-                    <table class="table mb-0 text-center">
-                        <thead class="font-weight-bold text-white" style="background-color:#01579b">
-                        <tr><strong>
-
-                            <th scope="col">Producto</th>
-                            <th scope="col">Cantidad</th>
-                            <th scope="col">Precio</th>
-                            <th scope="col"></th>
-                            </strong>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (Cart::content() as $item)
-                            <tr style="background-color:white">
-                            <!-- <div class="cart-table-row mb-2"> -->
-                                <td class="d-md-flex align-items-center cart-table-row-left">
-                                    <a href="{{ route('shop.show', $item->model->slug) }}"><img src="{{ productImage($item->model->image) }}" alt="item" class="cart-table-img"></a>
-                                    <div class="cart-item-details w-100">
-                                        <div class="cart-table-item"><a href="{{ route('shop.show', $item->model->slug) }}">{{ $item->model->name }} ({{ $item->model->cantidad_caja }} unidades por caja)</a></div>
-                                        
-                                    </div>
-                                </td>
-                                <td>
-                                    <select class="quantity" data-id="{{ $item->rowId }}" data-productQuantity="{{ $item->model->quantity }}">
-                                        @for ($i = 1; $i < 5 + 1 ; $i++)
-                                        <option {{ $item->qty == $i ? 'selected' : '' }}>{{ $i }}</option>
-                                        @endfor
-                                    </select>
-                                    <!-- <input class="quantity" min="0" name="quantity" value="1" type="number"> -->         
-                                </td>
-                                <td>
-                                    <div>{{ presentPrice($item->subtotal) }}</div>
-                                    <div class="cart-table-actions">
-                                        <form action="{{ route('cart.destroy', $item->rowId) }}" method="POST">
-                                            {{ csrf_field() }}
-                                            {{ method_field('DELETE') }}
-                                            
-                                            <!-- <button type="submit" class="cart-options">Quitar</button> -->
-                                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                                        </form>
-                                        
-                                        <!-- <form action="{{ route('cart.switchToSaveForLater', $item->rowId) }}" method="POST">
-                                            {{ csrf_field() }}
-        
-                                            <button type="submit" class="cart-options">Mover a Deseos</button>
-                                        </form> -->
-                                    </div>
-                                </td>
-                            <!-- </div> -->
-                            </tr>
-                            @endforeach                  
-                        </tbody>
-                    </table>
+        <div class="row">
+            <div class="cart-section col-12">
+                <div>  
+                    <h2>{{ Cart::count() }} producto(s) en tu Carrito de compras</h2>
                     
-                </div> <!-- end cart-table -->
-                
-                         
-            </div>
+                    <div class="table-responsive">
+                        <table class="table mb-0 text-center">
+                            <thead class="font-weight-bold text-white" style="background-color:#01579b">
+                            <tr><strong>
+
+                                <th scope="col">Producto</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col"></th>
+                                </strong>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (Cart::content() as $item)
+                                <tr style="background-color:white">
+                                <!-- <div class="cart-table-row mb-2"> -->
+                                    <td class="d-md-flex align-items-center cart-table-row-left">
+                                        <a href="{{ route('shop.show', $item->model->slug) }}"><img src="{{ productImage($item->model->image) }}" alt="item" class="cart-table-img w-50"></a>
+                                        <div class="cart-item-details text-center">
+                                            <div class="cart-table-item"><a href="{{ route('shop.show', $item->model->slug) }}">{{ $item->model->name }}</a></div>
+                                            
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <select class="quantity" data-id="{{ $item->rowId }}" data-productQuantity="{{ $item->model->quantity }}">
+                                            @for ($i = 1; $i < 5 + 1 ; $i++)
+                                            <option {{ $item->qty == $i ? 'selected' : '' }}>{{ $i }}</option>
+                                            @endfor
+                                        </select>
+                                        <!-- <input class="quantity" min="0" name="quantity" value="1" type="number"> -->         
+                                    </td>
+                                    <td>
+                                        <div>{{ presentPrice($item->subtotal) }}</div>
+                                        <div class="cart-table-actions">
+                                            <form action="{{ route('cart.destroy', $item->rowId) }}" method="POST">
+                                                {{ csrf_field() }}
+                                                {{ method_field('DELETE') }}
+                                                
+                                                <!-- <button type="submit" class="cart-options">Quitar</button> -->
+                                                <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                                            </form>
+                                            
+                                            <!-- <form action="{{ route('cart.switchToSaveForLater', $item->rowId) }}" method="POST">
+                                                {{ csrf_field() }}
             
-        </div> <!-- end cart-section -->
-        
-        <div class="cart-section-2 col-12 col-lg-4 mr-auto">
-            <div class="card-body bg-white mt-5">
-                <div class="cart-totals text-center">
-                    <div class="mb-3" style="border-bottom: 1px solid #ddd">
-                        <h2>Resumen de tu pedido</h2>
+                                                <button type="submit" class="cart-options">Mover a Deseos</button>
+                                            </form> -->
+                                        </div>
+                                    </td>
+                                <!-- </div> -->
+                                </tr>
+                                @endforeach                  
+                            </tbody>
+                        </table>
+                        
+                    </div> <!-- end cart-table -->
+                    
+                            
+                </div>
+                
+            </div> <!-- end cart-section -->
+            
+            <div class="cart-section-2 col-12">
+                <div class="card-body bg-white d-flex">
+                    <div class="text-center cart-totals col-4 order-2 d-flex justify-content-around pr-5 align-items-center">
+                        <h2 class="mb-0">Total</h2>{{ presentPrice($newTotal) }}
                     </div>
-                    <div class="row pb-4">
-                        <div class="col-6">
-                                <strong>Total</strong>
-                            </div>
-                            <div class="col-6">
-                                <span class="cart-totals-total">{{ presentPrice($newTotal) }}</span>
-                            </div>
-                        </div>
-                        <div class="pb-2">
-                            <div style="font-size:15px">El costo de envío no esta incluido en el precio de los productos.<br><br> El pago de los productos y el envío se realiza <strong>via depósito</strong>, deberá enviar una foto del voucher respondiendo al correo que le enviaremos <strong>al finalizar su pedido.</strong> Si tiene alguna duda puede comunicarse al siguiente número 916284386
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-center">
+                            <div class="col-8 text-justify">
+                                <div>El costo de envío no esta incluido en el precio de los productos.<br>El pago de los productos y el envío se realiza <strong>via depósito</strong>, deberá enviar una foto del voucher respondiendo al correo que le enviaremos <strong>al finalizar su pedido.</strong>
+                                </div>
+                            </div>                      
+                </div>
+                        <div class="row d-flex justify-content-center order-1 mt-4">
                             <a href="{{ route('checkout.index') }}" class="button text-white" style="text-decoration:none;background-color:#01579b;border:none">Ir a comprar</a>
-                        </div>                        
-                    </div> <!-- end cart-totals -->
+                        </div>  
             </div>
+        
         </div>
           
         @else
