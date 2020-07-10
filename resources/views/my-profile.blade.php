@@ -34,34 +34,47 @@
 
     <div class="products-section container">
         <div class="sidebar">
-
             <ul>
-              <li class="active"><a href="{{ route('users.edit') }}">Mi Perfil</a></li>
-              <li><a href="{{ route('orders.index') }}">Mis Órdenes</a></li>
+                <li>
+                    <a href="{{ route('users.edit') }}" class="d-flex">
+                        <div style="width:25px" class="text-center">
+                            <i class="far fa-user"></i>
+                        </div>
+                        Mi Perfil
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="{{ route('orders.index') }}" class="d-flex">
+                        <div style="width:25px" class="text-center">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        Mis Órdenes
+                    </a>
+                </li>
             </ul>
         </div> <!-- end sidebar -->
-        <div class="my-profile">
+        <div class="my-profile card-body bg-white">
             <div class="products-header">
-                <h1 class="stylish-heading">Mi Perfil</h1>
+                <h1 class="stylish-heading mb-4">Mi Perfil</h1>
             </div>
 
             <div>
                 <form action="{{ route('users.update') }}" method="POST">
                     @method('patch')
                     @csrf
-                    <div class="" style="padding-top: 10px;">
-                        <input id="name" type="text" name="name" value="{{ old('name', $user->name) }}" placeholder="Nombre" required>
+                    <div class="form-group">
+                        <input class="form-control" id="name" type="text" name="name" value="{{ old('name', $user->name) }}" placeholder="Nombre" required>
                     </div>
-                    <div class="" style="padding-top: 10px;">
-                        <input id="email" type="email" name="email" value="{{ old('email', $user->email) }}" placeholder="Email" required>
-                        <div>Dejar en blanco si no quiere cambiar la contraseña</div>
+                    <div class="form-group">
+                        <input class="form-control" id="email" type="email" name="email" value="{{ old('email', $user->email) }}" placeholder="Email" required>
+                        <span class="badge" style="font-size:14px">Dejar en blanco si no quiere cambiar la contraseña</span>
                     </div>
-                    <div class="" style="padding-top: 10px;">
-                        <input id="password" type="password" name="password" placeholder="Contraseña">
+                    <div class="form-group">
+                        <input class="form-control" id="password" type="password" name="password" placeholder="Contraseña">
                         
                     </div>
-                    <div class="" style="padding-top: 10px;">
-                        <input id="password-confirm" type="password" name="password_confirmation" placeholder="Confirmar Contraseña">
+                    <div class="form-group">
+                        <input class="form-control" id="password-confirm" type="password" name="password_confirmation" placeholder="Confirmar Contraseña">
                     </div>
                     <div>
                         <button type="submit" class="my-profile-button">Actualizar Perfil</button>

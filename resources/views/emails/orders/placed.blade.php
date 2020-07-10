@@ -7,16 +7,12 @@
 @endslot
 
 {{-- Body --}}
-# Pedido Recibido
-
-Hola {{ $order->billing_name }}, gracias por realizar su pedido en EL MAYORISTA
+Hola {{ $order->billing_name }}, gracias por realizar su pedido en **ALETOYSi**
 
 **Numero de Pedido:** {{ $order->id }}
-
 **Monto Total:** S/ {{ round($order->billing_total / 100, 2) }}
 
 **Relacion de Productos**
-
 @component('mail::table')
 | Producto            | Precio x Unidad(S/)                      | Cantidad                           |                              Precio Total                         |
 |:-------------------:|:----------------------------------------:|:----------------------------------:|:-----------------------------------------------------------------:|

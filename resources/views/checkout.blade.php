@@ -129,7 +129,7 @@
                             <tr class="d-flex justify-content-between align-items-center">
                                 @foreach (Cart::content() as $item)
                                         <td style="position:relative">
-                                            <div style="position:absolute;background:yellow;border-radius: 20px;padding: 0 9px;top:-5px;left:-10px">
+                                            <div class="checkout-cantidad">
                                                 <strong>{{ $item->qty }}</strong>
                                             </div>
                                             <span>
