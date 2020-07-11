@@ -47,6 +47,7 @@
           gtag('set', {'user_id': 'USER_ID'}); // Establezca el ID de usuario mediante el user_id con el que haya iniciado sesión.
           
         </script>
+        <script src="{{ asset('js/app.js') }}"></script>
 
         
         
