@@ -609,7 +609,9 @@ body::after {
 a {
   text-decoration: none;
 }
-
+.top-nav {
+  background-color: white;
+}
 .nav-top {
   display: -webkit-box;
   display: flex;
@@ -777,19 +779,7 @@ a {
         <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
 
 
-         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script data-ad-client="ca-pub-8718908287387658" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169774086-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-169774086-1');
-          gtag('set', {'user_id': 'USER_ID'}); // Establezca el ID de usuario mediante el user_id con el que haya iniciado sesión.
-          
-        </script>
-
+         
 
 
 
@@ -797,21 +787,7 @@ a {
 
 
        <!-- Facebook Pixel Code -->
-        <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '271128407569193');
-        fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=271128407569193&ev=PageView&noscript=1"
-        /></noscript>
+      
         <!-- End Facebook Pixel Code -->
     </head>
     <body style="background-color: white; 
@@ -829,33 +805,13 @@ a {
         <!-- end Whatsapp -->
         
         <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v7.0'
-          });
-        };
-
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+     
 
       <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="2174827419500879"
-  logged_in_greeting="Bienvenido a el mayorista. ¿En qué podemos ayudarte?"
-  logged_out_greeting="Bienvenido a el mayorista. ¿En qué podemos ayudarte?">
-      </div>
+     
        <!-- Your Chat Plugin code -->
 
-      
+      <example> </example> 
         <div id="app" >
             <header class="with-background" style="background-image: url('img/parallax/parallax9.jpg'); background-attachment: fixed;
   background-position: center;
