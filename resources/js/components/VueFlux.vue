@@ -1,3 +1,7 @@
+
+
+
+<script>
 import { VueFlux, Transitions } from 'vue-flux';
 import 'vue-flux/dist/vue-flux.css';
 
@@ -20,3 +24,4 @@ export default {
       }
    })
 }
+</script>
