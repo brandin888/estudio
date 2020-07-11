@@ -1,5 +1,14 @@
 
+<template>
+    <vue-flux
+   :options="fluxOptions"
+   :images="fluxImages"
+   :transitions="fluxTransitions"
+   ref="slider">
+</vue-flux>
 
+<button @click="$refs.slider.showImage('next')">NEXT</button>
+</template>
 
 <script>
 import { VueFlux, Transitions } from 'vue-flux';
