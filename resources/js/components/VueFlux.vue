@@ -11,9 +11,9 @@ export default {
          autoplay: true
       },
       fluxImages: [
-         'URL1',
-         'URL2',
-         'URL3'
+         'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.adslzone.net%2Fcomo-se-hace%2Fphotoshop%2Fquitar-fondo-imagen%2F&psig=AOvVaw0xxsCvbnuFK_gxFnJGTUop&ust=1594582911954000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDN97n6xeoCFQAAAAAdAAAAABAD',
+         'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.adslzone.net%2Fcomo-se-hace%2Fphotoshop%2Fquitar-fondo-imagen%2F&psig=AOvVaw0xxsCvbnuFK_gxFnJGTUop&ust=1594582911954000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDN97n6xeoCFQAAAAAdAAAAABAD',
+         'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.adslzone.net%2Fcomo-se-hace%2Fphotoshop%2Fquitar-fondo-imagen%2F&psig=AOvVaw0xxsCvbnuFK_gxFnJGTUop&ust=1594582911954000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDN97n6xeoCFQAAAAAdAAAAABAD'
       ],
       fluxTransitions: {
          transitionTurn3d: Transitions.transitionTurn3d
