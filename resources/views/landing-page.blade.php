@@ -794,6 +794,14 @@ a {
     <body style="background-image: url('http://localhost:8020/aletoys/public/img/background.svg');background-repeat: no-repeat; background-size: 1706px 3324px; background-position-y: calc(-0.54px);">
 
         <!-- Load Whatsapp -->
+          <vue-flux
+   :options="fluxOptions"
+   :images="fluxImages"
+   :transitions="fluxTransitions"
+   ref="slider">
+</vue-flux>
+
+<button @click="$refs.slider.showImage('next')">NEXT</button>
         <div>
           <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51916284386&Hola!&nbsp;ventas&nbsp;por&nbsp;mayor">
             <img src="{{ asset('img/whatsapp.png') }}" alt="whatsapp">
@@ -835,14 +843,7 @@ a {
                         </div>
                     </div> <!-- end hero-copy -->
 
-                    <vue-flux
-   :options="fluxOptions"
-   :images="fluxImages"
-   :transitions="fluxTransitions"
-   ref="slider">
-</vue-flux>
-
-<button @click="$refs.slider.showImage('next')">NEXT</button>
+                  
                 </div> <!-- end hero -->
             </header>
 
