@@ -30,10 +30,10 @@ class CartUpdatedListener
         //$couponName = session()->get('coupon')['name'];
         $couponName = "DEF456";
 
-        if ($couponName) {
-            $coupon = Coupon::where('code', $couponName)->first();
+        // if ($couponName) {
+        //     $coupon = Coupon::where('code', $couponName)->first();
 
-            dispatch_now(new UpdateCoupon($coupon));
-        }
+        //     dispatch_now(new UpdateCoupon($coupon));
+        // }
     }
 }

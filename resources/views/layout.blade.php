@@ -15,7 +15,7 @@
         <link href="/img/favicon.ico" rel="SHORTCUT ICON" />
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet"> -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
@@ -35,7 +35,7 @@
         <link rel="stylesheet" href="{{ asset('css/app.css?v=1.6') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.4') }}">
         <link href="{{ asset('css/all.css?v=1.1') }}" rel="stylesheet">
-       
+
         
         
 

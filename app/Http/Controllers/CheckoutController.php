@@ -188,7 +188,6 @@ $categories = Category::all();
             'billing_city' => $request->department,
             'billing_province' => $request->province,
             'billing_district' => $request->district,
-            'billing_postalcode' => $request->postalcode,
             'billing_phone' => $request->phone,
             'billing_name_on_card' => $request->name_on_card,
             'billing_discount' => getNumbers()->get('discount'),

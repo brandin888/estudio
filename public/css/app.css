@@ -157,7 +157,7 @@ a:visited {
 }
 
 a:hover {
-  /* color: #878787; */
+  color: var(--primary);
 }
 
 .logo a {
@@ -187,10 +187,14 @@ img {
   max-width: 1200px;
 }
 
+.home {
+  font-size: 24px;
+}
+
 body {
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 300;
+  font-family: 'Annie Use Your Telescope', cursive;
+  /* font-size: 24px; */
+  font-weight: 700;
   line-height: 1.6;
   background-color:#F5F5F5;
 }
@@ -202,11 +206,11 @@ h4,
 h5,
 .product-section-subtitle,
 .product-section-price {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: 'Annie Use Your Telescope', cursive;
   font-weight: bold;
 }
 .cart-totals {
-  font-family: "Montserrat", Arial, sans-serif;
+  /* font-family: "Montserrat", Arial, sans-serif; */
 }
 
 h1 {
@@ -216,7 +220,7 @@ h1 {
 
 h1.stylish-heading {
   margin-bottom: 60px;
-  position: relative;
+  /* position: relative; */
 }
 
 h1.stylish-heading:before,
@@ -286,7 +290,7 @@ strong {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  /* color: white; */
 }
 
 .button {
@@ -808,14 +812,14 @@ form button[type=submit] {
     font-size:16px;
     margin-bottom: 5px !important;
   }
-  .cart-totals h2, .cart-totals{
+  .cart-totals h2{
     font-size:16px;
   }
-  .table {
+  .table{
     font-size: 14px;
   }
   .cart-section-2 {
-    margin-top:0px !important;
+    font-size: 14px;
   }
 }
 
@@ -1179,6 +1183,10 @@ footer {
   margin-bottom: 30px;
 }
 
+.cart-section-2 h2 {
+  margin-bottom: 30px;
+}
+
 .cart-section .cart-table-row {
   display: flex;
   justify-content: space-between;
@@ -1364,9 +1372,10 @@ h1.checkout-heading {
 .checkout-section .checkout-totals {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #919191;
-  padding: 18px 0;
-  line-height: 2;
+  border-top: 1px solid #919191;
+  padding: 5px 0;
+  margin-top: 10px;
+  /* line-height: 2; */
 }
 
 .checkout-section .checkout-totals .checkout-totals-right {
@@ -1377,6 +1386,16 @@ h1.checkout-heading {
   font-weight: bold;
   font-size: 22px;
   line-height: 2.2;
+}
+
+.checkout-cantidad {
+  position:absolute;
+  background:var(--primary);
+  color:white;
+  border-radius: 20px;
+  padding: 0 9px;
+  top:-5px;
+  left:-10px
 }
 
 /**
@@ -1560,26 +1579,23 @@ h1.checkout-heading {
   display: block;
 }
 
-.my-profile .form-control {
-  margin-bottom: 30px;
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--secondary);
 }
 
 .my-profile input {
-  border: 1px solid #919191;
-  padding: 16px 10px;
-  border-radius: 5px;
-  width: 66.6%;
-  font-size: 14px;
+  /* border: 1px solid #919191;
+  border-radius: 5px;*/
+  /* width: 66.6%;  */
 }
 
 .my-profile .my-profile-button {
   background: linear-gradient(to right, #63b9e6a1 0%, #01579b 50%, #003b69 100%);
   color: #fff;
- border-radius: 8px;
-  
-
-      text-transform: uppercase;
-    margin-top: 20px;
+  border-radius: 8px;
+    text-transform: uppercase;
+    /* margin-top: 20px; */
     padding: 10px 50px;
     font-family: 'Lato', sans-serif;
     font-weight: 900;

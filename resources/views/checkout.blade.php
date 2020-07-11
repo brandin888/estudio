@@ -61,16 +61,7 @@
             <div class="p-4 col-12 col-md-6 bg-white" style="background-color:white">
                 <form action="{{ route('checkout.store') }}" method="POST" id="payment-form">
                     {{ csrf_field() }}
-                    <h2>Identificación - Dirección de entrega</h2>
-
-                    <div class="form-group">
-                        <label for="email">Correo electrónico</label>
-                        @if (auth()->user())
-                            <input type="email" class="form-control" id="email" name="email" value="{{ auth()->user()->email }}" readonly>
-                        @else
-                            <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" required>
-                        @endif
-                    </div>
+                    <h2>Información de contacto</h2>
                     <div class="form-group">
                         <label for="name">Nombre</label>
                         <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" required>
@@ -79,6 +70,20 @@
                         <label for="address">Dirección</label>
                         <input type="text" class="form-control" id="address" name="address" value="{{ old('address') }}" required>
                     </div>
+                    <div class="half-form">
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            @if (auth()->user())
+                            <input type="email" class="form-control" id="email" name="email" value="{{ auth()->user()->email }}" readonly>
+                            @else
+                            <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" required>
+                            @endif
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Celular</label>
+                            <input type="text" class="form-control" id="phone" name="phone" value="{{ old('phone') }}" required>
+                        </div>
+                    </div> <!-- end half-form -->
 
                     <div class="half-form">
                         <div class="form-group">
@@ -100,39 +105,7 @@
                             </select>                    
                         </div>
                     </div>
-
-                    <div class="half-form">
-                        <div class="form-group">
-                            <label for="postalcode">Codigo Postal</label>
-                            <input type="text" class="form-control" id="postalcode" name="postalcode" value="{{ old('postalcode') }}" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Celular</label>
-                            <input type="text" class="form-control" id="phone" name="phone" value="{{ old('phone') }}" required>
-                        </div>
-                    </div> <!-- end half-form -->
-
-                    <div class="spacer"></div>
-
-                    <!-- <h2>Payment Details</h2>
-
-                    <div class="form-group">
-                        <label for="name_on_card">Name on Card</label>
-                        <input type="text" class="form-control" id="name_on_card" name="name_on_card" value="">
-                    </div> -->
-
-                    <!-- <div class="form-group">
-                        <label for="card-element">
-                          Credit or debit card
-                        </label>
-                        <div id="card-element"> -->
-                          <!-- a Stripe Element will be inserted here. -->
-                        <!-- </div> -->
-
-                        <!-- Used to display form errors -->
-                        <!-- <div id="card-errors" role="alert"></div>
-                    </div> -->
-                    
+                   
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input input-check" id="checkbox" name="politica" required>
                         <span class="politica">Al hacer clic en "Realizar Compra" certifico que acepto <a href="#" data-toggle="modal" data-target="#modalPolitica">las Condiciones de Uso y la Política de Privacidad.</a></span>
@@ -149,24 +122,27 @@
 
 
             <div class="p-4 col-12 col-md-5 offset-md-1 mb-auto bg-white">
-                <h2>Resumen de tu pedido</h2>
+                <h2>Resumen del pedido</h2>
                 <div class="checkout-table">
-                    @foreach (Cart::content() as $item)
-                    <div class="checkout-table-row">
-                        <div class="checkout-table-row-left">
-                            <img src="{{ productImage($item->model->image) }}" alt="item" class="checkout-table-img">
-                            <div class="checkout-item-details" style="width:50%">
-                                <div class="checkout-table-item">{{ $item->model->name }}</div>
-                                
-                                <div class="checkout-table-price">{{ $item->model->presentPrice() }}</div>
-                            </div>
-                        </div> <!-- end checkout-table -->
+                    <table class="w-100">
+                        <tbody>
+                            <tr class="d-flex justify-content-between align-items-center">
+                                @foreach (Cart::content() as $item)
+                                        <td style="position:relative">
+                                            <div class="checkout-cantidad">
+                                                <strong>{{ $item->qty }}</strong>
+                                            </div>
+                                            <span>
+                                                <img src="{{ productImage($item->model->image) }}" alt="item" class="checkout-table-img" style="max-height:100px">
 
-                        <div class="checkout-table-row-right">
-                            <div class="checkout-table-quantity">{{ $item->qty }}</div>
-                        </div>
-                    </div> <!-- end checkout-table-row -->
-                    @endforeach
+                                            </span>
+                                        </td>
+                                        <td>{{ $item->model->name }}</td>
+                                        <td>{{ $item->model->presentPrice() }}</td>
+                                @endforeach
+                            </tr>
+                        </tbody>
+                    </table>
 
                 </div> <!-- end checkout-table -->
 
@@ -204,19 +180,22 @@
 
     
 <!-- Modal -->
-<div class="modal fade" id="modalPolitica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modalIngresar modal-dialog-centered" role="document">
-    <div class="modal-content">
+<div class="modal fade bd-example-modal-lg" id="modalPolitica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content text-justify">
       <div class="modal-body modalIngresar__body d-flex align-items-center">
-        <button type="button" class="close modalIngresar__body__icon" data-dismiss="modal" aria-label="Close">
-          <img src="{{ asset('img/close.png') }}" alt="">
-        </button>
-        <div class="container">
+        <div class="container" style="font-size:12px">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="modal__titulo">CONDICIONES DE USO Y POLÍTICA DE PRIVACIDAD</h2>
+                <div class="modal-header px-0 align-items-center" style="border-bottom:0px">
+                    <h2 class="modal-title modal__titulo">CONDICIONES DE USO Y POLÍTICA DE PRIVACIDAD</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+              <!-- <h2 class="modal__titulo">CONDICIONES DE USO Y POLÍTICA DE PRIVACIDAD</h2> -->
               <div class="modal__parrafo">
-                <p>El presente Política de Privacidad establece los términos en que El Mayorista usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.</p>
+                <p>El presente Política de Privacidad establece los términos en la que El Mayorista, usa y protege la información proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.</p>
               </div>
               <div class="modal__parrafo">
                <strong>Información que es recogida</strong>

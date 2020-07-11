@@ -129,4 +129,14 @@ class CartController extends Controller
 
         return redirect()->route('cart.index')->with('success_message', 'Item has been Saved For Later!');
     }
+
+    public function records(){
+        return Cart::content()->map(function ($item) {
+            return [
+                'name' => $item->name,
+                'quantity' => $item->qty,
+                'price' => $item->price
+            ];
+        })->values()->toJson();
+    }
 }

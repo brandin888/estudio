@@ -12,7 +12,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    </head>
+    <script src="{{ asset('js/app.js') }}"></script>
+</head>
 <body>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
