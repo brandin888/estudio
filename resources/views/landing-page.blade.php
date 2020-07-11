@@ -840,7 +840,7 @@ a {
                         </div>
                     </div> <!-- end hero-copy -->
 
-                  
+                  <example-component> </example-component>
                 </div> <!-- end hero -->
             </header>
 
