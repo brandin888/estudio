@@ -1104,7 +1104,7 @@ ham.addEventListener('click', function () {
 </script>
 
 <script type="text/javascript">
-  
+  console.log("entra aqui");
   import { VueFlux, Transitions } from 'vue-flux';
 import 'vue-flux/dist/vue-flux.css';
 
