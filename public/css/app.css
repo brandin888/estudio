@@ -157,7 +157,7 @@ a:visited {
 }
 
 a:hover {
-  /* color: #878787; */
+  color: var(--primary);
 }
 
 .logo a {
@@ -187,10 +187,14 @@ img {
   max-width: 1200px;
 }
 
+.home {
+  font-size: 24px;
+}
+
 body {
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 300;
+  font-family: 'Annie Use Your Telescope', cursive;
+  /* font-size: 24px; */
+  font-weight: 700;
   line-height: 1.6;
   background-color:#F5F5F5;
 }
@@ -202,7 +206,7 @@ h4,
 h5,
 .product-section-subtitle,
 .product-section-price {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: 'Annie Use Your Telescope', cursive;
   font-weight: bold;
 }
 .cart-totals {
@@ -286,7 +290,7 @@ strong {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  /* color: white; */
 }
 
 .button {

@@ -7,6 +7,7 @@ Route::get('/shop/{product}', 'ShopController@show')->name('shop.show');
 
 // Route::get('/password', 'SearchController@reset')->name('password');
 Route::get('/cart', 'CartController@index')->name('cart.index');
+Route::get('/cart/records', 'CartController@records');
 Route::post('/cart/{product}', 'CartController@store')->name('cart.store');
 Route::patch('/cart/{product}', 'CartController@update')->name('cart.update');
 Route::delete('/cart/{product}', 'CartController@destroy')->name('cart.destroy');

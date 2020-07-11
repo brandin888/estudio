@@ -17,6 +17,7 @@ window.Vue = require('vue');
  */
 Vue.component('example', require('./components/Example.vue').default);
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('cart', require('./components/Cart.vue').default);
 // Vue.component('blog-posts', require('./components/BlogPosts').default);
 
 const app = new Vue({

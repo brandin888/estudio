@@ -767,7 +767,8 @@ a {
         <title>El mayorista</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="{{ asset('css/all.css?v=1.1') }}" rel="stylesheet"> <!--load all styles -->
 
@@ -814,11 +815,7 @@ a {
         /></noscript>
         <!-- End Facebook Pixel Code -->
     </head>
-    <body style="background-color: white; 
-        background-repeat: no-repeat;
-         background-size: 100% 100%;
-          z-index: -1;
-        ">
+    <body style="background-image: url('http://localhost:8020/aletoys/public/img/background.svg');background-repeat: no-repeat; background-size: 1706px 3324px; background-position-y: calc(-0.54px);">
 
         <!-- Load Whatsapp -->
         <div>
@@ -856,7 +853,7 @@ a {
        <!-- Your Chat Plugin code -->
 
       
-        <div id="app" >
+        <div id="app" class="home" style="background-color: rgba(255, 255, 255, 0.84);">
             <header class="with-background" style="background-image: url('img/parallax/parallax9.jpg'); background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -929,11 +926,11 @@ a {
   <ul class="nav-items nav-level-1">
     <li class="nav-item">
       <a class="nav-link" href="{{ url('/') }}/cart">
-        Carrito  @if (Cart::instance('default')->count() > 0)
-    <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
-    @endif
+        Carrito  
+      @if (Cart::instance('default')->count() > 0)
+      <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
+      @endif
       </a>
-
     </li>
     
     <li class="nav-item nav-expand">

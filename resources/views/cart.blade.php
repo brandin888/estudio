@@ -30,7 +30,7 @@
         <div>
             <div class="d-flex align-items-center">
                 <i style="font-size:20px" class="fa fa-reply mr-2"></i>
-                <a class="font-weight-bold" style="text-decoration:none;font-size:16px; color: white" href="{{ route('shop.index') }}">Seguir comprando</a>
+                <a class="font-weight-bold" style="text-decoration:none;font-size:16px" href="{{ route('shop.index') }}">Seguir comprando</a>
             </div>
         </div>
     </div>
