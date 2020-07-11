@@ -794,9 +794,7 @@ a {
     <body style="background-image: url('http://localhost:8020/aletoys/public/img/background.svg');background-repeat: no-repeat; background-size: 1706px 3324px; background-position-y: calc(-0.54px);">
 
         <!-- Load Whatsapp -->
-          <vue-flux
-   >
-</vue-flux>
+          <vue-flux></vue-flux>
 
 <button @click="$refs.slider.showImage('next')">NEXT</button>
         <div>
