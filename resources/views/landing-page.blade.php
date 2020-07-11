@@ -835,7 +835,14 @@ a {
                         </div>
                     </div> <!-- end hero-copy -->
 
-                    
+                    <vue-flux
+   :options="fluxOptions"
+   :images="fluxImages"
+   :transitions="fluxTransitions"
+   ref="slider">
+</vue-flux>
+
+<button @click="$refs.slider.showImage('next')">NEXT</button>
                 </div> <!-- end hero -->
             </header>
 
