@@ -20,23 +20,16 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('vue-flux', require('./components/VueFlux.vue').default);
+//Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-<<<<<<< HEAD
 
 const app = new Vue({
     el: '#app',
-=======
-Vue.component('example', require('./components/Example.vue').default);
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('cart', require('./components/Cart.vue').default);
-// Vue.component('blog-posts', require('./components/BlogPosts').default);
-
-const app = new Vue({
-    el: '#app'
->>>>>>> a4e5ffbf5dd3798e59f84de4820ae6a8b7326b0d
 });
