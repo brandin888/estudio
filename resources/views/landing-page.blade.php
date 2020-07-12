@@ -843,8 +843,6 @@ a {
             </header>
 
            <div class="menu__responsive">
-
-
   <div class="logo__responsive">
     <a href="{{ url('/') }}/"> <span class="cart-count"><span style="color:#e18604;  font-size: 25px; font-weight: bold"> El Mayorista</span></span></a>
   </div>
@@ -855,14 +853,7 @@ a {
     @endif
     </a>
   </li>
-<vue-flux
-   :options="fluxOptions"
-   :images="fluxImages"
-   :transitions="fluxTransitions"
-   ref="slider">
-</vue-flux>
 
-<button @click="$refs.slider.showImage('next')">NEXT</button>
 
 
     {{-- @foreach($items as $menu_item)
@@ -1105,30 +1096,6 @@ const ham = document.getElementById('menu-icon-shape');
 ham.addEventListener('click', function () {
   document.body.classList.toggle('nav-is-toggled');
 });
-</script>
-<script type="text/javascript">
-  import { VueFlux, Transitions } from 'vue-flux';
-import 'vue-flux/dist/vue-flux.css';
-
-export default {
-   components: {
-      'vue-flux': VueFlux
-   },
-
-   data: () => ({
-      fluxOptions: {
-         autoplay: true
-      },
-      fluxImages: [
-         'URL1',
-         'URL2',
-         'URL3'
-      ],
-      fluxTransitions: {
-         transitionTurn3d: Transitions.transitionTurn3d
-      }
-   })
-}
 </script>
 
 
