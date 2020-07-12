@@ -15,7 +15,7 @@
 }
 </style>
 
-<div class="breadcrumbs " style="background: linear-gradient(to right, #007cbf 0%, #01579b8f 50%, #007fe2 100%);">
+<div class="breadcrumbs " >
     <div class="breadcrumbs-container container">
         <div style="color: white;">
             {{ $slot }}

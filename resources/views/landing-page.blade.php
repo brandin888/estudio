@@ -757,6 +757,94 @@ a {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
 }
+
+
+
+
+
+.carousel {
+  top: 100px;
+  position: relative;
+  width: 100%;
+  height: 50em;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+.carousel[data-slide="1"] {
+  transform: rotateY(0deg);
+}
+.carousel[data-slide="2"] {
+  transform: rotateY(-90deg);
+}
+.carousel[data-slide="3"] {
+  transform: rotateY(-180deg);
+}
+.carousel[data-slide="4"] {
+  transform: rotateY(-270deg);
+}
+.slides {
+  position: absolute;
+  width: 100%;
+  
+  background: white;
+  height: 400px;
+}
+.slides img {
+  width: 100%;
+  height: 400px;
+}
+.back, .slides:nth-child(3) {
+  transform: translateZ(-25em) rotateY(180deg);
+}
+.right, .slides:nth-child(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+.left, .slides:nth-child(4) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+.front, .slides:nth-child(1) {
+  transform: translateZ(25em);
+}
+.next, .prev {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 6em;
+  margin-top: -2.5em;
+  border-radius: 3px;
+  background: #212121;
+  text-align: center;
+  line-height: 3;
+  letter-spacing: 5px;
+  color: white;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.prev:hover {
+  background:  #e60023;
+}
+.prev {
+  left: 0;
+}
+.next:hover {
+  background:  #e60023;
+}
+.cf:before, .slides:before,
+.cf:after,
+.slides:after {
+  content: " ";
+  display: table;
+}
+.cf:after, .slides:after {
+  clear: both;
+}
+.cf, .slides {
+  *zoom: 1;
+}
+
 </style>
 
 
@@ -777,7 +865,7 @@ a {
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css?v=1.4') }}">
+        <link rel="stylesheet" href="{{ asset('css/app.css?v=1.5') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.4') }}">
         <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
 
@@ -786,16 +874,6 @@ a {
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
-         
-
-
-
-
-
-
-       <!-- Facebook Pixel Code -->
-      
-        <!-- End Facebook Pixel Code -->
     </head>
     <body style="background-color: white; 
         background-repeat: no-repeat;
@@ -826,23 +904,39 @@ a {
 
         <div id="app" class="home" style="background-color: rgba(255, 255, 255, 0.84);">
 
+            <header >
+                <div class="top-nav " style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}'); position: fixed;z-index: 1;width: 100%" >
+                   <div ><img src="{{ asset('img/diseño/logoweb.png') }}" style=" width: 150px; padding-left: 30px"></div>
+                    
+                    @component('components.breadcrumbs')
+        
+    @endcomponent
 
-            <header class="with-background" style="background-image: url('img/parallax/parallax9.jpg'); background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;">
-                <div class="top-nav container">
-                    <div class="top-nav-left">
-                        <div class="logo">El mayorista</div>
-                        {{ menu('main', 'partials.menus.main') }}
-                    </div>
                     <div class="top-nav-right">
                         @include('partials.menus.main-right')
                     </div>
                 </div> <!-- end top-nav -->
+                <div >
+                  <div class="carousel" data-slide="1">
+                    <div class="slides">
+                      <img src="https://picsum.photos/700/700?random=1" />
+                    </div>
+                    <div class="slides">
+                      <img src="https://picsum.photos/700/700?random=2" />
+                    </div>
+                    <div class="slides">
+                      <img src="https://picsum.photos/700/700?random=3" />
+                    </div>
+                    <div class="slides">
+                      <img src="https://picsum.photos/700/700?random=4" />
+                    </div>
+                </div>
+  <div class="next">NEXT &#8680;</div>
+  <div class="prev">&#8678; PREV</div>
+</div>
                 <div class="hero container"  >
                     <div class="hero-copy">
-                        <h1>El Mayorista</h1>
+                        <h1>Aletoysi</h1>
                         <h2>Ofrecemos productos variados para el hogar.</h2>
                         <div class="hero-buttons" style="padding-top: 20px">
                             <a href="{{ url('/') }}/shop" class="button button-white">Tienda</a>
@@ -914,17 +1008,23 @@ a {
                 <h5 class="mt-2">Advances one slide at a time</h5>
             </div>
            <div class="menu__responsive">
-            <div class="logo__responsive">
-              <a href="{{ url('/') }}/"> <span class="cart-count"><span style="color:#e18604;  font-size: 25px; font-weight: bold"> El Mayorista</span></span></a>
-            </div>
-      <div class="carrito_top">
-        <li class="nav-item"><a class="navbar__link" href="{{ route('cart.index') }}"><i class="fas fa-shopping-cart"></i>
-        @if (Cart::instance('default')->count() > 0)
-        <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
-        @endif
-        </a>
-        </li>
-        {{-- @foreach($items as $menu_item)
+
+  <div class="logo__responsive">
+    <a href="{{ url('/') }}/"> <span class="cart-count"><span style="color:#e18604;  font-size: 25px; font-weight: bold"> Aletoysi</span></span></a>
+  </div>
+
+  <div class="carrito_top">
+    <li class="nav-item"><a class="navbar__link" href="{{ route('cart.index') }}"><i class="fas fa-shopping-cart"></i>
+    @if (Cart::instance('default')->count() > 0)
+    <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
+    @endif
+    </a>
+  </li>
+
+
+
+    {{-- @foreach($items as $menu_item)
+
         <li>
             <a href="{{ $menu_item->link() }}">
                 {{ $menu_item->title }}
@@ -1134,6 +1234,28 @@ ham.addEventListener('click', function () {
   document.body.classList.toggle('nav-is-toggled');
 });
 </script>
+
+<script type="text/javascript">
+
+/** Code By Webdevtrick ( https://webdevtrick.com ) **/
+var $carousel = $('.carousel'),
+    currentSlide, nextSlide;
+ 
+$('.next').click(function() {
+  currentSlide = $carousel.attr('data-slide');
+  nextSlide = +currentSlide === 4 ? 1 : +currentSlide + 1;
+  $carousel.attr('data-slide', nextSlide);
+});
+ 
+$('.prev').click(function() {
+  currentSlide = $carousel.attr('data-slide');
+  nextSlide = +currentSlide === 1 ? 4 : +currentSlide - 1;
+  $carousel.attr('data-slide', nextSlide);
+});
+</script>
+    </body>
+</html>
+
 
 <script>
 $('#recipeCarousel').carousel({

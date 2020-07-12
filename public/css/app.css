@@ -276,8 +276,8 @@ strong {
 
 .breadcrumbs {
   
-  border-bottom: 1px solid #CDCDCD;
-  padding: 24px 0;
+  height: 80px;
+  padding-top: 20px;
   font-weight: bold;
 }
 
@@ -941,13 +941,13 @@ header.with-background .hero .button {
 }
 
 header {
-  background: #535353;
+  ;
 }
 
 header .top-nav {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 10px 0;
   letter-spacing: 1.5px;
 }
 
