@@ -767,15 +767,21 @@ a {
         <title>El mayorista</title>
 
         <!-- Fonts -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet"> -->
-        <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="{{ asset('css/all.css?v=1.1') }}" rel="stylesheet"> <!--load all styles -->
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css?v=1.4') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.4') }}">
         <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
+
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
          <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -815,7 +821,11 @@ a {
         /></noscript>
         <!-- End Facebook Pixel Code -->
     </head>
-    <body style="background-image: url('http://localhost:8020/aletoys/public/img/background.svg');background-repeat: no-repeat; background-size: 1706px 3324px; background-position-y: calc(-0.54px);">
+    <body style="background-color: white; 
+        background-repeat: no-repeat;
+         background-size: 100% 100%;
+          z-index: -1;
+        ">
 
         <!-- Load Whatsapp -->
         <div>
@@ -853,7 +863,7 @@ a {
        <!-- Your Chat Plugin code -->
 
       
-        <div id="app" class="home" style="background-color: rgba(255, 255, 255, 0.84);">
+        <div id="app" >
             <header class="with-background" style="background-image: url('img/parallax/parallax9.jpg'); background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -880,22 +890,78 @@ a {
                     
                 </div> <!-- end hero -->
             </header>
-
+            <div class="container text-center my-3">
+                <h2 class="font-weight-light">Bootstrap 4 - Multi Item Carousel</h2>
+                <div class="row mx-auto my-auto">
+                    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner w-100" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-4">
+                                    <div class="card card-body">
+                                        <img class="img-fluid" src="http://placehold.it/380?text=1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="card card-body">
+                                        <img class="img-fluid" src="http://placehold.it/380?text=2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="card card-body">
+                                        <img class="img-fluid" src="http://placehold.it/380?text=3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="card card-body">
+                                        <img class="img-fluid" src="http://placehold.it/380?text=4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="card card-body">
+                                        <img class="img-fluid" src="http://placehold.it/380?text=5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="card card-body">
+                                        <img class="img-fluid" src="http://placehold.it/380?text=6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <h5 class="mt-2">Advances one slide at a time</h5>
+            </div>
            <div class="menu__responsive">
-  <div class="logo__responsive">
-    <a href="{{ url('/') }}/"> <span class="cart-count"><span style="color:#e18604;  font-size: 25px; font-weight: bold"> El Mayorista</span></span></a>
-  </div>
-  <div class="carrito_top">
-    <li class="nav-item"><a class="navbar__link" href="{{ route('cart.index') }}"><i class="fas fa-shopping-cart"></i>
-    @if (Cart::instance('default')->count() > 0)
-    <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
-    @endif
-    </a>
-  </li>
-
-
-
-    {{-- @foreach($items as $menu_item)
+            <div class="logo__responsive">
+              <a href="{{ url('/') }}/"> <span class="cart-count"><span style="color:#e18604;  font-size: 25px; font-weight: bold"> El Mayorista</span></span></a>
+            </div>
+      <div class="carrito_top">
+        <li class="nav-item"><a class="navbar__link" href="{{ route('cart.index') }}"><i class="fas fa-shopping-cart"></i>
+        @if (Cart::instance('default')->count() > 0)
+        <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
+        @endif
+        </a>
+        </li>
+        {{-- @foreach($items as $menu_item)
         <li>
             <a href="{{ $menu_item->link() }}">
                 {{ $menu_item->title }}
@@ -906,108 +972,77 @@ a {
                 @endif
             </a>
         </li>
-    @endforeach --}}
-    <!-- <a class="navbar__link" href="{{ url('/')}}/mi-carrito"><i class="fas fa-shopping-cart"></i><span class="pl-2">(0)</span></a> -->
-  </div>
-  <div id="menu-icon-shape">
-    <div id="menu-icon">
-      <div id="top"></div>
-      <div id="middle"></div>
-      <div id="bottom"></div>
+        @endforeach --}}
+        <!-- <a class="navbar__link" href="{{ url('/')}}/mi-carrito"><i class="fas fa-shopping-cart"></i><span class="pl-2">(0)</span></a> -->
+      </div>
+      <div id="menu-icon-shape">
+        <div id="menu-icon">
+          <div id="top"></div>
+          <div id="middle"></div>
+          <div id="bottom"></div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+    <nav class="nav-drill">
+      <ul class="nav-items nav-level-1">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/') }}/cart">
+            Carrito  @if (Cart::instance('default')->count() > 0)
+        <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
+        @endif
+          </a>
+        </li>
+        <li class="nav-item nav-expand">
+          <a class="nav-link nav-expand-link" href="#">
+            Categorías
+          </a>
+          <ul class="nav-items nav-expand-content">
+          @foreach($categories as $category)
+                <li  class="nav-item"><a class="nav-link" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
+          <li>
+          @endforeach
+          </ul>
+        </li>
+        @guest
+        <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Registrarse</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Iniciar Sesión</a></li>
+        @else
+        <li class="nav-item nav-expand">
+            <a class="nav-link nav-expand-link" href="#">Mi cuenta</a>
 
+            <ul class="nav-items nav-expand-content">
+          
+                <li  class="nav-item"><a class="nav-link" href="{{ route('users.edit') }}">Mi Perfil</a></li>
+                <li>
 
-
-
-
-<nav class="nav-drill">
-  <ul class="nav-items nav-level-1">
-    <li class="nav-item">
-      <a class="nav-link" href="{{ url('/') }}/cart">
-        Carrito  
-      @if (Cart::instance('default')->count() > 0)
-      <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
-      @endif
-      </a>
-    </li>
-    
-    <li class="nav-item nav-expand">
-      <a class="nav-link nav-expand-link" href="#">
-        Categorías
-      </a>
-      <ul class="nav-items nav-expand-content">
-      @foreach($categories as $category)
-            <li  class="nav-item"><a class="nav-link" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
-      <li>
-      @endforeach
-      
-        
-       
-        
+                <li  class="nav-item"><a class="nav-link" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
+                <li>
+          </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                Salir Sesión
+            </a>
+        </li>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+        </form>
+        @endguest
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/') }}/contacto">
+            Contáctanos
+          </a>
+        </li>
       </ul>
-    </li>
-    
-
-    @guest
-    <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Registrarse</a></li>
-    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Iniciar Sesión</a></li>
-    @else
-    <li class="nav-item nav-expand">
-        <a class="nav-link nav-expand-link" href="#">Mi cuenta</a>
-
-        <ul class="nav-items nav-expand-content">
-      
-            <li  class="nav-item"><a class="nav-link" href="{{ route('users.edit') }}">Mi Perfil</a></li>
-            <li>
-
-            <li  class="nav-item"><a class="nav-link" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
-            <li>
-      
-        
-
-
-       
-        
-      </ul>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link" href="{{ route('logout') }}"
-            onclick="event.preventDefault();
-                     document.getElementById('logout-form').submit();">
-            Salir Sesión
-        </a>
-    </li>
-
-    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-        {{ csrf_field() }}
-    </form>
-    @endguest
-
-    
-
-    <li class="nav-item">
-      <a class="nav-link" href="{{ url('/') }}/contacto">
-        Contáctanos
-      </a>
-    </li>
-    
-  </ul>
-</nav>
-
-
-
-
- <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 250px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn; padding-top: 18px;"><div class="row"><div class="col-lg-10 col-lg-offset-1 text-center">
-<i class="icon icon-heading ion-pie-graph size-96"></i>
-<br><h2>El Mayorista</h2><p class="lead">
-Somos una empresa <strong>Mayorista</strong> de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en <a style="color: #01579b ; font-weight: bold;" href="{{ url('/') }}/contacto"> Lima Cercado </a>, visita nuestra página de  <a style="color: #01579b ; font-weight: bold;" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/" target="_blank"> Facebook </a>.</p></div></div></div>
-</section>           
-            
-
-             @component('components.breadcrumbs')
+    </nav>
+    <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 250px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn; padding-top: 18px;"><div class="row"><div class="col-lg-10 offset-lg-1 text-center">
+    <i class="icon icon-heading ion-pie-graph size-96"></i>
+    <br><h2>El Mayorista</h2><p class="lead">
+    Somos una empresa <strong>Mayorista</strong> de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en <a style="color: #01579b ; font-weight: bold;" href="{{ url('/') }}/contacto"> Lima Cercado </a>, visita nuestra página de  <a style="color: #01579b ; font-weight: bold;" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/" target="_blank"> Facebook </a>.</p></div></div></div>
+    </section>   
+    @component('components.breadcrumbs')
         <a href="/" style="color: white">Inicio</a>
         <i class="fa fa-chevron-right breadcrumb-separator" style="color: white"></i>
         <span style="color: white">Tienda</span>
@@ -1136,7 +1171,67 @@ ham.addEventListener('click', function () {
   document.body.classList.toggle('nav-is-toggled');
 });
 </script>
+<script>
+$('#recipeCarousel').carousel({
+  interval: 10000
+})
+
+$('.carousel .carousel-item').each(function(){
+    var minPerSlide = 3;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<minPerSlide;i++) {
+        next=next.next();
+        if (!next.length) {
+        	next = $(this).siblings(':first');
+      	}
+        
+        next.children(':first-child').clone().appendTo($(this));
+      }
+});
+
+
+</script>
+<style>
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+
+</style>
     </body>
 </html>
-
-
