@@ -952,21 +952,25 @@ a {
                 <div class="row mx-auto my-auto">
                     <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
                         <div class="carousel-inner w-100" role="listbox">
-                         
-                            <div class="carousel-item active">
+                          <div class="carousel-item active">
                                 <div class="col-md-3S">
                                    
                                         <img class="img-fluid" src="{{ asset('img/diseño/muñecas.png') }}">
                                     
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                         @foreach($categories as $category)
+                         <div class="carousel-item">
                                 <div class="col-md-3S">
                                     
-                                        <img class="img-fluid" src="{{ asset('img/diseño/accion.png') }}">
-                                    
+                                        <img class="img-fluid" src="{{ categoryImage($category->image) }}">
+                                     
                                 </div>
                             </div>
+                              
+                          @endforeach
+                            
+                            
                             <div class="carousel-item">
                                 <div class="col-md-3S">
                                     
