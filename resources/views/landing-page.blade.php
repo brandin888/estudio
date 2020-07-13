@@ -952,7 +952,7 @@ a {
                 <div class="row mx-auto my-auto">
                     <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
                         <div class="carousel-inner w-100" role="listbox">
-                          <div class="carousel-item active">
+                          <div class="carousel-item active" >
                                 <div class="col-md-3S">
                                    
                                         <img class="img-fluid" src="{{ asset('img/diseño/muñecas.png') }}">
@@ -962,8 +962,8 @@ a {
                          @foreach($categories as $category)
                          <div class="carousel-item">
                                 <div class="col-md-3S">
-                                    
-                                        <img class="img-fluid" src="{{ categoryImage($category->image) }}">
+                                      <a href="{{ route('shop.index', ['category' => $category->slug]) }}"><img class="img-fluid" src="{{ categoryImage($category->image) }}"></a>
+                                        
                                      
                                 </div>
                             </div>
@@ -971,34 +971,7 @@ a {
                           @endforeach
                             
                             
-                            <div class="carousel-item">
-                                <div class="col-md-3S">
-                                    
-                                        <img class="img-fluid" src="{{ asset('img/diseño/didacticos.png') }}">
-                                    
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-3S">
-                                    
-                                        <img class="img-fluid" src="{{ asset('img/diseño/alairelibre.png') }}">
-                                    
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-3S">
-                                    <div class="card card-body">
-                                        <img class="img-fluid" src="http://placehold.it/380?text=5">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-3S">
-                                    <div class="card card-body">
-                                        <img class="img-fluid" src="http://placehold.it/380?text=6">
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                         <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
