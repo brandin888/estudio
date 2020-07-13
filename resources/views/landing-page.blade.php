@@ -762,7 +762,7 @@ a {
 
 
 
-.carousel {
+.carousel2 {
   top: 100px;
   position: relative;
   width: 100%;
@@ -771,16 +771,16 @@ a {
   transform-style: preserve-3d;
   transition: transform 0.5s ease;
 }
-.carousel[data-slide="1"] {
+.carousel2[data-slide="1"] {
   transform: rotateY(0deg);
 }
-.carousel[data-slide="2"] {
+.carousel2[data-slide="2"] {
   transform: rotateY(-90deg);
 }
-.carousel[data-slide="3"] {
+.carousel2[data-slide="3"] {
   transform: rotateY(-180deg);
 }
-.carousel[data-slide="4"] {
+.carousel2[data-slide="4"] {
   transform: rotateY(-270deg);
 }
 .slides {
@@ -810,27 +810,28 @@ a {
 }
 .next, .prev {
   position: absolute;
-  top: 50%;
+  top: 70%;
   right: 0;
   width: 6em;
   margin-top: -2.5em;
   border-radius: 3px;
-  background: #212121;
+  background-color: transparent;
   text-align: center;
   line-height: 3;
   letter-spacing: 5px;
-  color: white;
+  color: #dc84b3;
   transform: translateY(-50%);
   cursor: pointer;
+  font-size: 60px;
 }
 .prev:hover {
-  background:  #e60023;
+  color: black;
 }
 .prev {
   left: 0;
 }
 .next:hover {
-  background:  #e60023;
+  color: black;
 }
 .cf:before, .slides:before,
 .cf:after,
@@ -844,6 +845,16 @@ a {
 .cf, .slides {
   *zoom: 1;
 }
+.col-md-3S{
+      flex: 0 0 20%;
+    max-width: 20%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: transparent;
+}
+
 
 </style>
 
@@ -875,7 +886,7 @@ a {
 
 
     </head>
-    <body style="background-color: white; 
+    <body style="background-image:url('{{ asset('img/background.svg') }}') ; 
         background-repeat: no-repeat;
          background-size: 100% 100%;
           z-index: -1;
@@ -906,7 +917,7 @@ a {
 
             <header >
                 <div class="top-nav " style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}'); position: fixed;z-index: 1;width: 100%" >
-                   <div ><img src="{{ asset('img/diseño/logoweb.png') }}" style=" width: 150px; padding-left: 30px"></div>
+                   <div ><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 150px; padding-left: 30px"></div>
                     
                     @component('components.breadcrumbs')
         
@@ -917,7 +928,7 @@ a {
                     </div>
                 </div> <!-- end top-nav -->
                 <div >
-                  <div class="carousel" data-slide="1">
+                  <div class="carousel2" data-slide="1">
                     <div class="slides">
                       <img src="https://picsum.photos/700/700?random=1" />
                     </div>
@@ -931,64 +942,54 @@ a {
                       <img src="https://picsum.photos/700/700?random=4" />
                     </div>
                 </div>
-  <div class="next">NEXT &#8680;</div>
-  <div class="prev">&#8678; PREV</div>
+  <div class="next"> &#8680;</div>
+  <div class="prev">&#8678; </div>
 </div>
-                <div class="hero container"  >
-                    <div class="hero-copy">
-                        <h1>Aletoysi</h1>
-                        <h2>Ofrecemos productos variados para el hogar.</h2>
-                        <div class="hero-buttons" style="padding-top: 20px">
-                            <a href="{{ url('/') }}/shop" class="button button-white">Tienda</a>
-                            <a href="{{ url('/') }}/contacto" class="button button-white">Contáctanos</a>
-                        </div>
-                    </div> <!-- end hero-copy -->
-
-                  
-                </div> <!-- end hero -->
+                
             </header>
             <div class="container text-center my-3">
-                <h2 class="font-weight-light">Bootstrap 4 - Multi Item Carousel</h2>
+                <h2 class="font-weight-light">Categorías</h2>
                 <div class="row mx-auto my-auto">
                     <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
                         <div class="carousel-inner w-100" role="listbox">
+                         
                             <div class="carousel-item active">
-                                <div class="col-md-4">
-                                    <div class="card card-body">
-                                        <img class="img-fluid" src="http://placehold.it/380?text=1">
-                                    </div>
+                                <div class="col-md-3S">
+                                   
+                                        <img class="img-fluid" src="{{ asset('img/diseño/muñecas.png') }}">
+                                    
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="col-md-4">
-                                    <div class="card card-body">
-                                        <img class="img-fluid" src="http://placehold.it/380?text=2">
-                                    </div>
+                                <div class="col-md-3S">
+                                    
+                                        <img class="img-fluid" src="{{ asset('img/diseño/accion.png') }}">
+                                    
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="col-md-4">
-                                    <div class="card card-body">
-                                        <img class="img-fluid" src="http://placehold.it/380?text=3">
-                                    </div>
+                                <div class="col-md-3S">
+                                    
+                                        <img class="img-fluid" src="{{ asset('img/diseño/didacticos.png') }}">
+                                    
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="col-md-4">
-                                    <div class="card card-body">
-                                        <img class="img-fluid" src="http://placehold.it/380?text=4">
-                                    </div>
+                                <div class="col-md-3S">
+                                    
+                                        <img class="img-fluid" src="{{ asset('img/diseño/alairelibre.png') }}">
+                                    
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="col-md-4">
+                                <div class="col-md-3S">
                                     <div class="card card-body">
                                         <img class="img-fluid" src="http://placehold.it/380?text=5">
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="col-md-4">
+                                <div class="col-md-3S">
                                     <div class="card card-body">
                                         <img class="img-fluid" src="http://placehold.it/380?text=6">
                                     </div>
@@ -1102,8 +1103,8 @@ a {
     </nav>
     <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 250px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn; padding-top: 18px;"><div class="row"><div class="col-lg-10 offset-lg-1 text-center">
     <i class="icon icon-heading ion-pie-graph size-96"></i>
-    <br><h2>El Mayorista</h2><p class="lead">
-    Somos una empresa <strong>Mayorista</strong> de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en <a style="color: #01579b ; font-weight: bold;" href="{{ url('/') }}/contacto"> Lima Cercado </a>, visita nuestra página de  <a style="color: #01579b ; font-weight: bold;" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/" target="_blank"> Facebook </a>.</p></div></div></div>
+    <br><h2>Aletoysi</h2><p class="lead">
+    Somos  <strong> Aletoysi</strong> una juguetería, hacemos ventas por caja a todo Perú,  puedes encontrarnos en <a style="color: #01579b ; font-weight: bold;" href="{{ url('/') }}/contacto"> Lima Cercado </a>, visita nuestra página de  <a style="color: #01579b ; font-weight: bold;" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/" target="_blank"> Facebook </a>.</p></div></div></div>
     </section>   
     @component('components.breadcrumbs')
         <a href="/" style="color: white">Inicio</a>
@@ -1238,7 +1239,7 @@ ham.addEventListener('click', function () {
 <script type="text/javascript">
 
 /** Code By Webdevtrick ( https://webdevtrick.com ) **/
-var $carousel = $('.carousel'),
+var $carousel = $('.carousel2'),
     currentSlide, nextSlide;
  
 $('.next').click(function() {
@@ -1263,7 +1264,7 @@ $('#recipeCarousel').carousel({
 })
 
 $('.carousel .carousel-item').each(function(){
-    var minPerSlide = 3;
+    var minPerSlide = 10;
     var next = $(this).next();
     if (!next.length) {
     next = $(this).siblings(':first');
@@ -1304,12 +1305,12 @@ $('.carousel .carousel-item').each(function(){
     
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
-      transform: translateX(33.333%);
+      transform: translateX(20%);
     }
     
     .carousel-inner .carousel-item-left.active, 
     .carousel-inner .carousel-item-prev {
-      transform: translateX(-33.333%);
+      transform: translateX(-20%);
     }
 }
 
