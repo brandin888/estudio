@@ -23,7 +23,7 @@
                 {{ csrf_field() }}
                 <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="Correo electrónico" required autofocus>
                 <div class="login-container">
-                    <button type="submit" class="auth-button">Enviar enlace de reinicio de contraseña</button>
+                    <button type="submit" class="auth-button">Enviar enlace</button>
                 </div>
 
 

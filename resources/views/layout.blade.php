@@ -47,7 +47,7 @@
     </head>
 
 
-<body class="@yield('body-class', '')" >
+<body class="@yield('body-class', '')" style="background:#ffffff">
     <!-- Load Whatsapp -->
     <div>
       <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51916284386&Hola!&nbsp;ventas&nbsp;por&nbsp;mayor">

@@ -1,5 +1,4 @@
 {
-
   "private": true,
   "scripts": {
     "dev": "npm run development",
@@ -32,5 +31,4 @@
     "sweetalert": "^2.1.2",
     "sweetalert2": "^9.15.1"
   }
-
 }
