@@ -4,6 +4,7 @@
 
 @section('extra-css')
 <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
+
 <style scoped>
 @media (max-width: 700px) {
   .breadcrumbs .breadcrumbs-container {
@@ -16,25 +17,9 @@
 
 @section('content')
 
-<div class="breadcrumbs" style="background: linear-gradient(to right, #007cbf 0%, #01579b8f 50%, #007fe2 100%);">
-    <div class="breadcrumbs-container container">
-        <div>
-            <div class="d-flex align-items-center">
-                <i style="font-size:30px" class="fa fa-shopping-cart mr-2"></i>
-                <h2 class="mb-0">Mi Carrito</h2>
-            </div>
-        </div>
-        <div>
-            @include('partials.search')
-        </div>
-        <div>
-            <div class="d-flex align-items-center">
-                <i style="font-size:20px" class="fa fa-reply mr-2"></i>
-                <a class="font-weight-bold" style="text-decoration:none;font-size:16px" href="{{ route('shop.index') }}">Seguir comprando</a>
-            </div>
-        </div>
-    </div>
-</div>
+ @component('components.breadcrumbs')
+        
+    @endcomponent
 
 <div class="d-flex justify-content-center mt-3">
         
@@ -69,7 +54,7 @@
                                 <th scope="col">Producto</th>
                                 <th scope="col">Cantidad</th>
                                 <th scope="col">Precio</th>
-                                <th scope="col"></th>
+                                <th scope="col"> <a style="color: white" href="{{ route('shop.index') }}">Seguir comprando</a></th>
                                 </strong>
 
                                 </tr>

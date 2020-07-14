@@ -538,10 +538,7 @@ section#action, section#action-transparent {
   body {
     margin-top: 58px;
   }
- #aa-search-input{
-  width: 280px;
-
- }
+  
   header .top-nav {
     
     display: none;
@@ -925,10 +922,8 @@ a {
 
             <header >
                 <div class="top-nav " style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}'); position: fixed;z-index: 1;width: 100%" >
-                   <div ><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 150px; padding-left: 30px"></div>
-                    <div>@component('components.breadcrumbs')
-        
-    @endcomponent</div>
+                   <div > <a href="/"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 150px; padding-left: 30px"></a></div>
+                    <div></div>
                     
 
                     <div class="top-nav-right">
@@ -1094,11 +1089,11 @@ a {
       </ul>
     </nav>
     
-    @component('components.breadcrumbs')
-        <a href="/" style="color: white">Inicio</a>
-        <i class="fa fa-chevron-right breadcrumb-separator" style="color: white"></i>
-        <span style="color: white">Tienda</span>
-    @endcomponent
+    <div>@component('components.breadcrumbs')
+        
+    @endcomponent</div>
+
+
      <div class="container">
         @if (session()->has('success_message'))
             <div class="alert alert-success">

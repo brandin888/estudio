@@ -10,9 +10,18 @@
 
 @media only screen and (max-width: 992px) {
 
+.breadcrumbs {
+ top: 5px;
+}
+
+
   .carousel2, .next ,.prev{
     display: none;
   }
+ 
+ .aa-input-search:focus {
+    width: 200px;
+    }
 
   header.with-background .top-nav,
   header .top-nav {

@@ -172,9 +172,7 @@ section#action, section#action-transparent {
 @section('content')
 
     @component('components.breadcrumbs')
-        <a href="/">Inicio</a>
-        <i class="fa fa-chevron-right breadcrumb-separator"></i>
-        <span>Tienda</span>
+      
     @endcomponent
 
     <div class="container">

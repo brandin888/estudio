@@ -33,7 +33,8 @@
 }
 
 .menu__responsive .carrito_top a i {
-  color: #f99300;
+  color: #110041;
+  border-color: #110041;
 }
 
 .menu__responsive .carrito_top a span {
@@ -68,7 +69,7 @@
 #bottom {
   width: 100%;
   height: 2px;
-  background: #e18604;
+  background: #110041;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
@@ -364,9 +365,7 @@
   body {
     margin-top: 58px;
   }
- #aa-search-input{
-  width: 280px;
- }
+ 
 
   .menu__responsive {
     display: block;
@@ -576,58 +575,60 @@ a {
 }
 
 </style>
-<header class="blue darken-4">
+<header >
   
-    <div class="top-nav container ">
-      <div class="top-nav-left ">
-          <div class="logo"><a href="/">El Mayorista</a></div>
-          @if (! (request()->is('checkout') || request()->is('guestCheckout')))
-          {{ menu('main', 'partials.menus.main') }}
-          @endif
-      </div>
-      <div class="top-nav-right">
-          @if (! (request()->is('checkout') || request()->is('guestCheckout')))
-          @include('partials.menus.main-right')
-          @endif
-      </div>
-    </div> <!-- end top-nav -->
+    <div class="top-nav " style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}'); position: fixed;z-index: 1;width: 100%" >
+                   <div ><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 150px; padding-left: 30px"></div>
+                    <div></div>
+                    
+
+                    <div class="top-nav-right">
+                        @include('partials.menus.main-right')
+                    </div>
+                </div> <!-- end top-nav -->
 </header>
-<div class="menu__responsive">
-   <div class="logo__responsive">
-    <a href="{{ url('/') }}/"> <span class="cart-count"><span style="color: #e18604; font-size: 25px; font-weight: bold"> El Mayorista</span></span></a>
-  </div>
-  <div class="carrito_top">
-    <li class="nav-item"><a class="navbar__link" href="{{ route('cart.index') }}"><i class="fas fa-shopping-cart"></i>
-    @if (Cart::instance('default')->count() > 0)
-    <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
-    @endif
-    </a>
-  </li>
+ <div class="menu__responsive"  style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}');">
+
+              <div class="logo__responsive">
+                <a href="{{ url('/') }}/"> <span class="cart-count"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 100px; height: 45px"></span></a>
+
+              </div>
+             
+            <div class="carrito_top">
+
+              <li class="nav-item"><a class="navbar__link" href="{{ route('cart.index') }}"><i class="fas fa-shopping-cart"></i>
+              @if (Cart::instance('default')->count() > 0)
+              <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
+              @endif
+              </a>
+            </li>
 
 
 
-    {{-- @foreach($items as $menu_item)
-        <li>
-            <a href="{{ $menu_item->link() }}">
-                {{ $menu_item->title }}
-                @if ($menu_item->title === 'Cart')
-                    @if (Cart::instance('default')->count() > 0)
-                    <span class="cart-count"><span>{{ Cart::instance('default')->count() }}</span></span>
-                    @endif
-                @endif
-            </a>
-        </li>
-    @endforeach --}}
-    <!-- <a class="navbar__link" href="{{ url('/')}}/mi-carrito"><i class="fas fa-shopping-cart"></i><span class="pl-2">(0)</span></a> -->
-  </div>
-  <div id="menu-icon-shape">
-    <div id="menu-icon">
-      <div id="top"></div>
-      <div id="middle"></div>
-      <div id="bottom"></div>
+              {{-- @foreach($items as $menu_item)
+
+                  <li>
+                      <a href="{{ $menu_item->link() }}">
+                          {{ $menu_item->title }}
+                          @if ($menu_item->title === 'Cart')
+                              @if (Cart::instance('default')->count() > 0)
+                              <span class="cart-count"><span>{{ Cart::instance('default')->count() }}</span></span>
+                              @endif
+                          @endif
+                      </a>
+                  </li>
+                  @endforeach --}}
+                  <!-- <a class="navbar__link" href="{{ url('/')}}/mi-carrito"><i class="fas fa-shopping-cart"></i><span class="pl-2">(0)</span></a> -->
+                </div>
+                <div id="menu-icon-shape">
+
+                  <div id="menu-icon">
+                    <div id="top"></div>
+                    <div id="middle"></div>
+                    <div id="bottom"></div>
+                  </div>
+                </div>
     </div>
-  </div>
-</div>
 
 
 <!-- Overlay menu -->

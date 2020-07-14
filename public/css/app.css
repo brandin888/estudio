@@ -275,10 +275,12 @@ strong {
 }
 
 .breadcrumbs {
+  position: fixed;
   
   height: 80px;
   padding-top: 20px;
   font-weight: bold;
+  z-index:  10;
 }
 
 .breadcrumbs .breadcrumb-separator {
@@ -949,6 +951,7 @@ header .top-nav {
   justify-content: space-between;
   padding: 10px 0;
   letter-spacing: 1.5px;
+  top: 0px;
 }
 
 header .top-nav .logo {
