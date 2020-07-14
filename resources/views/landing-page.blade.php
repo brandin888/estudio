@@ -7,7 +7,7 @@
   }
   @media (max-width: 992px) {
     header {
-    height: 450px;
+    height: 120px;
 
   }
   }
@@ -206,7 +206,8 @@ section#action, section#action-transparent {
 }
 
 .menu__responsive .carrito_top a i {
-  color: #f99300;
+  color: #110041;
+  border-color: #110041;
 }
 
 .menu__responsive .carrito_top a span {
@@ -241,7 +242,7 @@ section#action, section#action-transparent {
 #bottom {
   width: 100%;
   height: 2px;
-  background: #e18604;
+  background: #110041;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
@@ -541,13 +542,20 @@ section#action, section#action-transparent {
   width: 280px;
 
  }
+  header .top-nav {
+    
+    display: none;
+  }
+ .top-nav-right{
+    display: none;
+ }
   #algolia-autocomplete-listbox-0 {
  
   width: 280px;
  }
 
   .menu__responsive {
-    display: block;
+    display: flex;
     -webkit-box-shadow: 0px 1px 10px #0000007a;
             box-shadow: 0px 1px 10px #0000007a;
   }
@@ -918,10 +926,10 @@ a {
             <header >
                 <div class="top-nav " style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}'); position: fixed;z-index: 1;width: 100%" >
                    <div ><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 150px; padding-left: 30px"></div>
-                    
-                    @component('components.breadcrumbs')
+                    <div>@component('components.breadcrumbs')
         
-    @endcomponent
+    @endcomponent</div>
+                    
 
                     <div class="top-nav-right">
                         @include('partials.menus.main-right')
@@ -930,23 +938,27 @@ a {
                 <div >
                   <div class="carousel2" data-slide="1">
                     <div class="slides">
-                      <img src="https://picsum.photos/700/700?random=1" />
+                      <img src="{{ asset('img/diseño/slider4.jpg') }}" />
                     </div>
                     <div class="slides">
-                      <img src="https://picsum.photos/700/700?random=2" />
+                      <img src="{{ asset('img/diseño/slider2.jpg') }}" />
                     </div>
                     <div class="slides">
-                      <img src="https://picsum.photos/700/700?random=3" />
+                      <img src="{{ asset('img/diseño/slider1.jpg') }}" />
                     </div>
-                    <div class="slides">
-                      <img src="https://picsum.photos/700/700?random=4" />
-                    </div>
+                    
                 </div>
   <div class="next"> &#8680;</div>
   <div class="prev">&#8678; </div>
 </div>
                 
             </header>
+
+            <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 250px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn; padding-top: 18px;"><div class="row"><div class="col-lg-10 offset-lg-1 text-center">
+    <i class="icon icon-heading ion-pie-graph size-96"></i>
+    <br><h2>Aletoysi</h2><p class="lead">
+    Somos  <strong> Aletoysi</strong> una juguetería, hacemos ventas por caja a todo Perú,  puedes encontrarnos en <a style="color: #01579b ; font-weight: bold;" href="{{ url('/') }}/contacto"> Lima Cercado </a>, visita nuestra página de  <a style="color: #01579b ; font-weight: bold;" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/" target="_blank"> Facebook </a>.</p></div></div></div>
+    </section>   
             <div class="container text-center my-3">
                 <h2 class="font-weight-light">Categorías</h2>
                 <div class="row mx-auto my-auto">
@@ -985,44 +997,47 @@ a {
                 </div>
                 <h5 class="mt-2">Advances one slide at a time</h5>
             </div>
-           <div class="menu__responsive">
+           <div class="menu__responsive"  style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}');">
 
-  <div class="logo__responsive">
-    <a href="{{ url('/') }}/"> <span class="cart-count"><span style="color:#e18604;  font-size: 25px; font-weight: bold"> Aletoysi</span></span></a>
-  </div>
+              <div class="logo__responsive">
+                <a href="{{ url('/') }}/"> <span class="cart-count"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 100px; height: 45px"></span></a>
 
-  <div class="carrito_top">
-    <li class="nav-item"><a class="navbar__link" href="{{ route('cart.index') }}"><i class="fas fa-shopping-cart"></i>
-    @if (Cart::instance('default')->count() > 0)
-    <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
-    @endif
-    </a>
-  </li>
+              </div>
+             
+            <div class="carrito_top">
+
+              <li class="nav-item"><a class="navbar__link" href="{{ route('cart.index') }}"><i class="fas fa-shopping-cart"></i>
+              @if (Cart::instance('default')->count() > 0)
+              <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
+              @endif
+              </a>
+            </li>
 
 
 
-    {{-- @foreach($items as $menu_item)
+              {{-- @foreach($items as $menu_item)
 
-        <li>
-            <a href="{{ $menu_item->link() }}">
-                {{ $menu_item->title }}
-                @if ($menu_item->title === 'Cart')
-                    @if (Cart::instance('default')->count() > 0)
-                    <span class="cart-count"><span>{{ Cart::instance('default')->count() }}</span></span>
-                    @endif
-                @endif
-            </a>
-        </li>
-        @endforeach --}}
-        <!-- <a class="navbar__link" href="{{ url('/')}}/mi-carrito"><i class="fas fa-shopping-cart"></i><span class="pl-2">(0)</span></a> -->
-      </div>
-      <div id="menu-icon-shape">
-        <div id="menu-icon">
-          <div id="top"></div>
-          <div id="middle"></div>
-          <div id="bottom"></div>
-        </div>
-      </div>
+                  <li>
+                      <a href="{{ $menu_item->link() }}">
+                          {{ $menu_item->title }}
+                          @if ($menu_item->title === 'Cart')
+                              @if (Cart::instance('default')->count() > 0)
+                              <span class="cart-count"><span>{{ Cart::instance('default')->count() }}</span></span>
+                              @endif
+                          @endif
+                      </a>
+                  </li>
+                  @endforeach --}}
+                  <!-- <a class="navbar__link" href="{{ url('/')}}/mi-carrito"><i class="fas fa-shopping-cart"></i><span class="pl-2">(0)</span></a> -->
+                </div>
+                <div id="menu-icon-shape">
+
+                  <div id="menu-icon">
+                    <div id="top"></div>
+                    <div id="middle"></div>
+                    <div id="bottom"></div>
+                  </div>
+                </div>
     </div>
     <nav class="nav-drill">
       <ul class="nav-items nav-level-1">
@@ -1078,11 +1093,7 @@ a {
         </li>
       </ul>
     </nav>
-    <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 250px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn; padding-top: 18px;"><div class="row"><div class="col-lg-10 offset-lg-1 text-center">
-    <i class="icon icon-heading ion-pie-graph size-96"></i>
-    <br><h2>Aletoysi</h2><p class="lead">
-    Somos  <strong> Aletoysi</strong> una juguetería, hacemos ventas por caja a todo Perú,  puedes encontrarnos en <a style="color: #01579b ; font-weight: bold;" href="{{ url('/') }}/contacto"> Lima Cercado </a>, visita nuestra página de  <a style="color: #01579b ; font-weight: bold;" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/" target="_blank"> Facebook </a>.</p></div></div></div>
-    </section>   
+    
     @component('components.breadcrumbs')
         <a href="/" style="color: white">Inicio</a>
         <i class="fa fa-chevron-right breadcrumb-separator" style="color: white"></i>
@@ -1107,14 +1118,7 @@ a {
     </div>
 
     <div class="products-section container">
-        <div class="sidebar">
-            <h3>Categorías</h3>
-            <ul>
-                @foreach ($categories as $category)
-                    <li class="{{ setActiveCategory($category->slug) }}"><a href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
-                @endforeach
-            </ul>
-        </div> <!-- end sidebar -->
+       
         <div>
             <div class="products-header">
                 <h1 class="stylish-heading">{{ $categoryName }}</h1>
@@ -1263,12 +1267,20 @@ $('.carousel .carousel-item').each(function(){
 </script>
 <style>
 @media (max-width: 768px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.33%);
     }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.33%);
     }
+    .col-md-3S{
+      flex: 0 0 33.33%;
+    max-width: 33.33%;
+  
+}
 }
 
 .carousel-inner .carousel-item.active,

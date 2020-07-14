@@ -9,9 +9,15 @@
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: 992px) {
+
+  .carousel2, .next ,.prev{
+    display: none;
+  }
+
   header.with-background .top-nav,
   header .top-nav {
     flex-direction: column;
+    display: none;
   }
 
   header.with-background .top-nav .logo,
@@ -99,7 +105,7 @@
   }
 
   .products-section .products {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .product-section {
