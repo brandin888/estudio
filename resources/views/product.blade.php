@@ -12,7 +12,7 @@
         
     @endcomponent
 
-    <div class="container">
+    <div class="container" style="padding-bottom: 35px;">
         @if (session()->has('success_message'))
             <div class="alert alert-success">
                 {{ session()->get('success_message') }}
@@ -50,14 +50,14 @@
             </div>
         </div>
         <div class="product-section-information" style="padding-left: 40px; padding-top: 20px;">
-            <h1 class="product-section-title">{{ $product->name }} ( {{ $product->cantidad_caja }} unidades por caja) </h1>
-            <div class="product-section-subtitle" style="color:#1e1f00">{{ $product->details }}</div>
+            <h1 class="product-section-title" style="color:#ffc63f">{{ $product->name }} </h1>
+            <div class="product-section-subtitle" style="color:#019ada">{{ $product->details }}</div>
             <!-- <div>{!! $stockLevel !!}</div> -->
-            <div class="product-section-price">{{ $product->presentPriceUnidad() }}</div>
-            <p>
-               Precio por caja: {!! $product->presentPrice() !!}
-            </p>
-            <p>
+            <div class="product-section-price" style="color:#171260">{{ $product->presentPriceUnidad() }}</div>
+            <!-- <p style="color:#e75353c">
+               Precio: {!! $product->presentPrice() !!}
+            </p> -->
+            <p style="color:#124d60">
                 {!! $product->description !!}
             </p>
 

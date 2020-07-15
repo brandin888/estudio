@@ -188,7 +188,7 @@
                 </ul>
             </div>
             @endif
-            <h2>Cliente regular</h2>
+            <h2 style="color:#171260">Cliente regular</h2>
             <div class="spacer"></div>
 
             <form action="{{ route('login') }}" method="POST">
@@ -214,7 +214,7 @@
         </div>
 
         <div class="auth-right">
-            <h2>Cliente nuevo</h2>
+            <h2  style="color:#171260">Cliente nuevo</h2>
             <!-- <div class="spacer"></div>
             <p><strong>Ahorra tiempo ahora.</strong></p>
             <p>No necesitas tener una cuenta para hacer tu pedido.</p>
@@ -223,8 +223,8 @@
             <div class="spacer"></div>
             &nbsp; -->
             <div class="spacer"></div>
-            <p><strong>Ahorra tiempo para después.</strong></p>
-            <p>Crea una cuenta para ahorrar tiempo por cada pedido.</p>
+            <p><strong style="color:#54bbe6">Ahorra tiempo para después.</strong></p>
+            <p style="color:#54bbe6">Crea una cuenta para ahorrar tiempo por cada pedido.</p>
             <div class="spacer"></div>
             <a href="{{ route('register') }}" class="auth-button-hollow">Crear una cuenta</a>
 
