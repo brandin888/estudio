@@ -48,13 +48,12 @@
                     
                     <div class="table-responsive">
                         <table class="table mb-0 text-center">
-                            <thead class="font-weight-bold text-white" style="background-color:#01579b">
+                            <thead class="font-weight-bold text-white bg-primary">
                             <tr><strong>
 
                                 <th scope="col">Producto</th>
                                 <th scope="col">Cantidad</th>
-                                <th scope="col">Precio</th>
-                                <th scope="col"> <a style="color: white" href="{{ route('shop.index') }}">Seguir comprando</a></th>
+                                <th scope="col" colspan="2">Precio</th>
                                 </strong>
 
                                 </tr>
@@ -119,8 +118,9 @@
                                 </div>
                             </div>                      
                 </div>
-                        <div class="row d-flex justify-content-center order-1 mt-4">
-                            <a href="{{ route('checkout.index') }}" class="button text-white" style="text-decoration:none;background-color:#01579b;border:none">Ir a comprar</a>
+                        <div class="row d-flex justify-content-around order-1 mt-4">
+                            <a class="button text-white bg-primary" style="color:white;text-decoration:none;border:none" href="{{ route('shop.index') }}">Seguir comprando</a>
+                            <a href="{{ route('checkout.index') }}" class="button text-white bg-primary" style="text-decoration:none;border:none">Ir a comprar</a>
                         </div>  
             </div>
         
