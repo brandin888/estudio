@@ -304,7 +304,7 @@
                 address_line1: document.getElementById('address').value,
                 address_city: 'LIMA',
                 address_state: 'LIMA',
-                address_zip: document.getElementById('postalcode').value
+                // address_zip: document.getElementById('postalcode').value
               }
               var form = document.getElementById('payment-form');
 
