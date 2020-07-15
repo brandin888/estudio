@@ -8,7 +8,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>El Mayorista | Tienda Online</title>
+        <title>Aletoysi | Jueguetes</title>
         <meta name="theme-color" content="#0e1126" />
         <meta name="description" content="Somos una empresa Mayorista de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en  Lima Cercado">
 

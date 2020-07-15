@@ -870,8 +870,8 @@ a {
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>El mayorista</title>
+        <meta name="theme-color" content="#dd8cb4" />
+        <title>Aletoysi</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
@@ -929,7 +929,7 @@ a {
 
             <header >
                 <div class="top-nav " style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}'); position: fixed;z-index: 1;width: 100%" >
-                   <div > <a href="/"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 150px; padding-left: 30px"></a></div>
+                   <div > <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 150px; padding-left: 30px"></a></div>
                     <div></div>
                     
 
@@ -948,7 +948,9 @@ a {
                     <div class="slides">
                       <img src="{{ asset('img/diseño/slider1.jpg') }}" />
                     </div>
-                    
+                     <div class="slides">
+                      <img src="{{ asset('img/diseño/slider4.jpg') }}" />
+                    </div>
                 </div>
   <div class="next"> &#8680;</div>
   <div class="prev">&#8678; </div>
@@ -1137,8 +1139,8 @@ a {
                   @if($product->quantity > 0)
                     <div class="product polaroid ">
                         <div ><a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a></div>
-                        <div ><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name">{{ $product->name }} </div></a>
-                        <div class="product-price" style="font-weight: bold; color: black;">{{ $product->presentPriceUnidad() }}<span style="font-weight: normal; font-size: 12px">/unidad</span></div></div>
+                        <div ><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name" style=" color: #171260;">{{ $product->name }} </div></a>
+                        <div class="product-price" style="font-weight: bold; color: #171260;">{{ $product->presentPrice() }}</div></div>
                     </div>
                   @endif
                 @empty
