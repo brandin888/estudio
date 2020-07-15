@@ -565,11 +565,11 @@ form button[type=submit] {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: var(--primary);
 }
 
 .table-hover tbody tr:hover {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: var(--primary);
 }
 
 .table-primary,
@@ -699,12 +699,12 @@ form button[type=submit] {
 }
 
 .table-hover .table-active:hover {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: var(--primary);
 }
 
 .table-hover .table-active:hover > td,
 .table-hover .table-active:hover > th {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: var(--primary);
 }
 
 .table .thead-dark th {
@@ -1310,7 +1310,7 @@ footer {
 }
 
 .cart-section .have-code-container input[type=submit]:hover {
-  background: #212121;
+  background: var(--primary);
 }
 
 h1.checkout-heading {
