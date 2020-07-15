@@ -4,7 +4,6 @@
 
 @section('extra-css')
 <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
-
 <style scoped>
 @media (max-width: 700px) {
   .breadcrumbs .breadcrumbs-container {
@@ -17,8 +16,9 @@
 
 @section('content')
 
- @component('components.breadcrumbs')
-        
+
+    @component('components.breadcrumbs')
+      
     @endcomponent
 
 <div class="d-flex justify-content-center mt-3">
@@ -39,21 +39,22 @@
         </div>
         @endif
     </div>
-    <div class="container">
+    <div class="container" style="padding-top: 120px">
         @if (Cart::count() > 0)
         <div class="row">
             <div class="cart-section col-12">
                 <div>  
                     <h2>{{ Cart::count() }} producto(s) en tu Carrito de compras</h2>
-                    
+                     <a class="font-weight-bold" style="text-decoration:none;font-size:16px" href="{{ route('shop.index') }}">Seguir comprando</a>
                     <div class="table-responsive">
                         <table class="table mb-0 text-center">
-                            <thead class="font-weight-bold text-white bg-primary">
+                            <thead class="font-weight-bold text-white" style="background-color:#01579b">
                             <tr><strong>
 
                                 <th scope="col">Producto</th>
                                 <th scope="col">Cantidad</th>
-                                <th scope="col" colspan="2">Precio</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col"><a class="font-weight-bold" style="text-decoration:none;font-size:16px" href="{{ route('shop.index') }}">Seguir comprando</a></th>
                                 </strong>
 
                                 </tr>
@@ -118,9 +119,8 @@
                                 </div>
                             </div>                      
                 </div>
-                        <div class="row d-flex justify-content-around order-1 mt-4">
-                            <a class="button text-white bg-primary" style="color:white;text-decoration:none;border:none" href="{{ route('shop.index') }}">Seguir comprando</a>
-                            <a href="{{ route('checkout.index') }}" class="button text-white bg-primary" style="text-decoration:none;border:none">Ir a comprar</a>
+                        <div class="row d-flex justify-content-center order-1 mt-4">
+                            <a href="{{ route('checkout.index') }}" class="button text-white" style="text-decoration:none;background-color:#01579b;border:none">Ir a comprar</a>
                         </div>  
             </div>
         

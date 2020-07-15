@@ -52,7 +52,7 @@
 }</style>
     </head>
 
- <div id="app" class="home" style="background-color: rgba(255, 255, 255, 0.84);">
+ <div  style="background-color: rgba(255, 255, 255, 0.84);">
 <body class="@yield('body-class', '')" style="background-image:url('{{ asset('img/background.svg') }}') ; 
         background-repeat: no-repeat;
          background-size: 100% 100%;
