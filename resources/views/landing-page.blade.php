@@ -971,7 +971,7 @@ a {
                           <div class="carousel-item active" >
                                 <div class="col-md-3S">
                                    
-                                        <img class="img-fluid" src="{{ asset('img/diseño/muñecas.png') }}">
+                                        <img class="img-fluid" src="{{ asset('img/diseño/cate.png') }}">
                                     
                                 </div>
                             </div>

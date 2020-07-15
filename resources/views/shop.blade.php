@@ -206,7 +206,7 @@ section#action, section#action-transparent {
                           <div class="carousel-item active" >
                                 <div class="col-md-3S">
                                    
-                                        <img class="img-fluid" src="{{ asset('img/diseño/muñecas.png') }}">
+                                        <img class="img-fluid" src="{{ asset('img/diseño/cate.png') }}">
                                     
                                 </div>
                             </div>
@@ -254,8 +254,8 @@ section#action, section#action-transparent {
                     <div class="product polaroid">
 
                         <div ><a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a></div>
-                        <div style="height: 15%; "><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name">{{ $product->name }}</div></a>
-                       <div class="product-price" style="font-weight: bold; color: black;">{{ $product->presentPrice() }}</div></div>
+                        <div style="height: 15%; "><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name" style=" color: #171260;">{{ $product->name }}</div></a>
+                       <div class="product-price" style="font-weight: bold; color: #171260;">{{ $product->presentPrice() }}</div></div>
                     </div>
                     @endif
                 @empty
