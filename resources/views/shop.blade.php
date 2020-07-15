@@ -161,6 +161,9 @@ section#action, section#action-transparent {
 }
 
 </style>
+
+
+
 @extends('layout')
 
 @section('title', 'Products')
@@ -194,14 +197,46 @@ section#action, section#action-transparent {
     </div>
 
     <div class="products-section container" >
-        <div class="sidebar">
-            <h3>Categorías</h3>
-            <ul>
-                @foreach ($categories as $category)
-                    <li class="{{ setActiveCategory($category->slug) }}"><a href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
-                @endforeach
-            </ul>
-        </div> <!-- end sidebar -->
+        
+<div class="container text-center my-3">
+                <h2 class="font-weight-light">Categorías</h2>
+                <div class="row mx-auto my-auto">
+                    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner w-100" role="listbox">
+                          <div class="carousel-item active" >
+                                <div class="col-md-3S">
+                                   
+                                        <img class="img-fluid" src="{{ asset('img/diseño/muñecas.png') }}">
+                                    
+                                </div>
+                            </div>
+                         @foreach($categories as $category)
+                         <div class="carousel-item">
+                                <div class="col-md-3S">
+                                      <a href="{{ route('shop.index', ['category' => $category->slug]) }}"><img class="img-fluid" src="{{ categoryImage($category->image) }}"></a>
+                                        
+                                     
+                                </div>
+                            </div>
+                              
+                          @endforeach
+                            
+                            
+                            
+                        </div>
+                        <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <h5 class="mt-2">Descubre nuestra gran variedad de juguetes</h5>
+            </div>
+
         <div>
             <div class="products-header">
                 <h1 class="stylish-heading">{{ $categoryName }}</h1>
@@ -236,9 +271,89 @@ section#action, section#action-transparent {
 @endsection
 
 @section('extra-js')
+<style>
+  .col-md-3S{
+      flex: 0 0 20%;
+    max-width: 20%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: transparent;
+}
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.33%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.33%);
+    }
+    .col-md-3S{
+      flex: 0 0 33.33%;
+    max-width: 33.33%;
+  
+}
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(20%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-20%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+
+</style>
     <!-- Include AlgoliaSearch JS Client and autocomplete.js library -->
     <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
     <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
     <script src="{{ asset('js/algolia.js?v=1.2') }}"></script>
+    <script>
+$('#recipeCarousel').carousel({
+  interval: 10000
+})
+
+$('.carousel .carousel-item').each(function(){
+    var minPerSlide = 10;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<minPerSlide;i++) {
+        next=next.next();
+        if (!next.length) {
+          next = $(this).siblings(':first');
+        }
+        
+        next.children(':first-child').clone().appendTo($(this));
+      }
+});
+
+
+
+</script>
 
 @endsection

@@ -133,7 +133,7 @@ section#action, section#action-transparent {
     background-image: url("img/parallax/parallax3.jpg");
 }
 #action-parallax4 {
-    background-image: url("img/parallax/parallax5.jpg");
+    background-image: url("img/parallax/footer.jpg");
 }
 #action-parallax5 {
     background-image: url("../images/cover-portal-empleado.jpg");
@@ -577,11 +577,7 @@ section#action, section#action-transparent {
 
 }
 
-@media (min-width: 992px) and (max-width: 1171px) {
-  .navbar__link {
-    padding: 9px 4px;
-    font-size: 12px;
-  }
+
 
   
 }
@@ -655,7 +651,7 @@ a {
   display: flex;
   position: fixed;
   z-index: 100;
-  top: 0;
+  top: 20px;
   right: 0;
   width: 250px;
   height: 90vh;
@@ -677,7 +673,7 @@ a {
   display: block;
   padding: 0.875em 1em;
   background-color: #fff;
-  color: #4d729c;
+  color: #110041;
   font-size: 1rem;
   line-height: 1.5em;
   font-weight: 300;
@@ -699,14 +695,14 @@ a {
   border-bottom: solid 1px #1565C0;
 }
 .nav-expand-content .nav-link {
-  background-color: #daf9f4;
+  background-color: #f7e5ff;
 }
 .nav-expand-content .nav-back-link {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  background-color: #1565C0 !important;
+  background-color: #6b307b !important;
   color: #fff;
 }
 .nav-expand-content .nav-back-link::before {
@@ -732,10 +728,10 @@ a {
   visibility: visible;
 }
 .nav-expand .nav-expand-content {
-  background-color: #daebf9;
+  background-color: #f7e5ff;
 }
 .nav-expand .nav-expand-content .nav-link {
-  background-color: #daebf9;
+  background-color: #f7e5ff;
 }
 .nav-expand .nav-expand-content .nav-expand-content {
   background-color: #aff1e6;
@@ -768,7 +764,7 @@ a {
 
 
 .carousel2 {
-  top: 100px;
+  top: 90px;
   position: relative;
   width: 100%;
   height: 50em;
@@ -860,7 +856,12 @@ a {
     background-color: transparent;
 }
 
-
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #6b307b;
+    border-color: #6b307b;
+}
 </style>
 
 
@@ -889,7 +890,13 @@ a {
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-
+<style type="text/css">
+  .page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #6b307b;
+    border-color: #6b307b;
+}</style>
     </head>
     <body style="background-image:url('{{ asset('img/background.svg') }}') ; 
         background-repeat: no-repeat;
@@ -918,7 +925,7 @@ a {
 
       
 
-        <div id="app" class="home" style="background-color: rgba(255, 255, 255, 0.84);">
+        <div style="background-color: rgba(255, 255, 255, 0.84);">
 
             <header >
                 <div class="top-nav " style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}'); position: fixed;z-index: 1;width: 100%" >
@@ -990,7 +997,7 @@ a {
                         </a>
                     </div>
                 </div>
-                <h5 class="mt-2">Advances one slide at a time</h5>
+                <h5 class="mt-2">Descubre nuestra gran variedad de juguetes</h5>
             </div>
            <div class="menu__responsive"  style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}');">
 

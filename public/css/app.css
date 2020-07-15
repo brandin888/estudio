@@ -1008,6 +1008,7 @@ header .top-nav-left {
 header .top-nav-right {
   display: flex;
   align-items: center;
+  padding: 15px;
 }
 
 footer {

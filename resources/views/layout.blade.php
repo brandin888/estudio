@@ -43,11 +43,22 @@
         <script  src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"> </script>    
         
         @yield('extra-css')
-
+        <style type="text/css">
+  .page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #6b307b;
+    border-color: #6b307b;
+}</style>
     </head>
 
-
-<body class="@yield('body-class', '')" style="background:#ffffff">
+ <div id="app" class="home" style="background-color: rgba(255, 255, 255, 0.84);">
+<body class="@yield('body-class', '')" style="background-image:url('{{ asset('img/background.svg') }}') ; 
+        background-repeat: no-repeat;
+         background-size: 100% 100%;
+          z-index: -1;
+          background-color: rgba(255, 255, 255, 0.84);
+        ">
     <!-- Load Whatsapp -->
     <div>
       <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51916284386&Hola!&nbsp;ventas&nbsp;por&nbsp;mayor">
@@ -65,7 +76,7 @@
 
     @include('partials.footer')
 
-
+</div>
    
     <script type="text/javascript" src="{{ asset('js/scripts.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>

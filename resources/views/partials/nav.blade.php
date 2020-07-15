@@ -7,6 +7,7 @@
     background-color: #01579b !important;
 }
 
+
 .menu__responsive {
   width: 100%;
   height: 58px;
@@ -466,7 +467,7 @@ a {
   display: flex;
   position: fixed;
   z-index: 100;
-  top: 0;
+  top: 20px;
   right: 0;
   width: 250px;
   height: 90vh;
@@ -488,7 +489,7 @@ a {
   display: block;
   padding: 0.875em 1em;
   background-color: #fff;
-  color: #4d729c;
+  color: #110041;
   font-size: 1rem;
   line-height: 1.5em;
   font-weight: 300;
@@ -510,14 +511,14 @@ a {
   border-bottom: solid 1px #1565C0;
 }
 .nav-expand-content .nav-link {
-  background-color: #daf9f4;
+  background-color: #f7e5ff;
 }
 .nav-expand-content .nav-back-link {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  background-color: #1565C0 !important;
+  background-color: #6b307b !important;
   color: #fff;
 }
 .nav-expand-content .nav-back-link::before {
@@ -543,10 +544,10 @@ a {
   visibility: visible;
 }
 .nav-expand .nav-expand-content {
-  background-color: #daebf9;
+  background-color: #f7e5ff;
 }
 .nav-expand .nav-expand-content .nav-link {
-  background-color: #daebf9;
+  background-color: #f7e5ff;
 }
 .nav-expand .nav-expand-content .nav-expand-content {
   background-color: #aff1e6;
