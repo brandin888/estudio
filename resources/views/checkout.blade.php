@@ -3,6 +3,7 @@
 @section('title', 'Checkout')
 
 @section('extra-css')
+<link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
     <style>
         .mt-32 {
             margin-top: 32px;
@@ -19,23 +20,10 @@
 @endsection
 
 @section('content')
-<div class="breadcrumbs w-100">
-    <div class="breadcrumbs-container container">
-        <div>
-            <div class="d-flex align-items-center">
-                <i style="font-size:30px" class="fa fa-shopping-cart mr-2"></i>
-                <h2 class="mb-0">Datos de la compra</h2>
-            </div>
-        </div>
-        <div>
-            <div class="d-flex align-items-center">
-                <i style="font-size:20px" class="fa fa-reply mr-2"></i>
-                <a class="font-weight-bold" style="text-decoration:none;font-size:16px" href="{{ route('cart.index') }}">Volver al carrito</a>
-            </div>
-        </div>
-    </div>
-</div>
 
+@component('components.breadcrumbs')
+      
+    @endcomponent
     
     <div class="container">
 
