@@ -60,7 +60,7 @@
           </form>
         </div>
       </div>
-      <div class="col-md-4 hero-buttons">
+      <div class="d-none d-sm-block col-md-4 hero-buttons">
           <img src="{{ asset('img/contacto02.png') }}" class="contacto__img" alt="">
       </div>
     </div>

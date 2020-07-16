@@ -303,7 +303,7 @@ strong {
 
 .button:hover {
   color: rgba(255, 255, 255, 0.9);
-  background: linear-gradient(to right, #003b69 0%, #01579b 50%, #003b69 100%);
+  background: var(--primary);
 }
 
 .button-white {
@@ -313,18 +313,23 @@ strong {
 
 .button-white:hover {
   
- background: linear-gradient(to right, #003b69 0%, #01579b 50%, #003b69 100%);
+ background: var(--primary);
+}
+
+button:focus {
+  outline: 0px dotted;
+  outline: 0px auto -webkit-focus-ring-color; 
 }
 
 .button-primary {
-  background: #01579b;
+  background: var(--primary);
   color: white !important;
   padding: 12px 40px;
   border-radius: 10px;
 }
 
 .button-primary:hover {
-  background: #10498a;
+  background: var(--primary);
 }
 
 .button-primary:disabled {
@@ -1606,7 +1611,7 @@ h1.checkout-heading {
 }
 
 .my-profile .my-profile-button:hover {
-  background: linear-gradient(to right, #003b69 0%, #01579b 50%, #003b69 100%);
+  background: var(--primary);
 }
 
 .my-orders .order-container {

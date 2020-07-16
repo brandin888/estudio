@@ -45,16 +45,15 @@
             <div class="cart-section col-12">
                 <div>  
                     <h2>{{ Cart::count() }} producto(s) en tu Carrito de compras</h2>
-                     <a class="font-weight-bold" style="text-decoration:none;font-size:16px" href="{{ route('shop.index') }}">Seguir comprando</a>
                     <div class="table-responsive">
                         <table class="table mb-0 text-center">
-                            <thead class="font-weight-bold text-white" style="background-color:#01579b">
+                            <thead class="font-weight-bold text-white" style="background-color:var(--primary)">
                             <tr><strong>
 
                                 <th scope="col">Producto</th>
                                 <th scope="col">Cantidad</th>
                                 <th scope="col">Precio</th>
-                                <th scope="col"><a class="font-weight-bold" style="text-decoration:none;font-size:16px" href="{{ route('shop.index') }}">Seguir comprando</a></th>
+                                <th scope="col"></th>
                                 </strong>
 
                                 </tr>
@@ -119,8 +118,9 @@
                                 </div>
                             </div>                      
                 </div>
-                        <div class="row d-flex justify-content-center order-1 mt-4">
-                            <a href="{{ route('checkout.index') }}" class="button text-white" style="text-decoration:none;background-color:#01579b;border:none">Ir a comprar</a>
+                        <div class="row d-flex justify-content-around align-items-center order-1 mt-4">
+                            <a class="font-weight-bold" class="button text-white" style="text-decoration:none;font-size:16px" href="{{ route('shop.index') }}">Seguir comprando</a>
+                            <a href="{{ route('checkout.index') }}" class="button text-white" style="text-decoration:none;background-color:var(--primary);border:none">Ir a comprar</a>
                         </div>  
             </div>
         
