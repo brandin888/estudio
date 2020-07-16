@@ -14,7 +14,7 @@
       <div class="col-md-12 col-xs-12 col-sm-12">
         <h2><strong>HABLA CON UNO DE NUESTROS ASESORES</strong></h2>
       </div>
-      <div class="col-md-8">
+      <div class="col-lg-8">
         <!-- <div data-aos="fade-right" class="formulario__content box"> -->
         <div class="formulario__content box">
           <h3><strong>Estamos a su disposición</strong></h3>
@@ -60,7 +60,7 @@
           </form>
         </div>
       </div>
-      <div class="d-none d-sm-block col-md-4 hero-buttons">
+      <div class="d-none d-lg-block col-md-4 hero-buttons">
           <img src="{{ asset('img/contacto02.png') }}" class="contacto__img" alt="">
       </div>
     </div>

@@ -1600,7 +1600,7 @@ h1.checkout-heading {
 }
 
 .my-profile .my-profile-button {
-  background: linear-gradient(to right, #63b9e6a1 0%, #01579b 50%, #003b69 100%);
+  background: var(--primary);
   color: #fff;
   border-radius: 8px;
     text-transform: uppercase;

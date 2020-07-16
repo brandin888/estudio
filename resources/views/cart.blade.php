@@ -109,15 +109,15 @@
             </div> <!-- end cart-section -->
             
             <div class="cart-section-2 col-12">
-                <div class="card-body bg-white d-flex">
-                    <div class="text-center cart-totals col-4 order-2 d-flex justify-content-around pr-5 align-items-center">
-                        <h2 class="mb-0">Total</h2>{{ presentPrice($newTotal) }}
-                    </div>
-                            <div class="col-8 text-justify">
+                        <div class="card-body bg-white d-md-flex">
+                            <div class="col-12 col-md-8 text-justify">
                                 <div>El costo de envío no esta incluido en el precio de los productos.<br>El pago de los productos y el envío se realiza <strong>via depósito</strong>, deberá enviar una foto del voucher respondiendo al correo que le enviaremos <strong>al finalizar su pedido.</strong>
                                 </div>
                             </div>                      
-                </div>
+                            <div class="text-center cart-totals col-12 col-md-4 d-flex justify-content-around pr-5 align-items-center">
+                                <h2 class="mb-0">Total</h2>{{ presentPrice($newTotal) }}
+                            </div>
+                        </div>
                         <div class="row d-flex justify-content-around align-items-center order-1 mt-4">
                             <a class="font-weight-bold" class="button text-white" style="text-decoration:none;font-size:16px" href="{{ route('shop.index') }}">Seguir comprando</a>
                             <a href="{{ route('checkout.index') }}" class="button text-white" style="text-decoration:none;background-color:var(--primary);border:none">Ir a comprar</a>

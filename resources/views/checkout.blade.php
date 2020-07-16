@@ -114,21 +114,20 @@
                 <div class="checkout-table">
                     <table class="w-100">
                         <tbody>
+                            @foreach (Cart::content() as $item)
                             <tr class="d-flex justify-content-between align-items-center">
-                                @foreach (Cart::content() as $item)
-                                        <td style="position:relative">
-                                            <div class="checkout-cantidad">
-                                                <strong>{{ $item->qty }}</strong>
-                                            </div>
-                                            <span>
-                                                <img src="{{ productImage($item->model->image) }}" alt="item" class="checkout-table-img" style="max-height:100px">
-
-                                            </span>
-                                        </td>
-                                        <td>{{ $item->model->name }}</td>
-                                        <td>{{ $item->model->presentPrice() }}</td>
-                                @endforeach
+                                <td style="position:relative">
+                                    <div class="checkout-cantidad">
+                                        <strong>{{ $item->qty }}</strong>
+                                    </div>
+                                    <span>
+                                        <img src="{{ productImage($item->model->image) }}" alt="item" class="checkout-table-img" style="max-height:100px">
+                                    </span>
+                                </td>
+                                <td>{{ $item->model->name }}</td>
+                                <td>{{ $item->model->presentPrice() }}</td>
                             </tr>
+                            @endforeach
                         </tbody>
                     </table>
 
