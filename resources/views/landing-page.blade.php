@@ -94,7 +94,7 @@ div.container {
   cursor: pointer;
 }
 .polaroid:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 140, 186, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(192, 87, 210, 0.5);
   
 }
 
