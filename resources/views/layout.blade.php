@@ -9,7 +9,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>Aletoysi | Jueguetes</title>
-        <meta name="theme-color" content="#0e1126" />
+        <meta name="theme-color" content="#dd8cb4" />
         <meta name="description" content="Somos una empresa Mayorista de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en  Lima Cercado">
 
         <link href="/img/favicon.ico" rel="SHORTCUT ICON" />
@@ -58,6 +58,7 @@
          background-size: 100% 100%;
           z-index: -1;
           background-color: rgba(255, 255, 255, 0.84);
+          margin-top: 80px;
         ">
     <!-- Load Whatsapp -->
     <div>

@@ -21,9 +21,7 @@
 
 @section('content')
 
-@component('components.breadcrumbs')
-      
-    @endcomponent
+
     
     <div class="container">
 

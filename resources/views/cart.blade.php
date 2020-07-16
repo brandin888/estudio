@@ -39,7 +39,7 @@
         </div>
         @endif
     </div>
-    <div class="container" style="padding-top: 120px">
+    <div class="container" >
         @if (Cart::count() > 0)
         <div class="row">
             <div class="cart-section col-12">

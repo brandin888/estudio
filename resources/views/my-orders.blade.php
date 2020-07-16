@@ -90,11 +90,7 @@
 
 @section('content')
 
-    @component('components.breadcrumbs')
-        <a href="/">Inicio</a>
-        <i class="fa fa-chevron-right breadcrumb-separator"></i>
-        <span>Mis Órdenes</span>
-    @endcomponent
+   
 
     <div class="container">
         @if (session()->has('success_message'))
