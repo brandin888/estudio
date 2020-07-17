@@ -46,7 +46,7 @@ class Product extends Model
     public function presentPriceUnidad()
     {
         //return money_format('$%i', $this->price / 100);
-        return 'S/ '.number_format($this->price / (100*$this->cantidad_caja), 2);
+       return 'S/ '.number_format($this->price / (100), 2);
     }
 
     public function scopeMightAlsoLike($query)
