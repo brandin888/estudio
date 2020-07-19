@@ -54,6 +54,10 @@
             <div class="product-section-subtitle" style="color:#019ada">{{ $product->details }}</div>
             <!-- <div>{!! $stockLevel !!}</div> -->
             <div class="product-section-price" style="color:#171260">{{ $product->presentPriceUnidad() }}</div>
+            @if($product->pricemayor > 0)
+            <div class="product-section-subtitle" style="color:#171260">Precio por mayor: {{ $product->presentPriceMayor() }}</div>
+            @endif
+            
             <!-- <p style="color:#e75353c">
                Precio: {!! $product->presentPrice() !!}
             </p> -->

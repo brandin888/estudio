@@ -192,6 +192,9 @@
 
             var price = $('input[name="price"').val();
             $('input[name="price"').val(price / 100);
+
+            var pricemayor = $('input[name="pricemayor"').val();
+            $('input[name="pricemayor"').val(pricemayor / 100);
         });
     </script>
 @stop

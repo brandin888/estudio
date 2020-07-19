@@ -261,7 +261,7 @@ $categories = Category::all();
     {
         foreach (Cart::content() as $item) {
             $product = Product::find($item->model->id);
-            if ($product->quantity < $item->qty) {
+            if ( 0 == $product->quantity) {
                 return true;
             }
         }

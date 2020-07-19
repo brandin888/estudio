@@ -65,13 +65,13 @@
                                     <td class="d-md-flex justify-content-around align-items-center cart-table-row-left">
                                         <a href="{{ route('shop.show', $item->model->slug) }}"><img src="{{ productImage($item->model->image) }}" alt="item" class="cart-table-img" style="max-height:100px"></a>
                                         <div class="cart-item-details text-center">
-                                            <div class="cart-table-item"><a href="{{ route('shop.show', $item->model->slug) }}">{{ $item->model->name }}</a></div>
+                                            <div class="cart-table-item"><a href="{{ route('shop.show', $item->model->slug) }}">{{ $item->model->name }} </a></div>
                                             
                                         </div>
                                     </td>
                                     <td>
-                                        <select class="quantity" data-id="{{ $item->rowId }}" data-productQuantity="{{ $item->model->quantity }}">
-                                            @for ($i = 1; $i < 5 + 1 ; $i++)
+                                        <select class="quantity" data-id="{{ $item->rowId }}" data-productQuantity="{{ $item->model->quantity }}" data-pricemayor="{{ $item->model->pricemayor }}" data-price="{{ $item->model->price }}">
+                                            @for ($i = 1; $i < 100 + 1 ; $i++)
                                             <option {{ $item->qty == $i ? 'selected' : '' }}>{{ $i }}</option>
                                             @endfor
                                         </select>
@@ -152,13 +152,17 @@
                 element.addEventListener('change', function() {
                     const id = element.getAttribute('data-id')
                     const productQuantity = element.getAttribute('data-productQuantity')
-
+                    const productPricemayor = element.getAttribute('data-pricemayor')
+                    const productPrice = element.getAttribute('data-price')
+                    
                     console.log(this.value)
                     console.log(productQuantity)
-
+                    console.log(productPricemayor)
                     axios.patch(`cart/${id}`, {
                         quantity: this.value,
-                        productQuantity: productQuantity
+                        productQuantity: productQuantity,
+                        productPricemayor: productPricemayor,
+                        productPrice: productPrice
                     })
                     .then(function (response) {
                         // console.log(response);

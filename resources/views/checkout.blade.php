@@ -123,7 +123,16 @@
                                     </span>
                                 </td>
                                 <td>{{ $item->model->name }}</td>
+                                
+                                @if($item->qty > 11 and $item->model->pricemayor > 0 )
+                               
+                                <td>{{ $item->model->presentPriceMayor() }}</td>
+                                @else
+
                                 <td>{{ $item->model->presentPrice() }}</td>
+                                @endif
+
+
                             </tr>
                             @endforeach
                         </tbody>
