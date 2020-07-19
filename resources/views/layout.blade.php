@@ -62,14 +62,38 @@
         ">
     <!-- Load Whatsapp -->
     <div>
-      <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51916284386&Hola!&nbsp;ventas&nbsp;por&nbsp;mayor">
+      <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51950454991&Hola&nbsp;Aletoysi!!!">
         <img src="{{ asset('img/whatsapp.png') }}" alt="whatsapp">
       </a> 
     </div>
     <!-- end Whatsapp -->
 
-    
-    
+ 
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="103421061443777"
+  logged_in_greeting="Hola Aletoysi..!!!"
+  logged_out_greeting="Hola Aletoysi..!!!">
+      </div>
       
     @include('partials.nav')
 
