@@ -7,7 +7,7 @@
   }
   @media (max-width: 992px) {
     header {
-    height: 450px;
+    height: 120px;
 
   }
   }
@@ -94,7 +94,7 @@ div.container {
   cursor: pointer;
 }
 .polaroid:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 140, 186, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(192, 87, 210, 0.5);
   
 }
 
@@ -133,7 +133,7 @@ section#action, section#action-transparent {
     background-image: url("img/parallax/parallax3.jpg");
 }
 #action-parallax4 {
-    background-image: url("img/parallax/parallax5.jpg");
+    background-image: url("img/parallax/footer.jpg");
 }
 #action-parallax5 {
     background-image: url("../images/cover-portal-empleado.jpg");
@@ -206,7 +206,8 @@ section#action, section#action-transparent {
 }
 
 .menu__responsive .carrito_top a i {
-  color: #f99300;
+  color: #110041;
+  border-color: #110041;
 }
 
 .menu__responsive .carrito_top a span {
@@ -241,7 +242,7 @@ section#action, section#action-transparent {
 #bottom {
   width: 100%;
   height: 2px;
-  background: #e18604;
+  background: #110041;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
@@ -537,9 +538,13 @@ section#action, section#action-transparent {
   body {
     margin-top: 58px;
   }
- #aa-search-input{
-  width: 280px;
-
+  
+  header .top-nav {
+    
+    display: none;
+  }
+ .top-nav-right{
+    display: none;
  }
   #algolia-autocomplete-listbox-0 {
  
@@ -547,7 +552,7 @@ section#action, section#action-transparent {
  }
 
   .menu__responsive {
-    display: block;
+    display: flex;
     -webkit-box-shadow: 0px 1px 10px #0000007a;
             box-shadow: 0px 1px 10px #0000007a;
   }
@@ -572,11 +577,7 @@ section#action, section#action-transparent {
 
 }
 
-@media (min-width: 992px) and (max-width: 1171px) {
-  .navbar__link {
-    padding: 9px 4px;
-    font-size: 12px;
-  }
+
 
   
 }
@@ -609,7 +610,9 @@ body::after {
 a {
   text-decoration: none;
 }
-
+.top-nav {
+  background-color: white;
+}
 .nav-top {
   display: -webkit-box;
   display: flex;
@@ -648,7 +651,7 @@ a {
   display: flex;
   position: fixed;
   z-index: 100;
-  top: 0;
+  top: 20px;
   right: 0;
   width: 250px;
   height: 90vh;
@@ -670,7 +673,7 @@ a {
   display: block;
   padding: 0.875em 1em;
   background-color: #fff;
-  color: #4d729c;
+  color: #110041;
   font-size: 1rem;
   line-height: 1.5em;
   font-weight: 300;
@@ -692,14 +695,14 @@ a {
   border-bottom: solid 1px #1565C0;
 }
 .nav-expand-content .nav-link {
-  background-color: #daf9f4;
+  background-color: #f7e5ff;
 }
 .nav-expand-content .nav-back-link {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  background-color: #1565C0 !important;
+  background-color: #6b307b !important;
   color: #fff;
 }
 .nav-expand-content .nav-back-link::before {
@@ -725,10 +728,10 @@ a {
   visibility: visible;
 }
 .nav-expand .nav-expand-content {
-  background-color: #daebf9;
+  background-color: #f7e5ff;
 }
 .nav-expand .nav-expand-content .nav-link {
-  background-color: #daebf9;
+  background-color: #f7e5ff;
 }
 .nav-expand .nav-expand-content .nav-expand-content {
   background-color: #aff1e6;
@@ -755,6 +758,110 @@ a {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
 }
+
+
+
+
+
+.carousel2 {
+  top: 90px;
+  position: relative;
+  width: 100%;
+  height: 50em;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+.carousel2[data-slide="1"] {
+  transform: rotateY(0deg);
+}
+.carousel2[data-slide="2"] {
+  transform: rotateY(-90deg);
+}
+.carousel2[data-slide="3"] {
+  transform: rotateY(-180deg);
+}
+.carousel2[data-slide="4"] {
+  transform: rotateY(-270deg);
+}
+.slides {
+  position: absolute;
+  width: 100%;
+  
+  background: white;
+  height: 400px;
+}
+.slides img {
+  width: 100%;
+  height: 400px;
+}
+.back, .slides:nth-child(3) {
+  transform: translateZ(-25em) rotateY(180deg);
+}
+.right, .slides:nth-child(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+.left, .slides:nth-child(4) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+.front, .slides:nth-child(1) {
+  transform: translateZ(25em);
+}
+.next, .prev {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  width: 6em;
+  margin-top: -2.5em;
+  border-radius: 3px;
+  background-color: transparent;
+  text-align: center;
+  line-height: 3;
+  letter-spacing: 5px;
+  color: #dc84b3;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 60px;
+}
+.prev:hover {
+  color: black;
+}
+.prev {
+  left: 0;
+}
+.next:hover {
+  color: black;
+}
+.cf:before, .slides:before,
+.cf:after,
+.slides:after {
+  content: " ";
+  display: table;
+}
+.cf:after, .slides:after {
+  clear: both;
+}
+.cf, .slides {
+  *zoom: 1;
+}
+.col-md-3S{
+      flex: 0 0 20%;
+    max-width: 20%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: transparent;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #6b307b;
+    border-color: #6b307b;
+}
 </style>
 
 
@@ -763,66 +870,46 @@ a {
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>El mayorista</title>
+        <meta name="theme-color" content="#dd8cb4" />
+        <title>Aletoysi</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="{{ asset('css/all.css?v=1.1') }}" rel="stylesheet"> <!--load all styles -->
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css?v=1.4') }}">
+        <link rel="stylesheet" href="{{ asset('css/app.css?v=1.5') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.4') }}">
         <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
 
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script data-ad-client="ca-pub-8718908287387658" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169774086-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-169774086-1');
-          gtag('set', {'user_id': 'USER_ID'}); // Establezca el ID de usuario mediante el user_id con el que haya iniciado sesión.
-          
-        </script>
-
-
-
-
-
-
-
-       <!-- Facebook Pixel Code -->
-        <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '271128407569193');
-        fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=271128407569193&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Facebook Pixel Code -->
+<style type="text/css">
+  .page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #6b307b;
+    border-color: #6b307b;
+}</style>
     </head>
-    <body style="background-color: white; 
+    <body style="background-image:url('{{ asset('img/background.svg') }}') ; 
         background-repeat: no-repeat;
          background-size: 100% 100%;
           z-index: -1;
         ">
 
         <!-- Load Whatsapp -->
+          
+
+
         <div>
-          <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51916284386&Hola!&nbsp;ventas&nbsp;por&nbsp;mayor">
+          <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51950454991&Hola!&nbsp;ventas&nbsp;por&nbsp;mayor">
             <img src="{{ asset('img/whatsapp.png') }}" alt="whatsapp">
           </a> 
         </div>
@@ -849,172 +936,194 @@ a {
       <!-- Your Chat Plugin code -->
       <div class="fb-customerchat"
         attribution=setup_tool
-        page_id="2174827419500879"
-  logged_in_greeting="Bienvenido a el mayorista. ¿En qué podemos ayudarte?"
-  logged_out_greeting="Bienvenido a el mayorista. ¿En qué podemos ayudarte?">
+        page_id="103421061443777"
+  logged_in_greeting="Hola Aletoysi..!!!"
+  logged_out_greeting="Hola Aletoysi..!!!">
       </div>
+     
        <!-- Your Chat Plugin code -->
 
+
       
-        <div id="app" >
-            <header class="with-background" style="background-image: url('img/parallax/parallax9.jpg'); background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;">
-                <div class="top-nav container">
-                    <div class="top-nav-left">
-                        <div class="logo">El mayorista</div>
-                        {{ menu('main', 'partials.menus.main') }}
-                    </div>
+
+        <div style="background-color: rgba(255, 255, 255, 0.84);">
+
+            <header >
+                <div class="top-nav " style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}'); position: fixed;z-index: 1;width: 100%" >
+                   <div > <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 150px; padding-left: 30px"></a></div>
+                    <div></div>
+                    
+
                     <div class="top-nav-right">
                         @include('partials.menus.main-right')
                     </div>
                 </div> <!-- end top-nav -->
-                <div class="hero container"  >
-                    <div class="hero-copy">
-                        <h1>El Mayorista</h1>
-                        <h2>Ofrecemos productos variados para el hogar.</h2>
-                        <div class="hero-buttons" style="padding-top: 20px">
-                            <a href="{{ url('/') }}/shop" class="button button-white">Tienda</a>
-                            <a href="{{ url('/') }}/contacto" class="button button-white">Contáctanos</a>
-                        </div>
-                    </div> <!-- end hero-copy -->
-
-                    
-                </div> <!-- end hero -->
+                <div >
+                  <div class="carousel2" data-slide="1">
+                    <div class="slides">
+                      <img src="{{ asset('img/diseño/slider4.jpg') }}" />
+                    </div>
+                    <div class="slides">
+                      <img src="{{ asset('img/diseño/slider2.jpg') }}" />
+                    </div>
+                    <div class="slides">
+                      <img src="{{ asset('img/diseño/slider1.jpg') }}" />
+                    </div>
+                     <div class="slides">
+                      <img src="{{ asset('img/diseño/slider4.jpg') }}" />
+                    </div>
+                </div>
+  <div class="next"> &#8680;</div>
+  <div class="prev">&#8678; </div>
+</div>
+                
             </header>
 
-           <div class="menu__responsive">
-  <div class="logo__responsive">
-    <a href="{{ url('/') }}/"> <span class="cart-count"><span style="color:#e18604;  font-size: 25px; font-weight: bold"> El Mayorista</span></span></a>
-  </div>
-  <div class="carrito_top">
-    <li class="nav-item"><a class="navbar__link" href="{{ route('cart.index') }}"><i class="fas fa-shopping-cart"></i>
-    @if (Cart::instance('default')->count() > 0)
-    <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
-    @endif
-    </a>
-  </li>
+            <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 250px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn; padding-top: 18px;"><div class="row"><div class="col-lg-10 offset-lg-1 text-center">
+    <i class="icon icon-heading ion-pie-graph size-96"></i>
+    <br><h2>Aletoysi</h2><p class="lead">
+    Somos  <strong> Aletoysi</strong> una juguetería, hacemos ventas por caja a todo Perú,  puedes encontrarnos en <a style="color: #01579b ; font-weight: bold;" href="{{ url('/') }}/contacto"> Lima Cercado </a>, visita nuestra página de  <a style="color: #01579b ; font-weight: bold;" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/" target="_blank"> Facebook </a>.</p></div></div></div>
+    </section>   
+            <div class="container text-center my-3">
+                <h2 class="font-weight-light">Categorías</h2>
+                <div class="row mx-auto my-auto">
+                    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner w-100" role="listbox">
+                          <div class="carousel-item active" >
+                                <div class="col-md-3S">
+                                   
+                                        <img class="img-fluid" src="{{ asset('img/diseño/cate.png') }}">
+                                    
+                                </div>
+                            </div>
+                         @foreach($categories as $category)
+                         <div class="carousel-item">
+                                <div class="col-md-3S">
+                                      <a href="{{ route('shop.index', ['category' => $category->slug]) }}"><img class="img-fluid" src="{{ categoryImage($category->image) }}"></a>
+                                        
+                                     
+                                </div>
+                            </div>
+                              
+                          @endforeach
+                            
+                            
+                            
+                        </div>
+                        <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <h5 class="mt-2">Descubre nuestra gran variedad de juguetes</h5>
+            </div>
+           <div class="menu__responsive"  style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}');">
+
+              <div class="logo__responsive">
+                <a href="{{ url('/') }}/"> <span class="cart-count"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 100px; height: 45px"></span></a>
+
+              </div>
+             
+            <div class="carrito_top">
+
+              <li class="nav-item"><a class="navbar__link" href="{{ route('cart.index') }}"><i class="fas fa-shopping-cart"></i>
+              @if (Cart::instance('default')->count() > 0)
+              <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
+              @endif
+              </a>
+            </li>
 
 
 
-    {{-- @foreach($items as $menu_item)
-        <li>
-            <a href="{{ $menu_item->link() }}">
-                {{ $menu_item->title }}
-                @if ($menu_item->title === 'Cart')
-                    @if (Cart::instance('default')->count() > 0)
-                    <span class="cart-count"><span>{{ Cart::instance('default')->count() }}</span></span>
-                    @endif
-                @endif
+              {{-- @foreach($items as $menu_item)
+
+                  <li>
+                      <a href="{{ $menu_item->link() }}">
+                          {{ $menu_item->title }}
+                          @if ($menu_item->title === 'Cart')
+                              @if (Cart::instance('default')->count() > 0)
+                              <span class="cart-count"><span>{{ Cart::instance('default')->count() }}</span></span>
+                              @endif
+                          @endif
+                      </a>
+                  </li>
+                  @endforeach --}}
+                  <!-- <a class="navbar__link" href="{{ url('/')}}/mi-carrito"><i class="fas fa-shopping-cart"></i><span class="pl-2">(0)</span></a> -->
+                </div>
+                <div id="menu-icon-shape">
+
+                  <div id="menu-icon">
+                    <div id="top"></div>
+                    <div id="middle"></div>
+                    <div id="bottom"></div>
+                  </div>
+                </div>
+    </div>
+    <nav class="nav-drill">
+      <ul class="nav-items nav-level-1">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/') }}/cart">
+            Carrito  @if (Cart::instance('default')->count() > 0)
+        <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
+        @endif
+          </a>
+        </li>
+        <li class="nav-item nav-expand">
+          <a class="nav-link nav-expand-link" href="#">
+            Categorías
+          </a>
+          <ul class="nav-items nav-expand-content">
+          @foreach($categories as $category)
+                <li  class="nav-item"><a class="nav-link" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
+          <li>
+          @endforeach
+          </ul>
+        </li>
+        @guest
+        <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Registrarse</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Iniciar Sesión</a></li>
+        @else
+        <li class="nav-item nav-expand">
+            <a class="nav-link nav-expand-link" href="#">Mi cuenta</a>
+
+            <ul class="nav-items nav-expand-content">
+          
+                <li  class="nav-item"><a class="nav-link" href="{{ route('users.edit') }}">Mi Perfil</a></li>
+                <li>
+
+                <li  class="nav-item"><a class="nav-link" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
+                <li>
+          </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                Salir Sesión
             </a>
         </li>
-    @endforeach --}}
-    <!-- <a class="navbar__link" href="{{ url('/')}}/mi-carrito"><i class="fas fa-shopping-cart"></i><span class="pl-2">(0)</span></a> -->
-  </div>
-  <div id="menu-icon-shape">
-    <div id="menu-icon">
-      <div id="top"></div>
-      <div id="middle"></div>
-      <div id="bottom"></div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-<nav class="nav-drill">
-  <ul class="nav-items nav-level-1">
-    <li class="nav-item">
-      <a class="nav-link" href="{{ url('/') }}/cart">
-        Carrito  @if (Cart::instance('default')->count() > 0)
-    <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
-    @endif
-      </a>
-
-    </li>
-    
-    <li class="nav-item nav-expand">
-      <a class="nav-link nav-expand-link" href="#">
-        Categorías
-      </a>
-      <ul class="nav-items nav-expand-content">
-      @foreach($categories as $category)
-            <li  class="nav-item"><a class="nav-link" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
-      <li>
-      @endforeach
-      
-        
-       
-        
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+        </form>
+        @endguest
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/') }}/contacto">
+            Contáctanos
+          </a>
+        </li>
       </ul>
-    </li>
+    </nav>
     
-
-    @guest
-    <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Registrarse</a></li>
-    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Iniciar Sesión</a></li>
-    @else
-    <li class="nav-item nav-expand">
-        <a class="nav-link nav-expand-link" href="#">Mi cuenta</a>
-
-        <ul class="nav-items nav-expand-content">
-      
-            <li  class="nav-item"><a class="nav-link" href="{{ route('users.edit') }}">Mi Perfil</a></li>
-            <li>
-
-            <li  class="nav-item"><a class="nav-link" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
-            <li>
-      
+    <div>@component('components.breadcrumbs')
         
+    @endcomponent</div>
 
 
-       
-        
-      </ul>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link" href="{{ route('logout') }}"
-            onclick="event.preventDefault();
-                     document.getElementById('logout-form').submit();">
-            Salir Sesión
-        </a>
-    </li>
-
-    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-        {{ csrf_field() }}
-    </form>
-    @endguest
-
-    
-
-    <li class="nav-item">
-      <a class="nav-link" href="{{ url('/') }}/contacto">
-        Contáctanos
-      </a>
-    </li>
-    
-  </ul>
-</nav>
-
-
-
-
- <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 250px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn; padding-top: 18px;"><div class="row"><div class="col-lg-10 col-lg-offset-1 text-center">
-<i class="icon icon-heading ion-pie-graph size-96"></i>
-<br><h2>El Mayorista</h2><p class="lead">
-Somos una empresa <strong>Mayorista</strong> de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en <a style="color: #01579b ; font-weight: bold;" href="{{ url('/') }}/contacto"> Lima Cercado </a>, visita nuestra página de  <a style="color: #01579b ; font-weight: bold;" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/" target="_blank"> Facebook </a>.</p></div></div></div>
-</section>           
-            
-
-             @component('components.breadcrumbs')
-        <a href="/" style="color: white">Inicio</a>
-        <i class="fa fa-chevron-right breadcrumb-separator" style="color: white"></i>
-        <span style="color: white">Tienda</span>
-    @endcomponent
      <div class="container">
         @if (session()->has('success_message'))
             <div class="alert alert-success">
@@ -1034,14 +1143,7 @@ Somos una empresa <strong>Mayorista</strong> de productos del hogar, hacemos ven
     </div>
 
     <div class="products-section container">
-        <div class="sidebar">
-            <h3>Categorías</h3>
-            <ul>
-                @foreach ($categories as $category)
-                    <li class="{{ setActiveCategory($category->slug) }}"><a href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
-                @endforeach
-            </ul>
-        </div> <!-- end sidebar -->
+       
         <div>
             <div class="products-header">
                 <h1 class="stylish-heading">{{ $categoryName }}</h1>
@@ -1058,8 +1160,8 @@ Somos una empresa <strong>Mayorista</strong> de productos del hogar, hacemos ven
                   @if($product->quantity > 0)
                     <div class="product polaroid ">
                         <div ><a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a></div>
-                        <div ><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name">{{ $product->name }} </div></a>
-                        <div class="product-price" style="font-weight: bold; color: black;">{{ $product->presentPriceUnidad() }}<span style="font-weight: normal; font-size: 12px">/unidad</span></div></div>
+                        <div ><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name" style=" color: #171260;">{{ $product->name }} </div></a>
+                        <div class="product-price" style="font-weight: bold; color: #171260;">{{ $product->presentPrice() }}</div></div>
                     </div>
                   @endif
                 @empty
@@ -1139,7 +1241,99 @@ ham.addEventListener('click', function () {
   document.body.classList.toggle('nav-is-toggled');
 });
 </script>
+
+<script type="text/javascript">
+
+/** Code By Webdevtrick ( https://webdevtrick.com ) **/
+var $carousel = $('.carousel2'),
+    currentSlide, nextSlide;
+ 
+$('.next').click(function() {
+  currentSlide = $carousel.attr('data-slide');
+  nextSlide = +currentSlide === 4 ? 1 : +currentSlide + 1;
+  $carousel.attr('data-slide', nextSlide);
+});
+ 
+$('.prev').click(function() {
+  currentSlide = $carousel.attr('data-slide');
+  nextSlide = +currentSlide === 1 ? 4 : +currentSlide - 1;
+  $carousel.attr('data-slide', nextSlide);
+});
+</script>
     </body>
 </html>
 
 
+<script>
+$('#recipeCarousel').carousel({
+  interval: 10000
+})
+
+$('.carousel .carousel-item').each(function(){
+    var minPerSlide = 10;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<minPerSlide;i++) {
+        next=next.next();
+        if (!next.length) {
+        	next = $(this).siblings(':first');
+      	}
+        
+        next.children(':first-child').clone().appendTo($(this));
+      }
+});
+
+
+
+</script>
+<style>
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.33%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.33%);
+    }
+    .col-md-3S{
+      flex: 0 0 33.33%;
+    max-width: 33.33%;
+  
+}
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(20%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-20%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+
+</style>
+    </body>
+</html>

@@ -90,11 +90,7 @@
 
 @section('content')
 
-    @component('components.breadcrumbs')
-        <a href="/">Inicio</a>
-        <i class="fa fa-chevron-right breadcrumb-separator"></i>
-        <span>Mis Órdenes</span>
-    @endcomponent
+   
 
     <div class="container">
         @if (session()->has('success_message'))
@@ -116,51 +112,77 @@
 
     <div class="products-section my-orders container">
         <div class="sidebar">
-
             <ul>
-              <li><a href="{{ route('users.edit') }}">Mi Perfil</a></li>
-              <li class="active"><a href="{{ route('orders.index') }}">Mis Órdenes</a></li>
+                <li>
+                    <a href="{{ route('users.edit') }}" class="d-flex">
+                        <div style="width:25px" class="text-center">
+                            <i class="far fa-user"></i>
+                        </div>
+                        Mi Perfil
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="{{ route('orders.index') }}" class="d-flex">
+                        <div style="width:25px" class="text-center">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        Mis Órdenes
+                    </a>
+                </li>
             </ul>
         </div> <!-- end sidebar -->
         <div class="my-profile">
             <div class="products-header">
-                <h1 class="stylish-heading">Mis Órdenes</h1>
+                <h1 class="stylish-heading mb-4">Mis Órdenes</h1>
             </div>
 
             <div>
                 @foreach ($orders as $order)
                 <div class="order-container">
                     <div class="order-header">
-                        <div class="order-header-items">
-                            <div>
-                                <div class="uppercase font-bold">Fecha</div>
-                                <div>{{ presentDate($order->created_at) }}</div>
-                            </div>
-                            <div>
-                                <div class="uppercase font-bold">Id de Orden</div>
-                                <div>{{ $order->id }}</div>
-                            </div><div>
-                                <div class="uppercase font-bold">Total</div>
-                                <div>{{ presentPrice($order->billing_total) }}</div>
-                            </div>
-                            <div> 
+                            <table class="w-100">
+                                <tbody>
+                                    <tr class="d-flex justify-content-between align-items-center">
+                                        <td>
+                                        <div>
+                                            <div class="uppercase font-bold">Fecha</div>
+                                            <div>{{ presentDate($order->created_at) }}</div>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div>
+                                            <div class="uppercase font-bold">Id de Orden</div>
+                                            <div>{{ $order->id }}</div>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div>
+                                            <div class="uppercase font-bold">Total</div>
+                                            <div>{{ presentPrice($order->billing_total) }}</div>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="uppercase font-bold">Estado</div>
+                                        @if($order->shipped==1)
+                                            <div class="uppercase font-bold" style="color: #008f39">Enviado</div>
+                                        @else 
+                                            <div class="uppercase font-bold" style="color: #cb3234">No Enviado</div>
+                                        @endif
+                                        </td>
+                                        <td>
+                                            <strong>
+                                                <a href="{{ route('orders.show', $order->id) }}">
+                                                    Detalle de orden
+                                                    <i class="fas fa-arrow-alt-circle-right"></i>
+                                                </a>
+                                            </strong>
+                                        </td>
 
-                                @if($order->shipped==1)
-                                    <div class="uppercase font-bold" style="color: #008f39">Enviado</div>
-                                @else 
-                                    <div class="uppercase font-bold" style="color: #cb3234">No Enviado</div>
-                                @endif
-
-                                
-                                
-                            </div>
-                        </div>
+                                    </tr>
+                                    </tr>
+                                </tbody>
+                            </table>
                         <div>
-                            <div class="order-header-items">
-                                <div><a href="{{ route('orders.show', $order->id) }}">Detalle de Orden</a></div>
-                                <div>|</div>
-                                
-                            </div>
                             @if(isset($order->imagen_factura))
                                 <div class="order-header-items">
                                 <div><img id="myImg" width="100" height="100" src="{{ orderImage($order->imagen_factura) }}" alt="Comprobante de Pago"></div>

@@ -28,7 +28,7 @@
 }
 #action-parallax4 {
     
-    background-image: url("{{ asset('img/parallax/parallax2.jpg') }}");
+    background-image: url("{{ asset('img/parallax/footer.jpg') }}");
 }
 #action-parallax5 {
     background-image: url("../images/cover-portal-empleado.jpg");
@@ -146,10 +146,11 @@
     margin-left: -1em;
 
 }
+
 </style>
 
 <footer data-type="background" data-speed="4" class="parallax fixed_p" id="action-parallax4" style="background-position: 50% 33.75px;
- z-index: 1; height: 320px;
+ z-index: 1;
 
 
 
@@ -158,7 +159,7 @@
     <div class="row">
       
 
-      <div class="col-6 col-md-3">
+      <div class="col-6 ">
         <div class="footer__titulo">
           ENLACES
         </div>
@@ -170,14 +171,14 @@
         </ul>
       </div>
 
-      <div class="col-6 col-md-3">
+      <div class="col-6 ">
         <div class="footer__titulo">
           SÍGUENOS
         </div>
         <ul class="lista-footer lista-footer--padding-min">
-          <li class="lista-footer__item lista-footer__item--nobullet pt-0"><a class="redes__link" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/" target="_blank"><i class="fab fa-facebook-f"></i><span class="pl-3">Facebook</span></a></li>
+          <li class="lista-footer__item lista-footer__item--nobullet pt-0"><a class="redes__link" href="https://www.facebook.com/Aletoysi-103421061443777/" target="_blank"><i class="fab fa-facebook-f"></i><span class="pl-3">Facebook</span></a></li>
           
-    <li class="lista-footer__item lista-footer__item--nobullet"><a class="redes__link" href="   " target="_blank"><i class="fab fa-instagram"></i><span class="pl-3">Instagram</span></a></li>           
+    <li class="lista-footer__item lista-footer__item--nobullet"><a class="redes__link" href="https://www.instagram.com/Aletoysi/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i><span class="pl-3">Instagram</span></a></li>           
  </ul>
       </div>
 

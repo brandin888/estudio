@@ -73,20 +73,20 @@ class CartController extends Controller
     public function update(Request $request, $id)
     {      
         $validator = Validator::make($request->all(), [
-            'quantity' => 'required|numeric|between:1,5'
+            'quantity' => 'required|numeric|between:1,´100'
         ]);
 
         if ($validator->fails()) {
-            session()->flash('errors', collect(['La cantidad debe estar entre 1 y 5.']));
+            session()->flash('errors', collect(['La cantidad debe estar entre 1 y 100.']));
             return response()->json(['success' => false], 400);
         }
 
-        if ($request->quantity > $request->productQuantity) {
+        if ($request->productQuantity = 0) {
             session()->flash('errors', collect(['Actualmente no tenemos suficientes de este producto en stock.']));
             return response()->json(['success' => false], 400);
         }
 
-        Cart::update($id, $request->quantity);
+        Cart::update($id, $request->quantity,$request->productPricemayor,$request->productPrice);
         session()->flash('success_message', 'La cantidad se actualizó correctamente!');
         return response()->json(['success' => true]);
     }
@@ -128,5 +128,15 @@ class CartController extends Controller
             ->associate('App\Product');
 
         return redirect()->route('cart.index')->with('success_message', 'Item has been Saved For Later!');
+    }
+
+    public function records(){
+        return Cart::content()->map(function ($item) {
+            return [
+                'name' => $item->name,
+                'quantity' => $item->qty,
+                'price' => $item->price
+            ];
+        })->values()->toJson();
     }
 }

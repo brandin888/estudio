@@ -14,7 +14,7 @@
       <div class="col-md-12 col-xs-12 col-sm-12">
         <h2><strong>HABLA CON UNO DE NUESTROS ASESORES</strong></h2>
       </div>
-      <div class="col-md-8">
+      <div class="col-lg-8">
         <!-- <div data-aos="fade-right" class="formulario__content box"> -->
         <div class="formulario__content box">
           <h3><strong>Estamos a su disposición</strong></h3>
@@ -47,7 +47,7 @@
               <label for="mensaje" generated="true" class="error"></label>
 
             </div>
-            <div class="form-check col-md-8">
+            <div class="form-check">
               <input type="checkbox" class="form-check-input input-check" name="politica">
               <span class="politica">Al hacer clic en "Enviar" certifico que acepto <a href="#" data-toggle="modal" data-target="#modalPolitica">las Condiciones de Uso y la Política de Privacidad.</a></span>
             </div>
@@ -60,7 +60,7 @@
           </form>
         </div>
       </div>
-      <div class="col-md-4 hero-buttons">
+      <div class="d-none d-lg-block col-md-4 hero-buttons">
           <img src="{{ asset('img/contacto02.png') }}" class="contacto__img" alt="">
       </div>
     </div>
@@ -132,7 +132,7 @@
             <div class="col-md-12">
               <h2 class="modal__titulo">CONDICIONES DE USO Y POLÍTICA DE PRIVACIDAD</h2>
               <div class="modal__parrafo">
-                <p>El presente Política de Privacidad establece los términos en que El Mayorista usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.</p>
+                <p>El presente Política de Privacidad establece los términos en que Aletoysi usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.</p>
               </div>
               <div class="modal__parrafo">
                <strong>Información que es recogida</strong>
@@ -141,7 +141,7 @@
               <div class="modal__parrafo">
                 <strong>Uso de la información recogida</strong>
                 <p>Nuestro sitio web emplea la información con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios.  Es posible que sean enviados correos electrónicos periódicamente a través de nuestro sitio con ofertas especiales, nuevos productos y otra información publicitaria que consideremos relevante para usted o que pueda brindarle algún beneficio, estos correos electrónicos serán enviados a la dirección que usted proporcione y podrán ser cancelados en cualquier momento.</p>
-                <p>El Mayorista está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado.</p>
+                <p>Aletoysi está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado.</p>
               </div>
               <div class="modal__parrafo">
                   <strong>Cookies</strong>
@@ -156,15 +156,15 @@
                 <strong>Control de su información personal</strong>
                 <p>En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a nuestro sitio web.  Cada vez que se le solicite rellenar un formulario, como el de alta de usuario, puede marcar o desmarcar la opción de recibir información por correo electrónico.  En caso de que haya marcado la opción de recibir nuestro boletín o publicidad usted puede cancelarla en cualquier momento.</p>
                 <p>Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que sea requerido por un juez con un orden judicial.</p>
-                <p>El Mayorista Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.</p>
+                <p>Aletoysi Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.</p>
               </div>
               <div class="modal__parrafo">
                 <strong>Entrega del Producto</strong>
-                <p>Las fechas de entrega son aproximadas y estimadas, y no están garantizadas. El Mayorista no será responsable de cualquier daño al Comprador ocasionado por la demora en la entrega.</p>
-                <p>El Mayorista en ningún caso podrá ser responsable de ningún daño especial, incidental, indirecto o consecuencial, incluyengo
+                <p>Las fechas de entrega son aproximadas y estimadas, y no están garantizadas. Aletoysi no será responsable de cualquier daño al Comprador ocasionado por la demora en la entrega.</p>
+                <p>Aletoysi en ningún caso podrá ser responsable de ningún daño especial, incidental, indirecto o consecuencial, incluyengo
                   , pero no limitandose a las perdidas de beneficios, perdidas de actividad, ahorro, negocio, clientela, datos de cualquier tipo, reclamaciones de terceros o retraso de entrega.
                 </p>
-                <p>El Mayorista Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.</p>
+                <p>Aletoysi Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.</p>
               </div>
             </div>
           </div>

@@ -21,7 +21,7 @@
                 </ul>
             </div>
             @endif
-            <h2>Crear Cuenta</h2>
+            <h2 style="color:#171260">Crear Cuenta</h2>
             <div class="spacer"></div>
 
             <form method="POST" action="{{ route('register') }}">
@@ -37,7 +37,7 @@
                     required>
 
                 <div class="login-container">
-                    <button type="submit" class="auth-button">Crear Cuenta</button>
+                    <button type="submit" class="auth-button" >Crear Cuenta</button>
                     <div class="already-have-container">
                         <p><strong>¿Usted ya tiene una cuenta?</strong></p>
                         <a href="{{ route('login') }}">Iniciar Sesión</a>
@@ -48,15 +48,15 @@
         </div>
 
         <div class="auth-right">
-            <h2>Nuevo Cliente</h2>
+            <h2 style="color:#171260">Nuevo Cliente</h2>
             <div class="spacer"></div>
-            <p><strong>Ahorra tiempo.</strong></p>
-            <p>Creando una cuenta podras ordenar más rápido en el futuro, facil acceso a tu historial de órdenes.</p>
+            <p><strong  style="color:#ffc63f">Ahorra tiempo</strong></p>
+            <p style="color:#54bbe6">Creando una cuenta podras ordenar más rápido en el futuro, facil acceso a tu historial de órdenes.</p>
 
             &nbsp;
             <div class="spacer"></div>
-            <p><strong>Beneficios</strong></p>
-            <p>Podrás recibir promociones de nuestros nuevos productos.</p>
+            <p><strong  style="color:#ffc63f">Beneficios</strong></p>
+            <p style="color:#54bbe6">Podrás recibir promociones de nuestros nuevos productos.</p>
         </div>
     </div> <!-- end auth-pages -->
 </div>

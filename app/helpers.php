@@ -21,6 +21,11 @@ function orderImage($path)
     return $path && file_exists('storage/'.$path) ? asset('storage/'.$path) : asset('img/not-found.jpg');
 }
 
+function categoryImage($path)
+{
+    return $path && file_exists('storage/'.$path) ? asset('storage/'.$path) : asset('img/not-found.jpg');
+}
+
 
 function productImage($path)
 {

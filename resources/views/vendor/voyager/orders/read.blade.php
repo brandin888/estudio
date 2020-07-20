@@ -38,6 +38,7 @@
                                         <div>Product Id: {{ $product->id }}</div>
                                         <div>Product Name: {{ $product->name }}</div>
                                         <div>Product Price: {{ $product->presentPrice() }}</div>
+                                        <div>Product Price Mayor: {{ $product->presentPriceMayor() }}</div>
                                         <div>Product Quantity: {{ $product->pivot->quantity }}</div>
                                     </li>
                                 @endforeach

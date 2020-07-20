@@ -186,19 +186,17 @@
     border-color: rgba(218, 178, 254, 0.29);
     border-left: 1px solid transparent;
     color: #fff;
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
   }
   
   .modal-content .modal-body form .input-group input:focus {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    /* -webkit-box-shadow: none;
+            box-shadow: none; */
   }
   
   .modal-content .modal-body form .input-group input::-webkit-input-placeholder {
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 700;
   }
@@ -206,7 +204,6 @@
   .modal-content .modal-body form .input-group input::-ms-input-placeholder {
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 700;
   }
@@ -214,7 +211,6 @@
   .modal-content .modal-body form .input-group input::placeholder {
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 700;
   }
@@ -224,7 +220,6 @@
     width: 100%;
     padding: 10px;
     font-weight: 900;
-    font-family: 'Lato', sans-serif;
     margin: auto;
   }
   
@@ -394,11 +389,12 @@
       font-size: 14px;
     }
   }
-  
+  .contacto__img {
+    margin-top: 40px;
+  }
   @media (max-width: 1757px) {
     .contacto__img {
       width: 70%;
-      margin-top: 70px;
     }
   }
   
@@ -426,14 +422,12 @@
   
   .ubicaciones__card__titulo {
     color: #2EC4B6;
-    font-family: 'Paytone One', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
   }
   
   .ubicaciones__card__subtitulo {
     color: #bcc1d5;
-    font-family: 'Lato', sans-serif;
     font-weight: 600;
     font-size: 16px;
   }
@@ -446,7 +440,6 @@
   .ubicaciones__card__datos li {
     list-style: none;
     color: #2EC4B6;
-    font-family: 'Lato', sans-serif;
     font-weight: 600;
     padding: 9px 0px;
     position: relative;
@@ -470,7 +463,6 @@
   
   .ubicaciones__card__datos li a {
     color: #a7b3d2;
-    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
   }
@@ -616,9 +608,8 @@
   }
   
   .formulario__content h3 {
-    color: #003b70;
+    color: #171260;
     font-size: 18px;
-    font-family: 'Paytone One', sans-serif;
     text-transform: uppercase;
     margin-bottom: 30px;
   }
@@ -626,7 +617,6 @@
   .formulario__content form label {
     color: #253b56;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 900;
   }
@@ -639,26 +629,23 @@
   }
   
   .formulario__content form input:focus {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    /* -webkit-box-shadow: none;
+            box-shadow: none; */
     color: #212121;
   }
   
   .formulario__content form input::-webkit-input-placeholder {
     color: #253b5670;
-    font-family: 'Lato', sans-serif;
     font-style: italic;
   }
   
   .formulario__content form input::-ms-input-placeholder {
     color: #253b5670;
-    font-family: 'Lato', sans-serif;
     font-style: italic;
   }
   
   .formulario__content form input::placeholder {
     color: #253b5670;
-    font-family: 'Lato', sans-serif;
     font-style: italic;
   }
   
@@ -676,19 +663,16 @@
   
   .formulario__content form textarea::-webkit-input-placeholder {
     color: #253b5670;
-    font-family: 'Lato', sans-serif;
     font-style: italic;
   }
   
   .formulario__content form textarea::-ms-input-placeholder {
     color: #253b5670;
-    font-family: 'Lato', sans-serif;
     font-style: italic;
   }
   
   .formulario__content form textarea::placeholder {
     color: #253b5670;
-    font-family: 'Lato', sans-serif;
     font-style: italic;
   }
   
@@ -707,9 +691,8 @@
   
   .formulario__content form .btn__enviar {
     text-transform: uppercase;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 10px 50px;
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
   }
   
@@ -725,7 +708,6 @@
     display: block;
     margin-left: 8px;
     color: rgba(37, 59, 86, 0.48);
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
   }
   
@@ -740,14 +722,12 @@
   
   .formulario__content form .adjuntar__titulo {
     font-size: 14px;
-    font-family: 'Lato', sans-serif;
     color: #253b56;
   }
   
   .formulario__content form .adjuntar__link {
     font-size: 14px;
     color: #e8542c;
-    font-family: 'Lato', sans-serif;
     text-decoration: underline;
   }
   
@@ -860,10 +840,16 @@
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0;
-    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    /* -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; */
+  }
+
+
+  .form-control:focus {
+    border-color:var(--primary);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--secondary);
   }
   
   @media screen and (prefers-reduced-motion: reduce) {
@@ -879,12 +865,12 @@
   }
   
   .form-control:focus {
-    color: #495057;
+    /* color: #495057;
     background-color: #fff;
     border-color: #80bdff;
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.2rem transparent;
-            box-shadow: 0 0 0 0.2rem transparent;
+            box-shadow: 0 0 0 0.2rem transparent; */
   }
   
   .form-control::-webkit-input-placeholder {
@@ -1314,7 +1300,6 @@
   #mensajePolitica {
     color: #253b56;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
     margin-left: 22px;
     font-size: 12px;
@@ -1373,8 +1358,6 @@
   
   
   /*
-    font-family: 'Paytone One', sans-serif;
-    font-family: 'Lato', sans-serif;
   
   */
   
@@ -1399,7 +1382,7 @@
     --white: #fff;
     --gray: #6c757d;
     --gray-dark: #343a40;
-    --primary: #007bff;
+    --primary: #dc84b3;
     --secondary: #6c757d;
     --success: #28a745;
     --info: #17a2b8;
@@ -1633,7 +1616,7 @@
   
   button:focus {
     outline: 1px dotted;
-    outline: 5px auto -webkit-focus-ring-color;
+    /*outline: 5px auto -webkit-focus-ring-color; */
   }
   
   input,
@@ -4378,20 +4361,20 @@
   
   .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    /* background-color: #007bff;
+    border-color: #007bff; */
   }
   
   .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    /* background-color: #171260; */
+    /* border-color: #0062cc; */
   }
   
   .btn-primary:focus,
   .btn-primary.focus {
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    /* -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); */
   }
   
   .btn-primary.disabled,
@@ -4405,16 +4388,15 @@
   .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0062cc;
-    border-color: #005cbf;
+    background-color: var(--primary);
   }
   
-  .btn-primary:not(:disabled):not(.disabled):active:focus,
+  /* .btn-primary:not(:disabled):not(.disabled):active:focus,
   .btn-primary:not(:disabled):not(.disabled).active:focus,
   .show > .btn-primary.dropdown-toggle:focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-  }
+  } */
   
   .btn-secondary {
     color: #fff;
@@ -5928,6 +5910,7 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    
   }
   
   .nav-link {
@@ -6789,8 +6772,8 @@
   .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: var(--primary);
+    /* border-color: #007bff; */
   }
   
   .list-group-flush .list-group-item {
@@ -27857,18 +27840,16 @@
   
   .anio {
     padding-bottom: 1rem;
-    color: #003b70;
+    color: #171260;
     font-weight: bold;
-    font-family: 'Lato', sans-serif;
   }
   
   .mes {
     font-size: 20px;
-    color: #003b70;
+    color: #171260;
     margin-bottom: 20px;
     padding: .5em 1em;
     font-weight: bold;
-    font-family: 'Lato', sans-serif;
   }
   
   .semana,
@@ -27889,7 +27870,6 @@
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: 'Lato', sans-serif;
   }
   
   .pintado {
@@ -27949,7 +27929,6 @@
     -webkit-transform: translate(-50%, -40%);
             transform: translate(-50%, -40%);
     text-align: center;
-    font-family: 'Paytone One', sans-serif;
     font-size: 1rem;
   }
   
@@ -28039,7 +28018,6 @@
   }
   
   .navbar {
-    font-family: 'Lato', sans-serif;
     color: white;
     font-size: 0.875rem;
   }
@@ -28110,7 +28088,7 @@
   }
   
   .menu__responsive .carrito_top a i {
-    color: #212121;
+    color: white;
   }
   
   .menu__responsive .carrito_top a span {
@@ -28228,7 +28206,6 @@
     width: 100%;
     padding: 2% 0;
     display: block;
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 0.6px;
@@ -28364,7 +28341,7 @@
     }
   
     .telefonos-container a {
-      font-family: 'Lato', sans-serif;
+
       font-size: 13px;
       font-weight: 600;
     }
@@ -28400,7 +28377,7 @@
     }
   
     .telefonos-container__content__item .titulo {
-      font-family: 'Lato', sans-serif;
+
       display: block;
       color: #253b56;
       font-weight: 900;
@@ -28613,7 +28590,6 @@
     color: #8caac5;
     font-size: 14px;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
     font-weight: bold;
   }
   
@@ -28623,10 +28599,9 @@
   }
   
   .nuestros__productos__boleto a {
-    color: #003b70;
+    color: #171260;
     text-decoration: none;
     line-height: 20px;
-    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
   }
@@ -28653,7 +28628,6 @@
   }
   
   .nuestros__productos__content--item--titulo {
-    font-family: 'Paytone One', sans-serif;
     font-size: 25px;
     text-transform: uppercase;
     text-shadow: 0px 8px 21px rgba(0, 0, 0, 0.2);
@@ -28696,15 +28670,13 @@
   }
   
   .ubicaciones__card__titulo {
-    color: #003b70;
-    font-family: 'Paytone One', sans-serif;
+    color: #171260;
     font-size: 18px;
     text-transform: uppercase;
   }
   
   .ubicaciones__card__subtitulo {
     color: #bcc1d5;
-    font-family: 'Lato', sans-serif;
     font-weight: 600;
     font-size: 16px;
   }
@@ -28717,7 +28689,6 @@
   .ubicaciones__card__datos li {
     list-style: none;
     color: #253b56;
-    font-family: 'Lato', sans-serif;
     font-weight: 600;
     padding: 9px 0px;
     position: relative;
@@ -28741,7 +28712,6 @@
   
   .ubicaciones__card__datos li a {
     color: #a7b3d2;
-    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
   }
@@ -28871,7 +28841,6 @@
   
   .promociones__item__content--precio {
     color: #212121;
-    font-family: 'Paytone One', sans-serif;
     margin-top: 43px;
     position: relative;
   }
@@ -28902,7 +28871,6 @@
   }
   
   .promociones__item__content--parrafo {
-    font-family: 'Lato', sans-serif;
     font-weight: bold;
     line-height: 22px;
     font-size: 18px;
@@ -29340,34 +29308,30 @@
     right: 24px;
     color: #f58508;
     font-size: 14px;
-    font-family: 'Lato', sans-serif;
     font-weight: 600;
     text-decoration: none;
     top: 13px;
   }
   
   .recuperar__header h4 {
-    color: #003b70;
+    color: #171260;
     font-size: 20px;
     margin-bottom: 0;
-    font-family: 'Paytone One', sans-serif;
     text-transform: uppercase;
   }
   
   .recuperar__body label {
-    color: #003b70;
+    color: #171260;
     font-size: 14px;
-    font-family: 'Lato', sans-serif;
     font-weight: 600;
   }
   
   .recuperar__body input {
-    color: #003b70;
-    font-family: 'Lato', sans-serif;
+    color: #171260;
   }
   
   .recuperar__body input:focus {
-    color: #003b70;
+    color: #171260;
   }
   
   .swal2-confirm {
@@ -29507,7 +29471,6 @@
     color: #fff;
     font-weight: 600;
     font-size: 20px;
-    font-family: 'Lato', sans-serif;
     text-decoration: none;
   }
   
@@ -29547,9 +29510,8 @@
   }
   
   section h2 {
-    color: #003b70;
+    color: #171260;
     font-size: 30px;
-    font-family: 'Paytone One', sans-serif;
     text-transform: uppercase;
   }
   
@@ -29646,7 +29608,6 @@
     font-size: 60px;
     line-height: 70px;
     text-transform: uppercase;
-    font-family: 'Paytone One', sans-serif;
     text-shadow: 4.95px 4.95px 9px rgba(2, 13, 56, 0.3);
     margin-top: 33px;
     display: inline-block;
@@ -29690,7 +29651,6 @@
   .banner__chico__text__titulo {
     font-size: 40px;
     text-transform: uppercase;
-    font-family: 'Paytone One', sans-serif;
     text-shadow: 4.95px 4.95px 9px rgba(2, 13, 56, 0.3);
     margin-top: 33px;
     display: inline-block;
@@ -29705,7 +29665,6 @@
   
   .banner__chico__text__parrafo {
     font-size: 18px;
-    font-family: 'Lato', sans-serif;
   }
   
   .box {
@@ -29769,7 +29728,6 @@
   .selector-numero--home .input-select {
     height: 44px !important;
     color: #ffffff !important;
-    font-family: 'Lato', sans-serif;
     font-weight: 600 !important;
     font-size: 13px !important;
     background: transparent !important;
@@ -29786,7 +29744,6 @@
   .selector-numero .input-select {
     height: 56px;
     color: #0b2a52;
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
     font-size: 18px;
     background: #fff;
@@ -29813,7 +29770,6 @@
   .wizards__card__item--precio {
     color: #f58508;
     font-size: 40px;
-    font-family: 'Paytone One', sans-serif;
   }
   
   .wizards__card__item--titulo {
@@ -29823,7 +29779,6 @@
   
   .wizards__card__item--parrafo {
     color: #fff;
-    font-family: 'Lato', sans-serif;
     font-size: 15px;
   }
   
@@ -29874,7 +29829,6 @@
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: 'Lato', sans-serif;
   }
   
   .wizards__card__item .carro__input {
@@ -29915,9 +29869,8 @@
   }
   
   .wizards__content__titulo {
-    color: #003b70;
+    color: #171260;
     font-size: 30px;
-    font-family: 'Paytone One', sans-serif;
     text-transform: uppercase;
   }
   
@@ -29930,7 +29883,7 @@
   }
   
   .wizards__content__botones .btn-secondary {
-    background: #003b701a !important;
+    background: #1712601a !important;
     color: #253b5642 !important;
     text-transform: uppercase;
     padding: 18px 42px;
@@ -29938,7 +29891,6 @@
   
   .wizards__content__parrafo {
     color: #253b56;
-    font-family: 'Lato', sans-serif;
     font-weight: 600;
     font-size: 17px;
   }
@@ -30006,7 +29958,7 @@
   }
   
   .wizards__content__link:hover .wizards__content__link__item--top--titulo {
-    color: #003b70;
+    color: #171260;
   }
   
   .wizards__content__link:hover .wizards__content__link__item--top--subtitulo {
@@ -30014,11 +29966,11 @@
   }
   
   .wizards__content__link:hover .wizards__content__link__item--bottom--titulo {
-    color: #003b70;
+    color: #171260;
   }
   
   .wizards__content__link:hover .wizards__content__link__item--bottom--direccion li span {
-    color: #003b70;
+    color: #171260;
   }
   
   .wizards__content__link__item {
@@ -30059,19 +30011,16 @@
   }
   
   .wizards__content__link__item--top--titulo {
-    font-family: 'Paytone One', sans-serif;
     text-transform: uppercase;
     color: #fff;
     font-size: 20px;
   }
   
   .wizards__content__link__item--top--subtitulo {
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
   }
   
   .wizards__content__link__item--top--precio {
-    font-family: 'Paytone One', sans-serif;
     font-weight: 400;
     color: #212121;
     font-size: 20px;
@@ -30092,7 +30041,6 @@
     text-transform: uppercase;
     color: #fff;
     font-weight: 900;
-    font-family: 'Lato', sans-serif;
     font-size: 13px;
   }
   
@@ -30114,7 +30062,6 @@
   
   .wizards__content__link__item--bottom--direccion li span {
     display: inline-block;
-    font-family: 'Lato', sans-serif;
     font-weight: 600;
     margin-left: 21px;
   }
@@ -30182,7 +30129,7 @@
   }
   
   .wizards__content__birthday:hover .wizards__content__birthday__item--top--titulo {
-    color: #003b70;
+    color: #171260;
   }
   
   .wizards__content__birthday:hover .wizards__content__birthday__item--top--subtitulo {
@@ -30190,11 +30137,11 @@
   }
   
   .wizards__content__birthday:hover .wizards__content__birthday__item--bottom--titulo {
-    color: #003b70;
+    color: #171260;
   }
   
   .wizards__content__birthday:hover .wizards__content__birthday__item--bottom--direccion li span {
-    color: #003b70;
+    color: #171260;
   }
   
   .wizards__content__birthday__item {
@@ -30235,19 +30182,16 @@
   }
   
   .wizards__content__birthday__item--top--titulo {
-    font-family: 'Paytone One', sans-serif;
     text-transform: uppercase;
     color: #fff;
     font-size: 20px;
   }
   
   .wizards__content__birthday__item--top--subtitulo {
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
   }
   
   .wizards__content__birthday__item--top--precio {
-    font-family: 'Paytone One', sans-serif;
     font-weight: 400;
     color: #212121;
     font-size: 20px;
@@ -30268,7 +30212,6 @@
     text-transform: uppercase;
     color: #fff;
     font-weight: 900;
-    font-family: 'Lato', sans-serif;
     font-size: 13px;
   }
   
@@ -30290,18 +30233,16 @@
   
   .wizards__content__birthday__item--bottom--direccion li span {
     display: inline-block;
-    font-family: 'Lato', sans-serif;
     font-weight: 600;
     margin-left: 21px;
   }
   
   .wizards__content__calendario--titulo {
-    color: #003b70;
+    color: #171260;
   }
   
   .wizards__content__calendario--titulo h5 {
     font-size: 16px;
-    font-family: 'Lato', sans-serif;
     font-weight: 800;
   }
   
@@ -30310,12 +30251,11 @@
   }
   
   .wizards__content__hora--titulo {
-    color: #003b70;
+    color: #171260;
   }
   
   .wizards__content__hora--titulo h5 {
     font-size: 16px;
-    font-family: 'Lato', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
   }
@@ -30327,7 +30267,6 @@
   .wizards__content__hora .card-body h5 {
     color: #253b56;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 600;
   }
@@ -30376,7 +30315,6 @@
   }
   
   .wizards__content__hora--bg h3 {
-    font-family: 'Paytone One', sans-serif;
     color: #212121;
     font-size: 35px;
     position: relative;
@@ -30396,14 +30334,12 @@
   }
   
   .wizards__content__hora--bg p {
-    font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 400;
   }
   
   .wizards__content__hora--bg span {
     font-size: 17px;
-    font-family: 'Lato', sans-serif;
   }
   
   .wizards__content .muneco {
@@ -30428,7 +30364,6 @@
   
   .wizards__content .card__img .precio span {
     color: #212121;
-    font-family: 'Paytone One', sans-serif;
     font-weight: 500;
     font-size: 40px;
   }
@@ -30445,7 +30380,6 @@
   
   .wizards__content .card__content__cantidad__titulo {
     color: #253b56;
-    font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 700;
   }
@@ -30454,14 +30388,12 @@
     font-weight: bold;
     font-size: 18px;
     font-weight: 400;
-    font-family: 'Paytone One', sans-serif;
-    color: #003b70;
+    color: #171260;
     text-transform: uppercase;
   }
   
   .wizards__content .card__content p {
     color: #253b56;
-    font-family: 'Lato', sans-serif;
   }
   
   .wizards__content .registrate__top {
@@ -30469,15 +30401,13 @@
   }
   
   .wizards__content .registrate__top__titulo {
-    font-family: 'Paytone One', sans-serif;
-    color: #003b70;
+    color: #171260;
     text-transform: uppercase;
     font-size: 17px;
   }
   
   .wizards__content .registrate__top__parrafo {
     color: #253b56;
-    font-family: 'Lato', sans-serif;
     font-weight: 600;
     font-size: 16px;
   }
@@ -30499,13 +30429,11 @@
   
   .wizards__content .registrate__bottom .pago__titulo {
     color: #253b56;
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
   }
   
   .wizards__content .registrate__bottom .pago__parrafo {
     color: #253b56;
-    font-family: 'Lato', sans-serif;
     font-size: 15px;
   }
   
@@ -30538,7 +30466,6 @@
   
   .wizards__content .local__listado--item li {
     padding: 10px 0px;
-    font-family: 'Lato', sans-serif;
     font-size: 16px;
   }
   
@@ -30559,7 +30486,6 @@
   
   .wizards__content .local__centrado span {
     color: #f58508;
-    font-family: 'Paytone One', sans-serif;
   }
   
   .wizards__content .local__centrado .numero {
@@ -30596,23 +30522,19 @@
   .wizards__content .local__bottom .codigo::-webkit-input-placeholder {
     color: #fff;
     opacity: 0.3;
-    font-family: 'Lato', sans-serif;
   }
   
   .wizards__content .local__bottom .codigo::-ms-input-placeholder {
     color: #fff;
     opacity: 0.3;
-    font-family: 'Lato', sans-serif;
   }
   
   .wizards__content .local__bottom .codigo::placeholder {
     color: #fff;
     opacity: 0.3;
-    font-family: 'Lato', sans-serif;
   }
   
   .wizards__content .local__bottom label {
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 12px;
     text-transform: uppercase;
@@ -30625,7 +30547,6 @@
   .wizards__content .parrafo p {
     color: #253b56;
     opacity: 0.5;
-    font-family: 'Lato', sans-serif;
     font-size: 14px;
     line-height: 1.8;
   }
@@ -30639,7 +30560,7 @@
   .wizards .wizard__progress {
     width: 50%;
     height: 2px;
-    background: #003b70;
+    background: #171260;
     position: absolute;
     text-align: center;
     margin: auto;
@@ -30746,9 +30667,8 @@
   }
   
   .wizards .wizard__listado__item a {
-    color: #003b70;
+    color: #171260;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
     text-decoration: none;
   }
   
@@ -30760,7 +30680,7 @@
   .wizards .wizard__listado__item--numero span {
     border-radius: 50%;
     display: block;
-    background: #003b70;
+    background: #171260;
     width: 36px;
     display: block;
     height: 36px;
@@ -30780,7 +30700,6 @@
     font-size: 12px;
     font-weight: 900;
     top: 40px;
-    font-family: 'Lato', sans-serif;
   }
   
   .scrollUp {
@@ -30810,7 +30729,6 @@
     text-decoration: none !important;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
   }
   
@@ -30821,7 +30739,6 @@
   }
   
   .cargar__mas a {
-    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     font-weight: bolder;
     color: #fff;
@@ -30841,7 +30758,6 @@
   .btn__general:focus {
     text-align: center;
     border-radius: 10px;
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -30857,7 +30773,7 @@
   
   .btn__general--transparente:hover {
     background: #fff;
-    color: #003b70;
+    color: #171260;
   }
   
   .btn__general:hover {
@@ -30868,7 +30784,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 320px;
-    font-family: 'Lato', sans-serif;
   }
   
   #calendar_weekdays div {
@@ -30963,8 +30878,7 @@
   }
   
   .trabaja__content--item--titulo {
-    font-family: 'Paytone One', sans-serif;
-    color: #003b70;
+    color: #171260;
     text-transform: uppercase;
     font-size: 20px;
     margin-bottom: 16px;
@@ -30972,7 +30886,6 @@
   
   .trabaja__content--item--subtitulo {
     color: #253b56;
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 16px;
     display: block;
@@ -30981,7 +30894,6 @@
   
   .trabaja__content--item--parrafo {
     color: #253b56;
-    font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 25px;
@@ -31000,14 +30912,12 @@
   
   .trabaja__content--item--listado li h4 {
     color: #253b56;
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
     font-size: 16px;
   }
   
   .trabaja__content--item--listado li span {
     color: #253b56;
-    font-family: 'Lato', sans-serif;
     font-weight: 400;
   }
   
@@ -31044,13 +30954,11 @@
   .modalIngresar__body__link {
     margin-top: 20px;
     color: #cdcdcd;
-    font-family: 'Lato', sans-serif;
     font-size: 16px;
   }
   
   .modalIngresar__body__link a {
     color: #ff9803;
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
     text-decoration: none;
   }
@@ -31074,7 +30982,6 @@
   
   .modalVolver__body__titulo {
     color: #fff;
-    font-family: 'Paytone One', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 25px;
@@ -31138,7 +31045,6 @@
     font-size: 18px;
     text-transform: uppercase;
     bottom: 30px;
-    font-family: 'Paytone One', sans-serif;
     color: #fff;
     left: 40px;
   }
@@ -31190,16 +31096,14 @@
   }
   
   .modal__titulo {
-    color: #003b70;
+    color: #171260;
     font-size: 20px;
-    font-family: 'Paytone One', sans-serif;
     text-transform: uppercase;
   }
   
   .modal__parrafo {
     margin-bottom: 4px;
     color: #253b56;
-    font-family: 'Lato', sans-serif;
     font-weight: 600;
   }
   
@@ -32102,7 +32006,6 @@
   
   .footer__parrafo {
     padding-top: 22px;
-    font-family: 'Lato', sans-serif;
     font-size: 16px;
   }
   
@@ -32132,7 +32035,6 @@
   .webtilia {
     color: #818aba;
     font-size: 0.875rem;
-    font-family: 'Lato', sans-serif;
     font-weight: 500;
   }
   
@@ -32164,7 +32066,6 @@
   .lista-footer {
     padding-top: 30px;
     list-style: none;
-    font-family: 'Lato', sans-serif;
     font-weight: 500;
     padding-left: 15px;
   }
@@ -32250,7 +32151,6 @@
   }
   
   .nosotros__content__parrafo {
-    font-family: 'Lato', sans-serif;
     color: #253b56;
     font-size: 22px;
     font-weight: 700;
@@ -32338,7 +32238,6 @@
   
   .parque__Atraccion__item p {
     color: #253b56;
-    font-family: 'Lato', sans-serif;
     font-size: 16px;
   }
   
@@ -32597,7 +32496,6 @@
   .maps__content--top h2 {
     font-size: 12px;
     font-weight: 700;
-    font-family: 'Lato', sans-serif;
     margin-bottom: 0;
   }
   
@@ -32636,9 +32534,8 @@
   }
   
   .maps__content--bottom--listado--item .item__content h3 {
-    color: #003b70;
+    color: #171260;
     font-size: 18px;
-    font-family: 'Paytone One', sans-serif;
     text-transform: uppercase;
   }
   
@@ -32765,12 +32662,10 @@
   
   .club__contenido2__content__h3 {
     font-size: 25px;
-    font-family: 'Paytone One', sans-serif;
     color: #253b56;
   }
   
   .club__contenido2__content__parrafo {
-    font-family: 'Lato', sans-serif;
     color: #253b56;
     font-size: 21px;
     font-weight: 700;
@@ -32795,7 +32690,6 @@
     text-align: center;
     color: #253b56;
     font-size: 16px;
-    font-family: 'Lato', sans-serif;
     margin-top: 15px;
     margin-bottom: 36px;
   }
@@ -32834,7 +32728,6 @@
   
   .club .locales__item__h3 {
     text-transform: uppercase;
-    font-family: 'Paytone One', sans-serif;
     color: white;
     font-weight: 100;
     line-height: 1.5;
@@ -33269,16 +33162,14 @@
   }
   
   .carrito__content--item--listado h4 {
-    font-family: 'Paytone One', sans-serif;
     text-transform: uppercase;
-    color: #003b70;
+    color: #171260;
     font-size: 19px;
     margin-bottom: 0;
     margin-top: 10px;
   }
   
   .carrito__content--item--listado .precio h3 {
-    font-family: 'Paytone One', sans-serif;
     font-size: 33px;
     color: #f58508;
   }
@@ -33320,14 +33211,12 @@
   }
   
   .carrito__total .precio p {
-    font-family: 'Lato', sans-serif;
     text-align: left;
     margin-bottom: 0;
     font-weight: 600;
   }
   
   .carrito__total .precio h3 {
-    font-family: 'Paytone One', sans-serif;
     font-size: 60px;
     color: #f58508;
     margin-bottom: 30px;
@@ -33351,7 +33240,6 @@
   .carrito__volver a {
     color: #222a5f;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
     font-size: 13px;
     font-weight: 900;
     position: relative;
@@ -33607,7 +33495,7 @@
     color: #fa755a;
   }
   
-  .btn-primary,
+  /* .btn-primary,
   .btn-primary:active,
   .btn-primary:visited,
   .btn-primary:focus {
@@ -33616,7 +33504,6 @@
     transition: all .4s ease-in-out;
     border: 0;
     border-radius: 8px;
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
     background-size: 300% 100%;
     text-transform: uppercase;
@@ -33626,14 +33513,20 @@
     background: -webkit-gradient(linear, left top, right top, from(#2dcccd), color-stop(50%, #01579b), to(#003b69 ));
     background: linear-gradient(to right, #2dcccd 0%, #01579b 50%, #003b69  100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2dcccd', endColorstr='#003b69 ', GradientType=1 );
+  } */
+  .btn-primary:focus {
+    background-color: var(--primary);
   }
-  
+  .btn-primary:active {
+    background-color: var(--primary);
+  }
   .btn-primary:hover {
     background-position: 100% 0;
-    background: #003b69 ;
-    background: -webkit-gradient(left top, right top, color-stop(0%, #003b69 ), color-stop(100%, #01579b));
+    background-color: var(--primary);
+    /* background: #171260 ; */
+    /* background: -webkit-gradient(left top, right top, color-stop(0%, #003b69 ), color-stop(100%, #01579b));
     background: -webkit-gradient(linear, left top, right top, from(#003b69 ), to(#01579b));
-    background: linear-gradient(to right, #003b69  0%, #01579b 100%);
+    background: linear-gradient(to right, #003b69  0%, #01579b 100%); */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003b69 ', endColorstr='#01579b', GradientType=1 );
   }
   
@@ -33649,7 +33542,6 @@
   .btn-light:visited,
   .btn-light:focus {
     padding: 15px 75px;
-    font-family: 'Lato', sans-serif;
     font-size: 0.875rem;
     color: white;
     border-radius: 8px;
@@ -33667,7 +33559,6 @@
   .btn-secondary:focus {
     border: 1px solid white;
     padding: 15px 30px;
-    font-family: 'Lato', sans-serif;
     font-size: 0.875rem;
     color: #212121;
     border-radius: 8px;
@@ -33685,11 +33576,11 @@
   }
   
   .form-control:focus {
-    border-color: #2dcccd;
-    color: white;
+    /* border-color: #2dcccd; */
+    /* color: white;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(1, 87, 155, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(1, 87, 155, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(1, 87, 155, 0.6); */
   }
   
   .bg-warning {

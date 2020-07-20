@@ -43,10 +43,20 @@ class Product extends Model
         return 'S/ '.number_format($this->price / 100, 2);
     }
 
+     public function presentPriceMayor()
+    {
+        //return money_format('$%i', $this->price / 100);
+        return 'S/ '.number_format($this->pricemayor / 100, 2);
+    }
+
     public function presentPriceUnidad()
     {
         //return money_format('$%i', $this->price / 100);
+
        return 'S/ '.number_format($this->price / (100), 2);
+
+
+
     }
 
     public function scopeMightAlsoLike($query)

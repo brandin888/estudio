@@ -4656,3 +4656,12 @@ readers do not read off random characters that represent icons */
   } */
 
   /* ==================================== */
+
+  :root{
+    --primary: #dc84b3;
+  }
+  .btn-primary .btn__enviar{
+    color: #fff;
+    background-color: #dc84b3;
+    border-color:#dc84b3;
+  }
