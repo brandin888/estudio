@@ -546,6 +546,7 @@ section#action, section#action-transparent {
  .top-nav-right{
     display: none;
  }
+
   #algolia-autocomplete-listbox-0 {
  
   width: 280px;
@@ -771,6 +772,8 @@ a {
   margin: 0 auto;
   transform-style: preserve-3d;
   transition: transform 0.5s ease;
+
+  
 }
 .carousel2[data-slide="1"] {
   transform: rotateY(0deg);
@@ -826,13 +829,16 @@ a {
   font-size: 60px;
 }
 .prev:hover {
-  color: black;
+   color: #fff;
+  opacity: .9;
 }
 .prev {
-  left: 0;
+  left: 25%;
 }
-.next:hover {
-  color: black;
+.next:hover { 
+   
+  color: #fff;
+  opacity: .9;
 }
 .cf:before, .slides:before,
 .cf:after,
@@ -882,7 +888,7 @@ a {
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css?v=1.5') }}">
+        <link rel="stylesheet" href="{{ asset('css/app.css?v=1.6') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.4') }}">
         <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
 
@@ -898,11 +904,7 @@ a {
     border-color: #6b307b;
 }</style>
     </head>
-    <body style="background-image:url('{{ asset('img/background.svg') }}') ; 
-        background-repeat: no-repeat;
-         background-size: 100% 100%;
-          z-index: -1;
-        ">
+    <body>
 
         <!-- Load Whatsapp -->
           
@@ -946,23 +948,82 @@ a {
 
       
 
-        <div style="background-color: rgba(255, 255, 255, 0.84);">
+        <div >
 
             <header >
-                <div class="top-nav " style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}'); position: fixed;z-index: 1;width: 100%" >
-                   <div > <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 150px; padding-left: 30px"></a></div>
-                    <div></div>
+                <div class="top-nav " style=" position: fixed;z-index: 2;width: 100%" >
+                  
+                  <div style="width: 100%; height: 100px; display: flex;">
+                      <div > <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 400px; padding-left: 60px"></a></div>
+                   
                     
+                      
+                    <div class="top-nav-right"  style="text-align: left;">
+                      <img style="width: 100px; height: 100px" src="{{ asset('img/diseño/avatar.png') }}">
+                      @include('partials.menus.main-right')
+                        
+                    </div>
 
-                    <div class="top-nav-right">
-                        @include('partials.menus.main-right')
-                    </div>
+                  </div>
+                
+                
+
+                    <div class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px">
+                      <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
+                      <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-user" aria-hidden="true"></i>Quienes somos</a>
+                      <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-tag" aria-hidden="true"></i>Promociones</a>
+                      <a class="nav-link" style="border-top: 2px solid #f58634" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
+                          Categorías
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                          <div style="display: grid; grid-template-columns: auto auto auto;">
+                            @foreach($categories as $category)
+                          <a class="dropdown-item" href="#">{{ $category->name }}</a>
+                      
+                          
+                          @endforeach
+                          </div>
+                          
+
+                          
+                        </div>
+                        
+                         <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-shopping-bag" aria-hidden="true"></i>Productos más vendidos</a>
+                         <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-table" aria-hidden="true"></i>Servicios</a>
+                         <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-phone" aria-hidden="true"></i>Contáctanos</a>
+                         <div style="border-top: 2px solid #f58634">
+            @include('partials.search')
+        </div>
+                        
+                         
+                      </div>
+
+
                 </div> <!-- end top-nav -->
+
                 <div >
-                  <div class="carousel2" data-slide="1">
+                 <div class="row" style="margin-left: 0px; margin-right: 0px; height: 25em">
+                  <div class="col-lg-3 carouselcontainer" style="top: 90px; padding-left: 0px; padding-right: 0px ; height: 100%">
+
+                    <ul class="list-group" style="overflow-y: scroll; height: 100%; border-bottom: 1px solid #f58634; z-index: 1; position: relative;     ">
+                  <a class="list-group-item" style="border-bottom: 1px solid #f58634" >Categorías</a>
+                       @foreach($categories as $category)
+
+                   <a class="list-group-item" style="border-bottom: 1px solid #f58634;" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
+                              
+                      @endforeach
+                      
+                      
+                    </ul></div>
+                  <div class="col-lg-9 carousel2" style="padding-left: 0px; padding-right: 0px" data-slide="1">
+                    @foreach($banners as $banner)
                     <div class="slides">
-                      <img src="{{ asset('img/diseño/slider4.jpg') }}" />
+                      <img src="{{ categoryImage($banner->imagen) }}" />
                     </div>
+          
+                      @endforeach
+                    
+                    
                     <div class="slides">
                       <img src="{{ asset('img/diseño/slider2.jpg') }}" />
                     </div>
@@ -972,6 +1033,7 @@ a {
                      <div class="slides">
                       <img src="{{ asset('img/diseño/slider4.jpg') }}" />
                     </div>
+                </div>
                 </div>
   <div class="next"> &#8680;</div>
   <div class="prev">&#8678; </div>
@@ -1119,9 +1181,7 @@ a {
       </ul>
     </nav>
     
-    <div>@component('components.breadcrumbs')
-        
-    @endcomponent</div>
+    
 
 
      <div class="container">

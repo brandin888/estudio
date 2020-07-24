@@ -15,7 +15,7 @@
 }
 
 
-  .carousel2, .next ,.prev{
+  .carousel2, .next ,.prev, .carouselcontainer{
     display: none;
   }
  
