@@ -421,7 +421,7 @@
   }
   
   .ubicaciones__card__titulo {
-    color: #2EC4B6;
+    color: var(--primary);
     font-size: 18px;
     text-transform: uppercase;
   }
@@ -439,7 +439,7 @@
   
   .ubicaciones__card__datos li {
     list-style: none;
-    color: #2EC4B6;
+    color: var(--primary);
     font-weight: 600;
     padding: 9px 0px;
     position: relative;
@@ -517,6 +517,7 @@
   
     .btn-primary {
       padding: 12px !important;
+      border-radius: 6px;
     }
   
     .promociones__item__content {
@@ -684,7 +685,7 @@
   }
   
   .formulario__content form select:focus {
-    color: #212121;
+    color: #292e31;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -1382,7 +1383,7 @@
     --white: #fff;
     --gray: #6c757d;
     --gray-dark: #343a40;
-    --primary: #dc84b3;
+    --primary: #ff5b01;
     --secondary: #6c757d;
     --success: #28a745;
     --info: #17a2b8;
@@ -1391,6 +1392,9 @@
     --light: #f8f9fa;
     --dark: #343a40;
     --naranja: #f58508;
+    --naranja1: #ff9f45;
+    --naranja2: #ff7b21;
+    --naranja4: #ce2900;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -1410,7 +1414,7 @@
   }
   
   html {
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -1534,14 +1538,14 @@
   }
   
   a {
-    color: #007bff;
+    color: #292e31;
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
   }
   
   a:hover {
-    color: #ffffff;
+    color: #ff5a00;
     text-decoration: none;
   }
   
@@ -4361,12 +4365,14 @@
   
   .btn-primary {
     color: #fff;
+    border-radius: 6px;
     /* background-color: #007bff;
     border-color: #007bff; */
   }
   
   .btn-primary:hover {
     color: #fff;
+    border-radius: 6px;
     /* background-color: #171260; */
     /* border-color: #0062cc; */
   }
@@ -4382,6 +4388,7 @@
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
+    border-radius: 6px;
   }
   
   .btn-primary:not(:disabled):not(.disabled):active,
@@ -6975,7 +6982,7 @@
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: "Gotham Light", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.6;
@@ -7099,7 +7106,7 @@
     z-index: 1060;
     display: block;
     max-width: 276px;
-    font-family: "Gotham Light", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.6;
@@ -23278,7 +23285,7 @@
    */
   
   @font-face {
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 900;
     src: url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?f29ad0031ad2c1c14b771ce504e2bfa7);
@@ -23287,7 +23294,7 @@
   
   .fa,
   .fas {
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Open Sans", sans-serif;
     font-weight: 900;
   }
   
@@ -23297,7 +23304,7 @@
    */
   
   @font-face {
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     src: url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?6493321d567eb0f22bd5112fbcf044a8);
@@ -23305,7 +23312,7 @@
   }
   
   .far {
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
   }
   
@@ -23315,7 +23322,7 @@
    */
   
   @font-face {
-    font-family: 'Font Awesome 5 Brands';
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     src: url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?ec0716ae8aa1ba781a1a6bcbce833f6c);
@@ -23323,7 +23330,7 @@
   }
   
   .fab {
-    font-family: 'Font Awesome 5 Brands';
+    font-family: "Open Sans", sans-serif;
   }
   
   
@@ -27821,7 +27828,7 @@
   
   .atras,
   .siguiente {
-    color: #212121;
+    color: #292e31;
     cursor: pointer;
     font-size: 1.3em;
   }
@@ -28032,7 +28039,7 @@
   }
   
   .navbar__link:hover {
-    color: #212121;
+    color: #292e31;
     text-decoration: none;
   }
   
@@ -28045,12 +28052,12 @@
   }
   
   .redes__link:hover {
-    color: #212121;
+    color: #292e31;
     text-decoration: none;
   }
   
   .navbar-light .navbar-toggler {
-    color: #212121;
+    color: #292e31;
     border-color: #2dcccd;
   }
   
@@ -28391,7 +28398,7 @@
     }
   
     .telefonos-container__content__item .numero i {
-      color: #212121;
+      color: #292e31;
       margin-right: 10px;
     }
   }
@@ -28635,7 +28642,7 @@
   
   .nuestros__productos__content--item--parrafo {
     font-size: 16px;
-    font-family: "Lato";
+    font-family: "Open Sans", sans-serif;
     color: white;
     font-weight: bold;
     line-height: 1.5;
@@ -28695,7 +28702,7 @@
   }
   
   .ubicaciones__card__datos li i {
-    color: #2dcccd;
+    color: var(--primary);
     position: absolute;
     top: 16px;
   }
@@ -28717,11 +28724,11 @@
   }
   
   .ubicaciones__card__datos li a:hover {
-    background: #01579b;
-    background: -webkit-gradient(left top, right top, color-stop(0%, #01579b), color-stop(100%, #028484 ));
-    background: -webkit-gradient(linear, left top, right top, from(#01579b), to(#028484 ));
-    background: linear-gradient(to right, #01579b 0%, #028484  100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01579b', endColorstr='#028484 ', GradientType=1 );
+    background: var(--primary);
+    background: -webkit-gradient(left top, right top, color-stop(0%, var(--primary)), color-stop(100%, var(--naranja4) ));
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--naranja4) ));
+    background: linear-gradient(to right, var(--primary) 0%, var(--naranja4)  100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--primary), endColorstr=var(--naranja4), GradientType=1 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -28840,7 +28847,7 @@
   }
   
   .promociones__item__content--precio {
-    color: #212121;
+    color: #292e31;
     margin-top: 43px;
     position: relative;
   }
@@ -29342,7 +29349,7 @@
   }
   
   @font-face {
-    font-family: 'Paytone One';
+    font-family: "Open Sans", sans-serif;
     src: url(../fonts/PaytoneOne-Regular.ttf?1f7652ec6b7800a7c1c3eaa62e5ce1b8);
     /* IE9 Compat Modes */
   }
@@ -29851,7 +29858,7 @@
   }
   
   .wizards__card__item .carro__btn button i {
-    color: #212121;
+    color: #292e31;
   }
   
   .wizards__card__item--top {
@@ -30022,7 +30029,7 @@
   
   .wizards__content__link__item--top--precio {
     font-weight: 400;
-    color: #212121;
+    color: #292e31;
     font-size: 20px;
   }
   
@@ -30193,7 +30200,7 @@
   
   .wizards__content__birthday__item--top--precio {
     font-weight: 400;
-    color: #212121;
+    color: #292e31;
     font-size: 20px;
   }
   
@@ -30315,7 +30322,7 @@
   }
   
   .wizards__content__hora--bg h3 {
-    color: #212121;
+    color: #292e31;
     font-size: 35px;
     position: relative;
     padding-top: 21px;
@@ -30363,7 +30370,7 @@
   }
   
   .wizards__content .card__img .precio span {
-    color: #212121;
+    color: #292e31;
     font-weight: 500;
     font-size: 40px;
   }
@@ -30911,13 +30918,13 @@
   }
   
   .trabaja__content--item--listado li h4 {
-    color: #253b56;
+    color: #171260;
     font-weight: 900;
     font-size: 16px;
   }
   
   .trabaja__content--item--listado li span {
-    color: #253b56;
+    color: #171260;
     font-weight: 400;
   }
   
@@ -32080,7 +32087,7 @@
   
   .lista-footer__item::before {
     content: "\2022";
-    color: #212121;
+    color: #292e31;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
@@ -32159,7 +32166,7 @@
   }
   
   .nosotros__content__parrafo span {
-    color: #212121;
+    color: #292e31;
     font-weight: 900;
   }
   
@@ -32468,7 +32475,8 @@
   }
   
   .contacto {
-    padding: 100px 0px;
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
   
   .maps {
@@ -32580,7 +32588,7 @@
   
   .club__contenido__item .span {
     font-size: 22px;
-    font-family: "Lato", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #253b56;
     line-height: 1.364;
     margin-top: 14px;
@@ -32589,7 +32597,7 @@
   
   .club__contenido__item .parrafo {
     font-size: 16px;
-    font-family: "Lato", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #253b56;
     margin-top: 20px;
   }
@@ -32621,7 +32629,7 @@
   }
   
   .club__contenido__item--left ul li i {
-    color: #212121;
+    color: #292e31;
     width: 15px;
     position: absolute;
     height: 30px;
@@ -32629,7 +32637,7 @@
   
   .club__contenido__item--left ul li span {
     font-size: 16px;
-    font-family: "Lato", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #253b56;
     font-weight: 500;
     line-height: 1.364;
@@ -33171,7 +33179,7 @@
   
   .carrito__content--item--listado .precio h3 {
     font-size: 33px;
-    color: #f58508;
+    color: #171260;
   }
   
   .carrito__content--item--listado .precio h3 span {
@@ -33522,12 +33530,13 @@
   }
   .btn-primary:hover {
     background-position: 100% 0;
-    background-color: var(--primary);
-    /* background: #171260 ; */
-    /* background: -webkit-gradient(left top, right top, color-stop(0%, #003b69 ), color-stop(100%, #01579b));
-    background: -webkit-gradient(linear, left top, right top, from(#003b69 ), to(#01579b));
-    background: linear-gradient(to right, #003b69  0%, #01579b 100%); */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003b69 ', endColorstr='#01579b', GradientType=1 );
+    background-color: var(--secondary);
+    border-radius: 6px;
+    background: #ff7b21 ; 
+    background: -webkit-gradient(left top, right top, color-stop(0%, #ff7b21 ), color-stop(100%, #ff5a00));
+    background: -webkit-gradient(linear, left top, right top, from(#ff7b21 ), to(#ff5a00));
+    background: linear-gradient(to right, #ff7b21  0%, #ff5a00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7b21 ', endColorstr='#ff5a00', GradientType=1 );
   }
   
   .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -33594,4 +33603,10 @@
   
   .formato_categoria{
     color:black
+  }
+
+  .infor{
+    padding-top: 65px; 
+    padding-left: 25px;
+    padding-right: 25px;
   }

@@ -8,7 +8,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Aletoysi | Jueguetes</title>
+        <title>Litercorp | Ferreteria</title>
         <meta name="theme-color" content="#dd8cb4" />
         <meta name="description" content="Somos una empresa Mayorista de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en  Lima Cercado">
 
@@ -62,7 +62,7 @@
         ">
     <!-- Load Whatsapp -->
     <div>
-      <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51950454991&Hola&nbsp;Aletoysi!!!">
+      <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51945774749&Hola&nbsp;Litercorp&nbsp;quisiera&nbsp;cotizar&nbsp;el&nbsp;siguiente&nbsp;producto">
         <img src="{{ asset('img/whatsapp.png') }}" alt="whatsapp">
       </a> 
     </div>

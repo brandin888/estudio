@@ -60,8 +60,29 @@
           </form>
         </div>
       </div>
-      <div class="d-none d-lg-block col-md-4 hero-buttons">
-          <img src="{{ asset('img/contacto02.png') }}" class="contacto__img" alt="">
+      <div class="d-lg-block col-md-4 infor">
+          <!-- <img src="{{ asset('img/contacto02.png') }}" class="contacto__img" alt=""> -->
+          <h4><strong style="color: #171260;">Información de Contacto</strong></h4>
+          <ul>
+            <li style="color: #292e31;"> Asociación praderas de pariachi Mz. E Lt. 25, Ate Vitarte<br>
+                  Lima - Perú<br>
+                  <br>
+                  Oficina: 51+(1) 401 3742<br>
+                  <img src="{{ asset('img/wasa.png') }}" width="20" height="19" alt="Whatsapp Litercorp"> <a href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank" style="color:#11950b"> <b> Whatsapp +51 945 774 749</b> </a><br>
+                  <br>
+              <h4><strong style="color: #171260;">Horario de Atención</strong></h4>
+              Lunes a Viernes de 9:00AM a 6:00PM<br>
+              <a href="mailto:info@litercorp.com">Correo:info@litercorp.com</a><br><br>
+
+              <h4><strong style="color: #171260;">Redes Sociales</strong></h4>
+              <a href="https://www.facebook.com/Litercorp-111473320648629" target="_blank">Facebook: Litercorp</a>
+              
+            </li>
+        </ul>
+
+
+
+
       </div>
     </div>
   </div>
