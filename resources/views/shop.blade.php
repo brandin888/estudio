@@ -8,12 +8,13 @@
 }
 
 img {width: 100%;
-max-height: 150;}
+max-height: 400;}
 
 div.container {
   text-align: center;
   padding: 10px 20px;
 }
+
 
 .modal {
   display: none; /* Hidden by default */
@@ -195,7 +196,7 @@ section#action, section#action-transparent {
     </div>
 
     <div class="products-section container" >
-        
+<!--         
 <div class="container text-center my-3">
                 <h2 class="font-weight-light">Categorías</h2>
                 <div class="row mx-auto my-auto">
@@ -233,7 +234,7 @@ section#action, section#action-transparent {
                     </div>
                 </div>
                 <h5 class="mt-2">Descubre nuestra gran variedad de juguetes</h5>
-            </div>
+            </div> -->
 
         <div>
             <div class="products-header">

@@ -1041,20 +1041,19 @@ a {
 
             <section class="section_definir section_fuente">
   <div class="container-fluid">
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center" >
       
-      <div class="col-sm-6 col-md-6 pr-pl0 ">
+      <div class="col-sm-6 col-md-6 pr-pl0 " style="padding-left: 0px;">
         <img src="{{ asset('img/diseño/present.jpg') }}" alt="">
       </div>
       
       <div class="col-sm-6 col-md-6 col-md-offset-2 text-center ">
         <div class="col-md-12">
-          <p class="diseño_virtual">Bienvenidos a Litercorp</p>
+          <p class="diseño_virtual"><strong>Bienvenidos a Litercorp</strong></p><br>
         </div> 
-        <p class="wow fadeIn animated texto " data-wow-delay="0.2s" >La imagen corporativa es lo que hace única e 
-        irrepetible a una empresa, es todo lo que la identifica y le hace ser quien es, es la parte que los clientes y 
-        usuarios reconocerán, por lo tanto trabaja la percepción de la marca y suele ser trabajada por diseñadores 
-        gráficos profesionales que buscan agradar a los clientes creando una imagen atractiva para ellos.</p>
+        <p class="wow fadeIn animated texto " data-wow-delay="0.2s" >Somos una Empresa dedicada a la Distribución de productos de Ferretería 
+        a los sectores que lo requieren, mediante el innovador y permanente Servicio; generando Progreso y Estabilidad a las Personas que hacen posible la Existencia de 
+        esta Empresa, siendo así un aliado Estratégico de Nuestros Clientes, Proveedores y Colaboradores, comprometidos con el Bienestar de la Sociedad.</p>
 
         
       </div>
