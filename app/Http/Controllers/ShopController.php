@@ -72,7 +72,7 @@ class ShopController extends Controller
             'product' => $product,
             'stockLevel' => $stockLevel,
             'mightAlsoLike' => $mightAlsoLike,
-             'categories' => $categories,
+            'categories' => $categories,
             'categoryName' => $categoryName,
         ]);
     }

@@ -30,6 +30,9 @@
         @endif
     </div>
 
+    <div class="container" style="font-size:25px">
+    <i class="fas fa-home" style="color:var(--primary)"></i> > <strong><a href="/shop" style="color:var(--primary)">Tienda</a></strong> > {{ $product->name}}
+    </div>
     <div class="product-section container">
         <div style="padding-left: 0px">
             <div class="product-section-image bg-white">
@@ -49,33 +52,47 @@
                 @endif
             </div>
         </div>
-        <div class="product-section-information" style="padding-left: 40px; padding-top: 20px;">
-            <h1 class="product-section-title" style="color:#ffc63f">{{ $product->name }} </h1>
-            <div class="product-section-subtitle" style="color:#019ada">{{ $product->details }}</div>
+        <div class="product-section-information" style="padding-left: 40px;">
+            <h1>{{ $product->name }} </h1>
+            <div class="card-body d-lg-flex pb-5" style="background-color:#f7f7f9;font-size:18px;border-bottom:5px solid var(--primary)">
+                <div class="col-12 col-lg-6 mr-5 px-0">
+                    <div class="mb-3">Descripción:</div>
+                    {{ $product->details }}
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="mb-3">Precio : {{ $product->presentPriceUnidad() }}</div>
+                    @if($product->pricemayor > 0)
+                    <div class="product-section-subtitle" style="color:#171260">Precio por mayor: {{ $product->presentPriceMayor() }}</div>
+                    @endif
+                    @if ($product->quantity > 0)
+                        <form action="{{ route('cart.store', $product) }}" method="POST">
+                            {{ csrf_field() }}
+                            <button type="submit" class="btn btn__enviar"><i class="fas fa-shopping-cart"></i> Agrega al Carrito</button>
+                        </form>
+                    @endif
+                </div>
             <!-- <div>{!! $stockLevel !!}</div> -->
-            <div class="product-section-price" style="color:#171260">{{ $product->presentPriceUnidad() }}</div>
-            @if($product->pricemayor > 0)
-            <div class="product-section-subtitle" style="color:#171260">Precio por mayor: {{ $product->presentPriceMayor() }}</div>
-            @endif
+                
+            </div>
             
-            <!-- <p style="color:#e75353c">
-               Precio: {!! $product->presentPrice() !!}
-            </p> -->
-            <p style="color:#124d60">
-                {!! $product->description !!}
-            </p>
 
             <p>&nbsp;</p>
-
-            @if ($product->quantity > 0)
-                <form action="{{ route('cart.store', $product) }}" method="POST">
-                    {{ csrf_field() }}
-                    <button type="submit" class="btn btn__enviar">Agrega al Carrito</button>
-                </form>
-            @endif
         </div>
     </div> <!-- end product-section -->
-
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" style="font-weight:700" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Característica Técnicas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="font-weight:700" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Asistencia</a>
+            </li>
+            </ul>
+        <div class="tab-content pt-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">{!! $product->description !!}</div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        </div>
+    </div>
     @include('partials.might-like')
 
 @endsection

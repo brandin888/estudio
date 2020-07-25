@@ -1116,9 +1116,9 @@ footer {
 
 .product-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   /* grid-gap: 120px; */
-  padding: 100px 0 120px;
+  padding: 70px 0 70px;
 }
 
 .product-section .selected {
@@ -1148,8 +1148,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #979797;
-  padding: 30px;
+  /* border: 1px solid #979797; */
+  /* padding: 30px; */
   text-align: center;
   height: 400px;
 }
@@ -2177,6 +2177,6 @@ select.selectpicker {
 .btn__enviar{
   background: var(--primary);
   color: white !important;
-  padding: 12px 40px;
+  /* padding: 12px 40px; */
   border-radius: 10px;
 }

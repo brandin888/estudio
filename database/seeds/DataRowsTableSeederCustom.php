@@ -39,7 +39,7 @@ class DataRowsTableSeederCustom extends Seeder
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
-                'display_name' => 'name',
+                'display_name' => 'Nombre',
                 'required'     => 1,
                 'browse'       => 1,
                 'read'         => 1,
@@ -71,7 +71,7 @@ class DataRowsTableSeederCustom extends Seeder
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
-                'display_name' => 'Details',
+                'display_name' => 'Detalle',
                 'required'     => 1,
                 'browse'       => 1,
                 'read'         => 1,
@@ -87,7 +87,7 @@ class DataRowsTableSeederCustom extends Seeder
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'number',
-                'display_name' => 'price',
+                'display_name' => 'Precio',
                 'required'     => 1,
                 'browse'       => 1,
                 'read'         => 1,
@@ -103,7 +103,7 @@ class DataRowsTableSeederCustom extends Seeder
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'rich_text_box',
-                'display_name' => 'Description',
+                'display_name' => 'Características Técnicas',
                 'required'     => 1,
                 'browse'       => 1,
                 'read'         => 1,
@@ -119,7 +119,7 @@ class DataRowsTableSeederCustom extends Seeder
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'checkbox',
-                'display_name' => 'Featured',
+                'display_name' => 'Destacado',
                 'required'     => 1,
                 'browse'       => 1,
                 'read'         => 1,
@@ -135,7 +135,7 @@ class DataRowsTableSeederCustom extends Seeder
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'image',
-                'display_name' => 'Image',
+                'display_name' => 'Imagen',
                 'required'     => 1,
                 'browse'       => 1,
                 'read'         => 1,
@@ -151,7 +151,7 @@ class DataRowsTableSeederCustom extends Seeder
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'multiple_images',
-                'display_name' => 'Images',
+                'display_name' => 'Imagenes',
                 'required'     => 1,
                 'browse'       => 1,
                 'read'         => 1,
@@ -167,7 +167,7 @@ class DataRowsTableSeederCustom extends Seeder
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'timestamp',
-                'display_name' => 'Created At',
+                'display_name' => 'Fecha de creación',
                 'required'     => 1,
                 'browse'       => 1,
                 'read'         => 1,
@@ -183,7 +183,7 @@ class DataRowsTableSeederCustom extends Seeder
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'timestamp',
-                'display_name' => 'Updated At',
+                'display_name' => 'Fecha de modificacion',
                 'required'     => 1,
                 'browse'       => 1,
                 'read'         => 1,
@@ -199,7 +199,7 @@ class DataRowsTableSeederCustom extends Seeder
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'number',
-                'display_name' => 'Quantity',
+                'display_name' => 'Cantidad',
                 'required'     => 1,
                 'browse'       => 1,
                 'read'         => 1,
