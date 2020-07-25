@@ -1041,49 +1041,37 @@ a {
                 
             </header>
 
-            <section data-type="background" data-speed="4" class="parallax fixed_p"  style="background-color: #; height: 250px"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn; padding-top: 18px;"><div class="row"><div class="col-lg-10 offset-lg-1 text-center">
-    <i class="icon icon-heading ion-pie-graph size-96"></i>
-    <br><h2>Aletoysi</h2><p class="lead">
-    Somos  <strong> Aletoysi</strong> una juguetería, hacemos ventas por caja a todo Perú,  puedes encontrarnos en <a style="color: #01579b ; font-weight: bold;" href="{{ url('/') }}/contacto"> Lima Cercado </a>, visita nuestra página de  <a style="color: #01579b ; font-weight: bold;" href="https://www.facebook.com/ElMayoristasolopreciosxcaja/" target="_blank"> Facebook </a>.</p></div></div></div>
-    </section>   
-            <div class="container text-center my-3">
-                <h2 class="font-weight-light">Categorías</h2>
-                <div class="row mx-auto my-auto">
-                    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-                        <div class="carousel-inner w-100" role="listbox">
-                          <div class="carousel-item active" >
-                                <div class="col-md-3S">
-                                   
-                                        <img class="img-fluid" src="{{ asset('img/diseño/cate.png') }}">
-                                    
-                                </div>
-                            </div>
-                         @foreach($categories as $category)
-                         <div class="carousel-item">
-                                <div class="col-md-3S">
-                                      <a href="{{ route('shop.index', ['category' => $category->slug]) }}"><img class="img-fluid" src="{{ categoryImage($category->image) }}"></a>
-                                        
-                                     
-                                </div>
-                            </div>
-                              
-                          @endforeach
-                            
-                            
-                            
-                        </div>
-                        <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-                <h5 class="mt-2">Descubre nuestra gran variedad de juguetes</h5>
-            </div>
+            <section class="section_definir section_fuente">
+  <div class="container-fluid">
+    <div class="row justify-content-md-center">
+      
+      <div class="col-sm-6 col-md-6 pr-pl0 ">
+        <img src="{{ asset('img/diseño/present.jpg') }}" alt="">
+      </div>
+      
+      <div class="col-sm-6 col-md-6 col-md-offset-2 text-center ">
+        <div class="col-md-12">
+          <p class="diseño_virtual">Bienvenidos a Litercorp</p>
+        </div> 
+        <p class="wow fadeIn animated texto " data-wow-delay="0.2s" >La imagen corporativa es lo que hace única e 
+        irrepetible a una empresa, es todo lo que la identifica y le hace ser quien es, es la parte que los clientes y 
+        usuarios reconocerán, por lo tanto trabaja la percepción de la marca y suele ser trabajada por diseñadores 
+        gráficos profesionales que buscan agradar a los clientes creando una imagen atractiva para ellos.</p>
+
+        
+      </div>
+      
+
+      
+
+    </div>
+
+  </div>
+
+
+
+</section>
+
            <div class="menu__responsive"  style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}');">
 
               <div class="logo__responsive">
