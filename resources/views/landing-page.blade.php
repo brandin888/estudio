@@ -969,7 +969,7 @@ a {
                 
                 
 
-                    <div class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px; height:   100%">
+                    <div class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px; height:   35% ;">
                      
                       <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/nosotros') }}/"><i class="fa fa-user" aria-hidden="true"></i>Quienes somos</a>
                       <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/') }}/promociones"><i class="fa fa-tag" aria-hidden="true"></i>Promociones</a>
