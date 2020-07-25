@@ -10,11 +10,7 @@
 
 @section('content')
 
-    @component('components.breadcrumbs')
-        <a href="/">Inicio</a>
-        <i class="fa fa-chevron-right breadcrumb-separator"></i>
-        <span>Buscar Producto</span>
-    @endcomponent
+    
 
     <div class="container">
         @if (session()->has('success_message'))

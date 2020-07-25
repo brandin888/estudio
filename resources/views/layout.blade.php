@@ -34,6 +34,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css?v=1.6') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.4') }}">
+        <link href="{{ asset('css/algolia.css?v=1.0') }}" rel="stylesheet">
         <link href="{{ asset('css/all.css?v=1.1') }}" rel="stylesheet">
 
         
@@ -53,7 +54,7 @@
     </head>
 
  <div  style="background-color: rgba(255, 255, 255, 0.84);">
-<body class="@yield('body-class', '')" >
+<body class="@yield('body-class', '')" style="margin-top: 150px">
     <!-- Load Whatsapp -->
     <div>
       <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51945774749&Hola&nbsp;Litercorp&nbsp;quisiera&nbsp;cotizar&nbsp;el&nbsp;siguiente&nbsp;producto">

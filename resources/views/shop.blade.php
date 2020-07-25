@@ -174,9 +174,7 @@ section#action, section#action-transparent {
 
 @section('content')
 
-    @component('components.breadcrumbs')
-      
-    @endcomponent
+    
 
     <div class="container">
         @if (session()->has('success_message'))

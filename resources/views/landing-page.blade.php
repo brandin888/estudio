@@ -969,7 +969,7 @@ a {
                 
                 
 
-                    <div class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px">
+                    <div class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px; height:   100%">
                      
                       <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/nosotros') }}/"><i class="fa fa-user" aria-hidden="true"></i>Quienes somos</a>
                       <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/') }}/promociones"><i class="fa fa-tag" aria-hidden="true"></i>Promociones</a>
@@ -1001,7 +1001,7 @@ a {
 
                 </div> <!-- end top-nav -->
 
-                <div >
+                <div style="margin-top: 80px;">
                  <div class="row" style="margin-left: 0px; margin-right: 0px; height: 25em">
                   <div class="col-lg-3 carouselcontainer" style="top: 90px; padding-left: 0px; padding-right: 0px ; height: 100%">
 

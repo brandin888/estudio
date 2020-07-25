@@ -962,7 +962,9 @@ header .top-nav {
   top: 0px;
   color: black;
   background: white;
-
+  border-top: 15px solid #f58634;
+  border-bottom: 6px solid #f58634;
+  height:   180px;
 }
 
 header .top-nav .logo {

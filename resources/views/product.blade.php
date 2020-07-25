@@ -8,9 +8,7 @@
 
 @section('content')
 
-    @component('components.breadcrumbs')
-        
-    @endcomponent
+    
 
     <div class="container" style="padding-bottom: 35px;">
         @if (session()->has('success_message'))
