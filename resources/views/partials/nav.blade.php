@@ -11,7 +11,7 @@
 .menu__responsive {
   width: 100%;
   height: 58px;
-  background: #ffffff;
+  background: #00053e;
   position: fixed;
   top: 0;
   z-index: 1234;
@@ -34,7 +34,7 @@
 }
 
 .menu__responsive .carrito_top a i {
-  color: #110041;
+  color: #ff2a00;
   border-color: #110041;
 }
 
@@ -70,7 +70,7 @@
 #bottom {
   width: 100%;
   height: 2px;
-  background: #110041;
+  background: #ff2a00;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }

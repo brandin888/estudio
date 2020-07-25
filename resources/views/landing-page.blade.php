@@ -183,7 +183,7 @@ section#action, section#action-transparent {
 .menu__responsive {
   width: 100%;
   height: 58px;
-  background: #ffffff;
+  background: #00053e;
   position: fixed;
   top: 0;
   z-index: 1234;
@@ -206,7 +206,7 @@ section#action, section#action-transparent {
 }
 
 .menu__responsive .carrito_top a i {
-  color: #110041;
+  color: #ff2a00;
   border-color: #110041;
 }
 
@@ -242,7 +242,7 @@ section#action, section#action-transparent {
 #bottom {
   width: 100%;
   height: 2px;
-  background: #110041;
+  background: #ff2a00;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
@@ -535,9 +535,7 @@ section#action, section#action-transparent {
 }
 
 @media (max-width: 991px) {
-  body {
-    margin-top: 58px;
-  }
+  
   
   header .top-nav {
     
@@ -765,7 +763,7 @@ a {
 
 
 .carousel2 {
-  top: 90px;
+  
   position: relative;
   width: 100%;
   height: 50em;
@@ -1001,9 +999,9 @@ a {
 
                 </div> <!-- end top-nav -->
 
-                <div style="margin-top: 80px;">
+                <div style="margin-top: 20px;">
                  <div class="row" style="margin-left: 0px; margin-right: 0px; height: 25em">
-                  <div class="col-lg-3 carouselcontainer" style="top: 90px; padding-left: 0px; padding-right: 0px ; height: 100%">
+                  <div class="col-lg-3 carouselcontainer" style=" padding-left: 0px; padding-right: 0px ; height: 100%">
 
                     <ul class="list-group" style="overflow-y: scroll; height: 100%; border-bottom: 1px solid #f58634; z-index: 1; position: relative;     ">
                   <a class="list-group-item" style="border-bottom: 1px solid #f58634" >Categorías</a>

@@ -7,13 +7,21 @@
 }
 
 /* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  body{
+    margin-top: 150px;
+  }
+}
+
 
 @media only screen and (max-width: 992px) {
 
 .breadcrumbs {
  top: 5px;
 }
-
+body{
+  margin-top: 50px;
+}
 
   .carousel2, .next ,.prev, .carouselcontainer{
     display: none;
