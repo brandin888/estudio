@@ -11,7 +11,7 @@
 .menu__responsive {
   width: 100%;
   height: 58px;
-  background: #0e1126;
+  background: #ffffff;
   position: fixed;
   top: 0;
   z-index: 1234;
@@ -20,7 +20,7 @@
 
 .menu__responsive .logo__responsive {
   width: 100%;
-  padding: 10px;
+  
 }
 
 .menu__responsive .logo__responsive img {
@@ -358,7 +358,7 @@
   }
 
   .menu__responsive .logo__responsive {
-    padding: 16px;
+    padding: 5px;
   }
 }
 
@@ -508,7 +508,7 @@ a {
   visibility: hidden;
 }
 .nav-expand-content .nav-item:not(:last-child) {
-  border-bottom: solid 1px #1565C0;
+  border-bottom: solid 1px #ffc500;
 }
 .nav-expand-content .nav-link {
   background-color: #f7e5ff;
@@ -518,7 +518,7 @@ a {
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  background-color: #6b307b !important;
+  background-color: #f58634 !important;
   color: #fff;
 }
 .nav-expand-content .nav-back-link::before {
@@ -547,7 +547,7 @@ a {
   background-color: #f7e5ff;
 }
 .nav-expand .nav-expand-content .nav-link {
-  background-color: #f7e5ff;
+  background-color: #ffe9d8;
 }
 .nav-expand .nav-expand-content .nav-expand-content {
   background-color: #aff1e6;
@@ -578,20 +578,60 @@ a {
 </style>
 <header >
   
-    <div class="top-nav " style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}'); position: fixed;z-index: 1;width: 100%" >
-                   <div ><a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 150px; padding-left: 30px"></a></div>
-                    <div></div>
+ <div class="top-nav " style=" position: fixed;z-index: 2;width: 100%" >
+                  
+                  <div style="width: 100%; height: 100px; display: flex;">
+                      <div > <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 400px; padding-left: 60px"></a></div>
+                   
                     
-
-                    <div class="top-nav-right">
-                        @include('partials.menus.main-right')
+                      
+                    <div class="top-nav-right"  style="text-align: left;">
+                      <img style="width: 100px; height: 100px" src="{{ asset('img/diseño/avatar.png') }}">
+                      @include('partials.menus.main-right')
+                        
                     </div>
+
+                  </div>
+                
+                
+
+                    <div class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px">
+                      
+                      <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/nosotros') }}/"><i class="fa fa-user" aria-hidden="true"></i>Quienes somos</a>
+                      <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/') }}/promociones"><i class="fa fa-tag" aria-hidden="true"></i>Promociones</a>
+                      <a class="nav-link" style="border-top: 2px solid #f58634" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
+                          Categorías
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                          <div style="display: grid; grid-template-columns: auto auto auto;">
+                            @foreach($categories as $category)
+                          <a class="dropdown-item" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
+                      
+                          
+                          @endforeach
+                          </div>
+                          
+
+                          
+                        </div>
+                        
+                         <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-shopping-bag" aria-hidden="true"></i>Productos más vendidos</a>
+                         
+                         <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-phone" aria-hidden="true"></i>Contáctanos</a>
+                         <div style="border-top: 2px solid #f58634 ">
+                              @include('partials.search')
+                         </div>
+                        
+                         
+                      </div>
+
+
                 </div> <!-- end top-nav -->
 </header>
  <div class="menu__responsive"  style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}');">
 
               <div class="logo__responsive">
-                <a href="{{ url('/') }}/"> <span class="cart-count"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 100px; height: 45px"></span></a>
+                <a href="{{ url('/') }}/"> <span class="cart-count"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 200px; height: 60px"></span></a>
 
               </div>
              

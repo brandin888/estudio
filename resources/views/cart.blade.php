@@ -17,9 +17,7 @@
 @section('content')
 
 
-    @component('components.breadcrumbs')
-      
-    @endcomponent
+   
 
 <div class="d-flex justify-content-center mt-3">
         

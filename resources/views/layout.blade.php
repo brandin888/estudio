@@ -12,7 +12,7 @@
         <meta name="theme-color" content="#dd8cb4" />
         <meta name="description" content="Somos una empresa Mayorista de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en  Lima Cercado">
 
-        <link href="/img/favicon.ico" rel="SHORTCUT ICON" />
+       <link rel="shortcut icon" href="{{ asset('img/diseño/icono.png') }}" />
 
         <!-- Fonts -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet"> -->
@@ -53,13 +53,7 @@
     </head>
 
  <div  style="background-color: rgba(255, 255, 255, 0.84);">
-<body class="@yield('body-class', '')" style="background-image:url('{{ asset('img/background.svg') }}') ; 
-        background-repeat: no-repeat;
-         background-size: 100% 100%;
-          z-index: -1;
-          background-color: rgba(255, 255, 255, 0.84);
-          margin-top: 80px;
-        ">
+<body class="@yield('body-class', '')" >
     <!-- Load Whatsapp -->
     <div>
       <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51945774749&Hola&nbsp;Litercorp&nbsp;quisiera&nbsp;cotizar&nbsp;el&nbsp;siguiente&nbsp;producto">

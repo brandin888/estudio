@@ -183,7 +183,7 @@ section#action, section#action-transparent {
 .menu__responsive {
   width: 100%;
   height: 58px;
-  background: #0e1126;
+  background: #ffffff;
   position: fixed;
   top: 0;
   z-index: 1234;
@@ -192,7 +192,7 @@ section#action, section#action-transparent {
 
 .menu__responsive .logo__responsive {
   width: 100%;
-  padding: 10px;
+  
 }
 
 .menu__responsive .logo__responsive img {
@@ -530,7 +530,7 @@ section#action, section#action-transparent {
   }
 
   .menu__responsive .logo__responsive {
-    padding: 16px;
+    padding: 5px;
   }
 }
 
@@ -693,7 +693,7 @@ a {
   visibility: hidden;
 }
 .nav-expand-content .nav-item:not(:last-child) {
-  border-bottom: solid 1px #1565C0;
+  border-bottom: solid 1px #ffc500;
 }
 .nav-expand-content .nav-link {
   background-color: #f7e5ff;
@@ -703,7 +703,7 @@ a {
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  background-color: #6b307b !important;
+  background-color: #f58634 !important;
   color: #fff;
 }
 .nav-expand-content .nav-back-link::before {
@@ -732,13 +732,13 @@ a {
   background-color: #f7e5ff;
 }
 .nav-expand .nav-expand-content .nav-link {
-  background-color: #f7e5ff;
+  background-color: #ffe9d8;
 }
 .nav-expand .nav-expand-content .nav-expand-content {
   background-color: #aff1e6;
 }
 .nav-expand .nav-expand-content .nav-expand-content .nav-link {
-  background-color: #aff1e6;
+  background-color: #ffe9d8;
 }
 .nav-expand .nav-expand-content .nav-expand-content .nav-expand-content {
   background-color: #84e9d9;
@@ -877,10 +877,11 @@ a {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#dd8cb4" />
-        <title>Aletoysi</title>
+        <title>Litercorp | Ferreteria</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
+        <link rel="shortcut icon" href="{{ asset('img/diseño/icono.png') }}" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="{{ asset('css/all.css?v=1.1') }}" rel="stylesheet"> <!--load all styles -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -890,7 +891,7 @@ a {
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css?v=1.6') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.4') }}">
-        <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/algolia.css?v=1.1') }}">
 
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -969,16 +970,16 @@ a {
                 
 
                     <div class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px">
-                      <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
-                      <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-user" aria-hidden="true"></i>Quienes somos</a>
-                      <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-tag" aria-hidden="true"></i>Promociones</a>
-                      <a class="nav-link" style="border-top: 2px solid #f58634" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
+                     
+                      <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/nosotros') }}/"><i class="fa fa-user" aria-hidden="true"></i>Quienes somos</a>
+                      <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/') }}/promociones"><i class="fa fa-tag" aria-hidden="true"></i>Promociones</a>
+                      <a class="nav-link" style="border-top: 2px solid #f58634" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
                           Categorías
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
                           <div style="display: grid; grid-template-columns: auto auto auto;">
                             @foreach($categories as $category)
-                          <a class="dropdown-item" href="#">{{ $category->name }}</a>
+                          <a class="dropdown-item" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
                       
                           
                           @endforeach
@@ -989,11 +990,10 @@ a {
                         </div>
                         
                          <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-shopping-bag" aria-hidden="true"></i>Productos más vendidos</a>
-                         <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-table" aria-hidden="true"></i>Servicios</a>
                          <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-phone" aria-hidden="true"></i>Contáctanos</a>
-                         <div style="border-top: 2px solid #f58634">
-            @include('partials.search')
-        </div>
+                         <div style="border-top: 2px solid #f58634 ">
+                              @include('partials.search')
+                          </div>
                         
                          
                       </div>
@@ -1087,7 +1087,7 @@ a {
            <div class="menu__responsive"  style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}');">
 
               <div class="logo__responsive">
-                <a href="{{ url('/') }}/"> <span class="cart-count"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 100px; height: 45px"></span></a>
+                <a href="{{ url('/') }}/"> <span class="cart-count"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 200px; height: 60px"></span></a>
 
               </div>
              
