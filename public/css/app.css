@@ -231,7 +231,7 @@ h1.stylish-heading:after {
   left: 0;
   width: 66px;
   height: 1px;
-  background: #212121;
+  
   content: "";
   display: block;
 }

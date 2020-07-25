@@ -206,7 +206,7 @@ section#action, section#action-transparent {
 }
 
 .menu__responsive .carrito_top a i {
-  color: #ff2a00;
+  color: #ff9639;
   border-color: #110041;
 }
 
@@ -242,7 +242,7 @@ section#action, section#action-transparent {
 #bottom {
   width: 100%;
   height: 2px;
-  background: #ff2a00;
+  background: #ff9639;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
@@ -673,8 +673,8 @@ a {
   padding: 0.875em 1em;
   background-color: #fff;
   color: #110041;
-  font-size: 1rem;
-  line-height: 1.5em;
+  font-size: 0.9rem;
+  line-height: 0.8em;
   font-weight: 300;
 }
 .nav-expand-content {
@@ -987,8 +987,8 @@ a {
                           
                         </div>
                         
-                         <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-shopping-bag" aria-hidden="true"></i>Productos más vendidos</a>
-                         <a class="nav-link" style="border-top: 2px solid #f58634" href=""><i class="fa fa-phone" aria-hidden="true"></i>Contáctanos</a>
+                         <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/') }}/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Productos más vendidos</a>
+                         <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/') }}/contacto"><i class="fa fa-phone" aria-hidden="true"></i>Contáctanos</a>
                          <div style="border-top: 2px solid #f58634 ">
                               @include('partials.search')
                           </div>
