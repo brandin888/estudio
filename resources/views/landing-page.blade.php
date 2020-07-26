@@ -70,6 +70,9 @@ div.container {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
+header{
+  height: 400px;
+}
 
 @keyframes zoom {
   from {transform: scale(0.1)} 
@@ -969,7 +972,7 @@ a {
 
                     <div class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px; height:   35% ;">
                      
-                      <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/nosotros') }}/"><i class="fa fa-user" aria-hidden="true"></i>Quienes somos</a>
+                      <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>Quienes somos</a>
                       <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/') }}/promociones"><i class="fa fa-tag" aria-hidden="true"></i>Promociones</a>
                       <a class="nav-link" style="border-top: 2px solid #f58634" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
                           Categorías

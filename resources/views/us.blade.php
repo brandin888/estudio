@@ -507,22 +507,21 @@ section#action, section#action-transparent {
 @endsection
 
 @section('content')
-
+  <div >
     
 
-    <section class="nosotros" id="nosotros">
-  <img  data-aos="fade-right" src="{{ asset('images/nosotros/demonio.png') }}" class="demonio" alt="">
-  <img  data-aos="fade-left" src="{{ asset('images/nosotros/dinoRex.png') }}" class="dinoRex hidden-xs" alt="">
-  <img  data-aos="fade-up" src="{{ asset('images/nosotros/mono.png') }}" class="mono hidden-xs" alt="">
+    <section class="nosotros" id="nosotros" >
+  
+ 
   <div class="container">
     <div class="row">
-      <div class="col-md-4 col-sm-4">
+      <div class="col-md-6 col-sm-6">
         <div class="nosotros__content">
-          <p class="nosotros__content__parrafo">Es un <span>parque temático</span> de <span>realidad virtual</span> que te permitirá vivir una <span>experiencia distinta</span> y que hará de tus días algo <span>inolvidable.</span></p>
+          <p class="nosotros__content__parrafo">Somos una Empresa dedicada a la <span>Distribución de productos de Ferretería</span>  a los sectores que lo requieren, mediante el innovador y permanente Servicio; generando Progreso y Estabilidad a las Personas que hacen posible la Existencia de esta Empresa, siendo así un aliado Estratégico de Nuestros Clientes, Proveedores y Colaboradores, comprometidos con el Bienestar de la Sociedad.</p>
         </div>
       </div>
-      <div class="col-md-6 col-sm-8 offset-md-2">
-        <img src="{{ asset('images/nosotros/nosotros.png') }}" class="img-fluid" alt="">
+      <div class="col-md-5 col-sm-5 " style="margin-top: 100px; width: 100%">
+        <img src="{{ asset('images/nosotros/nosotros.jpg') }}" class="img-fluid" alt="">
       </div>
     </div>
   </div>
@@ -531,31 +530,19 @@ section#action, section#action-transparent {
 <section class="parque__Atraccion">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <div class="parque__Atraccion__item parque__Atraccion__item--center">
-          <img  data-aos="fade-left" src="{{ asset('images/nosotros/bruja.png') }}" class="bruja hidden-xs" alt="">
-          <img  data-aos="fade-right" src="{{ asset('images/nosotros/parque_atraccion_1.png') }}" class="img-fluid hidden-xs" alt="">
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="parque__Atraccion__item parque__Atraccion__item--center">
-          <img  data-aos="fade-right" src="{{ asset('images/promociones/murcielago.png') }}" class="murci1" alt="">
-          <img  data-aos="fade-left" src="{{ asset('images/promociones/murcielago.png') }}" class="murci2" alt="">
-          <img  data-aos="fade-right" src="{{ asset('images/nosotros/parque_atraccion_2.png') }}" class="img-fluid" alt="">
-          <img  data-aos="fade-left" src="{{ asset('images/nosotros/muneco.png') }}" class="muneco" alt="">
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
+      
+     
+      <div class="col-md-12 ">
         <div class="parque__Atraccion__item">
-          <h2>PARQUE DE ATRACCIONES</h2>
-          <p>Aquí encontrarás atracciones únicas de experiencia inmersiva para toda la familia. </p>
-          <p>¡Te esperamos de lunes a domingo en<span> MegaPlaza Lima Norte</span> y <span>Open Plaza Angamos</span> y <span>Real Plaza Cusco!</span> </p>
+          <h2>Conoce nuestra historia:</h2>
+          <p> </p>
+          <p>¡ en<span> Mte</span> y <span>Omos</span> y <span>Reco!</span> </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+</div>
 @endsection
 
 @section('extra-js')
