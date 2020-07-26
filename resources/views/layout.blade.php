@@ -54,7 +54,7 @@
     </head>
 
  <div  style="background-color: rgba(255, 255, 255, 0.84);">
-<body class="@yield('body-class', '')" style="">
+<body class="@yield('body-class', '')" style="background-color:#ffffff">
     <!-- Load Whatsapp -->
     <div>
       <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51945774749&Hola&nbsp;Litercorp&nbsp;quisiera&nbsp;cotizar&nbsp;el&nbsp;siguiente&nbsp;producto">

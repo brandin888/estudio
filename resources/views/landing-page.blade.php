@@ -906,7 +906,7 @@ a {
     border-color: #6b307b;
 }</style>
     </head>
-    <body>
+    <body style="background-color:#ffffff">
 
         <!-- Load Whatsapp -->
           
@@ -1052,11 +1052,11 @@ a {
       
       <div class="col-sm-6 col-md-6 col-md-offset-2 text-center ">
         <div class="col-md-12">
-          <p class="diseño_virtual"><strong>Bienvenidos a Litercorp</strong></p><br>
+          <h1 class="diseño_virtual" style="padding-top: 15px;"><strong>Bienvenidos a Litercorp</strong></h1><br>
         </div> 
-        <p class="wow fadeIn animated texto " data-wow-delay="0.2s" >Somos una Empresa dedicada a la Distribución de productos de Ferretería 
+        <h2 style="text-align: justify" class="wow fadeIn animated texto " data-wow-delay="0.2s"  >Somos una Empresa dedicada a la Distribución de productos de Ferretería 
         a los sectores que lo requieren, mediante el innovador y permanente Servicio; generando Progreso y Estabilidad a las Personas que hacen posible la Existencia de 
-        esta Empresa, siendo así un aliado Estratégico de Nuestros Clientes, Proveedores y Colaboradores, comprometidos con el Bienestar de la Sociedad.</p>
+        esta Empresa, siendo así un aliado Estratégico de Nuestros Clientes, Proveedores y Colaboradores, comprometidos con el Bienestar de la Sociedad.</h2>
 
         
       </div>
