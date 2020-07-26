@@ -1,10 +1,7 @@
 <!doctype html>
 
 <style type="text/css">
-  header {
-    height: 600px;
-
-  }
+  
   @media (max-width: 992px) {
     header {
     height: 120px;
@@ -539,7 +536,10 @@ section#action, section#action-transparent {
 
 @media (max-width: 991px) {
   
-  
+  header {
+    height: 0px;
+
+  }
   header .top-nav {
     
     display: none;
@@ -815,7 +815,7 @@ a {
 }
 .next, .prev {
   position: absolute;
-  top: 70%;
+  top: 80%;
   right: 0;
   width: 6em;
   margin-top: -2.5em;
@@ -824,7 +824,7 @@ a {
   text-align: center;
   line-height: 3;
   letter-spacing: 5px;
-  color: #dc84b3;
+  color: #ff6c25;
   transform: translateY(-50%);
   cursor: pointer;
   font-size: 60px;
