@@ -17,7 +17,10 @@ class CartController extends Controller
      */
     public function index()
     {
-        $mightAlsoLike = Product::mightAlsoLike()->get();
+        $mightAlsoLike = Product::mightAlsoLike()->take(-4)->get();
+        $productone = Product::mightAlsoLike()->first();
+        // dd($productone);
+        // dd($mightAlsoLike);
         $categories = Category::all();
 
         if (request()->category) {
@@ -32,6 +35,7 @@ class CartController extends Controller
         // dd($mightAlsoLike);
         return view('cart')->with([
             'mightAlsoLike' => $mightAlsoLike,
+            'productone' => $productone,
             'discount' => getNumbers()->get('discount'),
             'newSubtotal' => getNumbers()->get('newSubtotal'),
             'newTax' => getNumbers()->get('newTax'),

@@ -52,8 +52,8 @@ class ShopController extends Controller
     public function show($slug)
     {
         $product = Product::where('slug', $slug)->firstOrFail();
-        $mightAlsoLike = Product::where('slug', '!=', $slug)->mightAlsoLike()->get();
-        
+        $mightAlsoLike = Product::where('slug', '!=', $slug)->mightAlsoLike()->take(-4)->get();
+        $productone = Product::where('slug', '!=', $slug)->mightAlsoLike()->first();
         $stockLevel = getStockLevel($product->quantity);
        
         $categories = Category::all();
@@ -72,6 +72,7 @@ class ShopController extends Controller
             'product' => $product,
             'stockLevel' => $stockLevel,
             'mightAlsoLike' => $mightAlsoLike,
+            'productone' => $productone,
             'categories' => $categories,
             'categoryName' => $categoryName,
         ]);

@@ -5,9 +5,11 @@
                     <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
                         <div class="carousel-inner w-100" role="listbox">
                             <div class="carousel-item active">
-                                <div class="col-md-3S">
-                                    <img class="img-fluid" src="{{ asset('img/diseño/cate.png') }}">
-                                </div>
+                              <div class="col-md-3S" >
+                                  <a href="{{ route('shop.show', $productone->slug) }}"><img class="img-fluid" src="{{ productImage($productone->image) }}" alt="productalt"></a>
+                                  <div class="might-like-product-name">{{ $productone->name }}</div>
+                                  <div class="might-like-product-price">{{ $productone->presentPrice() }}</div>
+                              </div>
                             </div>
                         @foreach($mightAlsoLike as $product)
                         <div class="carousel-item">
@@ -29,13 +31,6 @@
                         </a>
                     </div>
                 </div>
-            <!-- @foreach ($mightAlsoLike as $product)
-                <a href="{{ route('shop.show', $product->slug) }}" class="might-like-product">
-                    <img src="{{ productImage($product->image) }}" alt="product">
-                    <div class="might-like-product-name">{{ $product->name }}</div>
-                    <div class="might-like-product-price">{{ $product->presentPrice() }}</div>
-                </a>
-            @endforeach -->
 
     </div>
 </div>
@@ -95,7 +90,7 @@
 </style>
 <script>
 $('#recipeCarousel').carousel({
-  interval: 10000
+  interval: 3000
 })
 
 $('.carousel .carousel-item').each(function(){
