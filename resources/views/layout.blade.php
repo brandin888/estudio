@@ -50,7 +50,11 @@
     color: #fff;
     background-color: #6b307b;
     border-color: #6b307b;
-}</style>
+}
+header{
+  height: 0px;
+}
+</style>
     </head>
 
  <div  style="background-color: rgba(255, 255, 255, 0.84);">
