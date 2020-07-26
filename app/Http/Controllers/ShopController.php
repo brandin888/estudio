@@ -25,7 +25,7 @@ class ShopController extends Controller
             $categoryName = optional($categories->where('slug', request()->category)->first())->name;
         } else {
             $products = Product::where('featured', true);
-            $categoryName = 'Conoce lo más buscado';
+            $categoryName = 'Productos más buscados';
         }
 
         if (request()->sort == 'low_high') {
@@ -107,7 +107,7 @@ class ShopController extends Controller
             $categoryName = optional($categories->where('slug', request()->category)->first())->name;
         } else {
             $products = Product::where('featured', true);
-            $categoryName = 'Conoce lo más buscado';
+            $categoryName = 'Productos más buscados';
         }
         return view('search-results-algolia')->with([
             'products' => $products,

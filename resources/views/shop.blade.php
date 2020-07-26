@@ -4,7 +4,7 @@
   width: 100%;
   background-color: white;
   padding: 0px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(255, 159, 69, 0.1), 0 6px 20px 0 rgba(255, 159, 69, 0.2);
 }
 
 img {width: 100%;
@@ -253,8 +253,8 @@ section#action, section#action-transparent {
                     <div class="product polaroid">
 
                         <div ><a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a></div>
-                        <div style="height: 15%; "><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name" style=" color: #171260;">{{ $product->name }}</div></a>
-                       <div class="product-price" style="font-weight: bold; color: #171260;">{{ $product->presentPrice() }}</div></div>
+                        <div style="height: 15%; "><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name" style=" color: #333333;">{{ $product->name }}</div></a>
+                       <div class="product-price" style="font-weight: bold; color: #333333;">{{ $product->presentPrice() }}</div></div>
                     </div>
                     @endif
                 @empty

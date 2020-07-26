@@ -48,13 +48,9 @@
   .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #6b307b;
-    border-color: #6b307b;
-}
-header{
-  height: 0px;
-}
-</style>
+    background-color: #ff5a00;
+    border-color: #ff5a00;
+}</style>
     </head>
 
  <div  style="background-color: rgba(255, 255, 255, 0.84);">

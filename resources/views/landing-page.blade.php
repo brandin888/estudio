@@ -12,7 +12,7 @@
   width: 100%;
   background-color: white;
   padding: 0px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(255, 159, 69, 0.1), 0 6px 20px 0 rgba(255, 159, 69, 0.2);
 }
 @media only screen and (max-width: 1200px) {
   .products-section .products {
@@ -863,8 +863,8 @@ a {
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #6b307b;
-    border-color: #6b307b;
+    background-color: #ff5a00;
+    border-color: #ff5a00;
 }
 </style>
 
@@ -899,8 +899,8 @@ a {
   .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #6b307b;
-    border-color: #6b307b;
+    background-color: #ff5a00;
+    border-color: #ff5a00;
 }</style>
     </head>
     <body style="background-color:#ffffff">
@@ -1039,7 +1039,42 @@ a {
                 
             </header>
 
-            <section class="section_definir section_fuente">
+    <section class="section_fuente pt-pb-e" style="background-color:#f7f7f7">
+      <div class="container">
+        <div class="col-md-12 text-center">
+          <h2 class="size-28 negro pb" style="padding-bottom: 25px;">TODO ESTO ES LO QUE HACEMOS PARA TI</h2>
+        </div>
+        <div class="col-md-12 col-md-offset-1 text-center">
+          <div class="row">
+            <div data-wow-delay="0.2s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn; padding-bottom: 15px;">
+              <h3 class="negro"><i class="fas fa-pager" style="font-size:70px;padding-bottom: 10px; color:#ff5b01"></i><br>PAGO DE FORMA SEGURA
+              </h3><p>En Litercorp nos importa tu seguridad, por eso te presentamos los diversos metodos de pago, pago Online, pago en Efectivo y Depositos.</p>
+            </div>
+
+            <div data-wow-delay="0.4s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn; padding-bottom: 15px;">
+              <h3 class="negro"><i class="fas fa-truck-moving pb15" style="font-size:70px;padding-bottom: 10px;color:#ff5b01"></i><br>ENVÍOS A TODO EL PERÚ
+              </h3><p>Se realizan envios a todo el Perú, y através de la página web puedes hacer seguimiento de tú compra.</p>
+            </div>
+
+            <div data-wow-delay="0.6s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn; padding-bottom: 15px;">
+              <h3 class="negro"><i class="fas fa-award pb15" style="font-size:70px;padding-bottom: 10px;color:#ff5b01"></i><br>PRODUCTOS DE CALIDAD
+              </h3><p>Ofrecemos productos de calidad y con garantia pensando siempre en ustedes.</p>
+            </div>
+
+            <div data-wow-delay="0.8s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn; padding-bottom: 15px;">
+              <h3 class="negro"><i class="fas fa-tags pb15" style="font-size:70px;padding-bottom: 10px;color:#ff5b01"></i></i><br>LOS MEJORES PRECIOS
+              </h3>
+              <p>Realizamos ventas por mayor y menor, puedes realizar tu cotización a traves de nuestra pagina web o con un asesor de venta.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+          <!--   <section class="section_definir section_fuente">
   <div class="container-fluid">
     <div class="row justify-content-md-center" >
       
@@ -1067,7 +1102,7 @@ a {
 
 
 
-</section>
+</section> -->
 
            <div class="menu__responsive"  style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}');">
 
@@ -1205,8 +1240,8 @@ a {
                   @if($product->quantity > 0)
                     <div class="product polaroid ">
                         <div ><a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a></div>
-                        <div ><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name" style=" color: #171260;">{{ $product->name }} </div></a>
-                        <div class="product-price" style="font-weight: bold; color: #171260;">{{ $product->presentPrice() }}</div></div>
+                        <div ><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name" style=" color: #333333;">{{ $product->name }} </div></a>
+                        <div class="product-price" style="font-weight: bold; color: #333333;">{{ $product->presentPrice() }}</div></div>
                     </div>
                   @endif
                 @empty

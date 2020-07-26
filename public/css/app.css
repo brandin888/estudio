@@ -2182,3 +2182,24 @@ select.selectpicker {
   /* padding: 12px 40px; */
   border-radius: 10px;
 }
+
+.pt-pb-e{
+  padding-top:25px;
+  padding-bottom:25px;
+}
+
+.section_fuente{
+  color: #666;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  
+}
+
+.negro{
+  color:#292e31;
+
+}
+
+.pb{
+  padding-bottom:40px;
+}
