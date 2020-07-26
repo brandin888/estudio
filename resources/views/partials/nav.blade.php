@@ -544,7 +544,7 @@ a {
   visibility: visible;
 }
 .nav-expand .nav-expand-content {
-  background-color: #f7e5ff;
+  background-color: #ffe9d8;
 }
 .nav-expand .nav-expand-content .nav-link {
   background-color: #ffe9d8;

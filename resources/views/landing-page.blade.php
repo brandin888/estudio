@@ -536,10 +536,7 @@ section#action, section#action-transparent {
 
 @media (max-width: 991px) {
   
-  header {
-    height: 0px;
-
-  }
+  
   header .top-nav {
     
     display: none;
@@ -730,7 +727,7 @@ a {
   visibility: visible;
 }
 .nav-expand .nav-expand-content {
-  background-color: #f7e5ff;
+  background-color: #ffe9d8;
 }
 .nav-expand .nav-expand-content .nav-link {
   background-color: #ffe9d8;
@@ -906,7 +903,7 @@ a {
     border-color: #6b307b;
 }</style>
     </head>
-    <body style="background-color:#ffffff">
+    <body>
 
         <!-- Load Whatsapp -->
           
@@ -1052,11 +1049,11 @@ a {
       
       <div class="col-sm-6 col-md-6 col-md-offset-2 text-center ">
         <div class="col-md-12">
-          <h1 class="diseño_virtual" style="padding-top: 15px;"><strong>Bienvenidos a Litercorp</strong></h1><br>
+          <p class="diseño_virtual"><strong>Bienvenidos a Litercorp</strong></p><br>
         </div> 
-        <h2 style="text-align: justify" class="wow fadeIn animated texto " data-wow-delay="0.2s"  >Somos una Empresa dedicada a la Distribución de productos de Ferretería 
+        <p class="wow fadeIn animated texto " data-wow-delay="0.2s" >Somos una Empresa dedicada a la Distribución de productos de Ferretería 
         a los sectores que lo requieren, mediante el innovador y permanente Servicio; generando Progreso y Estabilidad a las Personas que hacen posible la Existencia de 
-        esta Empresa, siendo así un aliado Estratégico de Nuestros Clientes, Proveedores y Colaboradores, comprometidos con el Bienestar de la Sociedad.</h2>
+        esta Empresa, siendo así un aliado Estratégico de Nuestros Clientes, Proveedores y Colaboradores, comprometidos con el Bienestar de la Sociedad.</p>
 
         
       </div>
