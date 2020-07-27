@@ -51,7 +51,7 @@ class CartController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function store(Product $product)
+    public function store(Request $product)
     {
         $duplicates = Cart::search(function ($cartItem, $rowId) use ($product) {
             return $cartItem->id === $product->id;
@@ -61,7 +61,7 @@ class CartController extends Controller
             return redirect()->route('cart.index')->with('success_message', 'El producto ya esta agregado a su carrito!');
         }
 
-        Cart::add($product->id, $product->name, 1, $product->price)
+        Cart::add($product->id, $product->name, $product->qty, $product->price)
             ->associate('App\Product');
 
         return redirect()->route('cart.index')->with('success_message', '¡El producto fue agregado a su carrito!');

@@ -2177,13 +2177,12 @@ select.selectpicker {
   width: 100%;
   height: auto;
 }
-.btn__enviar{
+.btn__enviar, .inicio{
   background: var(--primary);
   color: white !important;
   /* padding: 12px 40px; */
   border-radius: 10px;
 }
-<<<<<<< Updated upstream
 
 .pt-pb-e{
   padding-top:25px;
@@ -2205,12 +2204,10 @@ select.selectpicker {
 .pb{
   padding-bottom:40px;
 }
-=======
-.btn__enviar:hover{
+.btn__enviar:hover, .inicio:hover{
   background: white;
   border-color: var(--primary);
   color: var(--primary) !important;
   /* padding: 12px 40px; */
   border-radius: 10px;
 }
->>>>>>> Stashed changes

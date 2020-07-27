@@ -76,7 +76,7 @@
                             @if($item)
                             <button type="submit" class="btn btn__enviar" data-id="{{ $item->rowId }}" data-productQuantity="{{ $item->model->quantity }}" data-pricemayor="{{ $item->model->pricemayor }}" data-price="{{ $item->model->price }}"><i class="fas fa-shopping-cart"></i> Agrega al Carrito</button>
                             @else
-                            <button type="submit" class="btn btn__enviar"><i class="fas fa-shopping-cart"></i> Agrega al Carrito</button>
+                            <button type="submit" class="btn inicio" data-id="{{ $product->id }}" data-name="{{ $product->name }}" data-price="{{ $product->price }}"><i class="fas fa-shopping-cart"></i> Agrega al Carrito</button>
                             @endif
                             <!-- </form> -->
                     @endif
@@ -129,6 +129,26 @@
             }
 
         })();
+        $('.inicio').click(function(){
+                const $id = this.getAttribute('data-id')
+                const $name = this.getAttribute('data-name')
+                const $price = this.getAttribute('data-price')
+                let $value = $(this).parents('.dataproduct').find('label').html()
+                axios.post(`cart/create`, {
+                    id: $id,
+                    name: $name,
+                    price: $price,
+                    qty: $value
+                })
+                .then(function (response) {
+                    location.reload()
+                    // window.location.href = '{{ route('cart.index') }}'
+                })
+                .catch(function (error) {
+                    location.reload()
+                    // window.location.href = '{{ route('cart.index') }}'
+                });
+        });
         $('.btn-link').click(function(){
             $input = $(this).parents('.dataproduct').find('label')
             var min = 0
@@ -144,25 +164,34 @@
                 const productPricemayor = this.getAttribute('data-pricemayor')
                 const productPrice = this.getAttribute('data-price')
                 let value = $(this).parents('.dataproduct').find('label').html()
-                // console.log(this.value)
-                console.log(productQuantity)
-                console.log(productPricemayor)
-                console.log(id)
-                console.log(productPrice)
-                axios.patch(`cart/${id}`, {
-                    quantity: value,
-                    productQuantity: productQuantity,
-                    productPricemayor: productPricemayor,
-                    productPrice: productPrice
-                })
-                .then(function (response) {
-                    location.reload()
-                    // window.location.href = '{{ route('cart.index') }}'
-                })
-                .catch(function (error) {
-                    location.reload()
-                    // window.location.href = '{{ route('cart.index') }}'
-                });
+                if (parseInt(value) > 0){
+                    axios.patch(`cart/${id}`, {
+                        quantity: value,
+                        productQuantity: productQuantity,
+                        productPricemayor: productPricemayor,
+                        productPrice: productPrice
+                    })
+                    .then(function (response) {
+                        location.reload()
+                        // window.location.href = '{{ route('cart.index') }}'
+                    })
+                    .catch(function (error) {
+                        location.reload()
+                        // window.location.href = '{{ route('cart.index') }}'
+                    });
+
+                }else{
+                    const id = this.getAttribute('data-id')
+                    axios.delete(`cart/${id}`)
+                    .then(function (response) {
+                        location.reload()
+                        // window.location.href = '{{ route('cart.index') }}'
+                    })
+                    .catch(function (error) {
+                        location.reload()
+                        // window.location.href = '{{ route('cart.index') }}'
+                    });
+                }
         })
     </script>
 
