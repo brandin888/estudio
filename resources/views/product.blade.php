@@ -67,10 +67,18 @@
                         <!-- <form action="{{ route('cart.store', $product) }}" method="POST"> -->
                             <!-- {{ csrf_field() }} -->
                             <a t-attf-href="#" class="btn btn-link js_add_cart_json d-md-inline-block" aria-label="Remove one" title="Remove one"><i class="fas fa-minus"></i></a>
+                            @if($item)
                             <label type="text">{{ $item->qty }}</label>
+                            @else
+                            <label type="text">0</label>
+                            @endif
                             <a t-attf-href="#" class="btn btn-link js_add_cart_json d-md-inline-block" aria-label="Remove one" title="Remove one"><i class="fas fa-plus"></i></a>
+                            @if($item)
                             <button type="submit" class="btn btn__enviar" data-id="{{ $item->rowId }}" data-productQuantity="{{ $item->model->quantity }}" data-pricemayor="{{ $item->model->pricemayor }}" data-price="{{ $item->model->price }}"><i class="fas fa-shopping-cart"></i> Agrega al Carrito</button>
-                        <!-- </form> -->
+                            @else
+                            <!-- <button type="submit" class="btn btn__enviar" data-id="{{ $item->rowId }}" data-productQuantity="{{ $item->model->quantity }}" data-pricemayor="{{ $item->model->pricemayor }}" data-price="{{ $item->model->price }}"><i class="fas fa-shopping-cart"></i> Agrega al Carrito</button> -->
+                            @endif
+                            <!-- </form> -->
                     @endif
                 </div>
             <!-- <div>{!! $stockLevel !!}</div> -->

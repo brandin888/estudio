@@ -72,7 +72,7 @@ class ShopController extends Controller
         
         $id=$product->id;
         $item = Cart::content()->where('id', $id)->first();
-        // dd($product);
+        // dd(Cart::content());
 
         return view('product')->with([
             'product' => $product,
