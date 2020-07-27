@@ -76,7 +76,7 @@
                             @if($item)
                             <button type="submit" class="btn btn__enviar" data-id="{{ $item->rowId }}" data-productQuantity="{{ $item->model->quantity }}" data-pricemayor="{{ $item->model->pricemayor }}" data-price="{{ $item->model->price }}"><i class="fas fa-shopping-cart"></i> Agrega al Carrito</button>
                             @else
-                            <!-- <button type="submit" class="btn btn__enviar" data-id="{{ $item->rowId }}" data-productQuantity="{{ $item->model->quantity }}" data-pricemayor="{{ $item->model->pricemayor }}" data-price="{{ $item->model->price }}"><i class="fas fa-shopping-cart"></i> Agrega al Carrito</button> -->
+                            <button type="submit" class="btn btn__enviar"><i class="fas fa-shopping-cart"></i> Agrega al Carrito</button>
                             @endif
                             <!-- </form> -->
                     @endif
