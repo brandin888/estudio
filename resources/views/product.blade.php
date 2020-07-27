@@ -11,7 +11,7 @@
     
 
     <div class="container" style="padding-bottom: 35px;">
-        @if (session()->has('success_message'))
+        <!-- @if (session()->has('success_message'))
             <div class="alert alert-success">
                 {{ session()->get('success_message') }}
             </div>
@@ -25,18 +25,15 @@
                     @endforeach
                 </ul>
             </div>
-        @endif
+        @endif -->
     </div>
 
     <div class="container" style="font-size:25px">
     <i class="fas fa-home" style="color:var(--primary)"></i> > <strong><a href="/shop" style="color:var(--primary)">Tienda</a></strong> > {{ $product->name}}
     </div>
     <div class="product-section container">
-        <div style="padding-left: 0px">
-            <div class="product-section-image bg-white">
-                <img src="{{ productImage($product->image) }}" alt="product" class="active" id="currentImage">
-            </div>
-            <div class="product-section-images">
+        <div style="padding-left: 0px" class="d-flex">
+            <div class="product-section-images col-2">
                 <div class="product-section-thumbnail selected">
                     <img src="{{ productImage($product->image) }}" alt="product">
                 </div>
@@ -49,24 +46,31 @@
                     @endforeach
                 @endif
             </div>
+            <div class="product-section-image bg-white col-8">
+                <img src="{{ productImage($product->image) }}" alt="product" class="active" id="currentImage">
+            </div>
+            
         </div>
-        <div class="product-section-information" style="padding-left: 40px;">
+        <div class="product-section-information">
             <h1>{{ $product->name }} </h1>
             <div class="card-body d-lg-flex pb-5" style="background-color:#f7f7f9;font-size:18px;border-bottom:5px solid var(--primary)">
                 <div class="col-12 col-lg-6 mr-5 px-0">
                     <div class="mb-3">Descripción:</div>
                     {{ $product->details }}
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 dataproduct px-0">
                     <div class="mb-3">Precio : {{ $product->presentPriceUnidad() }}</div>
                     @if($product->pricemayor > 0)
                     <div class="product-section-subtitle" style="color:#171260">Precio por mayor: {{ $product->presentPriceMayor() }}</div>
                     @endif
                     @if ($product->quantity > 0)
-                        <form action="{{ route('cart.store', $product) }}" method="POST">
-                            {{ csrf_field() }}
-                            <button type="submit" class="btn btn__enviar"><i class="fas fa-shopping-cart"></i> Agrega al Carrito</button>
-                        </form>
+                        <!-- <form action="{{ route('cart.store', $product) }}" method="POST"> -->
+                            <!-- {{ csrf_field() }} -->
+                            <a t-attf-href="#" class="btn btn-link js_add_cart_json d-md-inline-block" aria-label="Remove one" title="Remove one"><i class="fas fa-minus"></i></a>
+                            <label type="text">{{ $item->qty }}</label>
+                            <a t-attf-href="#" class="btn btn-link js_add_cart_json d-md-inline-block" aria-label="Remove one" title="Remove one"><i class="fas fa-plus"></i></a>
+                            <button type="submit" class="btn btn__enviar" data-id="{{ $item->rowId }}" data-productQuantity="{{ $item->model->quantity }}" data-pricemayor="{{ $item->model->pricemayor }}" data-price="{{ $item->model->price }}"><i class="fas fa-shopping-cart"></i> Agrega al Carrito</button>
+                        <!-- </form> -->
                     @endif
                 </div>
             <!-- <div>{!! $stockLevel !!}</div> -->
@@ -96,6 +100,7 @@
 @endsection
 
 @section('extra-js')
+<script src="{{ asset('js/app.js') }}"></script>
     <script>
         (function(){
             const currentImage = document.querySelector('#currentImage');
@@ -116,6 +121,41 @@
             }
 
         })();
+        $('.btn-link').click(function(){
+            $input = $(this).parents('.dataproduct').find('label')
+            var min = 0
+            var max = 10
+            var previousQty = parseInt($input.html() || 0, 10);
+            var quantity = ($(this).has(".fa-minus").length ? -1 : 1) + previousQty;
+            var newQty = quantity > min ? (quantity < max ? quantity : max) : min;
+            $input.html(newQty)
+        });
+        $('.btn__enviar').click(function(){
+                const id = this.getAttribute('data-id')
+                const productQuantity = this.getAttribute('data-productQuantity')
+                const productPricemayor = this.getAttribute('data-pricemayor')
+                const productPrice = this.getAttribute('data-price')
+                let value = $(this).parents('.dataproduct').find('label').html()
+                // console.log(this.value)
+                console.log(productQuantity)
+                console.log(productPricemayor)
+                console.log(id)
+                console.log(productPrice)
+                axios.patch(`cart/${id}`, {
+                    quantity: value,
+                    productQuantity: productQuantity,
+                    productPricemayor: productPricemayor,
+                    productPrice: productPrice
+                })
+                .then(function (response) {
+                    location.reload()
+                    // window.location.href = '{{ route('cart.index') }}'
+                })
+                .catch(function (error) {
+                    location.reload()
+                    // window.location.href = '{{ route('cart.index') }}'
+                });
+        })
     </script>
 
     <!-- Include AlgoliaSearch JS Client and autocomplete.js library -->

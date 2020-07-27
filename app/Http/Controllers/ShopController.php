@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Product;
 use App\Category;
 use Illuminate\Http\Request;
+use Gloudemans\Shoppingcart\Facades\Cart;
+
 
 class ShopController extends Controller
 {
@@ -67,9 +69,14 @@ class ShopController extends Controller
             $products = Product::where('featured', true);
             $categoryName = 'Featured';
         }
+        
+        $id=$product->id;
+        $item = Cart::content()->where('id', $id)->first();
+        // dd($product);
 
         return view('product')->with([
             'product' => $product,
+            'item' => $item,
             'stockLevel' => $stockLevel,
             'mightAlsoLike' => $mightAlsoLike,
             'productone' => $productone,
