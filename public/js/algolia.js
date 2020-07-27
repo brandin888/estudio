@@ -30,7 +30,7 @@
                     return markup;
                 },
                 empty: function (result) {
-                    return 'Disculpe , no se encuentran resustados para: "' + result.query + '"';
+                    return 'Disculpe , no se encuentran resultados para: "' + result.query + '"';
                 }
             }
         }).on('autocomplete:selected', function (event, suggestion, dataset) {

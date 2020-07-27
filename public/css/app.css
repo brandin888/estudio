@@ -962,9 +962,10 @@ header .top-nav {
   top: 0px;
   color: black;
   background: white;
-  border-top: 15px solid #f58634;
+  
   border-bottom: 6px solid #f58634;
-  height:   180px;
+  height:   155px;
+  background-color: blanchedalmond;
 }
 
 header .top-nav .logo {
@@ -1153,7 +1154,7 @@ footer {
   /* border: 1px solid #979797; */
   /* padding: 30px; */
   text-align: center;
-  height: 300px;
+  height: 400px;
 }
 
 .product-section-image img {

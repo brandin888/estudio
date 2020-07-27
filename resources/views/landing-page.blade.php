@@ -866,6 +866,10 @@ a {
     background-color: #ff5a00;
     border-color: #ff5a00;
 }
+.nav-link {
+    display: flex;
+    background-color: transparent;
+}
 </style>
 
 
@@ -899,9 +903,18 @@ a {
   .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #ff5a00;
-    border-color: #ff5a00;
-}</style>
+
+    background-color: #6b307b;
+    border-color: #6b307b;
+}
+.nav-link {
+    display: flex;
+    background-color: transparent;
+}
+
+
+</style>
+
     </head>
     <body style="background-color:#ffffff">
 
@@ -951,9 +964,24 @@ a {
         <div >
 
             <header >
-                <div class="top-nav " style=" position: fixed;z-index: 2;width: 100%" >
+                <div class="top-nav " id="top-nav" style=" position: fixed;z-index: 2;width: 100%" >
+
                   
-                  <div style="width: 100%; height: 100px; display: flex;">
+                  <div id="top-nav0" style="width: 100%; height: 25px; display: flex; background-color: #444346; position: absolute;
+                  top: 0px;">
+                    
+
+                    <a class="redes__link pl-3" href="https://www.facebook.com/Litercorp-111473320648629" target="_blank"><i class="fab fa-facebook-f"></i><span class=""> Facebook</span></a>
+
+                    <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fab fa-whatsapp"></i><span class=""> 945 774 749</span></a>
+
+                    <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fa fa-envelope"></i><span class=""> info@litercorp.com</span></a>
+
+                    <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fa fa-map-marker"></i><span class=""> Asociación praderas de pariachi Mz. E Lt. 25, Ate Vitarte</span></a>
+
+                  </div>
+
+                  <div id="top-nav1" style="width: 100%; height: 90px; display: flex;">
                       <div > <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 400px; padding-left: 60px"></a></div>
                    
                     
@@ -968,7 +996,7 @@ a {
                 
                 
 
-                    <div class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px; height:   35% ;">
+                    <div id="top-nav2" class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px; height:   30% ;">
                      
                       <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>Quienes somos</a>
                       <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/') }}/promociones"><i class="fa fa-tag" aria-hidden="true"></i>Promociones</a>
@@ -1000,7 +1028,7 @@ a {
 
                 </div> <!-- end top-nav -->
 
-                <div style="margin-top: 20px;">
+                <div style="margin-top: ;">
                  <div class="row" style="margin-left: 0px; margin-right: 0px; height: 25em">
                   <div class="col-lg-3 carouselcontainer" style=" padding-left: 0px; padding-right: 0px ; height: 100%">
 
@@ -1340,6 +1368,12 @@ $('.prev').click(function() {
   nextSlide = +currentSlide === 1 ? 4 : +currentSlide - 1;
   $carousel.attr('data-slide', nextSlide);
 });
+
+setInterval(function() {
+  currentSlide = $carousel.attr('data-slide');
+  nextSlide = +currentSlide === 4 ? 1 : +currentSlide + 1;
+  $carousel.attr('data-slide', nextSlide);
+},3000);
 </script>
     </body>
 </html>
@@ -1416,5 +1450,31 @@ $('.carousel .carousel-item').each(function(){
 
 
 </style>
+<script type="text/javascript">
+  $('.carousel2').carousel({
+  interval: 10
+})
+</script>
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("top-nav").style.height = "80px";
+    document.getElementById("top-nav1").style.display = "none";
+    document.getElementById("top-nav0").style.display = "none";
+    document.getElementById("logo").style.fontSize = "25px";
+    document.getElementsByClassName("nav-link").style.border.top="none";
+    
+
+  } else {
+    document.getElementById("top-nav").style.height = "155px";
+    document.getElementById("top-nav1").style.display = "flex";
+    document.getElementById("top-nav0").style.display = "flex";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+</script>
     </body>
 </html>
