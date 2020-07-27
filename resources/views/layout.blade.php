@@ -85,9 +85,10 @@
       <!-- Your Chat Plugin code -->
       <div class="fb-customerchat"
         attribution=setup_tool
-        page_id="103421061443777"
-  logged_in_greeting="Hola Aletoysi..!!!"
-  logged_out_greeting="Hola Aletoysi..!!!">
+        page_id="111473320648629"
+  theme_color="#ff5a00"
+  logged_in_greeting="Bienvenido a Litercorp. ¿Cuál es el producto que desea cotizar?"
+  logged_out_greeting="Bienvenido a Litercorp. ¿Cuál es el producto que desea cotizar?">
       </div>
       
     @include('partials.nav')

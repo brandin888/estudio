@@ -917,7 +917,7 @@ a {
         <!-- end Whatsapp -->
         
         <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
+    <div id="fb-root"></div>
       <script>
         window.fbAsyncInit = function() {
           FB.init({
@@ -937,9 +937,10 @@ a {
       <!-- Your Chat Plugin code -->
       <div class="fb-customerchat"
         attribution=setup_tool
-        page_id="103421061443777"
-  logged_in_greeting="Hola Aletoysi..!!!"
-  logged_out_greeting="Hola Aletoysi..!!!">
+        page_id="111473320648629"
+  theme_color="#ff5a00"
+  logged_in_greeting="Bienvenido a Litercorp. ¿Cuál es el producto que desea cotizar?"
+  logged_out_greeting="Bienvenido a Litercorp. ¿Cuál es el producto que desea cotizar?">
       </div>
      
        <!-- Your Chat Plugin code -->
@@ -1047,22 +1048,22 @@ a {
         <div class="col-md-12 col-md-offset-1 text-center">
           <div class="row">
             <div data-wow-delay="0.2s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn; padding-bottom: 15px;">
-              <h3 class="negro"><i class="fas fa-pager" style="font-size:70px;padding-bottom: 10px; color:#ff5b01"></i><br>PAGO DE FORMA SEGURA
+              <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-pager" style="font-size:70px;padding-bottom: 10px; color:#ff5b01"></i><br>PAGO DE FORMA SEGURA
               </h3><p>En Litercorp nos importa tu seguridad, por eso te presentamos los diversos metodos de pago, pago Online, pago en Efectivo y Depositos.</p>
             </div>
 
             <div data-wow-delay="0.4s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn; padding-bottom: 15px;">
-              <h3 class="negro"><i class="fas fa-truck-moving pb15" style="font-size:70px;padding-bottom: 10px;color:#ff5b01"></i><br>ENVÍOS A TODO EL PERÚ
+              <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-truck-moving pb15" style="font-size:70px;padding-bottom: 10px;color:#ff5b01"></i><br>ENVÍOS A TODO EL PERÚ
               </h3><p>Se realizan envios a todo el Perú, y através de la página web puedes hacer seguimiento de tú compra.</p>
             </div>
 
             <div data-wow-delay="0.6s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn; padding-bottom: 15px;">
-              <h3 class="negro"><i class="fas fa-award pb15" style="font-size:70px;padding-bottom: 10px;color:#ff5b01"></i><br>PRODUCTOS DE CALIDAD
+              <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-award pb15" style="font-size:70px;padding-bottom: 10px;color:#ff5b01"></i><br>PRODUCTOS DE CALIDAD
               </h3><p>Ofrecemos productos de calidad y con garantia pensando siempre en ustedes.</p>
             </div>
 
             <div data-wow-delay="0.8s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn; padding-bottom: 15px;">
-              <h3 class="negro"><i class="fas fa-tags pb15" style="font-size:70px;padding-bottom: 10px;color:#ff5b01"></i></i><br>LOS MEJORES PRECIOS
+              <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-tags pb15" style="font-size:70px;padding-bottom: 10px;color:#ff5b01"></i></i><br>LOS MEJORES PRECIOS
               </h3>
               <p>Realizamos ventas por mayor y menor, puedes realizar tu cotización a traves de nuestra pagina web o con un asesor de venta.
               </p>
