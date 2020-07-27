@@ -904,8 +904,8 @@ a {
     z-index: 3;
     color: #fff;
 
-    background-color: #6b307b;
-    border-color: #6b307b;
+    background-color: #ff5a00;
+    border-color: #ff5a00;
 }
 .nav-link {
     display: flex;
