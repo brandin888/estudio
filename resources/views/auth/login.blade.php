@@ -193,9 +193,12 @@
 
             <form action="{{ route('login') }}" method="POST">
                 {{ csrf_field() }}
-
-                <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="Email" required autofocus>
-                <input type="password" id="password" name="password" value="{{ old('password') }}" placeholder="Contraseña" required>
+                <div class="form-group">
+                  <input class="form-control" type="email" id="email" name="email" value="{{ old('email') }}" placeholder="Email" required autofocus>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="password" id="password" name="password" value="{{ old('password') }}" placeholder="Contraseña" required>
+                </div>
 
                 <div class="login-container">
                     <button type="submit" class="auth-button ">Iniciar sesión</button>
@@ -215,16 +218,16 @@
 
         <div class="auth-right">
             <h2  style="color:#171260">Cliente nuevo</h2>
-            <!-- <div class="spacer"></div>
+            <div class="spacer"></div>
             <p><strong>Ahorra tiempo ahora.</strong></p>
             <p>No necesitas tener una cuenta para hacer tu pedido.</p>
             <div class="spacer"></div>
             <a href="{{ route('guestCheckout.index') }}" class="auth-button-hollow">Continúa como invitado</a>
             <div class="spacer"></div>
-            &nbsp; -->
+            &nbsp;
             <div class="spacer"></div>
-            <p><strong style="color:#54bbe6">Ahorra tiempo para después.</strong></p>
-            <p style="color:#54bbe6">Crea una cuenta para ahorrar tiempo por cada pedido.</p>
+            <p>Ahorra tiempo para después.</p>
+            <p>Crea una cuenta para ahorrar tiempo por cada pedido.</p>
             <div class="spacer"></div>
             <a href="{{ route('register') }}" class="auth-button-hollow">Crear una cuenta</a>
 

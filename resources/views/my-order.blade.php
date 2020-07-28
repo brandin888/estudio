@@ -34,21 +34,34 @@
         @endif
     </div>
 
-    <div class="products-section my-orders container">
-        <div class="sidebar">
-
+    <div class="products-section my-orders container d-md-flex">
+        <div class="sidebar col-12 col-md-2 mr-5">
             <ul>
-              <li><a href="{{ route('users.edit') }}">Mi Perfil</a></li>
-              <li class="active"><a href="{{ route('orders.index') }}">Mis Órdenes</a></li>
+                <li>
+                    <a class="d-flex" href="{{ route('users.edit') }}">
+                        <div style="width:25px" class="text-center">
+                        <i class="far fa-user"></i>
+                        </div>
+                        Mi Perfil
+                    </a>
+                </li>
+                <li class="active">
+                    <a class="d-flex" href="{{ route('orders.index') }}">
+                        <div style="width:25px" class="text-center">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        Mis Órdenes
+                    </a>
+                </li>
             </ul>
         </div> <!-- end sidebar -->
-        <div class="my-profile">
+        <div class="my-profile col-12 col-md-10">
             <div class="products-header">
-                <h1 class="stylish-heading">ID de la Orden: {{ $order->id }}</h1>
+                <h1 class="stylish-heading mb-4">N° de Orden: {{ $order->id }}</h1>
             </div>
 
             <div>
-                <div class="order-container">
+                <div class="order-container mb-3">
                     <div class="order-header">
                         <div class="order-header-items">
                             <div>

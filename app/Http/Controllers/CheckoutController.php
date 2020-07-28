@@ -105,7 +105,7 @@ $categories = Category::all();
             Mail::send(new OrderPlaced($order));
 
             // decrease the quantities of all the products in the cart
-            $this->decreaseQuantities();
+            // $this->decreaseQuantities();
 
             Cart::instance('default')->destroy();
             session()->forget('coupon');

@@ -57,7 +57,7 @@ class ShopController extends Controller
         $mightAlsoLike = Product::where('slug', '!=', $slug)->mightAlsoLike()->take(-4)->get();
         $productone = Product::where('slug', '!=', $slug)->mightAlsoLike()->first();
         $stockLevel = getStockLevel($product->quantity);
-       
+    //    dd($product);
         $categories = Category::all();
 
         if (request()->category) {
@@ -72,7 +72,7 @@ class ShopController extends Controller
         
         $id=$product->id;
         $item = Cart::content()->where('id', $id)->first();
-        // dd($product);
+        // dd($stockLevel);
 
         return view('product')->with([
             'product' => $product,

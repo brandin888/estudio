@@ -26,16 +26,18 @@
 
             <form method="POST" action="{{ route('register') }}">
                 {{ csrf_field() }}
-
-                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Nombre y Apellido" required autofocus>
-
-                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Correo electrónico" required>
-
-                <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña" required>
-
-                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirmación de contraseña"
-                    required>
-
+                <div class="form-group">
+                    <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Nombre y Apellido" required autofocus>
+                </div>
+                <div class="form-group">
+                    <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña" required>
+                </div>
+                <div class="form-group">
+                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirmación de contraseña"required>
+                </div>
                 <div class="login-container">
                     <button type="submit" class="auth-button" >Crear Cuenta</button>
                     <div class="already-have-container">
@@ -50,13 +52,12 @@
         <div class="auth-right">
             <h2 style="color:#171260">Nuevo Cliente</h2>
             <div class="spacer"></div>
-            <p><strong  style="color:#ffc63f">Ahorra tiempo</strong></p>
-            <p style="color:#54bbe6">Creando una cuenta podras ordenar más rápido en el futuro, facil acceso a tu historial de órdenes.</p>
+            <p><strong>Ahorra tiempo</strong></p>
+            <p>Creando una cuenta podras ordenar más rápido en el futuro, facil acceso a tu historial de órdenes.</p>
 
-            &nbsp;
             <div class="spacer"></div>
-            <p><strong  style="color:#ffc63f">Beneficios</strong></p>
-            <p style="color:#54bbe6">Podrás recibir promociones de nuestros nuevos productos.</p>
+            <p><strong>Beneficios</strong></p>
+            <p>Podrás recibir promociones de nuestros nuevos productos.</p>
         </div>
     </div> <!-- end auth-pages -->
 </div>

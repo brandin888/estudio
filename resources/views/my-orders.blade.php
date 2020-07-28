@@ -110,8 +110,8 @@
         @endif
     </div>
 
-    <div class="products-section my-orders container">
-        <div class="sidebar">
+    <div class="products-section my-orders container d-md-flex">
+        <div class="sidebar col-12 col-md-2 mr-5">
             <ul>
                 <li>
                     <a href="{{ route('users.edit') }}" class="d-flex">
@@ -131,7 +131,7 @@
                 </li>
             </ul>
         </div> <!-- end sidebar -->
-        <div class="my-profile">
+        <div class="my-profile col-12 col-md-10">
             <div class="products-header">
                 <h1 class="stylish-heading mb-4">Mis Órdenes</h1>
             </div>

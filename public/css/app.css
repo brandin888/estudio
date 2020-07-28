@@ -328,6 +328,7 @@ button:focus {
   color: white !important;
   padding: 12px 40px;
   border-radius: 10px;
+  font-weight: 700;
 }
 
 .button-primary:hover {
@@ -355,7 +356,7 @@ button:focus {
 
 .sidebar{
   text-align: left;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 
@@ -373,8 +374,8 @@ button:focus {
 } 
 .sidebar li:hover {
   line-height: 2.5;
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 
@@ -1099,7 +1100,7 @@ footer {
 }
 
 .products-section .sidebar li.active {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .products-section .products {
@@ -1129,7 +1130,7 @@ footer {
 }
 
 .product-section-images {
-  display: grid;
+  /* display: grid; */
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 10px;
   /* margin-top: 20px; */
@@ -1154,7 +1155,7 @@ footer {
   /* border: 1px solid #979797; */
   /* padding: 30px; */
   text-align: center;
-  height: 400px;
+  height: 300px;
 }
 
 .product-section-image img {
@@ -1532,12 +1533,14 @@ h1.checkout-heading {
 }
 
 .auth-pages input {
-  border: 1px solid var(--primary);
-  padding: 16px 10px;
-  border-radius: 5px;
-  width: 100%;
-  font-size: 14px;
-  margin-bottom: 30px;
+    border-radius: 4px;
+    /* height: 47px; */
+    /* border: 1px solid #e8e8e8; */
+    color: #212121;
+}
+
+.auth-pages input:focus {
+  outline: -webkit-focus-ring-color auto 0px !important
 }
 
 .auth-pages input[type=checkbox] {
@@ -1553,14 +1556,10 @@ h1.checkout-heading {
 .auth-pages .auth-button {
   background: linear-gradient(to right, var(--primary) 0%,var(--primary) 50%, var(--primary) 100%);
   color: #fff;
- border-radius: 8px;
-  width: 200px;
-
-      text-transform: uppercase;
-    margin-top: 20px;
-    padding: 10px 50px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 900;
+  border-radius: 10px;
+  padding: 12px 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 
 .auth-pages .auth-button:hover {
@@ -1570,15 +1569,11 @@ h1.checkout-heading {
 .auth-pages .auth-button-hollow {
  background: linear-gradient(to right, var(--primary) 0%, var(--primary) 50%, var(--primary) 100%);
   color: #fff;
- border-radius: 8px;
-  
-
-      text-transform: uppercase;
+ border-radius: 10px;
     margin-top: 20px;
-    padding: 10px 50px;
+    padding: 12px 40px;
     font-family: "Open Sans", sans-serif;
-    font-weight: 900;
-    width: 80%
+    font-weight: 700;
 }
 
 .auth-pages .auth-button-hollow:hover {
@@ -1610,14 +1605,12 @@ h1.checkout-heading {
 }
 
 .my-profile .my-profile-button {
-  background: var(--primary);
+  background: linear-gradient(to right, var(--primary) 0%,var(--primary) 50%, var(--primary) 100%);
   color: #fff;
-  border-radius: 8px;
-    text-transform: uppercase;
-    /* margin-top: 20px; */
-    padding: 10px 50px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 900;
+  border-radius: 10px;
+  padding: 12px 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 
 .my-profile .my-profile-button:hover {
