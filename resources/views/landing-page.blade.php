@@ -870,6 +870,10 @@ a {
     display: flex;
     background-color: transparent;
 }
+.nav-link {
+    display: flex;
+    background-color: transparent;
+}
 </style>
 
 
@@ -904,8 +908,10 @@ a {
     z-index: 3;
     color: #fff;
 
+
     background-color: #ff5a00;
     border-color: #ff5a00;
+
 }
 .nav-link {
     display: flex;
