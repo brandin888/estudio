@@ -183,7 +183,7 @@ section#action, section#action-transparent {
 .menu__responsive {
   width: 100%;
   height: 58px;
-  background: #00053e;
+  background: #353535;
   position: fixed;
   top: 0;
   z-index: 1234;
@@ -206,7 +206,7 @@ section#action, section#action-transparent {
 }
 
 .menu__responsive .carrito_top a i {
-  color: #ff9639;
+  color: #ff5a00;
   border-color: #110041;
 }
 
@@ -242,7 +242,7 @@ section#action, section#action-transparent {
 #bottom {
   width: 100%;
   height: 2px;
-  background: #ff9639;
+  background: #ff5a00;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
@@ -701,7 +701,7 @@ a {
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  background-color: #f58634 !important;
+  background-color: #ff5a00 !important;
   color: #fff;
 }
 .nav-expand-content .nav-back-link::before {
@@ -908,20 +908,13 @@ a {
     z-index: 3;
     color: #fff;
 
-<<<<<<< Updated upstream
-
     background-color: #ff5a00;
     border-color: #ff5a00;
-
-=======
-    background-color: #ff5a00;
-    border-color: #ff5a00;
->>>>>>> Stashed changes
 }
 .nav-link {
     display: flex;
     background-color: transparent;
-    color: white;
+    color: #ffffff;
 }
 
 
@@ -979,7 +972,7 @@ a {
                 <div class="top-nav " id="top-nav" style=" position: fixed;z-index: 2;width: 100%" >
 
                   
-                  <div id="top-nav0" style="width: 100%; height: 25px; display: flex;  position: absolute;
+                  <div id="top-nav0" style="align-items: center;font-size: 13px; padding-left: 8%; background: rgb(240, 240, 240); width: 100%; height: 25px; display: flex;  position: absolute;
                   top: 0px;">
                     
 
@@ -987,19 +980,21 @@ a {
 
                     <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fab fa-whatsapp"></i><span class=""> 945 774 749</span></a>
 
+                    <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fas fa-phone-alt"></i><span class=""> (01) 401 3742</span></a>
+
                     <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fa fa-envelope"></i><span class=""> info@litercorp.com</span></a>
 
-                    <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fa fa-map-marker"></i><span class=""> Asociación praderas de pariachi Mz. E Lt. 25, Ate Vitarte</span></a>
+                    <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fa fa-map-marker"></i><span class=""> Lima Este</span></a>
 
                   </div>
 
-                  <div id="top-nav1" style="width: 100%; height: 90px; display: flex;">
-                      <div > <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 400px; padding-left: 60px"></a></div>
+                  <div id="top-nav1" style="align-items: center; width: 100%; height: 90px; display: flex;padding-left: 33px;">
+                      <div > <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/liter.png') }}" style=" width: 300px; padding-left: 80px"></a></div>
                    
                     
                       
                     <div class="top-nav-right"  style="text-align: left;">
-                      <img style="width: 50px; height: 50px" src="{{ asset('img/diseño/avatar.png') }}">
+                      <img style="width: 30px; height: 30px" src="{{ asset('img/diseño/avatar.png') }}">
                       @include('partials.menus.main-right')
                         
                     </div>
@@ -1010,10 +1005,10 @@ a {
 
                     <div id="top-nav2" class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px; height:   30% ;">
                      
-                      <a class="nav-link" href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>Quienes somos</a>
-                      <a class="nav-link"  href="{{ url('/') }}/promociones"><i class="fa fa-tag" aria-hidden="true"></i>Promociones</a>
-                      <a class="nav-link" style="color: white" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
-                          Categorías
+                      <a class="nav-link colorban"  href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>QUIENES SOMOS</a>
+                      <a class="nav-link colorban"  href="{{ url('/') }}/promociones"><i class="fa fa-tag" aria-hidden="true"></i>PROMOCIONES</a>
+                      <a class="nav-link colorban" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
+                          CATEGORÍAS
                         </a>
                         <div  class="dropdown-menu " aria-labelledby="navbarDropdown" >
                           <div style="display: grid; grid-template-columns: auto auto auto;">
@@ -1028,14 +1023,14 @@ a {
                           
                         </div>
                         
-                         <a class="nav-link"  href="{{ url('/') }}/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Productos más vendidos</a>
-                         <a class="nav-link"  href="{{ url('/') }}/contacto"><i class="fa fa-phone" aria-hidden="true"></i>Contáctanos</a>
+                         <!-- <a class="nav-link colorban"  href="{{ url('/') }}/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>PRODUCTOS MÁS VENDIDOS</a> -->
+                         <a class="nav-link colorban" href="{{ url('/') }}/contacto"><i class="fa fa-phone" aria-hidden="true"></i>CONTACTAR</a>
                          <div >
                               @include('partials.search')
                           </div>
                         
                          
-                      </div>
+                    </div>
 
 
                 </div> <!-- end top-nav -->
@@ -1044,11 +1039,11 @@ a {
                  <div class="row" style="margin-left: 0px; margin-right: 0px; height: 25em">
                   <div class="col-lg-3 carouselcontainer" style=" padding-left: 0px; padding-right: 0px ; height: 100%">
 
-                    <ul class="list-group" style="overflow-y: scroll; height: 100%; border-bottom: 1px solid #f58634; z-index: 1; position: relative;     ">
-                  <a class="list-group-item" style="border-bottom: 1px solid #f58634" >Categorías</a>
+                    <ul class="list-group" style="overflow-y: scroll; height: 100%; border-bottom: 1px solid #ff5a00; z-index: 1; position: relative;     ">
+                  <a class="list-group-item" style="background-color:#ff7b21;border-bottom: 1px solid #ff5a00" >CATEGORÍAS</a>
                        @foreach($categories as $category)
 
-                   <a class="list-group-item" style="border-bottom: 1px solid #f58634;" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
+                   <a class="list-group-item" style="border-bottom: 1px solid #ff5a00;" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
                               
                       @endforeach
                       

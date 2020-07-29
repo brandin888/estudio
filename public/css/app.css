@@ -951,20 +951,18 @@ header.with-background .hero .button {
   margin-right: 14px;
 }
 
-header {
-  ;
-}
 
 header .top-nav {
   
   justify-content: space-between;
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   letter-spacing: 1.5px;
   top: 0px;
-  color: black;
+  color: #ffffff;
   background: white;
   
-  border-bottom: 6px solid #f58634;
+  /* border-bottom: 6px solid #f58634 */;
   height:   155px;
   background-color: #353535;
 }
@@ -1023,7 +1021,7 @@ header .top-nav-left {
 header .top-nav-right {
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 0px;
   margin-left: 25%;
 }
 
@@ -2203,4 +2201,11 @@ select.selectpicker {
   color: var(--primary) !important;
   /* padding: 12px 40px; */
   border-radius: 10px;
+}
+.colorban:visited {
+  color: #ffffff;
+}
+
+.colorban:hover {
+  color: #ff5a00;
 }
