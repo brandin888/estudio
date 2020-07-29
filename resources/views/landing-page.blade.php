@@ -916,6 +916,7 @@ a {
 .nav-link {
     display: flex;
     background-color: transparent;
+    color: white;
 }
 
 
@@ -973,7 +974,7 @@ a {
                 <div class="top-nav " id="top-nav" style=" position: fixed;z-index: 2;width: 100%" >
 
                   
-                  <div id="top-nav0" style="width: 100%; height: 25px; display: flex; background-color: #444346; position: absolute;
+                  <div id="top-nav0" style="width: 100%; height: 25px; display: flex;  position: absolute;
                   top: 0px;">
                     
 
@@ -993,7 +994,7 @@ a {
                     
                       
                     <div class="top-nav-right"  style="text-align: left;">
-                      <img style="width: 100px; height: 100px" src="{{ asset('img/diseño/avatar.png') }}">
+                      <img style="width: 50px; height: 50px" src="{{ asset('img/diseño/avatar.png') }}">
                       @include('partials.menus.main-right')
                         
                     </div>
@@ -1004,12 +1005,12 @@ a {
 
                     <div id="top-nav2" class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px; height:   30% ;">
                      
-                      <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>Quienes somos</a>
-                      <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/') }}/promociones"><i class="fa fa-tag" aria-hidden="true"></i>Promociones</a>
-                      <a class="nav-link" style="border-top: 2px solid #f58634" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
+                      <a class="nav-link" href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>Quienes somos</a>
+                      <a class="nav-link"  href="{{ url('/') }}/promociones"><i class="fa fa-tag" aria-hidden="true"></i>Promociones</a>
+                      <a class="nav-link" style="color: white" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
                           Categorías
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                        <div  class="dropdown-menu " aria-labelledby="navbarDropdown" >
                           <div style="display: grid; grid-template-columns: auto auto auto;">
                             @foreach($categories as $category)
                           <a class="dropdown-item" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
@@ -1022,9 +1023,9 @@ a {
                           
                         </div>
                         
-                         <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/') }}/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Productos más vendidos</a>
-                         <a class="nav-link" style="border-top: 2px solid #f58634" href="{{ url('/') }}/contacto"><i class="fa fa-phone" aria-hidden="true"></i>Contáctanos</a>
-                         <div style="border-top: 2px solid #f58634 ">
+                         <a class="nav-link"  href="{{ url('/') }}/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Productos más vendidos</a>
+                         <a class="nav-link"  href="{{ url('/') }}/contacto"><i class="fa fa-phone" aria-hidden="true"></i>Contáctanos</a>
+                         <div >
                               @include('partials.search')
                           </div>
                         
@@ -1469,14 +1470,16 @@ function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("top-nav").style.height = "80px";
     document.getElementById("top-nav1").style.display = "none";
+    
     document.getElementById("top-nav0").style.display = "none";
     document.getElementById("logo").style.fontSize = "25px";
-    document.getElementsByClassName("nav-link").style.border.top="none";
+    
     
 
   } else {
     document.getElementById("top-nav").style.height = "155px";
     document.getElementById("top-nav1").style.display = "flex";
+    
     document.getElementById("top-nav0").style.display = "flex";
     document.getElementById("logo").style.fontSize = "35px";
   }
