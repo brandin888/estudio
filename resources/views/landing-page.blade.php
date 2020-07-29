@@ -908,10 +908,15 @@ a {
     z-index: 3;
     color: #fff;
 
+<<<<<<< Updated upstream
 
     background-color: #ff5a00;
     border-color: #ff5a00;
 
+=======
+    background-color: #ff5a00;
+    border-color: #ff5a00;
+>>>>>>> Stashed changes
 }
 .nav-link {
     display: flex;
