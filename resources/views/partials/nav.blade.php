@@ -586,13 +586,17 @@ a {
     border-color: #6b307b;
 }
 
+.redes__link{
+  color: black;
+}
+
 </style>
 <header >
   
  <div class="top-nav " id="top-nav" style=" position: fixed;z-index: 2;width: 100%" >
 
                   
-                  <div id="top-nav0" style="align-items: center;font-size: 13px; padding-left: 8%; background: rgb(240, 240, 240);width: 100%; height: 25px; display: flex;  position: absolute;
+                  <div id="top-nav0" style="align-items: center;font-size: 13px; padding-left: 8%; background-color: rgb(240, 240, 240);width: 100%; height: 25px; display: flex;  position: absolute;
                   top: 0px;">
                     
 
@@ -625,7 +629,7 @@ a {
                     <div id="top-nav2" class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px; height:   30% ;">
                      
                       <a class="nav-link colorban"   href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>QUIENES SOMOS</a>
-                      <a class="nav-link colorban"   href="{{ url('/') }}/promociones"><i class="fa fa-tag" aria-hidden="true"></i>PROMOCIONES</a>
+                      <a class="nav-link colorban"  href="{{ url('/') }}/seguimiento"><i class="fa fa-tag" aria-hidden="true"></i>SEGUIMIENTO DE TU COMPRA</a>
                       <a  class="nav-link colorban"  class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
                           CATEGORÍAS
                         </a>
