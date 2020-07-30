@@ -12,7 +12,7 @@
   width: 100%;
   background-color: white;
   padding: 0px;
-  box-shadow: 0 4px 8px 0 rgba(255, 159, 69, 0.1), 0 6px 20px 0 rgba(255, 159, 69, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 1200px) {
   .products-section .products {
@@ -94,7 +94,7 @@ header{
   cursor: pointer;
 }
 .polaroid:hover {
-  box-shadow: 0 4px 8px 0 rgba(192, 87, 210, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(255, 159, 69, 1);
   
 }
 
@@ -921,7 +921,7 @@ a {
 </style>
 
     </head>
-    <body style="background-color:#ffffff">
+    <body style="background-color:#f5f5f5">
 
         <!-- Load Whatsapp -->
           
