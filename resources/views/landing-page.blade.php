@@ -1039,11 +1039,13 @@ a {
                  <div class="row" style="margin-left: 0px; margin-right: 0px; height: 25em">
                   <div class="col-lg-3 carouselcontainer" style=" padding-left: 0px; padding-right: 0px ; height: 100%">
 
-                    <ul class="list-group" style="overflow-y: scroll; height: 100%; border-bottom: 1px solid #ff5a00; z-index: 1; position: relative;     ">
-                  <a class="list-group-item" style="background-color:#ff7b21;border-bottom: 1px solid #ff5a00" >CATEGORÍAS</a>
+
+                    <ul class="list-group" style="overflow-y: scroll; height: 100%; border-bottom: 1px solid #f58634; z-index: 1; position: relative;     ">
+                  <a class="list-group-item" style="border-bottom: 1px solid #f58634; font-size: 28px ; color: white; background-color: #f58634;" >Categorías</a>
                        @foreach($categories as $category)
 
-                   <a class="list-group-item" style="border-bottom: 1px solid #ff5a00;" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
+                   <a class="list-group-item" style="border-bottom: 1px solid #f58634; font-size: 20px;" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
+
                               
                       @endforeach
                       
@@ -1470,7 +1472,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("top-nav").style.height = "80px";
     document.getElementById("top-nav1").style.display = "none";
-    
+     document.getElementById("top-nav2").style.padding = "5px 100px";
     document.getElementById("top-nav0").style.display = "none";
     document.getElementById("logo").style.fontSize = "25px";
     
@@ -1479,7 +1481,7 @@ function scrollFunction() {
   } else {
     document.getElementById("top-nav").style.height = "155px";
     document.getElementById("top-nav1").style.display = "flex";
-    
+    document.getElementById("top-nav2").style.padding = "0px 100px";
     document.getElementById("top-nav0").style.display = "flex";
     document.getElementById("logo").style.fontSize = "35px";
   }

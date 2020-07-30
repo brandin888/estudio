@@ -249,8 +249,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-img {width: 100%;
-max-height: 150;}
+
 
 div.container {
   text-align: center;
@@ -327,6 +326,8 @@ div.container {
   .modal-content {
     width: 100%;
   }
+
+
 }
 
 
@@ -432,8 +433,9 @@ section#action, section#action-transparent {
   color: #253b56;
   font-size: 22px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 39px;
   margin-top: 60px;
+  text-align: justify;
 }
 
 .nosotros__content__parrafo span {
@@ -493,6 +495,18 @@ section#action, section#action-transparent {
       -ms-flex-align: center;
           align-items: center;
 }
+ .img-us{
+    height:   300px;
+    margin-top: 60px;
+  }
+
+  @media (max-width: 991px) and (min-width: 426px){
+      .img-us{
+            
+         }
+
+  }
+
 </style>
 
 
@@ -515,13 +529,13 @@ section#action, section#action-transparent {
  
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-sm-6">
+      <div class="col-md-6 col-sm-12">
         <div class="nosotros__content">
           <p class="nosotros__content__parrafo">Somos una Empresa dedicada a la <span>Distribución de productos de Ferretería</span>  a los sectores que lo requieren, mediante el innovador y permanente Servicio; generando Progreso y Estabilidad a las Personas que hacen posible la Existencia de esta Empresa, siendo así un aliado Estratégico de Nuestros Clientes, Proveedores y Colaboradores, comprometidos con el Bienestar de la Sociedad.</p>
         </div>
       </div>
-      <div class="col-md-5 col-sm-5 " style="margin-top: 100px; width: 100%">
-        <img src="{{ asset('images/nosotros/nosotros.jpg') }}" class="img-fluid" alt="">
+      <div class="col-md-5 col-sm-12 " style=" width: 100%">
+        <img src="{{ asset('images/nosotros/nosotros.jpg') }}" class="img-us" alt="">
       </div>
     </div>
   </div>
