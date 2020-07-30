@@ -110,7 +110,7 @@
 .lista-footer__item a {
     font-size: 15px;
 }
-.redes__link {
+.redes__link2 {
     color: white;
 }
 .pl-3, .px-3 {
@@ -176,9 +176,9 @@
           SÍGUENOS
         </div>
         <ul class="lista-footer lista-footer--padding-min">
-          <li class="lista-footer__item lista-footer__item--nobullet pt-0"><a class="redes__link" href="https://www.facebook.com/Aletoysi-103421061443777/" target="_blank"><i class="fab fa-facebook-f"></i><span class="pl-3">Facebook</span></a></li>
+          <li class="lista-footer__item lista-footer__item--nobullet pt-0"><a class="redes__link2" href="https://www.facebook.com/Aletoysi-103421061443777/" target="_blank"><i class="fab fa-facebook-f"></i><span class="pl-3">Facebook</span></a></li>
           
-    <li class="lista-footer__item lista-footer__item--nobullet"><a class="redes__link" href="https://www.instagram.com/Aletoysi/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i><span class="pl-3">Instagram</span></a></li>           
+    <li class="lista-footer__item lista-footer__item--nobullet"><a class="redes__link2" href="https://www.instagram.com/Aletoysi/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i><span class="pl-3">Instagram</span></a></li>           
  </ul>
       </div>
 

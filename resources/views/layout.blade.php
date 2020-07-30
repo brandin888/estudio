@@ -51,6 +51,9 @@
     background-color: #ff5a00;
     border-color: #ff5a00;
 }
+.redes__link{
+  color: black;
+}
 
 header{
   height: 0px;
