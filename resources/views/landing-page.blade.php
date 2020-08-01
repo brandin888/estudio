@@ -652,9 +652,9 @@ a {
   z-index: 100;
   top: 20px;
   right: 0;
-  width: 250px;
+  width: 345px;
   height: 90vh;
-  background-color: #fff;
+  background-color: #ff6e00;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
@@ -701,7 +701,7 @@ a {
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  background-color: #ff5a00 !important;
+  background-color: #ce2900 !important;
   color: #fff;
 }
 .nav-expand-content .nav-back-link::before {
@@ -727,16 +727,16 @@ a {
   visibility: visible;
 }
 .nav-expand .nav-expand-content {
-  background-color: #ffe9d8;
+  background-color: #ff6e00;
 }
 .nav-expand .nav-expand-content .nav-link {
-  background-color: #ffe9d8;
+  background-color: #ff6e00;
 }
 .nav-expand .nav-expand-content .nav-expand-content {
   background-color: #aff1e6;
 }
 .nav-expand .nav-expand-content .nav-expand-content .nav-link {
-  background-color: #ffe9d8;
+  background-color: #ff6e00;
 }
 .nav-expand .nav-expand-content .nav-expand-content .nav-expand-content {
   background-color: #84e9d9;
@@ -869,6 +869,7 @@ a {
 .nav-link {
     display: flex;
     background-color: transparent;
+    color:red;
 }
 .nav-link {
     display: flex;
@@ -1007,9 +1008,9 @@ a {
                 
 
                     <div id="top-nav2" class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px; height:   30% ;">
-                     
+                      <a class="nav-link colorban"  href="{{ url('/') }}/"><i class="fas fa-home" aria-hidden="true"></i>INICIO</a>
                       <a class="nav-link colorban"  href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>QUIENES SOMOS</a>
-                      <a class="nav-link colorban"  href="{{ url('/') }}/seguimiento"><i class="fa fa-tag" aria-hidden="true"></i>SEGUIMIENTO DE TU COMPRA</a>
+                      
                       <a class="nav-link colorban" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
                           CATEGORÍAS
                         </a>
@@ -1026,11 +1027,12 @@ a {
                           
                         </div>
                         
-                         <!-- <a class="nav-link colorban"  href="{{ url('/') }}/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>PRODUCTOS MÁS VENDIDOS</a> -->
-                         <a class="nav-link colorban" href="{{ url('/') }}/contacto"><i class="fa fa-phone" aria-hidden="true"></i>CONTACTAR</a>
-                         <div >
+                      <!-- <a class="nav-link colorban"  href="{{ url('/') }}/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>PRODUCTOS MÁS VENDIDOS</a> -->
+                      <a class="nav-link colorban"  href="{{ url('/') }}/seguimiento"><i class="fa fa-tag" aria-hidden="true"></i>SEGUIMIENTO DE TU COMPRA</a>
+                      <a class="nav-link colorban" href="{{ url('/') }}/contacto"><i class="fa fa-phone" aria-hidden="true"></i>CONTACTAR</a>
+                      <div >
                               @include('partials.search')
-                          </div>
+                      </div>
                         
                          
                     </div>
@@ -1191,14 +1193,14 @@ a {
       <ul class="nav-items nav-level-1">
         <li class="nav-item">
           <a class="nav-link" href="{{ url('/') }}/cart">
-            Carrito  @if (Cart::instance('default')->count() > 0)
+            CARRITO  @if (Cart::instance('default')->count() > 0)
         <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
         @endif
           </a>
         </li>
         <li class="nav-item nav-expand">
           <a class="nav-link nav-expand-link" href="#">
-            Categorías
+            CATEGORÍAS
           </a>
           <ul class="nav-items nav-expand-content">
           @foreach($categories as $category)
@@ -1208,8 +1210,8 @@ a {
           </ul>
         </li>
         @guest
-        <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Registrarse</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Iniciar Sesión</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">REGISTRARSE</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">INICIAR SESIÓN</a></li>
         @else
         <li class="nav-item nav-expand">
             <a class="nav-link nav-expand-link" href="#">Mi cuenta</a>
@@ -1236,7 +1238,7 @@ a {
         @endguest
         <li class="nav-item">
           <a class="nav-link" href="{{ url('/') }}/contacto">
-            Contáctanos
+            CONTACTAR
           </a>
         </li>
       </ul>

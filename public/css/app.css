@@ -925,7 +925,7 @@ header.with-background .top-nav ul a {
 }
 
 header.with-background .top-nav ul a:hover {
-  color: #d0d0d0;
+  color: #ff5a00;
 }
 
 header.with-background .hero {
@@ -994,7 +994,7 @@ header .top-nav ul a {
 }
 
 header .top-nav ul a:hover {
-  color: #d0d0d0;
+  color: #ff5a00;
 }
 
 header .top-nav ul .cart-count {

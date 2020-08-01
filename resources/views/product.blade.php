@@ -29,7 +29,7 @@
     </div>
 
     <div class="container" style="font-size:25px">
-    <i class="fas fa-home" style="color:var(--primary)"></i> > <strong><a href="/shop" style="color:var(--primary)">Tienda</a></strong> > {{ $product->name}}
+    <i class="fas fa-home" style="color:var(--primary)"></i> > <strong><a href="/shop">Tienda</a></strong> > {{ $product->name}}
     </div>
     <div class="product-section container">
         <div style="padding-left: 0px" class="d-flex">
