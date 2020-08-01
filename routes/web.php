@@ -3,6 +3,9 @@
 Route::get('/', 'LandingPageController@index')->name('landing-page');
 Route::get('/us', 'UsController@index')->name('us.index');
 Route::get('/seguimiento', 'SeguimientoController@index')->name('seguimiento.index');
+Route::post('/seguimiento/my-order', 'SeguimientoController@store')->name('seguimiento.store');
+// Route::get('/seguimiento/back', 'SeguimientoController@back')->name('seguimiento.back');
+Route::get('/my-order/{order}', 'SeguimientoController@show')->name('orderguest.show');
 
 Route::get('/shop', 'ShopController@index')->name('shop.index');
 Route::get('/shop/{product}', 'ShopController@show')->name('shop.show');

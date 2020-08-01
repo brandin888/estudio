@@ -179,7 +179,8 @@
             <div class="alert alert-success">
                 {{ session()->get('success_message') }}
             </div>
-            @endif @if(count($errors) > 0)
+            @endif 
+            @if(count($errors) > 0)
             <div class="alert alert-danger">
                 <ul>
                     @foreach ($errors->all() as $error)
@@ -188,20 +189,21 @@
                 </ul>
             </div>
             @endif
+            
             <h2 style="color:#171260">Seguimiento de mi compra</h2>
             <div class="spacer"></div>
 
-            <form action="" method="POST">
+            <form action="{{ route('seguimiento.store') }}" method="POST">
                 {{ csrf_field() }}
                 <div class="form-group">
                   <input class="form-control" type="email" id="email" name="email" value="" placeholder="Email" required autofocus>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" type="number" id="orden" name="orden" value="" placeholder="Número de orden" required>
+                  <input class="form-control" type="number" id="order" name="order" value="" placeholder="Número de orden" required>
                 </div>
 
                 <div class="login-container">
-                    <button type="submit" class="auth-button ">Buscar mi órden</button>
+                    <button type="submit" class="auth-button ">Buscar mi orden</button>
                     
                 </div>
 
