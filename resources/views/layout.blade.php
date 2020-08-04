@@ -8,8 +8,8 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Litercorp | Ferreteria</title>
-        <meta name="theme-color" content="#dd8cb4" />
+        <title>Litercorp | Ferretería</title>
+        <meta name="theme-color" content="#353535" />
         <meta name="description" content="Somos una empresa Mayorista de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en  Lima Cercado">
 
        <link rel="shortcut icon" href="{{ asset('img/diseño/icono.png') }}" />

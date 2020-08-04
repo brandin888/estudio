@@ -650,7 +650,7 @@ a {
   display: flex;
   position: fixed;
   z-index: 100;
-  top: 20px;
+  top: 10px;
   right: 0;
   width: 345px;
   height: 90vh;
@@ -883,8 +883,8 @@ a {
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#dd8cb4" />
-        <title>Litercorp | Ferreteria</title>
+        <meta name="theme-color" content="#353535" />
+        <title>Litercorp | Ferretería</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">

@@ -467,7 +467,7 @@ a {
   display: flex;
   position: fixed;
   z-index: 100;
-  top: 20px;
+  top: 10px;
   right: 0;
   width: 345px;
   height: 90vh;
