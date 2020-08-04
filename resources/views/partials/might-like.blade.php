@@ -5,7 +5,7 @@
                     <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
                         <div class="carousel-inner w-100" role="listbox">
                             <div class="carousel-item active">
-                              <div class="col-md-3S" >
+                              <div class="col-md-3S text-center" >
                                   <a href="{{ route('shop.show', $productone->slug) }}"><img class="img-fluid" src="{{ productImage($productone->image) }}" alt="productalt"></a>
                                   <div class="might-like-product-name">{{ $productone->name }}</div>
                                   <div class="might-like-product-price">{{ $productone->presentPrice() }}</div>
@@ -13,7 +13,7 @@
                             </div>
                         @foreach($mightAlsoLike as $product)
                         <div class="carousel-item">
-                            <div class="col-md-3S" >
+                            <div class="col-md-3S text-center">
                                 <a href="{{ route('shop.show', $product->slug) }}"><img class="img-fluid" src="{{ productImage($product->image) }}" alt="product"></a>
                                 <div class="might-like-product-name">{{ $product->name }}</div>
                                 <div class="might-like-product-price">{{ $product->presentPrice() }}</div>

@@ -196,46 +196,6 @@ section#action, section#action-transparent {
     </div>
 
     <div class="products-section container" >
-<!--         
-<div class="container text-center my-3">
-                <h2 class="font-weight-light">Categorías</h2>
-                <div class="row mx-auto my-auto">
-                    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-                        <div class="carousel-inner w-100" role="listbox">
-                          <div class="carousel-item active" >
-                                <div class="col-md-3S">
-                                   
-                                        <img class="img-fluid" src="{{ asset('img/diseño/cate.png') }}">
-                                    
-                                </div>
-                            </div>
-                         @foreach($categories as $category)
-                         <div class="carousel-item">
-                                <div class="col-md-3S">
-                                      <a href="{{ route('shop.index', ['category' => $category->slug]) }}"><img class="img-fluid" src="{{ categoryImage($category->image) }}"></a>
-                                        
-                                     
-                                </div>
-                            </div>
-                              
-                          @endforeach
-                            
-                            
-                            
-                        </div>
-                        <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-                <h5 class="mt-2">Descubre nuestra gran variedad de juguetes</h5>
-            </div> -->
-
         <div>
             <div class="products-header">
                 <h1 class="stylish-heading">{{ $categoryName }}</h1>

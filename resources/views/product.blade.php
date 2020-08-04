@@ -52,7 +52,7 @@
             
         </div>
         <div class="product-section-information">
-            <h1 class="mb-0">{{ $product->name }}</h1>
+            <h1 class="mb-0 product-title">{{ $product->name }}</h1>
             <div style="margin-bottom:40px">{!! $stockLevel !!}</div>
             <div class="card-body d-lg-flex pb-5" style="background-color:#f7f7f9;font-size:18px;border-bottom:5px solid var(--primary)">
                 <div class="col-12 col-lg-6 mr-5 px-0">
@@ -82,18 +82,14 @@
                             <!-- </form> -->
                     @endif
                 </div>
-            <!-- <div>{!! $stockLevel !!}</div> -->
-                
+            <!-- <div>{!! $stockLevel !!}</div> -->  
             </div>
-            
-
-            <p>&nbsp;</p>
         </div>
     </div> <!-- end product-section -->
     <div class="container">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" style="border-bottom:solid 1px #dee2e6">
-                <a class="nav-link active" style="font-weight:700" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Característica Técnicas</a>
+                <a class="nav-link active" style="font-weight:700" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Características Técnicas</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" style="font-weight:700" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Asistencia</a>
