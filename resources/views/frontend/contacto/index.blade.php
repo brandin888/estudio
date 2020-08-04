@@ -202,9 +202,9 @@
 
 @endsection
 @section('scripts')
-{{-- <script type="text/javascript">
+<script type="text/javascript">
   const site_url = '{{ url('/') }}/';
-</script> --}}
+</script>
 <!-- <script type="text/javascript" src="{{ url('/') }}/js/contacto.js"></script> -->
 <script type="text/javascript" src="{{ asset('../resources/js/scripts/contacto.js')}}"></script>
 

@@ -128,9 +128,9 @@ function menu() {
   });
 }
 </script>
-<!-- <script type="text/javascript">
+<script type="text/javascript">
   const site_url = '{{ url('/') }}/';
-</script> -->
+</script>
     @yield('extra-js')
 
 </body>

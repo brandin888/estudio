@@ -120,7 +120,7 @@ var $num = 4;
 
 //cargar atracciones al hacer click a un local
 function mi_funcion(id){
-    // console.log(id);
+    // console.log('id');
     var route = site_url+'cargar-atracciones/'+id;
       $.ajax({
         url: route,
