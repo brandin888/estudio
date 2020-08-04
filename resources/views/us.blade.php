@@ -1,6 +1,76 @@
 
 <style type="text/css">
 
+section#action, section#action-transparent {
+    padding: 70px 0;
+}
+#action, #action-parallax, #action-parallax2, #action-parallax3, #action-parallax4, #action-parallax-seo, .action-parallax {
+    background: none repeat scroll 0 0 #1b1f23;
+}
+#action, #action-parallax, #action-parallax2, #action-parallax3, #action-parallax4,#action-parallax-seo, .action-parallax , #action-transparent, #action a, #action-parallax a, #action-parallax-seo a, #action-parallax2 a, #action-parallax3 a, #action-parallax4 a, #action-transparent a {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+#action-parallax, #action-parallax2, #action-parallax3, #action-parallax4,#action-parallax-seo, #action-transparent, .action-parallax {
+    background: none no-repeat scroll 50% 50% / cover rgba(0, 0, 0, 0);
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+#action-parallax {
+    background-image: url("storage/banners/slider2.jpg");
+}
+#action-parallax2 {
+    background-image: url("../images/cover4.jpg");
+}
+#action-parallax3 {
+    background-image: url("img/parallax/pa.jpg");
+}
+#action-parallax4 {
+    
+    background-image: url("{{ asset('img/parallax/footer.jpg') }}");
+}
+#action-parallax5 {
+    background-image: url("../images/cover-portal-empleado.jpg");
+}
+#action-parallax-seo {
+    background-image: url("../images/cover-seo.jpg");
+}
+#action-parallax-empleado {
+    background-image: url("../images/parallax-empleado.jpg");
+}
+#action-transparent {
+    background: none repeat scroll 0 0 #1b1f23;
+}
+#action-transparent {
+    background: none repeat scroll 0 0 #1b1f23;
+}
+#action-transparent .overlay-dark {
+    z-index: 0;
+}
+#action-transparent .icon-heading {
+    display: block;
+    line-height: 1px;
+    padding-top: 30px;
+}
+
+.overlay-dark {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+}
+.overlay, .overlay-dark {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.fixed_p {
+    background-attachment: fixed !important;
+}
+
 .hiden-video {
   overflow: hidden;
 }
@@ -355,10 +425,10 @@ section#action, section#action-transparent {
    background-image: url("img/parallax/parallax2.jpg");
 }
 #action-parallax3 {
-    background-image: url("img/parallax/parallax3.jpg");
+    background-image: url("{{ asset('img/parallax/parallax11.jpg') }}");
 }
 #action-parallax4 {
-    background-image: url("img/parallax/parallax5.jpg");
+     background-image: url("{{ asset('img/parallax/footer.jpg') }}");
 }
 #action-parallax5 {
     background-image: url("../images/cover-portal-empleado.jpg");
@@ -404,7 +474,7 @@ section#action, section#action-transparent {
 }
 
 .nosotros {
-  padding: 100px 0px;
+  padding: 50px 0px;
   position: relative;
 }
 
@@ -506,7 +576,16 @@ section#action, section#action-transparent {
          }
 
   }
-
+ .us_titulo{
+  font-size: 35px;
+  text-align: center;
+  color: #ff9701;
+ }
+ .us_subtitulo{
+  font-size: 25px;
+  text-align: center;
+  padding-top: 30px;
+ }
 </style>
 
 
@@ -541,21 +620,56 @@ section#action, section#action-transparent {
   </div>
 </section>
 
-<section class="parque__Atraccion">
-  <div class="container">
+
+<section data-type="background" data-speed="4" class="parallax fixed_p" id="action-parallax3" style="background-position: 50% 33.75px;
+ z-index: 1;
+
+
+
+"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn;">
+    <div class="container" style="text-align: left;">
     <div class="row">
       
+
+      <div class="col-12 us_titulo">
+        Conoce nuestra historia
+      </div>
+
+      <div class="col-12 us_subtitulo">
+        <a style="color: #ff9701; ">Nuestra misión:</a> brindar un servicio de calidad para que nuestros clientes pueden vivir experiencias extraordinarias con nosotros.
+      </div>
+
+     <div class="col-12 us_subtitulo">
+        <a style="color: #ff9701; ">Nuestra visión:</a> ser la empresa con mayor relevancia dentro del mercado de ferretería del Perú, y asi posicionarnos en la mente de nuestros clientes.
+      </div>
+
+    
      
-      <div class="col-md-12 ">
-        <div class="parque__Atraccion__item">
-          <h2>Conoce nuestra historia:</h2>
-          <p> </p>
-          <p>¡ en<span> Mte</span> y <span>Omos</span> y <span>Reco!</span> </p>
+    </div>
+  </div>
+
+</div>
+</section>
+
+
+ <section class="nosotros" id="nosotros" >
+  
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-12 " style=" width: 100%">
+        <img src="{{ asset('images/nosotros/nosotros1.jpg') }}" class="img-us" alt="">
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="nosotros__content">
+          <p class="nosotros__content__parrafo">Somos una Empresa dedicada a la <span>Distribución de productos de Ferretería</span>  a los sectores que lo requieren, mediante el innovador y permanente Servicio; generando Progreso y Estabilidad a las Personas que hacen posible la Existencia de esta Empresa, siendo así un aliado Estratégico de Nuestros Clientes, Proveedores y Colaboradores, comprometidos con el Bienestar de la Sociedad.</p>
         </div>
       </div>
+      
     </div>
   </div>
 </section>
+
 </div>
 @endsection
 
