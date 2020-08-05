@@ -674,7 +674,9 @@ a {
   </div>
 </div>
 
-<a style="font-size: 27px;" class="nav-link colorban" href="http://localhost/litercorp/public/cart"><i class="fas fa-shopping-cart"></i></a>
+<a style="font-size: 27px;" class="nav-link colorban" href="{{ url('/') }}/cart"><i class="fas fa-shopping-cart"></i> @if (Cart::instance('default')->count() > 0)
+        <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
+        @endif</a>
             
                         
                          
