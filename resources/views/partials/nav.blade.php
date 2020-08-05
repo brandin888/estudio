@@ -860,7 +860,7 @@ function scrollFunction() {
     document.getElementById("top-nav1").style.display = "none";
      document.getElementById("top-nav2").style.padding = "5px 100px";
     document.getElementById("top-nav0").style.display = "none";
-    document.getElementById("logo").style.fontSize = "25px";
+    
     
     
 
@@ -869,7 +869,7 @@ function scrollFunction() {
     document.getElementById("top-nav1").style.display = "flex";
     document.getElementById("top-nav2").style.padding = "0px 100px";
     document.getElementById("top-nav0").style.display = "flex";
-    document.getElementById("logo").style.fontSize = "35px";
+    
   }
 }
 </script>

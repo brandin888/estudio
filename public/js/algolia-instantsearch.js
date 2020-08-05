@@ -2,7 +2,7 @@
     const search = instantsearch({
 
         appId: 'M0GHLUKCOA',
-        apiKey: 'ff92f78014bba098bfe0bc577e70e9fa',
+        apiKey: 'b1f0dbe06a74e755848a8d2c37967915',
 
         indexName: 'products',
         urlSync: true
