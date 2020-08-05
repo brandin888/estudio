@@ -916,10 +916,75 @@ a {
     display: flex;
     background-color: transparent;
     color: #ffffff;
+    align-items: flex-start;
 }
 
 .redes__link{
   color: black;
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
 }
 
 </style>
@@ -992,28 +1057,15 @@ a {
 
                   </div>
 
-                  <div id="top-nav1" style="align-items: center; width: 100%; height: 90px; display: flex;padding-left: 33px;">
-                      <div > <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/liter.png') }}" style=" width: 300px; padding-left: 80px"></a></div>
-                   
-                    
-                      
-                    <div class="top-nav-right"  style="text-align: left;">
-                      <img style="width: 30px; height: 30px" src="{{ asset('img/diseño/avatar.png') }}">
-                      @include('partials.menus.main-right')
-                        
-                    </div>
-
-                  </div>
+             
                 
                 
 
-                    <div id="top-nav2" class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px; height:   30% ;">
-                      <a class="nav-link colorban"  href="{{ url('/') }}/"><i class="fas fa-home" aria-hidden="true"></i>INICIO</a>
+                    <div id="top-nav2" class="" style="text-align: center; display: flex; margin: 40px 80px;  height:   70% ;">
+                      <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/liter.png') }}" style=" width: 200px; padding-left: 0px"></a>
                       <a class="nav-link colorban"  href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>QUIENES SOMOS</a>
                       
-                      <a class="nav-link colorban" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
-                          CATEGORÍAS
-                        </a>
+                      <a class="nav-link colorban" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>CATEGORÍAS</a>
                         <div  class="dropdown-menu " aria-labelledby="navbarDropdown" >
                           <div style="display: grid; grid-template-columns: auto auto auto;">
                             @foreach($categories as $category)
@@ -1030,9 +1082,42 @@ a {
                       <!-- <a class="nav-link colorban"  href="{{ url('/') }}/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>PRODUCTOS MÁS VENDIDOS</a> -->
                       <a class="nav-link colorban"  href="{{ url('/') }}/seguimiento"><i class="fa fa-tag" aria-hidden="true"></i>SEGUIMIENTO DE TU COMPRA</a>
                       <a class="nav-link colorban" href="{{ url('/') }}/contacto"><i class="fa fa-phone" aria-hidden="true"></i>CONTACTAR</a>
+
                       <div >
                               @include('partials.search')
                       </div>
+                      <div class="btn-group">
+  <a type="button" class="nav-link colorban" class="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 27px;">
+    <i class="fa fa-user fa-3" aria-hidden="true"></i>
+  </a>
+  <div class="dropdown-menu">
+
+        @guest
+            <a class="dropdown-item" href="{{ route('register') }}">REGISTRARSE</a>
+            <a class="dropdown-item" href="{{ route('login') }}">INICIAR SESIÓN</a>
+        @else
+            <a class="dropdown-item" href="#">Mi cuenta</a>     
+            <a class="dropdown-item" href="{{ route('users.edit') }}">Mi Perfil</a></li>
+            <a class="dropdown-item" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                Salir Sesión
+            </a>
+       
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+        </form>
+        @endguest
+
+
+    
+  </div>
+</div>
+
+<a style="font-size: 27px;" class="nav-link colorban" href="http://localhost/litercorp/public/cart"><i class="fas fa-shopping-cart"></i></a>
+            
                         
                          
                     </div>
@@ -1046,10 +1131,10 @@ a {
 
 
                     <ul class="list-group" style="overflow-y: scroll; height: 100%; border-bottom: 1px solid #f58634; z-index: 1; position: relative;     ">
-                  <a class="list-group-item" style="border-bottom: 1px solid #f58634; font-size: 28px ; color: white; background-color: #f58634;" >Categorías</a>
+                  <a class="list-group-item" style="border-bottom: 1px solid #f58634; font-size: 28px ; color: white; background-color: #f58634;text-transform: uppercase;" >Categorías</a>
                        @foreach($categories as $category)
 
-                   <a class="list-group-item" style="border-bottom: 1px solid #f58634; font-size: 20px;" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
+                   <a class="list-group-item" style="border-bottom: 1px solid #f58634; font-size: 20px; text-transform: uppercase;" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
 
                               
                       @endforeach
@@ -1475,7 +1560,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("top-nav").style.height = "80px";
+    document.getElementById("top-nav").style.height = "100px";
     document.getElementById("top-nav1").style.display = "none";
      document.getElementById("top-nav2").style.padding = "5px 100px";
     document.getElementById("top-nav0").style.display = "none";
@@ -1484,7 +1569,7 @@ function scrollFunction() {
     
 
   } else {
-    document.getElementById("top-nav").style.height = "155px";
+    document.getElementById("top-nav").style.height = "120px";
     document.getElementById("top-nav1").style.display = "flex";
     document.getElementById("top-nav2").style.padding = "0px 100px";
     document.getElementById("top-nav0").style.display = "flex";

@@ -487,7 +487,7 @@ a {
 }
 .nav-link {
   display: block;
-  padding: 0.875em 1em;
+  
   background-color: #fff;
   color: #110041;
   font-size: 0.9rem;
@@ -578,6 +578,7 @@ a {
     display: flex;
     background-color: transparent;
     color: white;
+    align-items: flex-start;
 }
 .page-item.active .page-link {
     z-index: 3;
@@ -593,16 +594,17 @@ a {
 </style>
 <header >
   
- <div class="top-nav " id="top-nav" style=" position: fixed;z-index: 2;width: 100%" >
+                <div class="top-nav " id="top-nav" style=" position: fixed;z-index: 2;width: 100%" >
 
                   
-                  <div id="top-nav0" style="align-items: center;font-size: 13px; padding-left: 8%; background-color: rgb(240, 240, 240);width: 100%; height: 25px; display: flex;  position: absolute;
+                  <div id="top-nav0" style="align-items: center;font-size: 13px; padding-left: 8%; background: rgb(240, 240, 240); width: 100%; height: 25px; display: flex;  position: absolute;
                   top: 0px;">
                     
 
                     <a class="redes__link pl-3" href="https://www.facebook.com/Litercorp-111473320648629" target="_blank"><i class="fab fa-facebook-f"></i><span class=""> Facebook</span></a>
 
                     <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fab fa-whatsapp"></i><span class=""> 945 774 749</span></a>
+
                     <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fas fa-phone-alt"></i><span class=""> (01) 401 3742</span></a>
 
                     <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fa fa-envelope"></i><span class=""> info@litercorp.com</span></a>
@@ -611,29 +613,18 @@ a {
 
                   </div>
 
-                  <div id="top-nav1" style="align-items: center;width: 100%; height: 90px; display: flex;padding-left: 33px;">
-                      <div > <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/liter.png') }}" style=" width: 300px; padding-left: 80px"></a></div>
-                   
-                    
-                      
-                    <div class="top-nav-right"  style="text-align: left;">
-                      <img style="width: 30px; height: 30px" src="{{ asset('img/diseño/avatar.png') }}">
-                      @include('partials.menus.main-right')
-                        
-                    </div>
-
-                  </div>
+             
                 
                 
 
-                    <div id="top-nav2" class="" style="text-align: center; display: flex; padding: 0px 100px; margin-right: 50px; height:   30% ;">
-                    <a class="nav-link colorban"  href="{{ url('/') }}/"><i class="fas fa-home" aria-hidden="true"></i>INICIO</a>
-                      <a class="nav-link colorban"   href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>QUIENES SOMOS</a>
+                    <div id="top-nav2" class="" style="text-align: center; display: flex; margin: 40px 80px;  height:   70% ;">
+                      <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/liter.png') }}" style=" width: 200px; padding-left: 0px"></a>
+                      <a class="nav-link colorban"  href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>QUIENES SOMOS</a>
                       
-                      <a  class="nav-link colorban"  class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
+                      <a class="nav-link colorban" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
                           CATEGORÍAS
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                        <div  class="dropdown-menu " aria-labelledby="navbarDropdown" >
                           <div style="display: grid; grid-template-columns: auto auto auto;">
                             @foreach($categories as $category)
                           <a class="dropdown-item" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
@@ -646,15 +637,48 @@ a {
                           
                         </div>
                         
-                         <!-- <a class="nav-link colorban"  href="{{ url('/') }}/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Productos más vendidos</a> -->
-                         <a class="nav-link colorban"  href="{{ url('/') }}/seguimiento"><i class="fa fa-tag" aria-hidden="true"></i>SEGUIMIENTO DE TU COMPRA</a>
-                         <a class="nav-link colorban"  href="{{ url('/') }}/contacto"><i class="fa fa-phone" aria-hidden="true"></i>CONTACTAR</a>
-                         <div >
+                      <!-- <a class="nav-link colorban"  href="{{ url('/') }}/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>PRODUCTOS MÁS VENDIDOS</a> -->
+                      <a class="nav-link colorban"  href="{{ url('/') }}/seguimiento"><i class="fa fa-tag" aria-hidden="true"></i>SEGUIMIENTO DE TU COMPRA</a>
+                      <a class="nav-link colorban" href="{{ url('/') }}/contacto"><i class="fa fa-phone" aria-hidden="true"></i>CONTACTAR</a>
+
+                      <div >
                               @include('partials.search')
-                          </div>
+                      </div>
+                      <div class="btn-group">
+  <a type="button" class="nav-link colorban" class="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 27px;">
+    <i class="fa fa-user fa-3" aria-hidden="true"></i>
+  </a>
+  <div class="dropdown-menu">
+
+        @guest
+            <a class="dropdown-item" href="{{ route('register') }}">REGISTRARSE</a>
+            <a class="dropdown-item" href="{{ route('login') }}">INICIAR SESIÓN</a>
+        @else
+            <a class="dropdown-item" href="#">Mi cuenta</a>     
+            <a class="dropdown-item" href="{{ route('users.edit') }}">Mi Perfil</a></li>
+            <a class="dropdown-item" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                Salir Sesión
+            </a>
+       
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+        </form>
+        @endguest
+
+
+    
+  </div>
+</div>
+
+<a style="font-size: 27px;" class="nav-link colorban" href="http://localhost/litercorp/public/cart"><i class="fas fa-shopping-cart"></i></a>
+            
                         
                          
-                      </div>
+                    </div>
 
 
                 </div> <!-- end top-nav -->
@@ -856,7 +880,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("top-nav").style.height = "80px";
+    document.getElementById("top-nav").style.height = "100px";
     document.getElementById("top-nav1").style.display = "none";
      document.getElementById("top-nav2").style.padding = "5px 100px";
     document.getElementById("top-nav0").style.display = "none";
@@ -865,7 +889,7 @@ function scrollFunction() {
     
 
   } else {
-    document.getElementById("top-nav").style.height = "155px";
+    document.getElementById("top-nav").style.height = "120px";
     document.getElementById("top-nav1").style.display = "flex";
     document.getElementById("top-nav2").style.padding = "0px 100px";
     document.getElementById("top-nav0").style.display = "flex";
