@@ -623,7 +623,7 @@ a {
                 
                 
 
-                    <div id="top-nav2" class="" style="text-align: center; display: flex; margin: 40px 80px;  height:   70% ;">
+                    <div id="top-nav2" class="" style="text-align: center; display: flex; margin: 40px 35px;  height:   70% ;">
                       <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/liter.png') }}" style=" width: 180px; padding-left: 0px; max-width: 180px;height: 30px"></a>
                       <a class="nav-link colorban"  href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>QUIENES SOMOS</a>
                       
