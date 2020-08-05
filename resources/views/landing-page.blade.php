@@ -674,7 +674,7 @@ a {
   background-color: #fff;
   color: #110041;
   font-size: 0.9rem;
-  line-height: 0.8em;
+  line-height: 1em;
   font-weight: 300;
 }
 .nav-expand-content {
@@ -987,6 +987,11 @@ a {
   display: block;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff5a00;
+}
 </style>
 
     </head>
@@ -1062,7 +1067,7 @@ a {
                 
 
                     <div id="top-nav2" class="" style="text-align: center; display: flex; margin: 40px 80px;  height:   70% ;">
-                      <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/liter.png') }}" style=" width: 200px; padding-left: 0px"></a>
+                      <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/liter.png') }}" style=" width: 180px; padding-left: 0px; max-width: 180px;height: 30px"></a>
                       <a class="nav-link colorban"  href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>QUIENES SOMOS</a>
                       
                       <a class="nav-link colorban" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>CATEGORÍAS</a>
@@ -1096,14 +1101,14 @@ a {
             <a class="dropdown-item" href="{{ route('register') }}">REGISTRARSE</a>
             <a class="dropdown-item" href="{{ route('login') }}">INICIAR SESIÓN</a>
         @else
-            <a class="dropdown-item" href="#">Mi cuenta</a>     
-            <a class="dropdown-item" href="{{ route('users.edit') }}">Mi Perfil</a></li>
-            <a class="dropdown-item" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
+            <a class="dropdown-item" href="#">MI CUENTA</a>     
+            <a class="dropdown-item" href="{{ route('users.edit') }}">MI PERFIL</a></li>
+            <a class="dropdown-item" href="{{ route('orders.index') }}">MIS ORDENES</a></li>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
-                Salir Sesión
+                SALIR SESIÓN
             </a>
        
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -1116,7 +1121,7 @@ a {
   </div>
 </div>
 
-<a style="font-size: 27px;" class="nav-link colorban" href="{{ url('/') }}/cart"><i class="fas fa-shopping-cart"></i> @if (Cart::instance('default')->count() > 0)
+<a style="font-size: 27px; align-items: baseline;" class="nav-link colorban" href="{{ url('/') }}/cart"><i class="fas fa-shopping-cart"></i> @if (Cart::instance('default')->count() > 0)
         <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
         @endif</a>
             
