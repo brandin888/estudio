@@ -595,6 +595,14 @@ a {
     color: #fff;
     text-decoration: none;
     background-color: #ff5a00;
+
+}
+.pad10{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size:16px;
+  color:#4b4b4b;
+  padding-left: 16px;
 }
 
 </style>
@@ -698,7 +706,7 @@ a {
 
               </div>
              
-            <div class="carrito_top">
+            <div class="carrito_top" style=" padding-right: 15px;">
 
               <li class="nav-item"><a class="navbar__link" href="{{ route('cart.index') }}"><i class="fas fa-shopping-cart"></i>
               @if (Cart::instance('default')->count() > 0)
@@ -738,7 +746,18 @@ a {
 <!-- Overlay menu -->
 <nav class="nav-drill">
   <ul class="nav-items nav-level-1">
-    <li class="nav-item">
+    <li class="nav-item pad10">
+      <a class="nav-link " href="{{ url('/us') }}">
+        QUIENES SOMOS
+      </a>
+    </li>
+    <li class="nav-item pad10">
+      <a class="nav-link " href="{{ url('/seguimiento') }}">
+        SEGUIMIENTO DE TU COMPRA
+      </a>
+    </li>
+
+    <li class="nav-item pad10">
       <a class="nav-link" href="{{ url('/') }}/cart">
         CARRITO  @if (Cart::instance('default')->count() > 0)
     <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
@@ -746,7 +765,7 @@ a {
       </a>
 
     </li>
-    <li class="nav-item nav-expand">
+    <li class="nav-item nav-expand pad10">
       <a class="nav-link nav-expand-link" href="#">
         CATEGORÍAS
       </a>
@@ -764,18 +783,18 @@ a {
     
 
     @guest
-    <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">REGISTRARSE</a></li>
-    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">INICIAR SESIÓN</a></li>
+    <li class="nav-item pad10"><a class="nav-link" href="{{ route('register') }}">REGISTRARSE</a></li>
+    <li class="nav-item pad10"><a class="nav-link" href="{{ route('login') }}">INICIAR SESIÓN</a></li>
     @else
-    <li class="nav-item nav-expand">
+    <li class="nav-item nav-expand pad10">
         <a class="nav-link nav-expand-link" href="#">Mi cuenta</a>
 
         <ul class="nav-items nav-expand-content">
       
-            <li  class="nav-item"><a class="nav-link" href="{{ route('users.edit') }}">Mi Perfil</a></li>
+            <li  class="nav-item pad10"><a class="nav-link" href="{{ route('users.edit') }}">Mi Perfil</a></li>
             <li>
 
-            <li  class="nav-item"><a class="nav-link" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
+            <li  class="nav-item pad10"><a class="nav-link" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
             <li>
       
         
@@ -786,7 +805,7 @@ a {
       </ul>
     </li>
 
-    <li class="nav-item">
+    <li class="nav-item pad10">
         <a class="nav-link" href="{{ route('logout') }}"
             onclick="event.preventDefault();
                      document.getElementById('logout-form').submit();">
@@ -801,7 +820,7 @@ a {
 
     
 
-    <li class="nav-item">
+    <li class="nav-item pad10">
       <a class="nav-link" href="{{ url('/') }}/contacto">
         CONTACTAR
       </a>

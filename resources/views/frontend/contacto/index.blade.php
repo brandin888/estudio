@@ -73,10 +73,10 @@
                   <br>
               <h4><strong style="color: #171260;">Horario de Atención</strong></h4>
               Lunes a Viernes de 9:00AM a 6:00PM<br>
-              <a href="mailto:info@litercorp.com">Correo:info@litercorp.com</a><br><br>
+              <a href="mailto:info@litercorp.com"><i class="fas fa-envelope"></i> info@litercorp.com</a><br><br>
 
               <h4><strong style="color: #171260;">Redes Sociales</strong></h4>
-              <a href="https://www.facebook.com/Litercorp-111473320648629" target="_blank">Facebook: Litercorp</a>
+              <a href="https://www.facebook.com/Litercorp-111473320648629" target="_blank"><i class="fab fa-facebook"></i> Litercorp</a>
               
             </li>
         </ul>
