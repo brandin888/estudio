@@ -1157,15 +1157,7 @@ a {
                       @endforeach
                     
                     
-                    <div class="slides">
-                      <img src="{{ asset('img/diseño/slider2.jpg') }}" />
-                    </div>
-                    <div class="slides">
-                      <img src="{{ asset('img/diseño/slider1.jpg') }}" />
-                    </div>
-                     <div class="slides">
-                      <img src="{{ asset('img/diseño/slider4.jpg') }}" />
-                    </div>
+                   
                 </div>
                 </div>
   <div class="next"> &#8680;</div>
