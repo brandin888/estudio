@@ -1150,10 +1150,10 @@ a {
 
 
                     <ul class="list-group" style="overflow-y: scroll; height: 100%; border-bottom: 1px solid #f58634; z-index: 1; position: relative;     ">
-                  <a class="list-group-item" style="border-bottom: 1px solid #f58634; font-size: 28px ; color: white; background-color: #f58634;text-transform: uppercase;" >Categorías</a>
+                  <a class="list-group-item" style="border-bottom: 1px solid #f58634; font-size: 24px ; color: white; background-color: #f58634;text-transform: uppercase;" >Categorías</a>
                        @foreach($categories as $category)
 
-                   <a class="list-group-item" style="border-bottom: 1px solid #f58634; font-size: 20px; text-transform: uppercase;" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
+                   <a class="list-group-item" style="border-bottom: 1px solid #f58634; font-size: 17px; text-transform: uppercase;" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
 
                               
                       @endforeach
@@ -1494,7 +1494,7 @@ setInterval(function() {
   currentSlide = $carousel.attr('data-slide');
   nextSlide = +currentSlide === 4 ? 1 : +currentSlide + 1;
   $carousel.attr('data-slide', nextSlide);
-},3000);
+},5000);
 </script>
     </body>
 </html>
@@ -1582,20 +1582,20 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("top-nav").style.height = "100px";
-    document.getElementById("top-nav1").style.display = "none";
-     document.getElementById("top-nav2").style.padding = "5px 100px";
+    document.getElementById("top-nav").style.height = "80px";
+   
+     document.getElementById("top-nav2").style.padding = "5px 20px";
     document.getElementById("top-nav0").style.display = "none";
     
-    
+    document.getElementById("top-nav2").style.margin = "5px 5px";
     
 
   } else {
     document.getElementById("top-nav").style.height = "120px";
-    document.getElementById("top-nav1").style.display = "flex";
-    document.getElementById("top-nav2").style.padding = "0px 100px";
-    document.getElementById("top-nav0").style.display = "flex";
     
+    document.getElementById("top-nav2").style.padding = "0px 0px";
+    document.getElementById("top-nav0").style.display = "flex";
+    document.getElementById("top-nav2").style.margin = "40px 35px";
   }
 }
 </script>
