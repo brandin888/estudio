@@ -589,6 +589,7 @@ a {
 
 .redes__link{
   color: black;
+  padding-left: 25%;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -611,7 +612,7 @@ a {
                 <div class="top-nav " id="top-nav" style=" position: fixed;z-index: 2;width: 100%" >
 
                   
-                  <div id="top-nav0" style="align-items: center;font-size: 13px; padding-left: 8%; background: rgb(240, 240, 240); width: 100%; height: 25px; display: flex;  position: absolute;
+                  <div id="top-nav0" style="align-items: center;font-size: 13px; padding-left: 8%; background: white; width: 100%; height: 25px; display: flex;  position: absolute;
                   top: 0px;">
                     
 
