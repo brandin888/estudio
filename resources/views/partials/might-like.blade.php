@@ -5,7 +5,7 @@
                     <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
                         <div class="carousel-inner w-100" role="listbox">
                             <div class="carousel-item active">
-                              <div class="col-md-3S text-center" >
+                              <div class="col-md-3S mb-2 text-center" >
                                   <a href="{{ route('shop.show', $productone->slug) }}"><img class="img-fluid" src="{{ productImage($productone->image) }}" alt="productalt"></a>
                                   <div class="might-like-product-name">{{ $productone->name }}</div>
                                   <div class="might-like-product-price">{{ $productone->presentPrice() }}</div>
@@ -13,7 +13,7 @@
                             </div>
                         @foreach($mightAlsoLike as $product)
                         <div class="carousel-item">
-                            <div class="col-md-3S text-center">
+                            <div class="col-md-3S mb-2 text-center">
                                 <a href="{{ route('shop.show', $product->slug) }}"><img class="img-fluid" src="{{ productImage($product->image) }}" alt="product"></a>
                                 <div class="might-like-product-name">{{ $product->name }}</div>
                                 <div class="might-like-product-price">{{ $product->presentPrice() }}</div>
@@ -36,13 +36,17 @@
 </div>
 <style>
   .col-md-3S{
-      flex: 0 0 20%;
+    flex: 0 0 20%;
     max-width: 20%;
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     background-color: transparent;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05); */
+}
+.col-md-3S:hover{
+  box-shadow: 0 4px 8px 0 rgba(255, 159, 69, 1);
 }
 @media (max-width: 768px) {
     .carousel-inner .carousel-item-right.active,
