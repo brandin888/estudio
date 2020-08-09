@@ -130,8 +130,8 @@
 
             <div>
                 @foreach ($orders as $order)
-                <div class="order-container">
-                    <div class="order-header">
+                <div class="order-container shadow">
+                    <div class="order-header text-white" style="background-color:#353535;border:1px solid #353535">
                             <table class="w-100">
                                 <tbody>
                                     <tr class="d-flex justify-content-between align-items-center">
@@ -163,7 +163,7 @@
                                         </td>
                                         <td>
                                             <strong>
-                                                <a href="{{ route('orderguest.show', $order->id) }}">
+                                                <a class="ordenes-header" href="{{ route('orderguest.show', $order->id) }}">
                                                     Detalle de orden
                                                     <i class="fas fa-arrow-alt-circle-right"></i>
                                                 </a>

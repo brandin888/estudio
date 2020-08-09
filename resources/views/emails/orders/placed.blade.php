@@ -2,12 +2,12 @@
 {{-- Header --}}
 @slot('header')
     @component('mail::header', ['url' => config('app.url')])
-        Aletoysi
+        Litercorp
     @endcomponent
 @endslot
 
 {{-- Body --}}
-Hola {{ $order->billing_name }}, gracias por realizar su pedido en **ALETOYSi**
+Hola {{ $order->billing_name }}, gracias por realizar su pedido en **LITERCORP**
 
 **Numero de Pedido:** {{ $order->id }}
 
@@ -34,18 +34,18 @@ Se deberá depositar en cualquiera de las siguientes cuentas, para que su pedido
 Si esta registrado en nuestro sitio web, puede obtener más detalles sobre su pedido iniciando sesión.
 
 @component('mail::button', ['url' => 'el-mayorista.com/my-orders', 'color' => 'blue'])
-Aletoysi
+Litercorp
 @endcomponent
 
 No olvide responder a este correo, enviando una foto del depósito que ha realizado.
 
 Saludos,<br>
-Aletoysi
+Litercorp
 
 {{-- Footer --}}
 @slot('footer')
     @component('mail::footer')
-         &copy; {{ date('Y') }} Aletoysi. Todos los derechos reservados.
+         &copy; {{ date('Y') }} Litercorp. Todos los derechos reservados.
     @endcomponent
 @endslot
 @endcomponent

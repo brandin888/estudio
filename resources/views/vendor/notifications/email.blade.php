@@ -2,7 +2,7 @@
 {{-- Header --}}
 @slot('header')
     @component('mail::header', ['url' => config('app.url')])
-        Aletoysi
+    Litercorp
     @endcomponent
 @endslot
 {{-- Greeting --}}
@@ -68,7 +68,7 @@
 @endisset
 @slot('footer')
     @component('mail::footer')
-        &copy; {{ date('Y') }} Aletoysi. Todos los derechos reservados.
+        &copy; {{ date('Y') }} Litercorp. Todos los derechos reservados.
     @endcomponent
 @endslot
 @endcomponent

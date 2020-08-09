@@ -156,6 +156,14 @@ a:visited {
   color: #292e31;
 }
 
+.ordenes-header:visited{
+  color: white;
+}
+
+.ordenes-header:hover{
+  color: #ff5a00;
+}
+
 a:hover {
   color: #ff5a00;
 }
@@ -1625,7 +1633,7 @@ h1.checkout-heading {
 
 .my-orders .order-header {
   background: #F6F6F6;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #353535;
   padding: 14px;
   display: flex;
   align-items: center;
@@ -1634,7 +1642,7 @@ h1.checkout-heading {
 
 .my-orders .order-products {
   background: white;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #353535;
   border-top: none;
   padding: 14px;
 }

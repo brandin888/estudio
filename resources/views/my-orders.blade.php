@@ -139,7 +139,7 @@
             <div>
                 @foreach ($orders as $order)
                 <div class="order-container">
-                    <div class="order-header">
+                    <div class="order-header text-white" style="background-color:#353535">
                             <table class="w-100">
                                 <tbody>
                                     <tr class="d-flex justify-content-between align-items-center">
@@ -171,7 +171,7 @@
                                         </td>
                                         <td>
                                             <strong>
-                                                <a href="{{ route('orders.show', $order->id) }}">
+                                                <a class="ordenes-header" href="{{ route('orders.show', $order->id) }}">
                                                     Detalle de orden
                                                     <i class="fas fa-arrow-alt-circle-right"></i>
                                                 </a>
@@ -210,9 +210,10 @@
                                     <div>
                                         <a href="{{ route('shop.show', $product->slug) }}">{{ $product->name }}</a>
                                     </div>
-                                    <div>Precio por caja : {{ $product->presentPrice() }}</div>
-                                    <div>Cantidad de cajas: {{ $product->pivot->quantity }}</div>
-                                    <div>Unidades por caja: {{ $product->cantidad_caja }}</div>
+                                    <div>Precio : {{ $product->presentPrice() }}</div>
+                                    <div>Cantidad : {{ $product->pivot->quantity }}</div>
+                                    <!-- <div>Cantidad de cajas: {{ $product->pivot->quantity }}</div>
+                                    <div>Unidades por caja: {{ $product->cantidad_caja }}</div> -->
                                 </div>
                             </div>
                         @endforeach

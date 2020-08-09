@@ -38,7 +38,7 @@
         <div class="sidebar col-12 col-md-2 mr-5">
             <ul>
                 <li class="active">
-                    <a class="d-flex" href="{{ route('orders.index') }}">
+                    <a class="d-flex" href="#">
                         <div style="width:25px" class="text-center">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
@@ -54,7 +54,7 @@
 
             <div>
                 <div class="order-container mb-3">
-                    <div class="order-header">
+                    <div class="order-header text-white" style="background-color:#353535">
                         <div class="order-header-items">
                             <div>
                                 <div class="uppercase font-bold">Fecha de la Orden</div>
@@ -92,17 +92,7 @@
                                 <tr>
                                     <td>Total</td>
                                     <td>{{ presentPrice($order->billing_total) }}</td>
-                                </tr>
-
-                                <tr>
-                                    <td>Total</td>
-                                    <td>{{ presentPrice($order->billing_total) }}</td>
-                                </tr>
-
-
-                                
-
-                                
+                                </tr>                                                         
                             </tbody>
                         </table>
 
@@ -110,7 +100,7 @@
                 </div> <!-- end order-container -->
 
                 <div class="order-container">
-                    <div class="order-header">
+                    <div class="order-header text-white" style="background-color:#353535">
                         <div class="order-header-items">
                             <div>
                                 Productos del Pedido
@@ -128,8 +118,9 @@
                                     </div>
                                     <div>{{ $product->presentPrice() }}</div>
 
-                                    <div>Cantidad de cajas: {{ $product->pivot->quantity }}</div>
-                                    <div>Unidades por caja: {{ $product->cantidad_caja }}</div>
+                                    <div>Unidades: {{ $product->pivot->quantity }}</div>
+                                    <!-- <div>Cantidad de cajas: {{ $product->pivot->quantity }}</div>
+                                    <div>Unidades por caja: {{ $product->cantidad_caja }}</div> -->
                                 </div>
                             </div>
                         @endforeach
