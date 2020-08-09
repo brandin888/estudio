@@ -157,7 +157,7 @@ a:visited {
 }
 
 a:hover {
-  color: #f58634;
+  color: #ff5a00;
 }
  
 
@@ -2202,7 +2202,7 @@ select.selectpicker {
 .btn__enviar:hover, .inicio:hover{
   background: white;
   border-color: var(--primary);
-  color: var(--primary) !important;
+  color: #ffffff !important;
   /* padding: 12px 40px; */
   border-radius: 10px;
 }

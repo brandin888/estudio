@@ -672,7 +672,7 @@ a {
   display: block;
   padding: 0.875em 1em;
   background-color: #fff;
-  color: #110041;
+  color: #ff5a00;
   font-size: 0.9rem;
   line-height: 1em;
   font-weight: 300;
@@ -694,7 +694,7 @@ a {
   border-bottom: solid 1px #ffc500;
 }
 .nav-expand-content .nav-link {
-  background-color: #f7e5ff;
+  background-color: #ff5a00;
 }
 .nav-expand-content .nav-back-link {
   display: -webkit-box;
@@ -869,12 +869,9 @@ a {
 .nav-link {
     display: flex;
     background-color: transparent;
-    color:red;
+    
 }
-.nav-link {
-    display: flex;
-    background-color: transparent;
-}
+
 </style>
 
 
@@ -917,8 +914,17 @@ a {
     background-color: transparent;
     color: #ffffff;
     align-items: flex-start;
+    
 }
 
+.nav-link2{
+  font-weight: bold;
+  color: #292e31;
+}
+.nav-link2:hover{
+  font-weight: bold;
+  color: #ffffff;
+}
 .redes__link{
   color: black;
 
@@ -1191,23 +1197,24 @@ a {
     <section class="section_fuente pt-pb-e" style="background-color:#f7f7f7">
       <div class="container">
         <div class="col-md-12 text-center">
-          <h2 class="size-28 negro pb" style="padding-bottom: 25px;">TODO ESTO ES LO QUE HACEMOS PARA TI</h2>
+          <h2 class="size-28 negro pb" style="padding-bottom: 15px;">TODO ESTO ES LO QUE HACEMOS PARA TI</h2>
+          <p class="lead" style="padding-bottom: 25px; text-align: center">Encuentra los mejores productos <strong>ferreteros</strong> para abastecer tu negocio a los mejores precios. Realizamos ventas al por mayor y menor en todo el Perú.</p>
         </div>
         <div class="col-md-12 col-md-offset-1 text-center">
           <div class="row">
             <div data-wow-delay="0.2s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn; padding-bottom: 15px;">
               <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-pager" style="font-size:70px;padding-bottom: 10px; color:#ff5b01"></i><br>PAGO DE FORMA SEGURA
-              </h3><p>En Litercorp nos importa tu seguridad, por eso te presentamos los diversos metodos de pago, pago Online, pago en Efectivo y Depositos.</p>
+              </h3><p>En Litercorp nos importa tu seguridad, realiza los pagos a través de depositos o en efectivo.</p>
             </div>
 
             <div data-wow-delay="0.4s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn; padding-bottom: 15px;">
               <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-truck-moving pb15" style="font-size:70px;padding-bottom: 10px;color:#ff5b01"></i><br>ENVÍOS A TODO EL PERÚ
-              </h3><p>Se realizan envios a todo el Perú, y através de la página web puedes hacer seguimiento de tú compra.</p>
+              </h3><p>Se realizan envíos a todo el Perú, y a través de la página web puedes hacer seguimiento de tú compra.</p>
             </div>
 
             <div data-wow-delay="0.6s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn; padding-bottom: 15px;">
               <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-award pb15" style="font-size:70px;padding-bottom: 10px;color:#ff5b01"></i><br>PRODUCTOS DE CALIDAD
-              </h3><p>Ofrecemos productos de calidad y con garantia pensando siempre en ustedes.</p>
+              </h3><p>Ofrecemos productos de calidad y con garantía pensando siempre en ustedes.</p>
             </div>
 
             <div data-wow-delay="0.8s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn; padding-bottom: 15px;">
@@ -1298,52 +1305,52 @@ a {
     <nav class="nav-drill">
       <ul class="nav-items nav-level-1">
         <li class="nav-item pad10">
-          <a class="nav-link " href="{{ url('/us') }}">
+          <a class="nav-link nav-link2" href="{{ url('/us') }}">
             QUIENES SOMOS
           </a>
         </li>
         <li class="nav-item pad10">
-          <a class="nav-link " href="{{ url('/seguimiento') }}">
+          <a class="nav-link nav-link2" href="{{ url('/seguimiento') }}">
             SEGUIMIENTO DE TU COMPRA
           </a>
         </li>
 
         <li class="nav-item pad10">
-          <a class="nav-link " href="{{ url('/') }}/cart">
+          <a class="nav-link nav-link2" href="{{ url('/') }}/cart">
             CARRITO  @if (Cart::instance('default')->count() > 0)
         <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
         @endif
           </a>
         </li>
         <li class="nav-item nav-expand pad10">
-          <a class="nav-link nav-expand-link " href="#">
+          <a class="nav-link nav-link2 nav-expand-link " href="#">
             CATEGORÍAS
           </a>
           <ul class="nav-items nav-expand-content">
           @foreach($categories as $category)
-                <li  class="nav-item"><a class="nav-link " href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
+                <li  class="nav-item"><a class="nav-link nav-link2" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
           <li>
           @endforeach
           </ul>
         </li>
         @guest
-        <li class="nav-item pad10 "><a class="nav-link " href="{{ route('register') }}">REGISTRARSE</a></li>
-        <li class="nav-item pad10 "><a class="nav-link " href="{{ route('login') }}">INICIAR SESIÓN</a></li>
+        <li class="nav-item pad10 "><a class="nav-link nav-link2" href="{{ route('register') }}">REGISTRARSE</a></li>
+        <li class="nav-item pad10 "><a class="nav-link nav-link2" href="{{ route('login') }}">INICIAR SESIÓN</a></li>
         @else
         <li class="nav-item nav-expand pad10">
-            <a class="nav-link nav-expand-link " href="#">Mi cuenta</a>
+            <a class="nav-link nav-link2 nav-expand-link " href="#">Mi cuenta</a>
 
             <ul class="nav-items nav-expand-content">
           
-                <li  class="nav-item"><a class="nav-link" href="{{ route('users.edit') }}">Mi Perfil</a></li>
+                <li  class="nav-item"><a class="nav-link nav-link2" href="{{ route('users.edit') }}">Mi Perfil</a></li>
                 <li>
 
-                <li  class="nav-item"><a class="nav-link" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
+                <li  class="nav-item"><a class="nav-link nav-link2" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
                 <li>
           </ul>
         </li>
         <li class="nav-item pad10">
-            <a class="nav-link colornill" href="{{ route('logout') }}"
+            <a class="nav-link nav-link2 colornill" href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
                 Salir Sesión
@@ -1354,7 +1361,7 @@ a {
         </form>
         @endguest
         <li class="nav-item pad10 ">
-          <a class="nav-link" href="{{ url('/') }}/contacto">
+          <a class="nav-link nav-link2" href="{{ url('/') }}/contacto">
             CONTACTAR
           </a>
         </li>

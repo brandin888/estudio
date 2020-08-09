@@ -82,8 +82,8 @@ class ContactoController extends Controller
           $contacto->save();
 
 
-          $emails = 'el-mayorista@el-mayorista.com';
-          $subject = 'Nuevo contacto desde la web Odyssey: ' ;
+          $emails = 'info@litercorp.com';
+          $subject = 'Nuevo contacto desde la web Litercorp: ' ;
           HelperCorreo::sendMailContacto('emails.contacto', $contacto, $emails, $subject);
 
 

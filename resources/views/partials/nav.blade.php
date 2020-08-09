@@ -577,8 +577,16 @@ a {
 .nav-link {
     display: flex;
     background-color: transparent;
-    color: white;
+    color: #ffffff;
     align-items: flex-start;
+}
+.nav-link2{
+  font-weight: bold;
+  color: #292e31;
+}
+.nav-link2:hover{
+  font-weight: bold;
+  color: #ffffff;
 }
 .page-item.active .page-link {
     z-index: 3;
@@ -756,18 +764,18 @@ a {
 <nav class="nav-drill">
   <ul class="nav-items nav-level-1">
     <li class="nav-item pad10">
-      <a class="nav-link " href="{{ url('/us') }}">
+      <a class="nav-link nav-link2" href="{{ url('/us') }}">
         QUIENES SOMOS
       </a>
     </li>
     <li class="nav-item pad10">
-      <a class="nav-link " href="{{ url('/seguimiento') }}">
+      <a class="nav-link nav-link2" href="{{ url('/seguimiento') }}">
         SEGUIMIENTO DE TU COMPRA
       </a>
     </li>
 
     <li class="nav-item pad10">
-      <a class="nav-link" href="{{ url('/') }}/cart">
+      <a class="nav-link nav-link2" href="{{ url('/') }}/cart">
         CARRITO  @if (Cart::instance('default')->count() > 0)
     <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
     @endif
@@ -775,12 +783,12 @@ a {
 
     </li>
     <li class="nav-item nav-expand pad10">
-      <a class="nav-link nav-expand-link" href="#">
+      <a class="nav-link nav-link2 nav-expand-link" href="#">
         CATEGORÍAS
       </a>
       <ul class="nav-items nav-expand-content">
       @foreach($categories as $category)
-            <li  class="nav-item"><a class="nav-link" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
+            <li  class="nav-item"><a class="nav-link nav-link2" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
       <li>
       @endforeach
       
@@ -792,18 +800,18 @@ a {
     
 
     @guest
-    <li class="nav-item pad10"><a class="nav-link" href="{{ route('register') }}">REGISTRARSE</a></li>
-    <li class="nav-item pad10"><a class="nav-link" href="{{ route('login') }}">INICIAR SESIÓN</a></li>
+    <li class="nav-item pad10"><a class="nav-link nav-link2" href="{{ route('register') }}">REGISTRARSE</a></li>
+    <li class="nav-item pad10"><a class="nav-link nav-link2" href="{{ route('login') }}">INICIAR SESIÓN</a></li>
     @else
     <li class="nav-item nav-expand pad10">
-        <a class="nav-link nav-expand-link" href="#">Mi cuenta</a>
+        <a class="nav-link nav-link2 nav-expand-link" href="#">Mi cuenta</a>
 
         <ul class="nav-items nav-expand-content">
       
-            <li  class="nav-item pad10"><a class="nav-link" href="{{ route('users.edit') }}">Mi Perfil</a></li>
+            <li  class="nav-item pad10"><a class="nav-link nav-link2" href="{{ route('users.edit') }}">Mi Perfil</a></li>
             <li>
 
-            <li  class="nav-item pad10"><a class="nav-link" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
+            <li  class="nav-item pad10"><a class="nav-link nav-link2" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
             <li>
       
         
@@ -815,7 +823,7 @@ a {
     </li>
 
     <li class="nav-item pad10">
-        <a class="nav-link" href="{{ route('logout') }}"
+        <a class="nav-link nav-link2" href="{{ route('logout') }}"
             onclick="event.preventDefault();
                      document.getElementById('logout-form').submit();">
             Salir Sesión
@@ -830,7 +838,7 @@ a {
     
 
     <li class="nav-item pad10">
-      <a class="nav-link" href="{{ url('/') }}/contacto">
+      <a class="nav-link nav-link2" href="{{ url('/') }}/contacto">
         CONTACTAR
       </a>
     </li>

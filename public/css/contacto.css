@@ -609,14 +609,14 @@
   }
   
   .formulario__content h3 {
-    color: #171260;
+    color: #292e31;
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 30px;
   }
   
   .formulario__content form label {
-    color: #253b56;
+    color: #4b4b4b;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 900;
@@ -636,17 +636,17 @@
   }
   
   .formulario__content form input::-webkit-input-placeholder {
-    color: #253b5670;
+    color: #4b4b4b70;
     font-style: italic;
   }
   
   .formulario__content form input::-ms-input-placeholder {
-    color: #253b5670;
+    color: #4b4b4b70;
     font-style: italic;
   }
   
   .formulario__content form input::placeholder {
-    color: #253b5670;
+    color: #4b4b4b70;
     font-style: italic;
   }
   
@@ -663,17 +663,17 @@
   }
   
   .formulario__content form textarea::-webkit-input-placeholder {
-    color: #253b5670;
+    color: #4b4b4b70;
     font-style: italic;
   }
   
   .formulario__content form textarea::-ms-input-placeholder {
-    color: #253b5670;
+    color: #4b4b4b70;
     font-style: italic;
   }
   
   .formulario__content form textarea::placeholder {
-    color: #253b5670;
+    color: #4b4b4b70;
     font-style: italic;
   }
   
@@ -681,7 +681,7 @@
     border-radius: 4px;
     height: 47px;
     border: 1px solid #e8e8e8;
-    color: #253b5670;
+    color: #4b4b4b70;
   }
   
   .formulario__content form select:focus {
@@ -723,7 +723,7 @@
   
   .formulario__content form .adjuntar__titulo {
     font-size: 14px;
-    color: #253b56;
+    color: #4b4b4b;
   }
   
   .formulario__content form .adjuntar__link {
@@ -1299,7 +1299,7 @@
   
     
   #mensajePolitica {
-    color: #253b56;
+    color: #4b4b4b;
     text-transform: uppercase;
     font-weight: 900;
     margin-left: 22px;
@@ -4373,7 +4373,7 @@
   .btn-primary:hover {
     color: #fff;
     border-radius: 6px;
-    /* background-color: #171260; */
+    /* background-color: #292e31; */
     /* border-color: #0062cc; */
   }
   
@@ -27847,13 +27847,13 @@
   
   .anio {
     padding-bottom: 1rem;
-    color: #171260;
+    color: #292e31;
     font-weight: bold;
   }
   
   .mes {
     font-size: 20px;
-    color: #171260;
+    color: #292e31;
     margin-bottom: 20px;
     padding: .5em 1em;
     font-weight: bold;
@@ -27873,7 +27873,7 @@
   .dia {
     text-align: center;
     line-height: 3;
-    color: #253b56;
+    color: #4b4b4b;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
@@ -27905,7 +27905,7 @@
   
   .calendar__last-days {
     opacity: .3;
-    color: #253b56;
+    color: #4b4b4b;
   }
   
   @media (max-width: 425px) {
@@ -28081,7 +28081,6 @@
   
   .menu__responsive .logo__responsive {
     width: 100%;
-    padding: 18px;
   }
   
   .menu__responsive .logo__responsive img {
@@ -28386,14 +28385,14 @@
     .telefonos-container__content__item .titulo {
 
       display: block;
-      color: #253b56;
+      color: #4b4b4b;
       font-weight: 900;
       margin-bottom: 8px;
     }
   
     .telefonos-container__content__item .numero {
       display: block;
-      color: #253b56;
+      color: #4b4b4b;
       font-weight: 400;
     }
   
@@ -28416,7 +28415,7 @@
     }
   
     .menu__responsive .logo__responsive {
-      padding: 26px;
+      padding: 5px;
     }
   }
   
@@ -28606,7 +28605,7 @@
   }
   
   .nuestros__productos__boleto a {
-    color: #171260;
+    color: #292e31;
     text-decoration: none;
     line-height: 20px;
     text-transform: uppercase;
@@ -28677,7 +28676,7 @@
   }
   
   .ubicaciones__card__titulo {
-    color: #171260;
+    color: #292e31;
     font-size: 18px;
     text-transform: uppercase;
   }
@@ -28695,7 +28694,7 @@
   
   .ubicaciones__card__datos li {
     list-style: none;
-    color: #253b56;
+    color: #4b4b4b;
     font-weight: 600;
     padding: 9px 0px;
     position: relative;
@@ -29321,24 +29320,24 @@
   }
   
   .recuperar__header h4 {
-    color: #171260;
+    color: #292e31;
     font-size: 20px;
     margin-bottom: 0;
     text-transform: uppercase;
   }
   
   .recuperar__body label {
-    color: #171260;
+    color: #292e31;
     font-size: 14px;
     font-weight: 600;
   }
   
   .recuperar__body input {
-    color: #171260;
+    color: #292e31;
   }
   
   .recuperar__body input:focus {
-    color: #171260;
+    color: #292e31;
   }
   
   .swal2-confirm {
@@ -29517,7 +29516,7 @@
   }
   
   section h2 {
-    color: #171260;
+    color: #292e31;
     font-size: 30px;
     text-transform: uppercase;
   }
@@ -29876,7 +29875,7 @@
   }
   
   .wizards__content__titulo {
-    color: #171260;
+    color: #292e31;
     font-size: 30px;
     text-transform: uppercase;
   }
@@ -29890,14 +29889,14 @@
   }
   
   .wizards__content__botones .btn-secondary {
-    background: #1712601a !important;
-    color: #253b5642 !important;
+    background: #292e311a !important;
+    color: #4b4b4b42 !important;
     text-transform: uppercase;
     padding: 18px 42px;
   }
   
   .wizards__content__parrafo {
-    color: #253b56;
+    color: #4b4b4b;
     font-weight: 600;
     font-size: 17px;
   }
@@ -29965,7 +29964,7 @@
   }
   
   .wizards__content__link:hover .wizards__content__link__item--top--titulo {
-    color: #171260;
+    color: #292e31;
   }
   
   .wizards__content__link:hover .wizards__content__link__item--top--subtitulo {
@@ -29973,11 +29972,11 @@
   }
   
   .wizards__content__link:hover .wizards__content__link__item--bottom--titulo {
-    color: #171260;
+    color: #292e31;
   }
   
   .wizards__content__link:hover .wizards__content__link__item--bottom--direccion li span {
-    color: #171260;
+    color: #292e31;
   }
   
   .wizards__content__link__item {
@@ -30136,7 +30135,7 @@
   }
   
   .wizards__content__birthday:hover .wizards__content__birthday__item--top--titulo {
-    color: #171260;
+    color: #292e31;
   }
   
   .wizards__content__birthday:hover .wizards__content__birthday__item--top--subtitulo {
@@ -30144,11 +30143,11 @@
   }
   
   .wizards__content__birthday:hover .wizards__content__birthday__item--bottom--titulo {
-    color: #171260;
+    color: #292e31;
   }
   
   .wizards__content__birthday:hover .wizards__content__birthday__item--bottom--direccion li span {
-    color: #171260;
+    color: #292e31;
   }
   
   .wizards__content__birthday__item {
@@ -30245,7 +30244,7 @@
   }
   
   .wizards__content__calendario--titulo {
-    color: #171260;
+    color: #292e31;
   }
   
   .wizards__content__calendario--titulo h5 {
@@ -30258,7 +30257,7 @@
   }
   
   .wizards__content__hora--titulo {
-    color: #171260;
+    color: #292e31;
   }
   
   .wizards__content__hora--titulo h5 {
@@ -30272,7 +30271,7 @@
   }
   
   .wizards__content__hora .card-body h5 {
-    color: #253b56;
+    color: #4b4b4b;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
@@ -30386,7 +30385,7 @@
   }
   
   .wizards__content .card__content__cantidad__titulo {
-    color: #253b56;
+    color: #4b4b4b;
     font-size: 12px;
     font-weight: 700;
   }
@@ -30395,12 +30394,12 @@
     font-weight: bold;
     font-size: 18px;
     font-weight: 400;
-    color: #171260;
+    color: #292e31;
     text-transform: uppercase;
   }
   
   .wizards__content .card__content p {
-    color: #253b56;
+    color: #4b4b4b;
   }
   
   .wizards__content .registrate__top {
@@ -30408,13 +30407,13 @@
   }
   
   .wizards__content .registrate__top__titulo {
-    color: #171260;
+    color: #292e31;
     text-transform: uppercase;
     font-size: 17px;
   }
   
   .wizards__content .registrate__top__parrafo {
-    color: #253b56;
+    color: #4b4b4b;
     font-weight: 600;
     font-size: 16px;
   }
@@ -30435,12 +30434,12 @@
   }
   
   .wizards__content .registrate__bottom .pago__titulo {
-    color: #253b56;
+    color: #4b4b4b;
     font-weight: 900;
   }
   
   .wizards__content .registrate__bottom .pago__parrafo {
-    color: #253b56;
+    color: #4b4b4b;
     font-size: 15px;
   }
   
@@ -30552,7 +30551,7 @@
   }
   
   .wizards__content .parrafo p {
-    color: #253b56;
+    color: #4b4b4b;
     opacity: 0.5;
     font-size: 14px;
     line-height: 1.8;
@@ -30567,7 +30566,7 @@
   .wizards .wizard__progress {
     width: 50%;
     height: 2px;
-    background: #171260;
+    background: #292e31;
     position: absolute;
     text-align: center;
     margin: auto;
@@ -30674,7 +30673,7 @@
   }
   
   .wizards .wizard__listado__item a {
-    color: #171260;
+    color: #292e31;
     text-transform: uppercase;
     text-decoration: none;
   }
@@ -30687,7 +30686,7 @@
   .wizards .wizard__listado__item--numero span {
     border-radius: 50%;
     display: block;
-    background: #171260;
+    background: #292e31;
     width: 36px;
     display: block;
     height: 36px;
@@ -30780,7 +30779,7 @@
   
   .btn__general--transparente:hover {
     background: #fff;
-    color: #171260;
+    color: #292e31;
   }
   
   .btn__general:hover {
@@ -30885,14 +30884,14 @@
   }
   
   .trabaja__content--item--titulo {
-    color: #171260;
+    color: #292e31;
     text-transform: uppercase;
     font-size: 20px;
     margin-bottom: 16px;
   }
   
   .trabaja__content--item--subtitulo {
-    color: #253b56;
+    color: #4b4b4b;
     font-weight: 700;
     font-size: 16px;
     display: block;
@@ -30900,7 +30899,7 @@
   }
   
   .trabaja__content--item--parrafo {
-    color: #253b56;
+    color: #4b4b4b;
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 25px;
@@ -30918,13 +30917,13 @@
   }
   
   .trabaja__content--item--listado li h4 {
-    color: #171260;
+    color: #292e31;
     font-weight: 900;
     font-size: 16px;
   }
   
   .trabaja__content--item--listado li span {
-    color: #171260;
+    color: #292e31;
     font-weight: 400;
   }
   
@@ -31103,14 +31102,14 @@
   }
   
   .modal__titulo {
-    color: #171260;
+    color: #292e31;
     font-size: 20px;
     text-transform: uppercase;
   }
   
   .modal__parrafo {
     margin-bottom: 4px;
-    color: #253b56;
+    color: #4b4b4b;
     font-weight: 600;
   }
   
@@ -32158,7 +32157,7 @@
   }
   
   .nosotros__content__parrafo {
-    color: #253b56;
+    color: #4b4b4b;
     font-size: 22px;
     font-weight: 700;
     line-height: 30px;
@@ -32171,7 +32170,7 @@
   }
   
   .nosotros__video {
-    background-color: #253b56;
+    background-color: #4b4b4b;
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
@@ -32244,7 +32243,7 @@
   }
   
   .parque__Atraccion__item p {
-    color: #253b56;
+    color: #4b4b4b;
     font-size: 16px;
   }
   
@@ -32475,7 +32474,7 @@
   }
   
   .contacto {
-    padding-top: 80px;
+    padding-top: 25px;
     padding-bottom: 30px;
   }
   
@@ -32542,7 +32541,7 @@
   }
   
   .maps__content--bottom--listado--item .item__content h3 {
-    color: #171260;
+    color: #292e31;
     font-size: 18px;
     text-transform: uppercase;
   }
@@ -32567,7 +32566,7 @@
   }
   
   .maps__content--bottom--listado--item .item__content__card span {
-    color: #253b56;
+    color: #4b4b4b;
     font-weight: 700;
     font-size: 13px;
     display: inline-block;
@@ -32589,7 +32588,7 @@
   .club__contenido__item .span {
     font-size: 22px;
     font-family: "Open Sans", sans-serif;
-    color: #253b56;
+    color: #4b4b4b;
     line-height: 1.364;
     margin-top: 14px;
     display: block;
@@ -32598,7 +32597,7 @@
   .club__contenido__item .parrafo {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
-    color: #253b56;
+    color: #4b4b4b;
     margin-top: 20px;
   }
   
@@ -32638,7 +32637,7 @@
   .club__contenido__item--left ul li span {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
-    color: #253b56;
+    color: #4b4b4b;
     font-weight: 500;
     line-height: 1.364;
     margin-left: 24px;
@@ -32670,11 +32669,11 @@
   
   .club__contenido2__content__h3 {
     font-size: 25px;
-    color: #253b56;
+    color: #4b4b4b;
   }
   
   .club__contenido2__content__parrafo {
-    color: #253b56;
+    color: #4b4b4b;
     font-size: 21px;
     font-weight: 700;
     line-height: 30px;
@@ -32696,7 +32695,7 @@
   
   .club .locales p {
     text-align: center;
-    color: #253b56;
+    color: #4b4b4b;
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 36px;
@@ -32815,7 +32814,7 @@
     width: 43px;
     height: 47px;
     background: #fff;
-    color: #253b56;
+    color: #4b4b4b;
     border: 1px solid #e8e8e8;
   }
   
@@ -33171,7 +33170,7 @@
   
   .carrito__content--item--listado h4 {
     text-transform: uppercase;
-    color: #171260;
+    color: #292e31;
     font-size: 19px;
     margin-bottom: 0;
     margin-top: 10px;
@@ -33179,7 +33178,7 @@
   
   .carrito__content--item--listado .precio h3 {
     font-size: 33px;
-    color: #171260;
+    color: #292e31;
   }
   
   .carrito__content--item--listado .precio h3 span {
