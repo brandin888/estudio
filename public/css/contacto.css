@@ -28079,28 +28079,7 @@
     display: none;
   }
   
-  .menu__responsive .logo__responsive {
-    width: 100%;
-    padding: 18px;
-  }
   
-  .menu__responsive .logo__responsive img {
-    width: 100px;
-  }
-  
-  .menu__responsive .carrito_top {
-    position: absolute;
-    top: 27px;
-    right: 70px;
-  }
-  
-  .menu__responsive .carrito_top a i {
-    color: white;
-  }
-  
-  .menu__responsive .carrito_top a span {
-    color: #fff;
-  }
   
   #menu-icon {
     width: 30px;
