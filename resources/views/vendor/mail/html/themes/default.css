@@ -30,7 +30,7 @@ blockquote {
 }
 
 a {
-    color: #dc84b3;
+    color: #ff5a00;
 }
 
 a img {
@@ -105,7 +105,7 @@ img {
 .header {
     padding: 25px 0;
     text-align: center;
-    background-color: #dc84b3;
+    background-color: #ff5a00;
     height: 100px;
 }
 
@@ -160,7 +160,7 @@ img {
     padding: 0;
     text-align: center;
     width: 100%;
-    background-color: #dc84b3;
+    background-color: #ff5a00;
     -premailer-cellpadding: 0;
     -premailer-cellspacing: 0;
     -premailer-width: 100%;
@@ -222,11 +222,11 @@ img {
 }
 
 .button-blue {
-    background-color: #dc84b3 !important;
-    border-top: 10px solid #dc84b3;
-    border-right: 18px solid #dc84b3;
-    border-bottom: 10px solid #dc84b3;
-    border-left: 18px solid #dc84b3;
+    background-color: #ff5a00 !important;
+    border-top: 10px solid #ff5a00;
+    border-right: 18px solid #ff5a00;
+    border-bottom: 10px solid #ff5a00;
+    border-left: 18px solid #ff5a00;
 }
 
 .button-green {
