@@ -25,11 +25,11 @@ Hola {{ $order->billing_name }}, gracias por realizar su pedido en **LITERCORP**
 **Dirección:** {{$order->billing_city}} - {{$order->billing_province}} - {{$order->billing_district}}
 
 Se deberá depositar en cualquiera de las siguientes cuentas, para que su pedido sea entregado:<br><br>
-**Nombre del Titular:** Alvic Cardenas Ñahuin<br>
-**BCP:** 19135761748076<br>
-**INTERBANK:** 0013129550583<br>
-**BBVA:** 001103460200135069<br>
-**SCOTIABANK:** 0417456001<br>
+**Nombre del Titular:** Rosa<br>
+**BCP:** <br>
+**INTERBANK:** <br>
+**BBVA:** <br>
+**SCOTIABANK:** <br>
 
 Si esta registrado en nuestro sitio web, puede obtener más detalles sobre su pedido iniciando sesión.
 
