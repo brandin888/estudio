@@ -21,7 +21,9 @@
             <div class="spacer"></div>
             <form action="{{ route('password.email') }}" method="POST">
                 {{ csrf_field() }}
-                <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="Correo electrónico" required autofocus>
+                <div class="form-group">
+                    <input class="form-control" type="email" id="email" name="email" value="{{ old('email') }}" placeholder="Correo electrónico" required autofocus>
+                </div>
                 <div class="spacer"></div>
                 <div class="login-container">
                     <button type="submit" class="auth-button">Enviar enlace</button>
