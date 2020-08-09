@@ -4,6 +4,16 @@
 <link href="{{ asset('css/contacto.css?v=1.0') }}" rel="stylesheet">
 <link href="{{ asset('css/algolia.css?v=1.0') }}" rel="stylesheet">
 
+
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script src="http://jquery.bassistance.de/validate/additional-methods.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script src="components/sweetalert/dist/sweetalert.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
+
 @endsection
 
 

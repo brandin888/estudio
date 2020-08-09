@@ -1074,7 +1074,7 @@ a {
                 <div class="top-nav " id="top-nav" style=" position: fixed;z-index: 2;width: 100%" >
 
                   
-                  <div id="top-nav0" style="align-items: center;font-size: 13px; padding-left: 8%; background: white; width: 100%; height: 25px; display: flex;  position: absolute;
+                  <div id="top-nav0"  style="align-items: center;font-size: 13px; padding-left: 8%; background: white; width: 100%; height: 25px; display: flex;  position: absolute;
                   top: 0px;">
                     
 
@@ -1094,7 +1094,7 @@ a {
                 
                 
 
-                    <div id="top-nav2" class="" style="text-align: center; display: flex; margin: 40px 35px;  height:   70% ;">
+                    <div id="top-nav2" class="d-flex align-items-center" style="text-align: center; display: flex; margin: 25px 35px;  height:   70% ;">
                       <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/liter.png') }}" style=" width: 180px; padding-left: 0px; max-width: 180px;height: 30px"></a>
                       <a class="nav-link colorban"  href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>QUIENES SOMOS</a>
                       
@@ -1612,7 +1612,7 @@ function scrollFunction() {
     
     document.getElementById("top-nav2").style.padding = "0px 0px";
     document.getElementById("top-nav0").style.display = "flex";
-    document.getElementById("top-nav2").style.margin = "40px 35px";
+    document.getElementById("top-nav2").style.margin = "25px 35px";
   }
 }
 </script>
