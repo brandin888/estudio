@@ -22,6 +22,7 @@
             <form action="{{ route('password.email') }}" method="POST">
                 {{ csrf_field() }}
                 <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="Correo electrónico" required autofocus>
+                <div class="spacer"></div>
                 <div class="login-container">
                     <button type="submit" class="auth-button">Enviar enlace</button>
                 </div>
@@ -30,11 +31,11 @@
             </form>
         </div>
         <div class="auth-right">
-            <h2 style="color:#171260">Información de pérdida de contraseña</h2>
+            <h2 style="color:#212529">Información de pérdida de contraseña</h2>
             <div class="spacer"></div>
-            <p style="color:#54bbe6">Se enviará un mensaje a su correo electrónico.</p>
+            <p style="color:#212529">Se enviará un mensaje a su correo electrónico.</p>
             <div class="spacer"></div>
-            <p style="color:#54bbe6">De esta forma podra recuperar su contraseña.</p>
+            <p style="color:#212529">De esta forma podra recuperar su contraseña.</p>
         </div>
     </div>
 </div>
