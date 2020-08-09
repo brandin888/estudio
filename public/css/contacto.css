@@ -28083,6 +28083,10 @@
     width: 100%;
   }
   
+  .menu__responsive .logo__responsive img {
+    width: 100px;
+  }
+  
   
   #menu-icon {
     width: 30px;
