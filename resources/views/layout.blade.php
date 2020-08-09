@@ -106,12 +106,16 @@ header{
     @include('partials.footer')
 
 </div>
-   
+   <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script src="{{ asset('js/algolia.js?v=1.2') }}"></script>
+<script src="js/app.js"></script>
     <script type="text/javascript" src="{{ asset('js/scripts.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyC4yN2BPmYWLa-GjR-5Z8V5YfkKgwygEF8"></script>
     <script src="{{ asset('js/gmaps.js')}}"></script>
 <script type="text/javascript">
+  
   //Active Menu
 
 var  pestana = $('#pestana_vista').attr('valor');
