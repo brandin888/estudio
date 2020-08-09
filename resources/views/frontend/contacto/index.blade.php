@@ -200,6 +200,14 @@
 
 
 
+
+
+@section('extra-js')
+
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script src="{{ asset('js/algolia.js?v=1.2') }}"></script>
+<script src="js/app.js"></script>
 @endsection
 @section('scripts')
 <script type="text/javascript">
@@ -207,8 +215,5 @@
 </script>
 <!-- <script type="text/javascript" src="{{ url('/') }}/js/contacto.js"></script> -->
 <script type="text/javascript" src="{{ asset('../resources/js/scripts/contacto.js')}}"></script>
- <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
-  <script src="{{ asset('js/algolia.js?v=1.2') }}"></script>
-
+ 
 @stop
