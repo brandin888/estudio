@@ -202,9 +202,10 @@
                                     <div>
                                         <a href="{{ route('shop.show', $product->slug) }}">{{ $product->name }}</a>
                                     </div>
-                                    <div>Precio por caja : {{ $product->presentPrice() }}</div>
-                                    <div>Cantidad de cajas: {{ $product->pivot->quantity }}</div>
-                                    <div>Unidades por caja: {{ $product->cantidad_caja }}</div>
+                                    <div>Precio : {{ $product->presentPrice() }}</div>
+                                    <div>Cantidad : {{ $product->pivot->quantity }}</div>
+                                    <!-- <div>Cantidad de cajas: {{ $product->pivot->quantity }}</div>
+                                    <div>Unidades por caja: {{ $product->cantidad_caja }}</div> -->
                                 </div>
                             </div>
                         @endforeach
