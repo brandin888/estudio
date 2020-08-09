@@ -606,6 +606,14 @@ a {
   padding-left: 16px;
 }
 
+.pad10{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size:16px;
+  color:#4b4b4b;
+  padding-left: 16px;
+}
+
 </style>
 <header >
   

@@ -968,6 +968,16 @@ a {
   font-family: inherit;
   margin: 0;
 }
+.pad10{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size:16px;
+  color:#4b4b4b;
+  padding-left: 16px;
+}
+.colornill{
+  color:#4b4b4b
+}
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: red;
