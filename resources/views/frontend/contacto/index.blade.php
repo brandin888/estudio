@@ -3,6 +3,7 @@
 
 <link href="{{ asset('css/contacto.css?v=1.0') }}" rel="stylesheet">
 <link href="{{ asset('css/algolia.css?v=1.0') }}" rel="stylesheet">
+
 @endsection
 
 
@@ -203,6 +204,7 @@
 
 
 @section('extra-js')
+
 
 <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
   <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>

@@ -10,7 +10,7 @@
 
         <title>Litercorp | Ferretería</title>
         <meta name="theme-color" content="#353535" />
-        <meta name="description" content="Somos una empresa Mayorista de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en  Lima Cercado">
+        <meta name="description" content="Somos una Juguetería, hacemos ventas por mayor a todo Perú,  puedes encontrarnos en  Lima Cercado">
 
        <link rel="shortcut icon" href="{{ asset('img/diseño/icono.png') }}" />
 
@@ -115,7 +115,7 @@ header{
     <script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyC4yN2BPmYWLa-GjR-5Z8V5YfkKgwygEF8"></script>
     <script src="{{ asset('js/gmaps.js')}}"></script>
 <script type="text/javascript">
-  
+
   //Active Menu
 
 var  pestana = $('#pestana_vista').attr('valor');
