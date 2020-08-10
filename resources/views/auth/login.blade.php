@@ -171,7 +171,7 @@
 
 @section('content')
 <div class="container" style="
-    margin-top: 100px;
+    margin-top: 50px;
 ">
     <div class="auth-pages">
         <div class="auth-left">
@@ -188,7 +188,7 @@
                 </ul>
             </div>
             @endif
-            <h2 style="color:#171260">Cliente regular</h2>
+            <h2 style="color:#292e31">Cliente regular</h2>
             <div class="spacer"></div>
 
             <form action="{{ route('login') }}" method="POST">
@@ -217,7 +217,7 @@
         </div>
 
         <div class="auth-right">
-            <h2  style="color:#171260">Cliente nuevo</h2>
+            <h2  style="color:#292e31">Cliente nuevo</h2>
             <div class="spacer"></div>
             <p><strong>Ahorra tiempo ahora.</strong></p>
             <p>No necesitas tener una cuenta para hacer tu pedido.</p>

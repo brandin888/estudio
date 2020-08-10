@@ -171,7 +171,7 @@
 
 @section('content')
 <div class="container" style="
-    margin-top: 100px;
+    margin-top: 50px;
 ">
     <div class="auth-pages">
         <div class="auth-left">
@@ -190,7 +190,7 @@
             </div>
             @endif
             
-            <h2 style="color:#171260">Seguimiento de mi compra</h2>
+            <h2 style="color:#292e31">Seguimiento de mi compra</h2>
             <div class="spacer"></div>
 
             <form action="{{ route('seguimiento.store') }}" method="POST">
@@ -215,10 +215,10 @@
         </div>
 
         <div class="auth-right">
-            <h2  style="color:#171260">¿Cómo puedo seguir mi órden?</h2>
+            <h2  style="color:#292e31">¿Cómo puedo seguir mi orden?</h2>
             <div class="spacer"></div>
             <p><strong>Ingresa tu email con el que realizaste la compra.</strong></p>
-            <p>El número de órden se enviará al email, Ingresa tu número de órden .</p>         
+            <p>El número de orden se enviará al email, Ingresa tu número de orden .</p>         
             <p>Descubre el estado de tu compra!!!.</p>
             <p>Podrás ver el resumen de tu pedido!!!.</p>
            

@@ -17,7 +17,7 @@
                 </ul>
             </div>
             @endif
-            <h2 style="color:#171260">¿Olvidó su contraseña?</h2>
+            <h2 style="color:#292e31">¿Olvidó su contraseña?</h2>
             <div class="spacer"></div>
             <form action="{{ route('password.email') }}" method="POST">
                 {{ csrf_field() }}

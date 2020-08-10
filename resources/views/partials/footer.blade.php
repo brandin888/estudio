@@ -110,6 +110,11 @@
 .lista-footer__item a {
     font-size: 15px;
 }
+@media (max-width: 768px) {
+    .lista-footer__item a {
+        font-size: 12px;
+    }
+}
 .redes__link2 {
     color: white;
 }

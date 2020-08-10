@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="container" style="
-    margin-top: 100px;
+    margin-top: 50px;
 ">
     <div class="auth-pages">
         <div>
@@ -21,7 +21,7 @@
                 </ul>
             </div>
             @endif
-            <h2 style="color:#171260">Crear Cuenta</h2>
+            <h2 style="color:#292e31">Crear Cuenta</h2>
             <div class="spacer"></div>
 
             <form method="POST" action="{{ route('register') }}">
@@ -39,7 +39,7 @@
                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirmación de contraseña"required>
                 </div>
                 <div class="login-container">
-                    <button type="submit" class="auth-button" >Crear Cuenta</button>
+                    <button type="submit" class="auth-button col-sm-6" >Crear Cuenta</button>
                     <div class="already-have-container">
                         <p><strong>¿Usted ya tiene una cuenta?</strong></p>
                         <a href="{{ route('login') }}">Iniciar Sesión</a>
@@ -50,7 +50,7 @@
         </div>
 
         <div class="auth-right">
-            <h2 style="color:#171260">Nuevo Cliente</h2>
+            <h2 style="color:#292e31">Nuevo Cliente</h2>
             <div class="spacer"></div>
             <p><strong>Ahorra tiempo</strong></p>
             <p>Creando una cuenta podras ordenar más rápido en el futuro, facil acceso a tu historial de órdenes.</p>

@@ -9,7 +9,7 @@
 {{-- Body --}}
 Hola {{ $order->billing_name }}, gracias por realizar su pedido en **LITERCORP**
 
-**Numero de Pedido:** {{ $order->id }}
+**Número de Pedido:** {{ $order->id }}
 
 **Monto Total:** S/ {{ round($order->billing_total / 100, 2) }}
 
@@ -24,16 +24,15 @@ Hola {{ $order->billing_name }}, gracias por realizar su pedido en **LITERCORP**
 
 **Dirección:** {{$order->billing_city}} - {{$order->billing_province}} - {{$order->billing_district}}
 
-Se deberá depositar en cualquiera de las siguientes cuentas, para que su pedido sea entregado:<br><br>
-**Nombre del Titular:** Rosa<br>
-**BCP:** <br>
-**INTERBANK:** <br>
-**BBVA:** <br>
-**SCOTIABANK:** <br>
-
 Si esta registrado en nuestro sitio web, puede obtener más detalles sobre su pedido iniciando sesión.
 
-@component('mail::button', ['url' => 'el-mayorista.com/my-orders', 'color' => 'blue'])
+@component('mail::button', ['url' => 'litercorp.com/seguimiento', 'color' => 'blue'])
+Litercorp
+@endcomponent
+
+Sino esta registrado, puede obtener más detalles ingresando su número de pedido y su correo electrónico.
+
+@component('mail::button', ['url' => 'litercorp.com/seguimiento', 'color' => 'blue'])
 Litercorp
 @endcomponent
 
