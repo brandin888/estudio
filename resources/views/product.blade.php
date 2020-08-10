@@ -99,7 +99,7 @@
                 <a class="nav-link" style="font-weight:700" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Asistencia</a>
             </li> -->
             </ul>
-        <div class="tab-content p-3 caracteristicas" id="myTabContent" style="border:1px solid #dee2e6;border-top:0px">
+        <div class="tab-content p-3 caracteristicas bg-white" id="myTabContent" style="border:1px solid #dee2e6;border-top:0px">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">{!! $product->description !!}</div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
         </div>
