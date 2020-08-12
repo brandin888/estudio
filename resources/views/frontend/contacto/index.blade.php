@@ -4,7 +4,7 @@
 <link href="{{ asset('css/contacto.css?v=1.0') }}" rel="stylesheet">
 <link href="{{ asset('css/algolia.css?v=1.0') }}" rel="stylesheet">
 
-
+<!-- 
 <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="js/jquery.form.js"></script>
 <script src="http://jquery.bassistance.de/validate/additional-methods.js"></script>
@@ -13,12 +13,11 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
-
+ -->
 @endsection
 
 
 @section('content')
-<script  src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"> </script>
 
 <section class="contacto">
   <div class="container">
@@ -209,17 +208,6 @@
 
 
 
-
-
-
-
-@section('extra-js')
-
-
-<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
-  <script src="{{ asset('js/algolia.js?v=1.2') }}"></script>
-<script src="js/app.js"></script>
 @endsection
 @section('scripts')
 <script type="text/javascript">

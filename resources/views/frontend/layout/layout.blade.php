@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="{{ asset('css/app.css?v=2.5') }}">
 <link rel="stylesheet" href="{{ asset('css/animate.css?v=1.0') }}">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<script  src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"> </script>
 
 
 

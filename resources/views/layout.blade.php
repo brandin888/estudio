@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
+        <!-- Chola -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,20 +46,20 @@
         
         @yield('extra-css')
         <style type="text/css">
-  .page-item.active .page-link {
-    z-index: 3;
-    color: #fff;
-    background-color: #ff5a00;
-    border-color: #ff5a00;
-}
-.redes__link{
-  color: black;
-}
+        .page-item.active .page-link {
+          z-index: 3;
+          color: #fff;
+          background-color: #ff5a00;
+          border-color: #ff5a00;
+        }
+        .redes__link{
+          color: black;
+        }
 
-header{
-  height: 0px;
-}
-</style>
+        header{
+          height: 0px;
+        }
+        </style>
     </head>
 
  <div  style="background-color: rgba(255, 255, 255, 0.84);">
