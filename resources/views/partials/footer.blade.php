@@ -119,11 +119,9 @@
     color: white;
 }
 .pl-3, .px-3 {
-    padding-left: 1rem !important;
+    padding-left: 0.3rem !important;
 }
-.pl-3, .px-3 {
-    padding-left: 1rem!important;
-}
+
 .fab {
     font-family: 'Font Awesome 5 Brands';
 }
