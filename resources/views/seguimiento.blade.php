@@ -171,7 +171,11 @@
 
 @section('content')
 <div class="container" style="
+<<<<<<< Updated upstream
     margin-top: 50px;
+=======
+    margin-top: 0px;
+>>>>>>> Stashed changes
 ">
     <div class="auth-pages">
         <div class="auth-left">
