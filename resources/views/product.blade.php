@@ -57,8 +57,8 @@
             <div class="card-body d-lg-flex pb-5 shadow" style="background-color:#f7f7f9;font-size:18px;border-bottom:5px solid var(--primary)">
                 <div class="col-12 col-lg-6 mr-5 px-0">
                     @if($product->codigo_producto)
-                    <div class="mb-3">Código:</div>
-                    {{ $product->codigo_producto }}
+                    <div class="mb-3">Código: {{ $product->codigo_producto }}</div>
+                    
                     @endif
                     <div class="mb-3">Descripción:</div>
                     {{ $product->details }}
