@@ -53,12 +53,12 @@
         </div>
         <div class="product-section-information">
             <h1 class="mb-0 product-title">{{ $product->name }}</h1>
-            <div style="margin-bottom:40px">{!! $stockLevel !!}</div>
-            @if($item)    
+            <div style="margin-bottom:40px">{!! $stockLevel !!} @if($item)    
                             
                             <button type="submit" class="btn btn__enviar2" ><i class="fas fa-shopping-cart"></i> Ir al carrito</button>
                            
-             @endif
+             @endif</div>
+            
             <div class="card-body d-lg-flex pb-5 shadow" style="background-color:#f7f7f9;font-size:18px;border-bottom:5px solid var(--primary)">
                 <div class="col-12 col-lg-6 mr-5 px-0">
                     @if($product->codigo_producto)
