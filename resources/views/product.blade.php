@@ -57,9 +57,17 @@
             <div class="card-body d-lg-flex pb-5 shadow" style="background-color:#f7f7f9;font-size:18px;border-bottom:5px solid var(--primary)">
                 <div class="col-12 col-lg-6 mr-5 px-0">
                     @if($product->codigo_producto)
-                    <div class="mb-3">Código: {{ $product->codigo_producto }}</div>
+                    <div class="mb-3">Código: {{ $product->codigo_producto }} @if($item)
+                            
+                            <button type="submit" class="btn btn__enviar2" ><i class="fas fa-shopping-cart"></i> Ir al carrito</button>
+                            @endif</div>
                     
                     @endif
+
+
+
+
+
                     <div class="mb-3">Descripción:</div>
                     {{ $product->details }}
                 </div>
@@ -83,10 +91,7 @@
                             @else
                             <button type="submit" class="btn inicio" data-id="{{ $product->id }}" data-name="{{ $product->name }}" data-price="{{ $product->price }}"><i class="fas fa-shopping-cart"></i> Agrega al Carrito</button>
                             @endif
-                            @if($item)
-                            <div class="spacer"></div>
-                            <button type="submit" class="btn btn__enviar2" ><i class="fas fa-shopping-cart"></i> Ir al carrito</button>
-                            @endif
+                            
                             <!-- </form> -->
                     @endif
                 </div>
