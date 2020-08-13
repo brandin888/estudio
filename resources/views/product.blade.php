@@ -83,6 +83,10 @@
                             @else
                             <button type="submit" class="btn inicio" data-id="{{ $product->id }}" data-name="{{ $product->name }}" data-price="{{ $product->price }}"><i class="fas fa-shopping-cart"></i> Agrega al Carrito</button>
                             @endif
+                            @if($item)
+                            <div class="spacer"></div>
+                            <button type="submit" class="btn btn__enviar2" ><i class="fas fa-shopping-cart"></i> Ir al carrito</button>
+                            @endif
                             <!-- </form> -->
                     @endif
                 </div>
