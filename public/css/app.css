@@ -2199,6 +2199,7 @@ select.selectpicker {
 }
 
 .btn__enviar2 {
+  margin-left: 10%;
   background: #353535;
   color: white !important;
   /* padding: 12px 40px; */

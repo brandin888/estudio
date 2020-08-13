@@ -57,10 +57,7 @@
             <div class="card-body d-lg-flex pb-5 shadow" style="background-color:#f7f7f9;font-size:18px;border-bottom:5px solid var(--primary)">
                 <div class="col-12 col-lg-6 mr-5 px-0">
                     @if($product->codigo_producto)
-                    <div class="mb-3">Código: {{ $product->codigo_producto }} @if($item)
-                            
-                            <button type="submit" class="btn btn__enviar2" ><i class="fas fa-shopping-cart"></i> Ir al carrito</button>
-                            @endif</div>
+                    <div class="mb-3">Código: {{ $product->codigo_producto }} </div>
                     
                     @endif
 
@@ -72,6 +69,11 @@
                     {{ $product->details }}
                 </div>
                 <div class="col-12 col-lg-6 dataproduct px-0">
+                            @if($item)    
+                            <div class="mb-3">
+                            <button type="submit" class="btn btn__enviar2" ><i class="fas fa-shopping-cart"></i> Ir al carrito</button>
+                            </div>
+                            @endif
                     <div class="mb-3">Precio : {{ $product->presentPriceUnidad() }}</div>
                     @if($product->pricemayor > 0)
                     <div class="product-section-subtitle" style="color:#171260">Precio por mayor: {{ $product->presentPriceMayor() }}</div>
