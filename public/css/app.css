@@ -795,7 +795,12 @@ form button[type=submit] {
   }
 }
 
+
 @media (max-width: 991.98px) {
+  .imagenone{
+    display: none;
+  }
+  
   .product-title {
     margin-top: 30px;
   }
@@ -1574,6 +1579,9 @@ h1.checkout-heading {
   justify-content: space-between;
 }
 
+.imagenpersona:hover{
+  box-shadow: 0 4px 8px 0 rgba(255, 159, 69, 1) !important;
+}
 .auth-pages .auth-button {
   background: linear-gradient(to right, var(--primary) 0%,var(--primary) 50%, var(--primary) 100%);
   color: #fff;
