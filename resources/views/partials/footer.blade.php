@@ -159,10 +159,10 @@
 
 "><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn;">
     <div class="container" style="text-align: left;">
-    <div class="row">
+    <div class="row footernone">
       
 
-      <div class="col-6 ">
+      <div class="col-12 col-sm-6 mb-5">
         <div class="footer__titulo">
           ENLACES
         </div>
@@ -174,7 +174,7 @@
         </ul>
       </div>
 
-      <div class="col-6 ">
+      <div class="col-12 col-sm-6">
         <div class="footer__titulo">
           SÍGUENOS
         </div>

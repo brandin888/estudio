@@ -837,6 +837,9 @@ form button[type=submit] {
 }
 
 @media (max-width: 550px) {
+  .footernone {
+    text-align: center!important;
+  }
   .cart-item-details {
     display: none;
   }
