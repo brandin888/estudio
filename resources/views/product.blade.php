@@ -102,18 +102,23 @@
             </div>
         </div>
     </div> <!-- end product-section -->
-    <div class="container">
-        <ul class="nav nav-tabs caracteristicas" id="myTab" role="tablist">
-            <li class="nav-item" style="border-bottom:solid 1px #dee2e6">
-                <a class="nav-link active" style="font-weight:700" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Características Técnicas</a>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" style="font-weight:700" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Asistencia</a>
-            </li> -->
+    <div class="container d-flex align-items-center">
+        <div class="col-lg-6">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" style="border-bottom:solid 1px #dee2e6">
+                    <a class="nav-link active" style="font-weight:700" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Características Técnicas</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" style="font-weight:700" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Asistencia</a>
+                </li> -->
             </ul>
-        <div class="tab-content p-3 caracteristicas bg-white" id="myTabContent" style="border:1px solid #dee2e6;border-top:0px">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">{!! $product->description !!}</div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            <div class="tab-content p-3 bg-white border" id="myTabContent" style="border:1px solid #dee2e6;border-top:0px">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">{!! $product->description !!}</div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            </div>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center">
+            <img class="img-fluid border bg-white" src="{{ asset('images/producto/personaferreteria.jpg') }}" alt="imagen-ferreteria-persona" style="max-width:70%;">
         </div>
     </div>
     @include('partials.might-like')
