@@ -1159,8 +1159,10 @@ footer {
   /* display: grid; */
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 10px;
-  display: grid;
-  align-items: center;
+  flex: 0 0 20%;
+  max-width: 20%;
+  /* display: grid; */
+  /* align-items: center; */
   /* margin-top: 20px; */
 }
 

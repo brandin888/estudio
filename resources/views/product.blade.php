@@ -35,13 +35,13 @@
         <div style="padding-left: 0px" class="d-flex">
             <div class="product-section-images col-2">
                 <div class="product-section-thumbnail selected">
-                    <img src="{{ productImage($product->image) }}" alt="product" style="max-width: 150%;">
+                    <img src="{{ productImage($product->image) }}" alt="product">
                 </div>
 
                 @if ($product->images)
                     @foreach (json_decode($product->images, true) as $image)
                     <div class="product-section-thumbnail">
-                        <img src="{{ productImage($image) }}" alt="product" style="max-width: 150%;">
+                        <img src="{{ productImage($image) }}" alt="product">
                     </div>
                     @endforeach
                 @endif
