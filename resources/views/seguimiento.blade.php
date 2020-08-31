@@ -200,10 +200,10 @@
             <form action="{{ route('seguimiento.store') }}" method="POST">
                 {{ csrf_field() }}
                 <div class="form-group">
-                  <input class="form-control" type="email" id="email" name="email" value="" placeholder="Email" required autofocus>
+                  <input class="form-control" type="email" id="email" name="email"  value="" placeholder="Email"  required autofocus>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" type="number" id="order" name="order" value="" placeholder="Número de orden" required>
+                  <input class="form-control" type="number" min="1" step="1" id="order" name="order" value="" placeholder="Número de orden" required>
                 </div>
 
                 <div class="login-container">

@@ -610,7 +610,7 @@ section#action, section#action-transparent {
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <div class="nosotros__content">
-          <p class="nosotros__content__parrafo">Somos una Empresa dedicada a la <span>Distribución de productos de Ferretería</span>  a los sectores que lo requieren, mediante el innovador y permanente Servicio; generando Progreso y Estabilidad a las Personas que hacen posible la Existencia de esta Empresa, siendo así un aliado Estratégico de Nuestros Clientes, Proveedores y Colaboradores, comprometidos con el Bienestar de la Sociedad.</p>
+          <p class="nosotros__content__parrafo">Bienvenidos a Litercorp <span> nos especializamos en la distribución de productos de Ferretería.</span>  Nuestros productos son de alta calidad y de marcas reconocidas. Nuestros Clientes son lo más importante para nosotros, por ello, nuestro compromiso es brindar el mejor servicio posible.</p>
         </div>
       </div>
       <div class="col-md-5 col-sm-12 " style=" width: 100%">
@@ -632,7 +632,7 @@ section#action, section#action-transparent {
       
 
       <div class="col-12 us_titulo">
-        Conoce nuestra historia
+        Litercorp
       </div>
 
       <div class="col-12 us_subtitulo">
@@ -662,7 +662,7 @@ section#action, section#action-transparent {
       </div>
       <div class="col-md-6 col-sm-12">
         <div class="nosotros__content">
-          <p class="nosotros__content__parrafo">Somos una Empresa dedicada a la <span>Distribución de productos de Ferretería</span>  a los sectores que lo requieren, mediante el innovador y permanente Servicio; generando Progreso y Estabilidad a las Personas que hacen posible la Existencia de esta Empresa, siendo así un aliado Estratégico de Nuestros Clientes, Proveedores y Colaboradores, comprometidos con el Bienestar de la Sociedad.</p>
+          <p class="nosotros__content__parrafo">Somos una empresa dedicada a la comercialización a gran escala de productos ferreteros; para el hogar y la construcción; ofreciendo la mejor variedad, relación precio-calidad, tiempo de entrega, atención personalizada, superando sus expectativas en el servicio y enfocados a la plena satisfacción de nuestros clientes, distribuidores y profesionales de la construcción.</p>
         </div>
       </div>
       
