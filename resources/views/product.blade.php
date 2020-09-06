@@ -46,7 +46,7 @@
                     @endforeach
                 @endif
             </div>
-            <div class="product-section-image bg-white col-8">
+            <div class="product-section-image bg-white col-9">
                 <img src="{{ productImage($product->image) }}" alt="product" class="active" id="currentImage">
             </div>
             
