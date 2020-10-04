@@ -8,7 +8,7 @@
 
 @section('content')
 
-    
+
 
     <div class="container" style="padding-bottom: 35px;">
         <!-- @if (session()->has('success_message'))
@@ -49,21 +49,21 @@
             <div class="product-section-image bg-white col-9">
                 <img src="{{ productImage($product->image) }}" alt="product" class="active" id="currentImage">
             </div>
-            
+
         </div>
         <div class="product-section-information">
             <h1 class="mb-0 product-title">{{ $product->name }}</h1>
-            <div style="margin-bottom:40px">{!! $stockLevel !!} @if($item)    
-                            
-                            <button type="submit" class="btn btn__enviar2" ><i class="fas fa-shopping-cart"></i> Ir al carrito</button>
-                           
+            <div style="margin-bottom:40px">{!! $stockLevel !!} @if($item)
+
+                            <a href="/cart" type="submit" class="btn btn__enviar2" ><i class="fas fa-shopping-cart"></i> Ir al carrito</a>
+
              @endif</div>
-            
+
             <div class="card-body d-lg-flex pb-5 shadow" style="background-color:#f7f7f9;font-size:18px;border-bottom:5px solid var(--primary)">
                 <div class="col-12 col-lg-6 mr-5 px-0">
                     @if($product->codigo_producto)
                     <div class="mb-3">Código: {{ $product->codigo_producto }} </div>
-                    
+
                     @endif
 
 
@@ -74,7 +74,7 @@
                     {{ $product->details }}
                 </div>
                 <div class="col-12 col-lg-6 dataproduct px-0">
-                            
+
                     <div class="mb-3">Precio : {{ $product->presentPriceUnidad() }}</div>
                     @if($product->pricemayor > 0)
                     <div class="product-section-subtitle" style="color:#171260">Precio por mayor: {{ $product->presentPriceMayor() }}</div>
@@ -94,11 +94,11 @@
                             @else
                             <button type="submit" class="btn inicio" data-id="{{ $product->id }}" data-name="{{ $product->name }}" data-price="{{ $product->price }}"><i class="fas fa-shopping-cart"></i> Agrega al Carrito</button>
                             @endif
-                            
+
                             <!-- </form> -->
                     @endif
                 </div>
-            <!-- <div>{!! $stockLevel !!}</div> -->  
+            <!-- <div>{!! $stockLevel !!}</div> -->
             </div>
         </div>
     </div> <!-- end product-section -->
