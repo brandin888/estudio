@@ -4658,7 +4658,7 @@ readers do not read off random characters that represent icons */
   /* ==================================== */
 
   :root{
-    --primary: #ff5a00;
+    --primary: #ffb700;
   }
   .btn-primary .btn__enviar{
     color: #fff;

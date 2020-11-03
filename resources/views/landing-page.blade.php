@@ -22,8 +22,7 @@
   }
 }
 
-img {width: 100%;
-max-height: 150;}
+img {width: 100%;}
 
 div.container {
   text-align: center;
@@ -68,7 +67,7 @@ div.container {
   animation-duration: 0.6s;
 }
 header{
-  height: 400px;
+  
 }
 
 @keyframes zoom {
@@ -671,9 +670,9 @@ a {
 .nav-link {
   display: block;
   padding: 0.875em 1em;
-  background-color: #fff;
-  color: #ff5a00;
-  font-size: 0.9rem;
+  
+  
+  font-size: 1.05rem;
   line-height: 1em;
   font-weight: 300;
 }
@@ -757,7 +756,9 @@ a {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
 }
+.fa, .fas, .far, .fal, .fab {
 
+}
 
 
 
@@ -868,7 +869,7 @@ a {
 }
 .nav-link {
     display: flex;
-    background-color: transparent;
+    color: white;
     
 }
 
@@ -881,7 +882,7 @@ a {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#353535" />
-        <title>Litercorp | Ferretería</title>
+        <title>Micky SRL | Distribuidora e Importadora</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
@@ -912,7 +913,7 @@ a {
 .nav-link {
     display: flex;
     background-color: transparent;
-    color: #ffffff;
+    
     align-items: flex-start;
     
 }
@@ -1020,10 +1021,25 @@ a {
     text-decoration: none;
     background-color: #ff5a00;
 }
+
+.carousel {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.carousel-item:active{
+  width: 100%;
+}
+
+.partials-search{
+  padding-left: 15%;
+}
+
 </style>
 
     </head>
-    <body style="background-color:#f5f5f5">
+    <body style="background-color: white">
 
         <!-- Load Whatsapp -->
           
@@ -1059,8 +1075,8 @@ a {
         attribution=setup_tool
         page_id="111473320648629"
   theme_color="#ff5a00"
-  logged_in_greeting="Bienvenido a Litercorp. ¿Cuál es el producto que desea cotizar?"
-  logged_out_greeting="Bienvenido a Litercorp. ¿Cuál es el producto que desea cotizar?">
+  logged_in_greeting="Bienvenido a Micky Srl. ¿Cuál es el producto que desea cotizar?"
+  logged_out_greeting="Bienvenido a Micky Srl. ¿Cuál es el producto que desea cotizar?">
       </div>
      
        <!-- Your Chat Plugin code -->
@@ -1071,24 +1087,11 @@ a {
         <div >
 
             <header >
+              
                 <div class="top-nav " id="top-nav" style=" position: fixed;z-index: 2;width: 100%" >
 
                   
-                  <div id="top-nav0"  style="align-items: center;font-size: 13px; padding-left: 8%; background: white; width: 100%; height: 25px; display: flex;  position: absolute;
-                  top: 0px;">
-                    
 
-                    <a class="redes__link pl-3" href="https://www.facebook.com/Litercorp-111473320648629" target="_blank"><i class="fab fa-facebook-f"></i><span class=""> Facebook</span></a>
-
-                    <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fab fa-whatsapp"></i><span class=""> 945 774 749</span></a>
-
-                    <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fas fa-phone-alt"></i><span class=""> (01) 401 3742</span></a>
-
-                    <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fa fa-envelope"></i><span class=""> info@litercorp.com</span></a>
-
-                    <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fa fa-map-marker"></i><span class=""> Lima Este</span></a>
-
-                  </div>
 
              
                 
@@ -1096,9 +1099,9 @@ a {
 
                     <div id="top-nav2" class="d-flex align-items-center" style="text-align: center; display: flex; margin: 25px 35px;  height:   70% ;">
                       <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/liter.png') }}" style=" width: 180px; padding-left: 0px; max-width: 180px;height: 30px"></a>
-                      <a class="nav-link colorban"  href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>QUIENES SOMOS</a>
+                      <a class="nav-link" id="nav-link"  href="{{ url('/') }}/">Inicio</a>
                       
-                      <a class="nav-link colorban" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>CATEGORÍAS</a>
+                      <a class="nav-link" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorías</a>
                         <div  class="dropdown-menu " aria-labelledby="navbarDropdown" >
                           <div style="display: grid; grid-template-columns: auto auto auto;">
                             @foreach($categories as $category)
@@ -1112,15 +1115,15 @@ a {
                           
                         </div>
                         
-                      <!-- <a class="nav-link colorban"  href="{{ url('/') }}/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>PRODUCTOS MÁS VENDIDOS</a> -->
-                      <a class="nav-link colorban"  href="{{ url('/') }}/seguimiento"><i class="fa fa-tag" aria-hidden="true"></i>SEGUIMIENTO DE TU COMPRA</a>
-                      <a class="nav-link colorban" href="{{ url('/') }}/contacto"><i class="fa fa-phone" aria-hidden="true"></i>CONTACTAR</a>
+                      <!-- <a class="nav-link"  href="{{ url('/') }}/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>PRODUCTOS MÁS VENDIDOS</a> -->
+                      <a class="nav-link"  href="{{ url('/') }}/seguimiento">Tu Compra</a>
+                      <a class="nav-link" href="{{ url('/') }}/contacto">Contactar</a>
 
-                      <div >
+                      <div class="partials-search" >
                               @include('partials.search')
                       </div>
                       <div class="btn-group">
-  <a type="button" class="nav-link colorban" class="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 27px;">
+  <a type="button" class="nav-link" class="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 27px;">
     <i class="fa fa-user fa-3" aria-hidden="true"></i>
   </a>
   <div class="dropdown-menu">
@@ -1149,7 +1152,7 @@ a {
   </div>
 </div>
 
-<a style="font-size: 27px; align-items: baseline;" class="nav-link colorban" href="{{ url('/') }}/cart"><i class="fas fa-shopping-cart"></i> @if (Cart::instance('default')->count() > 0)
+<a style="font-size: 27px; align-items: baseline;" class="nav-link" href="{{ url('/') }}/cart"><i class="fas fa-shopping-cart"></i> @if (Cart::instance('default')->count() > 0)
         <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
         @endif</a>
             
@@ -1160,36 +1163,31 @@ a {
 
                 </div> <!-- end top-nav -->
 
-                <div style="margin-top: ;">
-                 <div class="row" style="margin-left: 0px; margin-right: 0px; height: 25em">
-                  <div class="col-lg-3 carouselcontainer" style=" padding-left: 0px; padding-right: 0px ; height: 100%">
-
-
-                    <ul class="list-group" style="overflow-y: scroll; height: 100%; border-bottom: 1px solid #f58634; z-index: 1; position: relative;     ">
-                  <a class="list-group-item" style="border-bottom: 1px solid #f58634; font-size: 24px ; color: white; background-color: #f58634;text-transform: uppercase;" >Categorías</a>
-                       @foreach($categories as $category)
-
-                   <a class="list-group-item" style="border-bottom: 1px solid #f58634; font-size: 17px; text-transform: uppercase;" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
-
-                              
-                      @endforeach
-                      
-                      
-                    </ul></div>
-                  <div class="col-lg-9 carousel2" style="padding-left: 0px; padding-right: 0px" data-slide="1">
-                    @foreach($banners as $banner)
-                    <div class="slides">
-                      <img src="{{ categoryImage($banner->imagen) }}" />
-                    </div>
-          
-                      @endforeach
-                    
-                    
-                   
-                </div>
-                </div>
-  <div class="next"> &#8680;</div>
-  <div class="prev">&#8678; </div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{{ asset('img/diseño/slider1.jpg') }}" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{ asset('img/diseño/slider1.jpg') }}" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{ asset('img/diseño/slider1.jpg') }}" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
                 
             </header>
@@ -1517,77 +1515,13 @@ setInterval(function() {
 </html>
 
 
-<script>
-$('#recipeCarousel').carousel({
-  interval: 10000
-})
-
-$('.carousel .carousel-item').each(function(){
-    var minPerSlide = 10;
-    var next = $(this).next();
-    if (!next.length) {
-    next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    
-    for (var i=0;i<minPerSlide;i++) {
-        next=next.next();
-        if (!next.length) {
-        	next = $(this).siblings(':first');
-      	}
-        
-        next.children(':first-child').clone().appendTo($(this));
-      }
-});
 
 
+<script type="text/javascript">
+  
+  $('.carousel').carousel();
 
 </script>
-<style>
-@media (max-width: 768px) {
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(33.33%);
-    }
-    
-    .carousel-inner .carousel-item-left.active, 
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-33.33%);
-    }
-    .col-md-3S{
-      flex: 0 0 33.33%;
-    max-width: 33.33%;
-  
-}
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* display 3 */
-@media (min-width: 768px) {
-    
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(20%);
-    }
-    
-    .carousel-inner .carousel-item-left.active, 
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-20%);
-    }
-}
-
-.carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left{ 
-  transform: translateX(0);
-}
-
-
-</style>
 <script type="text/javascript">
   $('.carousel2').carousel({
   interval: 10
@@ -1599,20 +1533,32 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("top-nav").style.height = "80px";
-   
+    document.getElementById("top-nav").style.height = "65px";
+   document.getElementById("top-nav").style.backgroundColor = "#003166";
+   document.getElementById("top-nav").style.boxShadow = "0px 15px 15px 5px rgba(0,0,0,.2)";
      document.getElementById("top-nav2").style.padding = "5px 20px";
-    document.getElementById("top-nav0").style.display = "none";
+    
+    document.getElementById("top-nav2").style.color = "black";
     
     document.getElementById("top-nav2").style.margin = "5px 5px";
     
+    var y = document.getElementsByClassName("nav-link");
 
+    for (i = 0; i < y.length; i ++) {
+    y[i].style.color = "white";
+    }
   } else {
     document.getElementById("top-nav").style.height = "120px";
-    
+    document.getElementById("top-nav").style.boxShadow = "0 0px 0px 0px rgba(0,0,0,0)";
     document.getElementById("top-nav2").style.padding = "0px 0px";
-    document.getElementById("top-nav0").style.display = "flex";
+    
     document.getElementById("top-nav2").style.margin = "25px 35px";
+    document.getElementById("top-nav").style.backgroundColor = "transparent";
+    document.getElementById("top-nav2").style.color = "white";
+    var y = document.getElementsByClassName("nav-link");
+    for (i = 0; i < y.length; i ++) {
+    y[i].style.color = "white";
+    }
   }
 }
 </script>

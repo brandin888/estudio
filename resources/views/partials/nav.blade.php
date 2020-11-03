@@ -622,38 +622,33 @@ a {
   padding-left: 16px;
 }
 
+
+header .top-nav {
+  
+ 
+  background-color: #003166;
+  height: 80px;
+}
+.partials-search{
+  padding-left: 15%;
+}
 </style>
 <header >
   
                 <div class="top-nav " id="top-nav" style=" position: fixed;z-index: 2;width: 100%" >
 
                   
-                  <div id="top-nav0" style="align-items: center;font-size: 13px; padding-left: 8%; background: white; width: 100%; height: 25px; display: flex;  position: absolute;
-                  top: 0px;">
-                    
-
-                    <a class="redes__link pl-3" href="https://www.facebook.com/Litercorp-111473320648629" target="_blank"><i class="fab fa-facebook-f"></i><span class=""> Facebook</span></a>
-
-                    <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fab fa-whatsapp"></i><span class=""> 945 774 749</span></a>
-
-                    <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fas fa-phone-alt"></i><span class=""> (01) 401 3742</span></a>
-
-                    <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fa fa-envelope"></i><span class=""> info@litercorp.com</span></a>
-
-                    <a class="redes__link pl-3" href="https://api.whatsapp.com/send?phone=+51945774749&amp;text=Solicite%20su%20Cotización" target="_blank"><i class="fa fa-map-marker"></i><span class=""> Lima Este</span></a>
-
-                  </div>
-
+                  
              
                 
                 
 
-                    <div id="top-nav2" class="d-flex align-items-center" style="text-align: center; display: flex; margin: 25px 35px;  height:   70% ;">
+                    <div id="top-nav2" class="d-flex align-items-center" style="text-align: center; display: flex; margin: 5px 35px;  height:   70% ;">
                       <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/liter.png') }}" style=" width: 180px; padding-left: 0px; max-width: 180px;height: 30px"></a>
-                      <a class="nav-link colorban"  href="{{ url('/us') }}/"><i class="fa fa-user" aria-hidden="true"></i>QUIENES SOMOS</a>
+                      <a class="nav-link colorban"  href="{{ url('/') }}/">Inicio</a>
                       
-                      <a class="nav-link colorban" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gavel" aria-hidden="true"></i>
-                          CATEGORÍAS
+                      <a class="nav-link colorban" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Categorías
                         </a>
                         <div  class="dropdown-menu " aria-labelledby="navbarDropdown" >
                           <div style="display: grid; grid-template-columns: auto auto auto;">
@@ -669,10 +664,10 @@ a {
                         </div>
                         
                       <!-- <a class="nav-link colorban"  href="{{ url('/') }}/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>PRODUCTOS MÁS VENDIDOS</a> -->
-                      <a class="nav-link colorban"  href="{{ url('/') }}/seguimiento"><i class="fa fa-tag" aria-hidden="true"></i>SEGUIMIENTO DE TU COMPRA</a>
-                      <a class="nav-link colorban" href="{{ url('/') }}/contacto"><i class="fa fa-phone" aria-hidden="true"></i>CONTACTAR</a>
+                      <a class="nav-link colorban"  href="{{ url('/') }}/seguimiento">Tu Compra</a>
+                      <a class="nav-link colorban" href="{{ url('/') }}/contacto">Contactar</a>
 
-                      <div >
+                      <div class="partials-search" >
                               @include('partials.search')
                       </div>
                       <div class="btn-group">
@@ -682,12 +677,12 @@ a {
   <div class="dropdown-menu">
 
         @guest
-            <a class="dropdown-item" href="{{ route('register') }}">REGISTRARSE</a>
-            <a class="dropdown-item" href="{{ route('login') }}">INICIAR SESIÓN</a>
+            <a class="dropdown-item" href="{{ route('register') }}">RegistrarseE</a>
+            <a class="dropdown-item" href="{{ route('login') }}">Iniciar Sesión</a>
         @else
-            <a class="dropdown-item" href="#">MI CUENTA</a>     
-            <a class="dropdown-item" href="{{ route('users.edit') }}">MI PERFIL</a></li>
-            <a class="dropdown-item" href="{{ route('orders.index') }}">MIS ORDENES</a></li>
+            <a class="dropdown-item" href="#">Mi Cuenta</a>     
+            <a class="dropdown-item" href="{{ route('users.edit') }}">Mi Perfil</a></li>
+            <a class="dropdown-item" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="{{ route('logout') }}"
                 onclick="event.preventDefault();
@@ -764,13 +759,13 @@ a {
 <nav class="nav-drill">
   <ul class="nav-items nav-level-1">
     <li class="nav-item pad10">
-      <a class="nav-link nav-link2" href="{{ url('/us') }}">
-        QUIENES SOMOS
+      <a class="nav-link nav-link2" href="{{ url('/') }}">
+        Inicio
       </a>
     </li>
     <li class="nav-item pad10">
       <a class="nav-link nav-link2" href="{{ url('/seguimiento') }}">
-        SEGUIMIENTO DE TU COMPRA
+        Tu Compra
       </a>
     </li>
 
@@ -924,21 +919,32 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("top-nav").style.height = "80px";
-    
+    document.getElementById("top-nav").style.height = "65px";
+   document.getElementById("top-nav").style.backgroundColor = "#003166";
+   document.getElementById("top-nav").style.boxShadow = "0px 15px 15px 5px rgba(0,0,0,.2)";
      document.getElementById("top-nav2").style.padding = "5px 20px";
-    document.getElementById("top-nav0").style.display = "none";
+    
+    document.getElementById("top-nav2").style.color = "black";
     
     document.getElementById("top-nav2").style.margin = "5px 5px";
     
-    
+    var y = document.getElementsByClassName("nav-link");
 
+    for (i = 0; i < y.length; i ++) {
+    y[i].style.color = "white";
+    }
   } else {
-    document.getElementById("top-nav").style.height = "120px";
-    
+    document.getElementById("top-nav").style.height = "80px";
+    document.getElementById("top-nav").style.boxShadow = "0 0px 0px 0px rgba(0,0,0,0)";
     document.getElementById("top-nav2").style.padding = "0px 0px";
-    document.getElementById("top-nav0").style.display = "flex";
-    document.getElementById("top-nav2").style.margin = "25px 35px";
+    
+    document.getElementById("top-nav2").style.margin = "5px 35px";
+    document.getElementById("top-nav").style.backgroundColor = "#003166";
+    document.getElementById("top-nav2").style.color = "white";
+    var y = document.getElementsByClassName("nav-link");
+    for (i = 0; i < y.length; i ++) {
+    y[i].style.color = "white";
+    }
   }
 }
 </script>

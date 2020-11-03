@@ -992,7 +992,7 @@ header .top-nav {
   
   /* border-bottom: 6px solid #f58634 */;
   height:   120px;
-  background-color: #353535;
+  background-color: transparent;
 }
 
 header .top-nav .logo {

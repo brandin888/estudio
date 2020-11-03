@@ -9,7 +9,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Litercorp | Ferretería</title>
+        <title>Micky SRL | Distribuidora e Importadora</title>
         <meta name="theme-color" content="#353535" />
         <meta name="description" content="Somos una Ferretería, hacemos ventas por mayor a todo Perú,  puedes encontrarnos en  Lima Cercado">
 
@@ -63,7 +63,7 @@
     </head>
 
  <div  style="background-color: rgba(255, 255, 255, 0.84);">
-<body class="@yield('body-class', '')" style="background-color:#f5f5f5">
+<body class="@yield('body-class', '')" style="background-color: white">
     <!-- Load Whatsapp -->
     <div>
       <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51945774749&Hola&nbsp;Litercorp&nbsp;quisiera&nbsp;cotizar&nbsp;el&nbsp;siguiente&nbsp;producto">
