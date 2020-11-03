@@ -182,7 +182,7 @@ section#action, section#action-transparent {
 .menu__responsive {
   width: 100%;
   height: 58px;
-  background: #353535;
+  background: #003166;
   position: fixed;
   top: 0;
   z-index: 1234;
@@ -205,7 +205,7 @@ section#action, section#action-transparent {
 }
 
 .menu__responsive .carrito_top a i {
-  color: #ff5a00;
+  color: #ffb700;
   border-color: #110041;
 }
 
@@ -241,7 +241,7 @@ section#action, section#action-transparent {
 #bottom {
   width: 100%;
   height: 2px;
-  background: #ff5a00;
+  background: #ffb700;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
@@ -649,11 +649,11 @@ a {
   display: flex;
   position: fixed;
   z-index: 100;
-  top: 10px;
+  top: 8px;
   right: 0;
   width: 345px;
   height: 90vh;
-  background-color: #ff6e00;
+  background-color: white;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
@@ -665,7 +665,7 @@ a {
           flex: 0 0 100%;
 }
 .nav-item:not(:last-child) {
-  border-bottom: solid 1px #daf9f4;
+  border-bottom: solid 1px #ffb700;
 }
 .nav-link {
   display: block;
@@ -700,8 +700,8 @@ a {
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  background-color: #ce2900 !important;
-  color: #fff;
+  background-color: white !important;
+  color: #003166;
 }
 .nav-expand-content .nav-back-link::before {
   content: "-";
@@ -726,10 +726,10 @@ a {
   visibility: visible;
 }
 .nav-expand .nav-expand-content {
-  background-color: #ff6e00;
+  background-color: #ffb700;
 }
 .nav-expand .nav-expand-content .nav-link {
-  background-color: #ff6e00;
+  background-color: #ffb700;
 }
 .nav-expand .nav-expand-content .nav-expand-content {
   background-color: #aff1e6;
@@ -1022,11 +1022,7 @@ a {
     background-color: #ff5a00;
 }
 
-.carousel {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-}
+
 
 .carousel-item:active{
   width: 100%;
@@ -1163,7 +1159,7 @@ a {
 
                 </div> <!-- end top-nav -->
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel carousel-home">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -1258,7 +1254,7 @@ a {
 
 </section> -->
 
-           <div class="menu__responsive"  style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}');">
+           <div class="menu__responsive" >
 
               <div class="logo__responsive">
                 <a href="{{ url('/') }}/"> <span class="cart-count"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 200px; height: 60px"></span></a>

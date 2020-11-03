@@ -25,10 +25,22 @@
   border-radius: 10px;
   width: 25%;
 }
+
+  .carousel-home {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+  }
 }
 
 
 @media only screen and (max-width: 992px) {
+
+  .carousel-home {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+  }
 
   .btn__enviar2 {
   margin-left: 30%;
@@ -40,7 +52,7 @@
   width: 39%;
 }
 header {
-    height: 0px;
+    height: 200px;
 
   }
 .breadcrumbs {
