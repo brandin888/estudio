@@ -1197,7 +1197,7 @@ a {
       <img class="d-block w-100" src="{{ asset('img/diseño/slider1.jpg') }}" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{ asset('img/diseño/slider1.jpg') }}" alt="Second slide">
+      <img class="d-block w-100" src="{{ asset('img/diseño/slider2.jpg') }}" alt="Second slide">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="{{ asset('img/diseño/slider1.jpg') }}" alt="Third slide">
