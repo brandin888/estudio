@@ -93,7 +93,7 @@ header{
   cursor: pointer;
 }
 .polaroid:hover {
-  box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.4);
+  box-shadow: 0 4px 8px 0 rgba(0, 49, 102, 0.5);
   
 }
 
