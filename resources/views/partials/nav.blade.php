@@ -11,7 +11,7 @@
 .menu__responsive {
   width: 100%;
   height: 58px;
-  background: #353535;
+  background: #003166;
   position: fixed;
   top: 0;
   z-index: 1234;
@@ -34,12 +34,12 @@
 }
 
 .menu__responsive .carrito_top a i {
-  color: #ff5a00;
+  color: #ffb700;
   border-color: #110041;
 }
 
 .menu__responsive .carrito_top a span {
-  color: #ff5a00;
+  color: #ffb700;
 }
 
 #menu-icon {
@@ -70,7 +70,7 @@
 #bottom {
   width: 100%;
   height: 2px;
-  background: #ff5a00;
+  background: #ffb700;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }

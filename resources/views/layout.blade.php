@@ -11,7 +11,7 @@
 
         <title>Micky SRL | Distribuidora e Importadora</title>
         <meta name="theme-color" content="#353535" />
-        <meta name="description" content="Somos una Ferretería, hacemos ventas por mayor a todo Perú,  puedes encontrarnos en  Lima Cercado">
+        <meta name="description" content="Somos una Distribuidora, hacemos ventas por mayor a todo Perú,  puedes encontrarnos en  Lima Cercado">
 
        <link rel="shortcut icon" href="{{ asset('img/diseño/icono.png') }}" />
       

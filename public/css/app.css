@@ -991,8 +991,8 @@ header .top-nav {
   background: white;
   
   /* border-bottom: 6px solid #f58634 */;
-  height:   120px;
-  background-color: transparent;
+  height:   90px;
+  background-color: #003166;
 }
 
 header .top-nav .logo {

@@ -1186,7 +1186,7 @@ a {
 
                 </div> <!-- end top-nav -->
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel carousel-home">
+<div id="carouselExampleIndicators" class="carousel slide carousel-home" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -1590,12 +1590,12 @@ function scrollFunction() {
     y[i].style.color = "white";
     }
   } else {
-    document.getElementById("top-nav").style.height = "120px";
+    document.getElementById("top-nav").style.height = "90px";
     document.getElementById("top-nav").style.boxShadow = "0 0px 0px 0px rgba(0,0,0,0)";
     document.getElementById("top-nav2").style.padding = "0px 0px";
     
-    document.getElementById("top-nav2").style.margin = "25px 35px";
-    document.getElementById("top-nav").style.backgroundColor = "transparent";
+    document.getElementById("top-nav2").style.margin = "5px 35px";
+    document.getElementById("top-nav").style.backgroundColor = "#003166";
     document.getElementById("top-nav2").style.color = "white";
     var y = document.getElementsByClassName("nav-link");
     for (i = 0; i < y.length; i ++) {
