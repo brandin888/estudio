@@ -119,7 +119,7 @@
         </div>
         <div class="col-lg-6 d-flex imagenone justify-content-center">
             <a href="{{ url('/') }}/contacto" class="d-flex justify-content-center">
-            <img class="img-fluid border bg-white imagenpersona" src="{{ asset('images/producto/personaferreteria.jpg') }}" alt="imagen-ferreteria-persona" style="max-width:70%;">
+            <img class="img-fluid border bg-white imagenpersona" src="{{ asset('images/producto/accesorio.jpg') }}" alt="imagen-ferreteria-persona" style="max-width:70%;">
             </a>
         </div>
     </div>
