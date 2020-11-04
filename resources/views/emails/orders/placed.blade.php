@@ -2,12 +2,12 @@
 {{-- Header --}}
 @slot('header')
     @component('mail::header', ['url' => config('app.url')])
-        Litercorp
+        MickySRL
     @endcomponent
 @endslot
 
 {{-- Body --}}
-Hola {{ $order->billing_name }}, gracias por realizar su pedido en **LITERCORP**
+Hola {{ $order->billing_name }}, gracias por realizar su pedido en **MickySRL**
 
 **Número de Pedido:** {{ $order->id }}
 
@@ -26,13 +26,13 @@ Hola {{ $order->billing_name }}, gracias por realizar su pedido en **LITERCORP**
 
 Si esta registrado en nuestro sitio web, puede obtener más detalles sobre su pedido iniciando sesión.
 
-@component('mail::button', ['url' => 'litercorp.com/seguimiento', 'color' => 'blue'])
-Litercorp
+@component('mail::button', ['url' => 'mickysrl.com/seguimiento', 'color' => 'blue'])
+mickysrl
 @endcomponent
 
 Sino esta registrado, puede obtener más detalles ingresando su número de pedido y su correo electrónico.
 
-@component('mail::button', ['url' => 'litercorp.com/seguimiento', 'color' => 'blue'])
+@component('mail::button', ['url' => 'mickysrl.com/seguimiento', 'color' => 'blue'])
 Litercorp
 @endcomponent
 
@@ -44,7 +44,7 @@ Litercorp
 {{-- Footer --}}
 @slot('footer')
     @component('mail::footer')
-         &copy; {{ date('Y') }} Litercorp. Todos los derechos reservados.
+         &copy; {{ date('Y') }} mickysrl. Todos los derechos reservados.
     @endcomponent
 @endslot
 @endcomponent

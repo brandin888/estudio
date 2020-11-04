@@ -39,7 +39,7 @@
     </div>
     <div style="width: 100%; padding: 20px 0px; text-align: center; border-top: 1px solid #1A5284;">
       <p style="font-family: Poppins; font-weight: 300; font-size: 12px; line-height: 14px; color: #818ABA;"  >
-        © 2020 ELMAYORISTA Todos los derechos reservados.
+        © 2020 Micky SRL Todos los derechos reservados.
       </p>
     </div>
 </div>

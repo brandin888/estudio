@@ -93,7 +93,7 @@ header{
   cursor: pointer;
 }
 .polaroid:hover {
-  box-shadow: 0 4px 8px 0 rgba(255, 159, 69, 1);
+  box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.4);
   
 }
 
@@ -205,7 +205,7 @@ section#action, section#action-transparent {
 }
 
 .menu__responsive .carrito_top a i {
-  color: #ff5a00;
+  color: #003166;
   border-color: #110041;
 }
 
@@ -241,7 +241,7 @@ section#action, section#action-transparent {
 #bottom {
   width: 100%;
   height: 2px;
-  background: #ff5a00;
+  background: #003166;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
@@ -670,9 +670,9 @@ a {
 .nav-link {
   display: block;
   padding: 0.875em 1em;
-  
-  
-  font-size: 1.05rem;
+  background-color: #fff;
+  color: #003166;
+  font-size: 0.9rem;
   line-height: 1em;
   font-weight: 300;
 }
@@ -693,7 +693,7 @@ a {
   border-bottom: solid 1px #ffc500;
 }
 .nav-expand-content .nav-link {
-  background-color: #ff5a00;
+  background-color: #003166;
 }
 .nav-expand-content .nav-back-link {
   display: -webkit-box;
@@ -864,8 +864,8 @@ a {
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #ff5a00;
-    border-color: #ff5a00;
+    background-color: #003166;
+    border-color: #003166;
 }
 .nav-link {
     display: flex;
@@ -907,8 +907,8 @@ a {
     z-index: 3;
     color: #fff;
 
-    background-color: #ff5a00;
-    border-color: #ff5a00;
+    background-color: #003166;
+    border-color: #003166;
 }
 .nav-link {
     display: flex;
@@ -1019,7 +1019,7 @@ a {
 .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #ff5a00;
+    background-color: #003166;
 }
 
 .carousel {
@@ -1074,7 +1074,7 @@ a {
       <div class="fb-customerchat"
         attribution=setup_tool
         page_id="111473320648629"
-  theme_color="#ff5a00"
+  theme_color="#003166"
   logged_in_greeting="Bienvenido a Micky Srl. ¿Cuál es el producto que desea cotizar?"
   logged_out_greeting="Bienvenido a Micky Srl. ¿Cuál es el producto que desea cotizar?">
       </div>
@@ -1192,31 +1192,32 @@ a {
                 
             </header>
 
-    <section class="section_fuente pt-pb-e" style="background-color:#f7f7f7">
+
+    <section class="section_fuente pt-pb-e" style="background-color:#ffffff">
       <div class="container">
         <div class="col-md-12 text-center">
           <h2 class="size-28 negro pb" style="padding-bottom: 15px;">TODO ESTO ES LO QUE HACEMOS PARA TI</h2>
-          <p class="lead" style="padding-bottom: 25px; text-align: center">Encuentra los mejores productos <strong>ferreteros</strong> para abastecer tu negocio a los mejores precios. Realizamos ventas al por mayor y menor en todo el Perú.</p>
+          <p class="lead" style="padding-bottom: 25px; text-align: center">Encuentra los mejores productos para abastecer tu negocio a los mejores precios. Realizamos ventas al por mayor y menor en todo el Perú.</p>
         </div>
         <div class="col-md-12 col-md-offset-1 text-center">
           <div class="row">
             <div data-wow-delay="0.2s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn; padding-bottom: 15px;">
-              <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-pager" style="font-size:70px;padding-bottom: 10px; color:#ff5b01"></i><br>PAGO DE FORMA SEGURA
+              <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-pager" style="font-size:70px;padding-bottom: 10px; color:#003166"></i><br>PAGO DE FORMA SEGURA
               </h3><p>En Litercorp nos importa tu seguridad, realiza los pagos a través de depositos o en efectivo.</p>
             </div>
 
             <div data-wow-delay="0.4s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn; padding-bottom: 15px;">
-              <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-truck-moving pb15" style="font-size:70px;padding-bottom: 10px;color:#ff5b01"></i><br>ENVÍOS A TODO EL PERÚ
+              <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-truck-moving pb15" style="font-size:70px;padding-bottom: 10px;color:#003166"></i><br>ENVÍOS A TODO EL PERÚ
               </h3><p>Se realizan envíos a todo el Perú, y a través de la página web puedes hacer seguimiento de tú compra.</p>
             </div>
 
             <div data-wow-delay="0.6s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn; padding-bottom: 15px;">
-              <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-award pb15" style="font-size:70px;padding-bottom: 10px;color:#ff5b01"></i><br>PRODUCTOS DE CALIDAD
+              <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-award pb15" style="font-size:70px;padding-bottom: 10px;color:#003166"></i><br>PRODUCTOS DE CALIDAD
               </h3><p>Ofrecemos productos de calidad y con garantía pensando siempre en ustedes.</p>
             </div>
 
             <div data-wow-delay="0.8s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn; padding-bottom: 15px;">
-              <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-tags pb15" style="font-size:70px;padding-bottom: 10px;color:#ff5b01"></i></i><br>LOS MEJORES PRECIOS
+              <h3 class="negro" style="padding-bottom: 10px;"><i class="fas fa-tags pb15" style="font-size:70px;padding-bottom: 10px;color:#003166"></i></i><br>LOS MEJORES PRECIOS
               </h3>
               <p>Realizamos ventas por mayor y menor, puedes realizar tu cotización a traves de nuestra pagina web o con un asesor de venta.
               </p>
@@ -1406,7 +1407,7 @@ a {
                     <div class="product polaroid ">
                         <div ><a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a></div>
                         <div ><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name" style=" color: #333333;">{{ $product->name }} </div></a>
-                        <div class="product-price" style="font-weight: bold; color: #333333;">{{ $product->presentPrice() }}</div></div>
+                        <div class="product-price" style="font-weight: bold; color: #003166;">{{ $product->presentPrice() }}</div></div>
                     </div>
                   @endif
                 @empty
