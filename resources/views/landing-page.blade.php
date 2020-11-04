@@ -1220,7 +1220,7 @@ a {
 
           
 
-    <section class="section_fuente" style="background-color:#ffffff;padding-top:100px;padding-bottom:90px;">
+    <section class="section_fuente" style="background-color:#ffffff;padding-top:50px;padding-bottom:90px;">
       <div class="container">
         <div class="col-md-12 text-center">
           <h2 class="size-28 negro pb" style="padding-bottom: 15px;">SOMOS IMPORTADORES DIRECTOS</h2>
@@ -1234,7 +1234,7 @@ a {
 
 
 
-    <section class="section_fuente pt-pb-e" style="background-color:#ff0000">
+    <section class="section_fuente pt-pb-e" style="background-color:#d81313">
       <div class="container">
         <div class="col-md-12 text-center">
           <h2 class="size-28 negrof pb" style="padding-bottom: 15px;">TODO ESTO ES LO QUE HACEMOS PARA TI</h2>
