@@ -179,8 +179,8 @@
           SÍGUENOS
         </div>
         <ul class="lista-footer lista-footer--padding-min">
-            <li class="lista-footer__item lista-footer__item--nobullet pt-0"><a class="redes__link2" href="https://www.facebook.com/Litercorp-111473320648629/" target="_blank"><i class="fab fa-facebook-f"></i><span class="pl-3">Facebook</span></a></li>  
-            <li class="lista-footer__item lista-footer__item--nobullet"><a class="redes__link2" href="https://www.facebook.com/Litercorp-111473320648629/" target="_blank"><i class="fab fa-instagram"></i><span class="pl-3">Instagram</span></a></li>           
+            <li class="lista-footer__item lista-footer__item--nobullet pt-0"><a class="redes__link2" href="https://www.facebook.com/micky.srl.90" target="_blank"><i class="fab fa-facebook-f"></i><span class="pl-3">Facebook</span></a></li>  
+            <li class="lista-footer__item lista-footer__item--nobullet"><a class="redes__link2" href="https://www.facebook.com/micky.srl.90" target="_blank"><i class="fab fa-instagram"></i><span class="pl-3">Instagram</span></a></li>           
             <li class="lista-footer__item lista-footer__item--nobullet"><a class="redes__link2" href="#" target="_blank"><i class="fa fa-phone"></i><span class="pl-3">(01) 301 6088</span></a></li>         
             <li class="lista-footer__item lista-footer__item--nobullet"><a class="redes__link2" href="#" target="_blank"><i class="fa fa-envelope"></i><span class="pl-3">distribuidoramicky@gmail.com</span></a></li>           
         </ul>

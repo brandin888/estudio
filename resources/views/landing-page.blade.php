@@ -98,7 +98,8 @@ header{
   cursor: pointer;
 }
 .polaroid:hover {
-  box-shadow: 0 0 1px 1px rgba(255, 183, 0, 1);
+  /* box-shadow: 0 0 1px 1px rgba(255, 183, 0, 1); */
+  border: 2px solid #ffb700
   
 }
 

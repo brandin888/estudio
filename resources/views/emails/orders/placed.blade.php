@@ -33,13 +33,13 @@ mickysrl
 Sino esta registrado, puede obtener más detalles ingresando su número de pedido y su correo electrónico.
 
 @component('mail::button', ['url' => 'mickysrl.com/seguimiento', 'color' => 'blue'])
-Litercorp
+MickySRL
 @endcomponent
 
 No olvide responder a este correo, enviando una foto del depósito que ha realizado.
 
 Saludos,<br>
-Litercorp
+MickySRL
 
 {{-- Footer --}}
 @slot('footer')
