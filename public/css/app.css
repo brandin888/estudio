@@ -989,7 +989,7 @@ header .top-nav {
   top: 0px;
   color: #ffffff;
   background: white;
-  
+  z-index: 20;
   /* border-bottom: 6px solid #f58634 */;
   height:   90px;
   background-color: #003166;
@@ -1132,8 +1132,9 @@ footer {
 .products-section .products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* grid-gap: 30px 30px; */
-  grid-auto-rows: 450px;grid-gap: 30px 30px;
+  
+  grid-auto-rows: 450px;
+  grid-gap: 00px 0px;
 }
 
 .products-section .products .product-price {

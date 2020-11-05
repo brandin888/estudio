@@ -635,7 +635,7 @@ header .top-nav {
 </style>
 <header >
   
-                <div class="top-nav " id="top-nav" style=" position: fixed;z-index: 2;width: 100%" >
+                <div class="top-nav " id="top-nav" style=" position: fixed;width: 100%" >
 
                   
                   

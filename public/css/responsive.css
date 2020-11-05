@@ -12,7 +12,7 @@
     margin-top: 120px;
   }
   header {
-   height: 550px;
+   height: 450px;
 
   }
 
@@ -38,7 +38,7 @@
 
   .carousel-home {
     position: absolute;
-    top: 60px;
+    top: 50px;
     width: 100%;
   }
 

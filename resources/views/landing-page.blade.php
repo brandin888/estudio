@@ -210,7 +210,7 @@ section#action, section#action-transparent {
 }
 
 .menu__responsive .carrito_top a i {
-  color: #003166;
+  color: #ffb700;
   border-color: #110041;
 }
 
@@ -246,7 +246,7 @@ section#action, section#action-transparent {
 #bottom {
   width: 100%;
   height: 2px;
-  background: #003166;
+  background: #ffb700;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
@@ -1055,8 +1055,11 @@ a {
   padding-left: 15%;
 }
 .negrof{
-  color:#ffffff;
+  color: black;
 
+}
+.lead{
+  color: black;
 }
 
 </style>
@@ -1111,7 +1114,7 @@ a {
 
             <header >
               
-                <div class="top-nav " id="top-nav" style=" position: fixed;z-index: 2;width: 100%" >
+                <div class="top-nav " id="top-nav" style=" position: fixed;width: 100%" >
 
                   
 
@@ -1120,7 +1123,7 @@ a {
                 
                 
 
-                    <div id="top-nav2" class="d-flex align-items-center" style="text-align: center; display: flex; margin: 25px 35px;  height:   70% ;">
+                    <div id="top-nav2" class="d-flex align-items-center" style="text-align: center; display: flex; margin: 5px 35px;  height:   70% ;">
                       <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/liter.png') }}" style=" width: 180px; padding-left: 0px; max-width: 180px;height: 30px"></a>
                       <a class="nav-link" id="nav-link"  href="{{ url('/') }}/">Inicio</a>
                       
@@ -1234,33 +1237,33 @@ a {
 
 
 
-    <section class="section_fuente pt-pb-e" style="background-color:#d81313">
+    <section class="section_fuente pt-pb-e" style="background-color:#fbecd7">
       <div class="container">
         <div class="col-md-12 text-center">
           <h2 class="size-28 negrof pb" style="padding-bottom: 15px;">TODO ESTO ES LO QUE HACEMOS PARA TI</h2>
-          <p class="lead" style="padding-bottom: 25px; text-align: center; color:#ffffff">Encuentra los mejores productos para abastecer tu negocio a los mejores precios. Realizamos ventas al por mayor y menor en todo el Perú.</p>
+          <p class="lead" style="padding-bottom: 25px; text-align: center; ">Encuentra los mejores productos para abastecer tu negocio a los mejores precios. Realizamos ventas al por mayor y menor en todo el Perú.</p>
         </div>
         <div class="col-md-12 col-md-offset-1 text-center">
           <div class="row">
             <div data-wow-delay="0.2s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn; padding-bottom: 15px;">
               <h3 class="negrof" style="padding-bottom: 10px;"><i class="fas fa-pager" style="font-size:70px;padding-bottom: 10px; color:#ffb700"></i><br>PAGO DE FORMA SEGURA
-              </h3><p style="color:#ffffff">En Micky nos importa tu seguridad, realiza los pagos a través de depositos o en efectivo.</p>
+              </h3><p style="color: black">En Micky nos importa tu seguridad, realiza los pagos a través de depositos o en efectivo.</p>
             </div>
 
             <div data-wow-delay="0.4s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn; padding-bottom: 15px;">
               <h3 class="negrof" style="padding-bottom: 10px;"><i class="fas fa-truck-moving pb15" style="font-size:70px;padding-bottom: 10px;color:#ffb700"></i><br>ENVÍOS A TODO EL PERÚ
-              </h3><p style="color:#ffffff">Se realizan envíos a todo el Perú, y a través de la página web puedes conocer nuestros ultimos productos.</p>
+              </h3><p style="color: black">Se realizan envíos a todo el Perú, y a través de la página web puedes conocer nuestros ultimos productos.</p>
             </div>
 
             <div data-wow-delay="0.6s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn; padding-bottom: 15px;">
               <h3 class="negrof" style="padding-bottom: 10px;"><i class="fas fa-award pb15" style="font-size:70px;padding-bottom: 10px;color:#ffb700"></i><br>PRODUCTOS DE CALIDAD
-              </h3><p style="color:#ffffff">Ofrecemos productos de calidad y con garantía pensando siempre en ustedes.</p>
+              </h3><p style="color: black">Ofrecemos productos de calidad y con garantía pensando siempre en ustedes.</p>
             </div>
 
             <div data-wow-delay="0.8s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn; padding-bottom: 15px;">
               <h3 class="negrof" style="padding-bottom: 10px;"><i class="fas fa-tags pb15" style="font-size:70px;padding-bottom: 10px;color:#ffb700"></i></i><br>LOS MEJORES PRECIOS
               </h3>
-              <p style="color:#ffffff">Realizamos ventas por mayor y menor, puedes realizar tu cotización a traves de nuestra pagina web o con un asesor de venta.
+              <p style="color: black">Realizamos ventas por mayor y menor, puedes realizar tu cotización a traves de nuestra pagina web o con un asesor de venta.
               </p>
             </div>
           </div>
