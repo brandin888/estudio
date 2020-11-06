@@ -46,7 +46,8 @@
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05); */
 }
 .col-md-3S:hover{
-    box-shadow: 0 4px 8px 0 rgba(255, 183, 0, 1);
+    /* box-shadow: 0 4px 8px 0 rgba(255, 183, 0, 1); */
+    border: 2px solid #ffb700;
 }
 @media (max-width: 768px) {
     .carousel-inner .carousel-item-right.active,

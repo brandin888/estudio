@@ -1239,7 +1239,7 @@ a:not([href]):hover {
         <div class="col-md-12 text-center">
           <h2 class="size-28 negro pb" style="padding-bottom: 15px;">SOMOS IMPORTADORES DIRECTOS</h2>
           <p class="lead" style="padding-bottom: 25px; text-align: center">Tenemos la mejor variedad de juguetes y accesorios escolares con precios accesibles para mayoristas.</p>
-          <a  class="btn-section btn-lg " href="{{ url('/') }}/contacto">Solicitar Asesoria</a>
+          <a  class="btn-section btn-lg " href="{{ url('/') }}/contacto">Más información</a>
         </div>
         
       </div>
