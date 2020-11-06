@@ -632,6 +632,15 @@ header .top-nav {
 .partials-search{
   padding-left: 15%;
 }
+a:not([href]):hover, a:not([href]):focus {
+    color: #ffb700;
+    text-decoration: none;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #ffb700;
+}
 </style>
 <header >
   

@@ -1063,6 +1063,16 @@ a {
   color: black;
 }
 
+a:not([href]):hover {
+    color: #ffb700;
+    text-decoration: none;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #ffb700;
+}
 </style>
 
     </head>

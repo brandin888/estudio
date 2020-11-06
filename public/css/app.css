@@ -169,7 +169,7 @@ a:visited {
 }
 
 a:hover {
-  color: #003166;
+  color: #ffb700;
 }
  
 
@@ -2245,10 +2245,8 @@ select.selectpicker {
   /* padding: 12px 40px; */
   border-radius: 10px;
 }
-.colorban:visited {
-  color: #ffffff;
-}
+
 
 .colorban:hover {
-  color: #ff5a00;
+  color: #ffb700;
 }
