@@ -2208,7 +2208,7 @@ select.selectpicker {
   height: auto;
 }
 .btn__enviar, .inicio{
-  background: var(--primary);
+  background: #ffb700;
   color: white !important;
   /* padding: 12px 40px; */
   border-radius: 10px;
@@ -2239,9 +2239,9 @@ select.selectpicker {
   padding-bottom:40px;
 }
 .btn__enviar:hover, .inicio:hover{
-  background: white;
+  background: #ff0000;
   border-color: var(--primary);
-  color:  var(--primary) !important;
+  color:  white !important;
   /* padding: 12px 40px; */
   border-radius: 10px;
 }

@@ -933,15 +933,11 @@ function scrollFunction() {
    document.getElementById("top-nav").style.boxShadow = "0px 15px 15px 5px rgba(0,0,0,.2)";
      document.getElementById("top-nav2").style.padding = "5px 20px";
     
-    document.getElementById("top-nav2").style.color = "black";
+    document.getElementById("top-nav2").style.color = "white";
     
     document.getElementById("top-nav2").style.margin = "5px 5px";
     
-    var y = document.getElementsByClassName("nav-link");
-
-    for (i = 0; i < y.length; i ++) {
-    y[i].style.color = "white";
-    }
+   
   } else {
     document.getElementById("top-nav").style.height = "80px";
     document.getElementById("top-nav").style.boxShadow = "0 0px 0px 0px rgba(0,0,0,0)";
@@ -950,10 +946,7 @@ function scrollFunction() {
     document.getElementById("top-nav2").style.margin = "5px 35px";
     document.getElementById("top-nav").style.backgroundColor = "#003166";
     document.getElementById("top-nav2").style.color = "white";
-    var y = document.getElementsByClassName("nav-link");
-    for (i = 0; i < y.length; i ++) {
-    y[i].style.color = "white";
-    }
+   
   }
 }
 </script>
