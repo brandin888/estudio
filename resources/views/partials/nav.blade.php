@@ -586,7 +586,7 @@ a {
 }
 .nav-link2:hover{
   font-weight: bold;
-  color: #ffffff;
+  color: black;
 }
 .page-item.active .page-link {
     z-index: 3;

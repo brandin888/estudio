@@ -948,7 +948,7 @@ a {
 }
 .nav-link2:hover{
   font-weight: bold;
-  color: #ffffff;
+  color: black;
 }
 .redes__link{
   color: black;
