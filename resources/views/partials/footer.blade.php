@@ -162,7 +162,7 @@
     <div class="row footernone">
       
 
-      <div class="col-6 col-sm-6 mb-5">
+      <div class="col-12 col-sm-6 mb-5">
         <div class="footer__titulo">
           ENLACES
         </div>
@@ -174,7 +174,7 @@
         </ul>
       </div>
 
-      <div class="col-6 col-sm-6">
+      <div class="col-12 col-sm-6">
         <div class="footer__titulo">
           SÍGUENOS
         </div>
