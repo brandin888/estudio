@@ -66,7 +66,7 @@
                                         @if($row->type == 'relationship')
                                             @include('voyager::formfields.relationship')
                                         @else
-                                             @if ($row->display_name == 'Precio')
+                                             @if ($row->display_name == 'PrecioM')
                                              <input type="number"
                                                class="form-control"
                                                name="{{ $row->field }}"
