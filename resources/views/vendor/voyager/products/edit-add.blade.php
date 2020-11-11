@@ -66,7 +66,40 @@
                                         @if($row->type == 'relationship')
                                             @include('voyager::formfields.relationship')
                                         @else
-                                            {!! app('voyager')->formField($row, $dataType, $dataTypeContent) !!}
+                                             @if ($row->display_name == 'Precio')
+                                             <input type="number"
+                                               class="form-control"
+                                               name="{{ $row->field }}"
+                                               type="number"
+                                               @if($row->required == 1) required @endif
+                                               @if(isset($options->min)) min="{{ $options->min }}" @endif
+                                               @if(isset($options->max)) max="{{ $options->max }}" @endif
+                                               step="{{ $options->step ?? 'any' }}"
+                                               placeholder="{{ old($row->field, $options->placeholder ?? $row->getTranslatedAttribute('display_name')) }}"
+                                               value="{{ old($row->field, $dataTypeContent->{$row->field} ?? $options->default ?? 0)/100 }}">
+
+                                            @else
+                                                 @if ($row->display_name == 'Pricemenor')
+                                           
+                                            <input type="number"
+                                               class="form-control"
+                                               name="{{ $row->field }}"
+                                               type="number"
+                                               @if($row->required == 1) required @endif
+                                               @if(isset($options->min)) min="{{ $options->min }}" @endif
+                                               @if(isset($options->max)) max="{{ $options->max }}" @endif
+                                               step="{{ $options->step ?? 'any' }}"
+                                               placeholder="{{ old($row->field, $options->placeholder ?? $row->getTranslatedAttribute('display_name')) }}"
+                                               value="{{ old($row->field, $dataTypeContent->{$row->field} ?? $options->default ?? 0)/100 }}">
+                                            
+                                                @else
+
+                                                        {!! app('voyager')->formField($row, $dataType, $dataTypeContent) !!}
+                                                        @endif
+                                            @endif
+
+
+                                            
                                         @endif
 
                                         @foreach (app('voyager')->afterFormFields($row, $dataType, $dataTypeContent) as $after)

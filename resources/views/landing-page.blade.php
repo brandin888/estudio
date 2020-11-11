@@ -1135,7 +1135,7 @@ a:not([href]):hover {
                 
 
                     <div id="top-nav2" class="d-flex align-items-center" style="text-align: center; display: flex; margin: 5px 35px;  height:   70% ;">
-                      <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/liter.png') }}" style=" width: 180px; padding-left: 0px; max-width: 180px;height: 30px"></a>
+                      <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 180px; padding-left: 0px; max-width: 180px;height: 60px"></a>
                       <a class="nav-link" id="nav-link"  href="{{ url('/') }}/">Inicio</a>
                       
                       <a class="nav-link" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorías</a>

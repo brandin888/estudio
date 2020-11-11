@@ -170,7 +170,7 @@
                                                     @endif
                                                 @else
                                                     @include('voyager::multilingual.input-hidden-bread-browse')
-                                                    @if ($row->display_name == 'price')
+                                                    @if ($row->display_name == 'precio')
                                                         <span>S/{{ $data->{$row->field} /100 }}</span>
                                                     @else
                                                         @if ($row->display_name == 'pricemayor')
