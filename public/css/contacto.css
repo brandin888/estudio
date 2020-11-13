@@ -266,7 +266,7 @@
   /* Handle */
   
   .maps__content--bottom--listado::-webkit-scrollbar-thumb {
-    background: #2dcccd;
+    background: #ffb700;
   }
   
   /* Handle on hover */
@@ -29328,10 +29328,10 @@
   }
   
   .swal2-confirm {
-    background: #2dcccd !important;
-    background: -webkit-gradient(left top, right top, color-stop(0%, #2dcccd), color-stop(50%, #1d73b2), color-stop(100%, #028484 )) !important;
-    background: -webkit-gradient(linear, left top, right top, from(#2dcccd), color-stop(50%, #1d73b2), to(#028484 )) !important;
-    background: linear-gradient(to right, #2dcccd 0%, #1d73b2 50%, #028484  100%) !important;
+    background: #ffb700 !important;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #ffb700), color-stop(50%, #1d73b2), color-stop(100%, #028484 )) !important;
+    background: -webkit-gradient(linear, left top, right top, from(#ffb700), color-stop(50%, #1d73b2), to(#028484 )) !important;
+    background: linear-gradient(to right, #ffb700 0%, #ffb700 50%, #ffb700  100%) !important;
   }
   
   @font-face {
@@ -29441,7 +29441,7 @@
   /* Handle */
   
   ::-webkit-scrollbar-thumb {
-    background: #2dcccd;
+    background: #ffb700;
   }
   
   /* Handle on hover */
