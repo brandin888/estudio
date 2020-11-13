@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
-        <!-- Chola -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,23 +8,19 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Micky SRL | Distribuidora e Importadora</title>
-        <meta name="theme-color" content="#353535" />
-        <meta name="description" content="Somos una Distribuidora, hacemos ventas por mayor a todo Perú,  puedes encontrarnos en  Lima Cercado">
+        <title>El Mayorista | Tienda Online</title>
+        <meta name="theme-color" content="#0e1126" />
+        <meta name="description" content="Somos una empresa Mayorista de productos del hogar, hacemos ventas por caja a todo Perú,  puedes encontrarnos en  Lima Cercado">
 
-       <link rel="shortcut icon" href="{{ asset('img/diseño/icono.png') }}" />
-      
+        <link href="/img/favicon.ico" rel="SHORTCUT ICON" />
+
         <!-- Fonts -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
 
-         
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
         <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
         <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
@@ -39,46 +34,71 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css?v=1.6') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.4') }}">
-        <link href="{{ asset('css/algolia.css?v=1.0') }}" rel="stylesheet">
         <link href="{{ asset('css/all.css?v=1.1') }}" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script data-ad-client="ca-pub-8718908287387658" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169774086-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-169774086-1');
+          gtag('set', {'user_id': 'USER_ID'}); // Establezca el ID de usuario mediante el user_id con el que haya iniciado sesión.
+          
+        </script>
 
         
         
-        <script  src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"> </script>
-        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-          
+
+
+        <script  src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"> </script>   
+
+        <!-- Hotjar Tracking Code for https://el-mayorista.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2052177,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script> 
         
         @yield('extra-css')
-        <style type="text/css">
-        .page-item.active .page-link {
-          z-index: 3;
-          color: #fff;
-          background-color: #ff5a00;
-          border-color: #ff5a00;
-        }
-        .redes__link{
-          color: black;
-        }
-
-        header{
-          height: 0px;
-        }
-        </style>
+              <!-- Facebook Pixel Code -->
+        <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '271128407569193');
+        fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=271128407569193&ev=PageView&noscript=1"
+        /></noscript>
+        <!-- End Facebook Pixel Code -->
     </head>
 
- <div  style="background-color: rgba(255, 255, 255, 0.84);">
-<body class="@yield('body-class', '')" style="background-color: white">
+
+<body class="@yield('body-class', '')" >
     <!-- Load Whatsapp -->
     <div>
-      <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51994084591&Hola&nbsp;MickySRL&nbsp;quisiera&nbsp;cotizar&nbsp;el&nbsp;siguiente&nbsp;producto">
+      <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51916284386&Hola!&nbsp;ventas&nbsp;por&nbsp;mayor">
         <img src="{{ asset('img/whatsapp.png') }}" alt="whatsapp">
       </a> 
     </div>
     <!-- end Whatsapp -->
 
- 
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
+    
+     <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
       <script>
         window.fbAsyncInit = function() {
           FB.init({
@@ -98,11 +118,11 @@
       <!-- Your Chat Plugin code -->
       <div class="fb-customerchat"
         attribution=setup_tool
-        page_id="111473320648629"
-  theme_color="#ff5a00"
-  logged_in_greeting="Bienvenido a Litercorp. ¿Cuál es el producto que desea cotizar?"
-  logged_out_greeting="Bienvenido a Litercorp. ¿Cuál es el producto que desea cotizar?">
+        page_id="2174827419500879"
+  logged_in_greeting="Bienvenido a el mayorista. ¿En qué podemos ayudarte?"
+  logged_out_greeting="Bienvenido a el mayorista. ¿En qué podemos ayudarte?">
       </div>
+       <!-- Your Chat Plugin code -->
       
     @include('partials.nav')
 
@@ -110,17 +130,13 @@
 
     @include('partials.footer')
 
-</div>
-   <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
-  <script src="{{ asset('js/algolia.js?v=1.2') }}"></script>
-<script src="js/app.js"></script>
+
+   
     <script type="text/javascript" src="{{ asset('js/scripts.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyC4yN2BPmYWLa-GjR-5Z8V5YfkKgwygEF8"></script>
     <script src="{{ asset('js/gmaps.js')}}"></script>
 <script type="text/javascript">
-
   //Active Menu
 
 var  pestana = $('#pestana_vista').attr('valor');
@@ -143,6 +159,5 @@ function menu() {
     @yield('extra-js')
 
 </body>
-
-
 </html>
+</script>

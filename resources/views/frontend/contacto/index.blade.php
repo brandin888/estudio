@@ -3,7 +3,11 @@
 
 <link href="{{ asset('css/contacto.css?v=1.0') }}" rel="stylesheet">
 <link href="{{ asset('css/algolia.css?v=1.0') }}" rel="stylesheet">
-
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="../js/bootStrap/js/bootstrap.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.min.js"></script>
 <!-- 
 <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="js/jquery.form.js"></script>
