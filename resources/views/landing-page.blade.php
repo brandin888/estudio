@@ -200,9 +200,7 @@ section#action, section#action-transparent {
   
 }
 
-.menu__responsive .logo__responsive img {
-  width: 100px;
-}
+
 
 .menu__responsive .carrito_top {
   position: absolute;
@@ -1091,6 +1089,149 @@ a:not([href]):hover {
     text-decoration: none;
     background-color: #ffb700;
 }
+.contener_snow
+{
+  position: fixed;
+  top: 70px;
+  left:0%;
+  margin-left:0px;
+}
+.contener_snow2
+{
+  position: fixed;
+  top: 70px;
+  right: 350px;
+  margin-left:0px;
+}
+.snowflakes {
+
+  top: 0px;
+  width: 100px;
+  right: 0;
+  -webkit-animation: snowflakes 3s linear infinite;
+  -moz-animation: snowflakes 3s linear infinite;
+  -ms-animation: snowflakes 3s linear infinite;
+  animation: snowflakes 3s linear infinite;
+}
+.snowflake {
+  background-color: #F0FFFF;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+}
+.snowflakes .snowflake {
+  position: relative;
+}
+
+.snowflake:nth-child(1) {
+  -webkit-animation: snowflake 9s 0.2s ease-in-out infinite;
+  -moz-animation: snowflake 9s 0.2s ease-in-out infinite;
+  -ms-animation: snowflake 9s 0.2s ease-in-out infinite;
+  animation: snowflake 9s 0.2s ease-in-out infinite;
+  top: 20px;left: 50px;
+}
+.snowflake:nth-child(2) {
+  -webkit-animation: snowflake 9s 0.2s ease-in-out infinite reverse;
+  -moz-animation: snowflake 9s 0.2s ease-in-out infinite reverse;
+  -ms-animation: snowflake 9s 0.2s ease-in-out infinite reverse;
+  animation: snowflake 9s 0.2s ease-in-out infinite reverse;
+  top: -50px;left: -20px;
+}
+.snowflake:nth-child(3) {
+  -webkit-animation: snowflake 9s 0.2s ease-in-out infinite;
+  -moz-animation: snowflake 9s 0.2s ease-in-out infinite;
+  -ms-animation: snowflake 9s 0.2s ease-in-out infinite;
+  animation: snowflake 9s 0.2s ease-in-out infinite;
+  top: 20px;left: 60px;
+}
+.snowflake:nth-child(4) {
+  -webkit-animation: snowflake 9s 0.4s ease-in-out infinite reverse;
+  -moz-animation: snowflake 9s 0.4s ease-in-out infinite reverse;
+  -ms-animation: snowflake 9s 0.4s ease-in-out infinite reverse;
+  animation: snowflake 9s 0.4s ease-in-out infinite reverse;
+  top: -60px;left: -10px;
+}
+.snowflake:nth-child(5) {
+  -webkit-animation: snowflake 9s 0.3s ease-in-out infinite reverse;
+  -moz-animation: snowflake 9s 0.3s ease-in-out infinite reverse;
+  -ms-animation: snowflake 9s 0.3s ease-in-out infinite reverse;
+  animation: snowflake 9s 0.3s ease-in-out infinite reverse;
+  top: 30px;left: 30px;
+}
+.snowflake:nth-child(6) {
+  -webkit-animation: snowflake 9s 0.4s ease-in-out infinite reverse;
+  -moz-animation: snowflake 9s 0.4s ease-in-out infinite reverse;
+  -ms-animation: snowflake 9s 0.4s ease-in-out infinite reverse;
+  animation: snowflake 9s 0.4s ease-in-out infinite reverse;
+  top: 10px;left: 0px;
+}
+.snowflake:nth-child(7) {
+  -webkit-animation: snowflake 9s 0.2s ease-in-out infinite reverse;
+  -moz-animation: snowflake 9s 0.2s ease-in-out infinite reverse;
+  -ms-animation: snowflake 9s 0.2s ease-in-out infinite reverse;
+  animation: snowflake 9s 0.2s ease-in-out infinite reverse;
+  top: 60px;left: -50px;
+}
+.snowflake:nth-child(8) {
+  -webkit-animation: snowflake 9s 0.3s ease-in-out infinite reverse;
+  -moz-animation: snowflake 9s 0.3s ease-in-out infinite reverse;
+  -ms-animation: snowflake 9s 0.3s ease-in-out infinite reverse;
+  animation: snowflake 9s 0.3s ease-in-out infinite reverse;
+  top: -40px;left: 40px;
+}
+
+
+@-webkit-keyframes snowflakes {
+  from {-webkit-transform: translateY(0);opacity: 1;}
+  50% {opacity: 0.7;}
+  to {-webkit-transform: translateY(200px);opacity: 0;}
+}
+@-webkit-keyframes snowflake {
+  0% {-webkit-transform: translateX(0);}
+  25% {-webkit-transform: translateX(350px);}
+  50% {-webkit-transform: translateX(0);opacity: 1;}
+  75% {-webkit-transform: translateX(300px);}
+  100% {-webkit-transform: translateX(0);}
+}
+@-moz-keyframes snowflakes {
+  from {-moz-transform: translateY(0);opacity: 1;}
+  50% {opacity: 0.7;}
+  to {-moz-transform: translateY(200px);opacity: 0;}
+}
+@-moz-keyframes snowflake {
+  0% {-moz-transform: translateX(0);}
+  25% {-moz-transform: translateX(350px);}
+  50% {-moz-transform: translateX(0);opacity: 1;}
+  75% {-moz-transform: translateX(300px);}
+  100% {-moz-transform: translateX(0);}
+}
+@-ms-keyframes snowflakes {
+  from {-ms-transform: translateY(0);opacity: 1;}
+  50% {opacity: 0.7;}
+  to {-ms-transform: translateY(200px);opacity: 0;}
+}
+@-ms-keyframes snowflake {
+  0% {-ms-transform: translateX(0);}
+  25% {-ms-transform: translateX(350px);}
+  50% {-ms-transform: translateX(0);opacity: 1;}
+  75% {-ms-transform: translateX(300px);}
+  100% {-ms-transform: translateX(0);}
+}
+@keyframes snowflakes {
+  from {transform: translateY(0);opacity: 1;}
+  50% {opacity: 0.7;}
+  to {transform: translateY(200px);opacity: 0;}
+}
+@keyframes snowflake {
+  0% {transform: translateX(0);}
+  25% {transform: translateX(350px);}
+  50% {transform: translateX(0);opacity: 1;}
+  75% {transform: translateX(300px);}
+  100% {transform: translateX(0);}
+}
+
+
+
+
 </style>
 
     </head>
@@ -1153,7 +1294,7 @@ a:not([href]):hover {
                 
 
                     <div id="top-nav2" class="d-flex align-items-center" style="text-align: center; display: flex; margin: 5px 35px;  height:   70% ;">
-                      <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 180px; padding-left: 0px; max-width: 180px;height: 60px"></a>
+                      <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/logoweb2.png') }}" class="logoweb2" ></a>
                       <a class="nav-link" id="nav-link"  href="{{ url('/') }}/">Inicio</a>
                       
                       <a class="nav-link" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorías</a>
@@ -1338,7 +1479,7 @@ a:not([href]):hover {
            <div class="menu__responsive" >
 
               <div class="logo__responsive">
-                <a href="{{ url('/') }}/"> <span class="cart-count"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 200px; height: 60px"></span></a>
+                <a href="{{ url('/') }}/"> <span class="cart-count"><img src="{{ asset('img/diseño/logoweb2.png') }}" class="logoweb2"></span></a>
 
               </div>
              
@@ -1463,6 +1604,35 @@ a:not([href]):hover {
             </div>
         @endif
     </div>
+
+  
+    <div class="contener_snow">
+      <div class="snowflakes">
+          <div class="snowflake">&nbsp;</div>
+          <div class="snowflake">&nbsp;</div>
+          <div class="snowflake">&nbsp;</div>
+          <div class="snowflake">&nbsp;</div>
+          <div class="snowflake">&nbsp;</div>
+          <div class="snowflake">&nbsp;</div>
+          <div class="snowflake">&nbsp;</div>
+          <div class="snowflake">&nbsp;</div>
+      </div>
+    </div>
+
+    <div class="contener_snow2">
+      <div class="snowflakes">
+          <div class="snowflake">&nbsp;</div>
+          <div class="snowflake">&nbsp;</div>
+          <div class="snowflake">&nbsp;</div>
+          <div class="snowflake">&nbsp;</div>
+          <div class="snowflake">&nbsp;</div>
+          <div class="snowflake">&nbsp;</div>
+          <div class="snowflake">&nbsp;</div>
+          <div class="snowflake">&nbsp;</div>
+      </div>
+    </div>
+    
+
 
     <div class="products-section container">
        

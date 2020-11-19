@@ -23,9 +23,7 @@
   
 }
 
-.menu__responsive .logo__responsive img {
-  width: 100px;
-}
+
 
 .menu__responsive .carrito_top {
   position: absolute;
@@ -653,7 +651,7 @@ a:not([href]):hover, a:not([href]):focus {
                 
 
                     <div id="top-nav2" class="d-flex align-items-center" style="text-align: center; display: flex; margin: 5px 35px;  height:   70% ;">
-                      <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 180px; padding-left: 0px; max-width: 180px;height: 30px"></a>
+                      <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/logoweb2.png') }}" class="logoweb2"></a>
                       <a class="nav-link colorban"  href="{{ url('/') }}/">Inicio</a>
                       
                       <a class="nav-link colorban" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -723,7 +721,7 @@ a:not([href]):hover, a:not([href]):focus {
  <div class="menu__responsive"  style="background-image: url('{{ asset('img/diseño/fondo.jpg') }}');">
 
               <div class="logo__responsive">
-                <a href="{{ url('/') }}/"> <span class="cart-count"><img src="{{ asset('img/diseño/logoweb2.png') }}" style=" width: 200px; height: 60px"></span></a>
+                <a href="{{ url('/') }}/"> <span class="cart-count"><img src="{{ asset('img/diseño/logoweb2.png') }}" class="logoweb2"></span></a>
 
               </div>
              
