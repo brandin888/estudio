@@ -610,7 +610,7 @@ section#action, section#action-transparent {
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <div class="nosotros__content">
-          <p class="nosotros__content__parrafo">Bienvenidos a Litercorp <span> nos especializamos en la distribución de productos de Ferretería.</span>  Nuestros productos son de alta calidad y de marcas reconocidas. Nuestros Clientes son lo más importante para nosotros, por ello, nuestro compromiso es brindar el mejor servicio posible.</p>
+          <p class="nosotros__content__parrafo">Bienvenidos a Micky SRL <span> Somos importadores y distribuidores.</span>  Nuestros productos son de alta calidad y de marcas reconocidas. Nuestros clientes son lo más importante en nuestra empresa, nos comprometemos en el buen servicio.</p>
         </div>
       </div>
       <div class="col-md-5 col-sm-12 " style=" width: 100%">
@@ -632,15 +632,15 @@ section#action, section#action-transparent {
       
 
       <div class="col-12 us_titulo">
-        Litercorp
+        Micky SRL
       </div>
 
       <div class="col-12 us_subtitulo">
-        <a style="color: #ff9701; ">Nuestra misión:</a> brindar un servicio de calidad para que nuestros clientes pueden vivir experiencias extraordinarias con nosotros.
+        <a style="color: #ff9701; ">Nuestra misión:</a> Brindar productos de alta calidad y cumplir con las espectativas de nuestros clientes.
       </div>
 
      <div class="col-12 us_subtitulo">
-        <a style="color: #ff9701; ">Nuestra visión:</a> ser la empresa con mayor relevancia dentro del mercado de ferretería del Perú, y asi posicionarnos en la mente de nuestros clientes.
+        <a style="color: #ff9701; ">Nuestra visión:</a> Ser la empresa con más reconocimiento dentro del Pérú
       </div>
 
     
@@ -657,12 +657,12 @@ section#action, section#action-transparent {
  
   <div class="container">
     <div class="row">
-      <div class="col-md-5 col-sm-12 " style=" width: 100%">
+      <div class="col-md-5 col-sm-12 nosotros-img" style=" width: 100%">
         <img src="{{ asset('images/nosotros/nosotros1.jpg') }}" class="img-us" alt="">
       </div>
       <div class="col-md-6 col-sm-12">
         <div class="nosotros__content">
-          <p class="nosotros__content__parrafo">Somos una empresa dedicada a la comercialización a gran escala de productos ferreteros; para el hogar y la construcción; ofreciendo la mejor variedad, relación precio-calidad, tiempo de entrega, atención personalizada, superando sus expectativas en el servicio y enfocados a la plena satisfacción de nuestros clientes, distribuidores y profesionales de la construcción.</p>
+          <p class="nosotros__content__parrafo">Somos una empresa dedicada a la comercialización a gran escala de productos por temporada. Ofrecemos la mejor variedad, relación precio-calidad, tiempo de entrega, atención personalizada. Nuestros productos se adaptan a las necesidades de nuestros clientes.</p>
         </div>
       </div>
       

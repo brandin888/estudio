@@ -41,6 +41,9 @@
 
 
 @media only screen and (max-width: 992px) {
+  .nosotros-img{
+    display: none;
+  }
 
   .logoweb2{ 
   padding-left:  20px; 
