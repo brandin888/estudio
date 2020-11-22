@@ -4,6 +4,18 @@
 
 @section('extra-css')
     <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
+    <meta property="og:title" content="{{ $product->name }}">
+    <meta property="og:description" content="{{ $product->details }}">
+    <meta property="og:url" content="{{ route('shop.show', $product->slug) }}">
+    <meta property="og:image" content="{{ productImage($product->image) }}">
+    <meta property="product:brand" content="MickySRL">
+    <meta property="product:availability" content="in stock">
+    <meta property="product:condition" content="new">
+    <meta property="product:price:amount" content="{{ $product->presentPrice() }}">
+    <meta property="product:price:currency" content="PEN">
+    <meta property="product:retailer_item_id" content="{{ $product->id }}">
+    <meta property="product:item_group_id" content="{{ $product->id }}">
+    <meta property="product:category" content="1253">
 @endsection
 
 @section('content')
