@@ -5,7 +5,7 @@
 @section('extra-css')
     <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
     <meta property="og:title" content="{{ $product->name }}">
-    <meta property="og:description" content="{{ $product->description }}">
+    <meta property="og:description" content="{{!! $product->presentDescriptionFacebook() !!}}">
     <meta property="og:url" content="{{ route('shop.show', $product->slug) }}">
     <meta property="og:image" content="{{ productImage($product->image) }}">
     <meta property="product:brand" content="MickySRL">
