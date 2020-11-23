@@ -5,13 +5,13 @@
 @section('extra-css')
     <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
     <meta property="og:title" content="{{ $product->name }}">
-    <meta property="og:description" content="{{ $product->details }}">
+    <meta property="og:description" content="{{ $product->description }}">
     <meta property="og:url" content="{{ route('shop.show', $product->slug) }}">
     <meta property="og:image" content="{{ productImage($product->image) }}">
     <meta property="product:brand" content="MickySRL">
     <meta property="product:availability" content="in stock">
     <meta property="product:condition" content="new">
-    <meta property="product:price:amount" content="{{ $product->presentPrice() }}">
+    <meta property="product:price:amount" content="{{ $product->presentPriceFacebook() }}">
     <meta property="product:price:currency" content="PEN">
     <meta property="product:retailer_item_id" content="{{ $product->id }}">
     <meta property="product:item_group_id" content="{{ $product->id }}">
@@ -118,7 +118,7 @@
         <div class="col-12 col-lg-6">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" style="border-bottom:solid 1px #dee2e6">
-                    <a class="nav-link active" style="font-weight:700" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Características Técnicas</a>
+                    <a class="nav-link active" style="font-weight:700" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Características </a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link" style="font-weight:700" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Asistencia</a>

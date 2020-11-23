@@ -59,6 +59,18 @@ class Product extends Model
 
     }
 
+
+     public function presentPriceFacebook()
+    {
+        //return money_format('$%i', $this->price / 100);
+        return number_format($this->price / (100), 2);
+    }
+     public function presentDescriptionFacebook()
+    {
+        //return money_format('$%i', $this->price / 100);
+        return ucfirst($this->description);
+    }
+
     public function scopeMightAlsoLike($query)
     {
         return $query->inRandomOrder()->take(4);
