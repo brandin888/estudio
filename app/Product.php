@@ -68,7 +68,7 @@ class Product extends Model
      public function presentDescriptionFacebook()
     {
         //return money_format('$%i', $this->price / 100);
-        return ucfirst($this->description);
+        return ucfirst($this->details);
     }
 
     public function scopeMightAlsoLike($query)
