@@ -603,22 +603,7 @@ section#action, section#action-transparent {
   <div >
     
 
-    <section class="nosotros" id="nosotros" >
-  
- 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="nosotros__content">
-          <p class="nosotros__content__parrafo">Bienvenidos a Micky SRL <span> Somos importadores y distribuidores.</span>  Nuestros productos son de alta calidad y de marcas reconocidas. Nuestros clientes son lo más importante en nuestra empresa, nos comprometemos en el buen servicio.</p>
-        </div>
-      </div>
-      <div class="col-md-5 col-sm-12 " style=" width: 100%">
-        <img src="{{ asset('images/nosotros/nosotros.jpg') }}" class="img-us" alt="">
-      </div>
-    </div>
-  </div>
-</section>
+    
 
 
 <section data-type="background" data-speed="4" class="parallax fixed_p" id="action-parallax3" style="background-position: 50% 33.75px;
@@ -651,7 +636,22 @@ section#action, section#action-transparent {
 </div>
 </section>
 
-
+<section class="nosotros" id="nosotros" >
+  
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="nosotros__content">
+          <p class="nosotros__content__parrafo">Bienvenidos a Micky SRL <span> Somos importadores y distribuidores.</span>  Nuestros productos son de alta calidad y de marcas reconocidas. Nuestros clientes son lo más importante en nuestra empresa, nos comprometemos en el buen servicio.</p>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-12 " style=" width: 100%">
+        <img src="{{ asset('images/nosotros/nosotros.jpg') }}" class="img-us" alt="">
+      </div>
+    </div>
+  </div>
+</section>
 
 </div>
 @endsection
