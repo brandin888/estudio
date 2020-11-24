@@ -24,7 +24,7 @@
     background-image: url("../images/cover4.jpg");
 }
 #action-parallax3 {
-    background-image: url("img/parallax/parallax11.jpg");
+    background-image: url("img/parallax/parallax111.jpg");
 }
 #action-parallax4 {
     
