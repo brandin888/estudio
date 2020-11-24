@@ -25,7 +25,7 @@
 }
 #action-parallax3 {
     background-image: url("img/parallax/parallax111.jpg");
-    padding-bottom: 60px;
+    padding-bottom: 10px;
     color: black;
 }
 #action-parallax4 {

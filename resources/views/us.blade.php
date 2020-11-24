@@ -509,7 +509,7 @@ section#action, section#action-transparent {
 }
 
 .nosotros__content__parrafo span {
-  color: #f99300;
+  color: black;
   font-weight: 900;
 }
 
