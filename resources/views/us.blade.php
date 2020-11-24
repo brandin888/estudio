@@ -652,23 +652,6 @@ section#action, section#action-transparent {
 </section>
 
 
- <section class="nosotros" id="nosotros" >
-  
- 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 col-sm-12 nosotros-img" style=" width: 100%">
-        <img src="{{ asset('images/nosotros/nosotros1.jpg') }}" class="img-us" alt="">
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="nosotros__content">
-          <p class="nosotros__content__parrafo">Somos una empresa dedicada a la comercialización a gran escala de productos por temporada. Ofrecemos la mejor variedad, relación precio-calidad, tiempo de entrega, atención personalizada. Nuestros productos se adaptan a las necesidades de nuestros clientes.</p>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</section>
 
 </div>
 @endsection
