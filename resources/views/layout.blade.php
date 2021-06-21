@@ -8,9 +8,9 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>JÑP | Abogados & Consultores</title>
+        <title>JNP | Abogados & Consultores</title>
         <meta name="theme-color" content="#353535" />
-        <meta name="description" content="Somos una Distribuidora, hacemos ventas por mayor a todo Perú,  puedes encontrarnos en  Lima Cercado">
+        <meta name="description" content="">
 
         <link rel="shortcut icon" href="" />
 

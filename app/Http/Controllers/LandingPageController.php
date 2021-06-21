@@ -18,7 +18,7 @@ class LandingPageController extends Controller
     public function index()
     {
         $products = Product::where('featured', true)->take(8)->inRandomOrder()->get();
-        $posts= Post::latest()->take(10)->get();
+        $posts= Post::latest()->take(3)->get();
         $categories = Category::all();
         $pagination = 9;
         $categories = Category::all();

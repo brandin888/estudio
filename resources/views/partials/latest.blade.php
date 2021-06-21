@@ -1,128 +1,47 @@
+
+
             <!-- Blog Start -->
             <div class="blog">
                 <div class="container">
-                    <div class="section-header">
-                        <h2>Artículos Recientes</h2>
+                    <div class="section-header text-center">
+                        <p>Últimos Artículos</p>
+                        <h2>Visita Nuestro Blog</h2>
                     </div>
-                    <div class="owl-carousel blog-carousel">
-                          @foreach($posts as $post)
-                    
-    
-                        <div class="blog-item">
-                            <img src="{{ postImage($post->image) }}" alt="Blog">
-                            <h3>{{$post->title}}</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Civil Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>{{$post->updated_at}}</p>
+                    <div class="row">
+                        @foreach($posts as $post)
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <img src="{{ postImage($post->image) }}" alt="Image">
+                                </div>
+                                <div class="blog-title">
+                                    <h3>{{$post->title}}</h3>
+                                    <a class="btn" href="">+</a>
+                                </div>
+                                <div class="blog-meta">
+                                    <p><a href=""> {{$post->updated_at}}</a></p>
+                                    <p>In<a href="">Construction</a></p>
+                                </div>
+                                <div class="blog-text">
+                                    <p>
+                                        {{$post->excerpt}}
+                                    </p>
+                                </div>
                             </div>
-                            <p>
-                               {{$post->meta_description}}
-                            </p>
-                            <a class="btn" href="{{ route('blog.show', $post->slug) }}">Seguir leyendo<i class="fa fa-angle-right"></i></a>
-                        </div>
+                        </div>                    
+    
+ 
+  
+                            
+
+                               
+                          
+                          
+                               
+
           
                         @endforeach      
 
-                        <div class="blog-item">
-                            <img src="img/blog-1.jpg" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Civil Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        <div class="blog-item">
-                            <img src="img/blog-2.jpg" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Family Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        <div class="blog-item">
-                            <img src="img/blog-3.jpg" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Business Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        <div class="blog-item">
-                            <img src="img/blog-1.jpg" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Education Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        <div class="blog-item">
-                            <img src="img/blog-2.jpg" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Criminal Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        <div class="blog-item">
-                            <img src="img/blog-3.jpg" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Cyber Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                        <div class="blog-item">
-                            <img src="img/blog-1.jpg" alt="Blog">
-                            <h3>Lorem ipsum dolor</h3>
-                            <div class="meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Business Law</a>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>01-Jan-2045</p>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>

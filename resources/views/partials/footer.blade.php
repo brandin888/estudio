@@ -6,7 +6,7 @@
                     <div class="row">
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-contact">
-                                <h2>Office Contact</h2>
+                                <h2>Oficina de Contacto</h2>
                                 <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
                                 <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
                                 <p><i class="fa fa-envelope"></i>info@example.com</p>
@@ -21,7 +21,7 @@
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
-                                <h2>Services Areas</h2>
+                                <h2>Especialidades</h2>
                                 <a href="">Building Construction</a>
                                 <a href="">House Renovation</a>
                                 <a href="">Architecture Design</a>
@@ -31,7 +31,7 @@
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
-                                <h2>Useful Pages</h2>
+                                <h2>Accesos Directos</h2>
                                 <a href="">About Us</a>
                                 <a href="">Contact Us</a>
                                 <a href="">Our Team</a>
@@ -41,7 +41,7 @@
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="newsletter">
-                                <h2>Newsletter</h2>
+                                <h2>Contáctate</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu
                                 </p>
@@ -55,10 +55,10 @@
                 </div>
                 <div class="container footer-menu">
                     <div class="f-menu">
-                        <a href="">Terms of use</a>
-                        <a href="">Privacy policy</a>
+                        <a href="">Términos de uso</a>
+                        <a href="">Política de privacidad</a>
                         <a href="">Cookies</a>
-                        <a href="">Help</a>
+                        
                         <a href="">FQAs</a>
                     </div>
                 </div>
