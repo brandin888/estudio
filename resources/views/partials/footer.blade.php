@@ -1,197 +1,79 @@
-<style type="text/css">
-	
-	section#action, section#action-transparent {
-    padding: 70px 0;
-}
-#action, #action-parallax, #action-parallax2, #action-parallax3, #action-parallax4, #action-parallax-seo, .action-parallax {
-    background: none repeat scroll 0 0 #1b1f23;
-}
-#action, #action-parallax, #action-parallax2, #action-parallax3, #action-parallax4,#action-parallax-seo, .action-parallax , #action-transparent, #action a, #action-parallax a, #action-parallax-seo a, #action-parallax2 a, #action-parallax3 a, #action-parallax4 a, #action-transparent a {
-    color: #fff;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-#action-parallax, #action-parallax2, #action-parallax3, #action-parallax4,#action-parallax-seo, #action-transparent, .action-parallax {
-    background: none no-repeat scroll 50% 50% / cover rgba(0, 0, 0, 0);
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    z-index: -1;
-}
-#action-parallax {
-    background-image: url("storage/banners/slider2.jpg");
-}
-#action-parallax2 {
-    background-image: url("../images/cover4.jpg");
-}
-#action-parallax3 {
-    background-image: url("img/parallax/parallax111.jpg");
-    padding-bottom: 10px;
-    color: black;
-}
-#action-parallax4 {
-    
-    background-image: url("{{ asset('img/parallax/footer.jpg') }}");
-}
-#action-parallax5 {
-    background-image: url("../images/cover-portal-empleado.jpg");
-}
-#action-parallax-seo {
-    background-image: url("../images/cover-seo.jpg");
-}
-#action-parallax-empleado {
-    background-image: url("../images/parallax-empleado.jpg");
-}
-#action-transparent {
-    background: none repeat scroll 0 0 #1b1f23;
-}
-#action-transparent {
-    background: none repeat scroll 0 0 #1b1f23;
-}
-#action-transparent .overlay-dark {
-    z-index: 0;
-}
-#action-transparent .icon-heading {
-    display: block;
-    line-height: 1px;
-    padding-top: 30px;
-}
-
-.overlay-dark {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
-}
-.overlay, .overlay-dark {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-.fixed_p {
-    background-attachment: fixed !important;
-}
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-.col-6 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding-left: 5px;
-}
-.col-md-3 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding-left: 5px;
-}
-.footer__titulo {
-    font-size: 0.80rem;
-    font-weight: bold;
-    
-}
-.fab {
-    font-family: 'Font Awesome 5 Brands';
-}
-.lista-footer__item a {
-    font-size: 15px;
-}
-@media (max-width: 768px) {
-    .lista-footer__item a {
-        font-size: 12px;
-    }
-}
-.redes__link2 {
-    color: white;
-}
-.pl-3, .px-3 {
-    padding-left: 0.3rem !important;
-}
-
-.fab {
-    font-family: 'Font Awesome 5 Brands';
-}
-.fa, .fas, .far, .fal, .fab {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-}
-.lista-footer {
-    padding-top: 30px;
-    list-style: none;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    padding-left: 15px;
-}
-.lista-footer__item::before {
-    content: "\2022";
-    color: #f99300;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-
-}
-
-</style>
-
-<footer data-type="background" data-speed="4" class="parallax fixed_p" id="action-parallax4" style="background-position: 50% 33.75px;
- z-index: 1;
 
 
+<footer>
+                <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <h2>Office Contact</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
+                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                                <p><i class="fa fa-envelope"></i>info@example.com</p>
+                                <div class="footer-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Services Areas</h2>
+                                <a href="">Building Construction</a>
+                                <a href="">House Renovation</a>
+                                <a href="">Architecture Design</a>
+                                <a href="">Interior Design</a>
+                                <a href="">Painting</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Useful Pages</h2>
+                                <a href="">About Us</a>
+                                <a href="">Contact Us</a>
+                                <a href="">Our Team</a>
+                                <a href="">Projects</a>
+                                <a href="">Testimonial</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="newsletter">
+                                <h2>Newsletter</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu
+                                </p>
+                                <div class="form">
+                                    <input class="form-control" placeholder="Email here">
+                                    <button class="btn">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
 
-"><div data-wow-duration="4s" class="container wow fadeIn  animated" style="visibility: visible; animation-duration: 4s; animation-name: fadeIn;">
-    <div class="container" style="text-align: left;">
-    <div class="row footernone">
-      
-
-      <div class="col-6 col-sm-6 mb-5">
-        <div class="footer__titulo">
-          ENLACES
-        </div>
-        <ul class="lista-footer">
-          <li class="lista-footer__item pt-0"><a href="{{ url('/') }}/contacto" class="navbar__link club-odssy pl-0">Contáctanos</a></li>
-          <li class="lista-footer__item"><a href="{{ url('/') }}/contacto" class="navbar__link pl-0">Ubicación</a></li>
-          <li class="lista-footer__item"><a href="{{ url('/') }}/" class="navbar__link pl-0">Productos populares</a></li>
-          
-        </ul>
-      </div>
-
-      <div class="col-6 col-sm-6">
-        <div class="footer__titulo">
-          SÍGUENOS
-        </div>
-        <ul class="lista-footer lista-footer--padding-min">
-            <li class="lista-footer__item lista-footer__item--nobullet pt-0"><a class="redes__link2" href="https://www.facebook.com/distribuidoramicky" target="_blank"><i class="fab fa-facebook-f"></i><span class="pl-3">Facebook</span></a></li>  
-            <li class="lista-footer__item lista-footer__item--nobullet"><a class="redes__link2" href="https://www.facebook.com/distribuidoramicky" target="_blank"><i class="fab fa-instagram"></i><span class="pl-3">Instagram</span></a></li>           
-            <li class="lista-footer__item lista-footer__item--nobullet"><a class="redes__link2" href="#" target="_blank"><i class="fa fa-phone"></i><span class="pl-3">(01) 301 6088</span></a></li>         
-            <li class="lista-footer__item lista-footer__item--nobullet"><a class="redes__link2" href="#" target="_blank"><i class="fa fa-envelope"></i><span class="pl-3">distribuidoramicky@gmail.com</span></a></li>           
-        </ul>
-      </div>
-
-    
-     
-    </div>
-  </div>
-
-</div>
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 </footer>

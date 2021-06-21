@@ -1,8 +1,8 @@
 (function() {
     const search = instantsearch({
 
-        appId: '2PG0EECS0H',
-        apiKey: '1907367f2ef705e32da929ff26fc0858',
+        appId: 'PR6ZSBUJO6',
+        apiKey: 'f34034dbdaf674a86418e1b20c36f7a8',
 
         indexName: 'products',
         urlSync: true

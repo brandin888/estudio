@@ -1,6 +1,6 @@
 (function() {
 
-    var client = algoliasearch('2PG0EECS0H', '1907367f2ef705e32da929ff26fc0858');
+    var client = algoliasearch('PR6ZSBUJO6', 'f34034dbdaf674a86418e1b20c36f7a8');
 
     var index = client.initIndex('products');
     var enterPressed = false;

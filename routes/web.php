@@ -8,6 +8,8 @@ Route::post('/seguimiento/my-order', 'SeguimientoController@store')->name('segui
 Route::get('/my-order/{order}', 'SeguimientoController@show')->name('orderguest.show');
 
 Route::get('/shop', 'ShopController@index')->name('shop.index');
+Route::get('/blog', 'BlogController@index')->name('blog.index');
+Route::get('/blog/{post}', 'BlogController@show')->name('blog.show');
 Route::get('/shop/{product}', 'ShopController@show')->name('shop.show');
 
 // Route::get('/password', 'SearchController@reset')->name('password');

@@ -2,898 +2,6 @@
 
 <style type="text/css">
   
-  @media (max-width: 992px) {
-    header {
-    height: 120px;
-
-  }
-  }
-    div.polaroid {
-  width: 100%;
-  background-color: white;
-  padding: 0px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
-@media only screen and (max-width: 1200px) {
-  .products-section .products {
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-gap: 30px 30px;
-  }
-}
-
-img {width: 100%;}
-
-div.container {
-  text-align: center;
-  padding: 10px 20px;
-}
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {  
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-header{
-  
-}
-
-@keyframes zoom {
-  from {transform: scale(0.1)} 
-  to {transform: scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-.polaroid:hover {
-  /* box-shadow: 0 0 1px 1px rgba(255, 183, 0, 1); */
-  border: 2px solid #ffb700
-  
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-
-
-section#action, section#action-transparent {
-    padding: 70px 0;
-}
-#action, #action-parallax, #action-parallax2, #action-parallax3, #action-parallax4, #action-parallax-seo, .action-parallax {
-    background: none repeat scroll 0 0 #1b1f23;
-}
-#action, #action-parallax, #action-parallax2, #action-parallax3, #action-parallax4,#action-parallax-seo, .action-parallax , #action-transparent, #action a, #action-parallax a, #action-parallax-seo a, #action-parallax2 a, #action-parallax3 a, #action-parallax4 a, #action-transparent a {
-    color: #fff;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-#action-parallax, #action-parallax2, #action-parallax3, #action-parallax4,#action-parallax-seo, #action-transparent, .action-parallax {
-    background: none no-repeat scroll 50% 50% / cover rgba(0, 0, 0, 0);
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    z-index: -1;
-}
-#action-parallax {
-    background-image: url("storage/banners/slider2.jpg");
-}
-#action-parallax2 {
-   background-image: url("img/parallax/parallax2.jpg");
-}
-#action-parallax3 {
-    background-image: url("img/parallax/parallax3.jpg");
-}
-#action-parallax4 {
-    background-image: url("img/parallax/footer.jpg");
-}
-#action-parallax5 {
-    background-image: url("../images/cover-portal-empleado.jpg");
-}
-#action-parallax-seo {
-    background-image: url("../images/cover-seo.jpg");
-}
-#action-parallax-empleado {
-    background-image: url("../images/parallax-empleado.jpg");
-}
-#action-transparent {
-    background: none repeat scroll 0 0 #1b1f23;
-}
-#action-transparent {
-    background: none repeat scroll 0 0 #1b1f23;
-}
-#action-transparent .overlay-dark {
-    z-index: 0;
-}
-#action-transparent .icon-heading {
-    display: block;
-    line-height: 1px;
-    padding-top: 30px;
-}
-
-.overlay-dark {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
-}
-.overlay, .overlay-dark {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-.fixed_p {
-    background-attachment: fixed !important;
-}
-.cyan.lighten-2 {
-  background: linear-gradient(to right, #4ec1ffa3 0%, #01579b8f 50%, #003b69ad 100%);
-}
-
-
-
-.menu__responsive {
-  width: 100%;
-  height: 58px;
-  background: #003166;
-  position: fixed;
-  top: 0;
-  z-index: 1234;
-  display: none;
-}
-
-.menu__responsive .logo__responsive {
-  width: 100%;
-  
-}
-
-
-
-.menu__responsive .carrito_top {
-  position: absolute;
-  top: 27px;
-  right: 70px;
-}
-
-.menu__responsive .carrito_top a i {
-  color: #ffb700;
-  border-color: #110041;
-}
-
-.menu__responsive .carrito_top a span {
-  color: #fff;
-}
-
-#menu-icon {
-  width: 30px;
-  height: 20px;
-  position: relative;
-  margin: 0 auto;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-#menu-icon-shape {
-  width: 60px;
-  height: 60px;
-  position: fixed;
-  top: 12px;
-  right: 20px;
-  display: none;
-  z-index: 1234;
-  cursor: pointer;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-#top,
-#middle,
-#bottom {
-  width: 100%;
-  height: 2px;
-  background: #ffb700;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-
-#middle {
-  margin: 4px 0;
-}
-
-/* Transform menu icon into close icon */
-
-#top.active {
-  -webkit-transform: translateY(8px) translateX(0) rotate(45deg);
-  transform: translateY(8px) translateX(0) rotate(45deg);
-}
-
-#middle.active {
-  opacity: 0;
-}
-
-#bottom.active {
-  -webkit-transform: translateY(-4px) translateX(0) rotate(-45deg);
-  transform: translateY(-4px) translateX(0) rotate(-45deg);
-}
-
-/* Navigation */
-
-#overlay-nav {
-  width: 100%;
-  height: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 123;
-  background: #0e1126;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.6s ease;
-  transition: opacity 0.35s, visibility 0.35s, height 0.6s ease;
-}
-
-/* Open navigiation */
-
-#overlay-nav.active {
-  width: 100%;
-  height: 100%;
-  opacity: 100;
-  visibility: visible;
-  overflow: scroll;
-}
-
-#nav-content {
-  position: relative;
-  top: 57%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-#nav-content ul {
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  text-align: left;
-}
-
-#nav-content ul li ul.submenu {
-  padding: 0px 32px;
-}
-
-#nav-content ul li ul.submenu li {
-  display: inline-block;
-  color: #cdcdcd91;
-  padding: 0px 5px;
-}
-
-#nav-content ul li ul.submenu li a {
-  color: #cdcdcd91;
-  font-weight: 300;
-}
-
-#nav-content ul li a {
-  width: 100%;
-  padding: 1.5% 0;
-  display: block;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 0.6px;
-  text-decoration: none;
-  color: #fff;
-  position: relative;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-
-#nav-content ul li a:hover {
-  background: #0c0f1f;
-}
-
-#nav-content ul li a span {
-  position: relative;
-  padding-left: 2.3rem;
-}
-
-#nav-content ul li a span.icon:before {
-  content: "";
-  background-image: url(../images/icon.png?194a9580b33fd556d68f2c377f138da3);
-  background-repeat: no-repeat;
-  width: 28px;
-  height: 28px;
-  position: absolute;
-  top: -9px;
-  left: 0;
-}
-
-#nav-content ul li a span.icon.icon-boleto:before {
-  background-position: -26px -30px;
-}
-
-#nav-content ul li a span.icon.icon-cumple:before {
-  background-position: -0px -30px;
-}
-
-#nav-content ul li a span.icon.icon-promo:before {
-  background-position: -50px -30px;
-}
-
-@media screen and (max-width: 600px) {
-  #menu-icon-shape {
-    top: 2px;
-    right: 9px;
-  }
-
-  #nav-content ul li a {
-    padding: 1.5% 0;
-  }
-}
-
-@media (min-width: 992px) {
-  .container-nav {
-    position: absolute;
-    top: 0;
-    background: transparent;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
-
-  .navbar {
-    padding-top: 0;
-    margin-top: -9px;
-  }
-
-  .navbar__logo {
-    max-width: 100%;
-  }
-
-  .navbar-brand {
-    padding-top: 72px;
-  }
-
-  .menu-secondary {
-    padding-top: 49px;
-  }
-
-  .menu-secondary ul li a {
-    font-size: 14px;
-    font-weight: 900;
-    padding: 10px 25px;
-    position: relative;
-  }
-
-  .menu-secondary ul li a:hover {
-    color: #f58508;
-  }
-
-  .menu-secondary ul li a .icon {
-    background-image: url(../images/icon.png?194a9580b33fd556d68f2c377f138da3);
-    background-repeat: no-repeat;
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    top: 0;
-  }
-
-  .menu-secondary ul li a:hover .icon-boleto {
-    background-position: -26px -30px;
-  }
-
-  .menu-secondary ul li a .icon-boleto {
-    background-position: -26px 0px;
-  }
-
-  .menu-secondary ul li a:hover .icon-cumple {
-    background-position: -0px -30px;
-  }
-
-  .menu-secondary ul li a .icon-cumple {
-    background-position: -0px 0px;
-  }
-
-  .menu-secondary ul li a:hover .icon-promo {
-    background-position: -50px -30px;
-  }
-
-  .menu-secondary ul li a .icon-promo {
-    background-position: -50px 0px;
-  }
-
-  .menu-secondary ul li a span {
-    margin-left: 5px;
-  }
-
-  .telefonos-container {
-    position: absolute;
-    left: 0;
-    padding: 0rem 1rem;
-  }
-
-  .telefonos-container a {
-    font-family: 'Lato', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-  }
-
-  .telefonos-container a i {
-    font-size: 10px;
-  }
-
-  .telefonos-container__content {
-    margin-top: 11px;
-    margin-left: 17px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 0;
-    background: #f7f7f7;
-  }
-
-  .telefonos-container__content__item {
-    padding: 15px 54px 15px 30px;
-  }
-
-  .telefonos-container__content__item:hover {
-    background: #2EC4B6;
-  }
-
-  .telefonos-container__content__item:last-child:hover {
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-
-  .telefonos-container__content__item:last-child {
-    margin-bottom: 0px;
-  }
-
-  .telefonos-container__content__item .titulo {
-    font-family: 'Lato', sans-serif;
-    display: block;
-    color: #253b56;
-    font-weight: 900;
-    margin-bottom: 8px;
-  }
-
-  .telefonos-container__content__item .numero {
-    display: block;
-    color: #253b56;
-    font-weight: 400;
-  }
-
-  .telefonos-container__content__item .numero i {
-    color: #f99300;
-    margin-right: 10px;
-  }
-}
-
-@media (max-width: 425px) {
-  .menu__responsive .carrito_top {
-    top: 17px;
-    right: 57px;
-  }
-}
-
-@media (min-width: 426px) and (max-width: 991px) {
-  .menu__responsive {
-    height: 74px;
-  }
-
-  .menu__responsive .logo__responsive {
-    padding: 5px;
-  }
-}
-
-@media (max-width: 991px) {
-  
-  
-  header .top-nav {
-    
-    display: none;
-  }
- .top-nav-right{
-    display: none;
- }
-
-  #algolia-autocomplete-listbox-0 {
- 
-  width: 280px;
- }
-
-  .menu__responsive {
-    display: flex;
-    -webkit-box-shadow: 0px 1px 10px #0000007a;
-            box-shadow: 0px 1px 10px #0000007a;
-  }
-
-  #menu-icon-shape {
-    display: block;
-  }
-
-  .header {
-    display: none;
-  }
-  .sidebar{
-    display: none;
-  }
-  .products-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 50px auto 50px;
-  }
-   
-
-
-}
-
-
-
-  
-}
-
-
-
-
-
-
-@import "https://fonts.googleapis.com/css?family=Fira+Sans:300,400";
-@import "https://fonts.googleapis.com/icon?family=Material+Icons";
-* {
-  box-sizing: border-box;
-}
-
-
-body::after {
-  content: '';
-  
-  z-index: 99;
-  
-  height: 100vh;
-  width: 100vw;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  opacity: 0;
-  visibility: hidden;
-}
-
-a {
-  text-decoration: none;
-}
-.top-nav {
-  background-color: white;
-}
-.nav-top {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  position: fixed;
-  z-index: 101;
-  padding: 10px 20px;
-  width: 100%;
-  height: 50px;
-  background-color: #188976;
-}
-.nav-top .hamburger {
-  margin-left: auto;
-  color: #fff;
-  cursor: pointer;
-}
-
-.nav-drill {
-  margin-top: 50px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-}
-
-.nav-is-toggled .nav-drill {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-.nav-is-toggled::after {
-  opacity: 1;
-  visibility: visible;
-}
-
-.nav-drill {
-  display: -webkit-box;
-  display: flex;
-  position: fixed;
-  z-index: 100;
-  top: 8px;
-  right: 0;
-  width: 345px;
-  height: 90vh;
-  background-color: white;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transition: 0.45s;
-  transition: 0.45s;
-}
-.nav-items {
-  -webkit-box-flex: 0;
-          flex: 0 0 100%;
-}
-.nav-item:not(:last-child) {
-  border-bottom: solid 1px #ffb700;
-}
-.nav-link {
-  display: block;
-  padding: 0.875em 1em;
-  background-color: #fff;
-  color: #003166;
-  font-size: 0.9rem;
-  line-height: 1em;
-  font-weight: 300;
-}
-.nav-expand-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  background-color: #daf9f4;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  visibility: hidden;
-}
-.nav-expand-content .nav-item:not(:last-child) {
-  border-bottom: solid 1px #ffc500;
-}
-.nav-expand-content .nav-link {
-  background-color: #003166;
-}
-.nav-expand-content .nav-back-link {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  background-color: white !important;
-  color: #003166;
-}
-.nav-expand-content .nav-back-link::before {
-  content: "-";
-  margin-right: 0.5em;
-  font-family: "Material Icons";
-}
-.nav-expand-link {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-}
-.nav-expand-link::after {
-  content: "+";
-  -webkit-box-flex: 0;
-          flex: 0 1 auto;
-  font-family: "Material Icons";
-}
-.nav-expand.active > .nav-expand-content {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  visibility: visible;
-}
-.nav-expand .nav-expand-content {
-  background-color: #ffb700;
-}
-.nav-expand .nav-expand-content .nav-link {
-  background-color: #ffb700;
-}
-.nav-expand .nav-expand-content .nav-expand-content {
-  background-color: #aff1e6;
-}
-.nav-expand .nav-expand-content .nav-expand-content .nav-link {
-  background-color: #ff6e00;
-}
-.nav-expand .nav-expand-content .nav-expand-content .nav-expand-content {
-  background-color: #84e9d9;
-}
-.nav-expand .nav-expand-content .nav-expand-content .nav-expand-content .nav-link {
-  background-color: #84e9d9;
-}
-.nav-expand .nav-expand-content .nav-expand-content .nav-expand-content .nav-expand-content {
-  background-color: #59e1cb;
-}
-.nav-expand .nav-expand-content .nav-expand-content .nav-expand-content .nav-expand-content .nav-link {
-  background-color: #59e1cb;
-}
-.fa-shopping-bag:before {
-  content: "\F290";
-}
-.fa, .fas {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-}
-.fa, .fas, .far, .fal, .fab {
-
-}
-
-
-
-
-.carousel2 {
-  
-  position: relative;
-  width: 100%;
-  height: 50em;
-  margin: 0 auto;
-  transform-style: preserve-3d;
-  transition: transform 0.5s ease;
-
-  
-}
-.carousel2[data-slide="1"] {
-  transform: rotateY(0deg);
-}
-.carousel2[data-slide="2"] {
-  transform: rotateY(-90deg);
-}
-.carousel2[data-slide="3"] {
-  transform: rotateY(-180deg);
-}
-.carousel2[data-slide="4"] {
-  transform: rotateY(-270deg);
-}
-.slides {
-  position: absolute;
-  width: 100%;
-  
-  background: white;
-  height: 400px;
-}
-.slides img {
-  width: 100%;
-  height: 400px;
-}
-.back, .slides:nth-child(3) {
-  transform: translateZ(-25em) rotateY(180deg);
-}
-.right, .slides:nth-child(2) {
-  transform: rotateY(-270deg) translateX(50%);
-  transform-origin: top right;
-}
-.left, .slides:nth-child(4) {
-  transform: rotateY(270deg) translateX(-50%);
-  transform-origin: center left;
-}
-.front, .slides:nth-child(1) {
-  transform: translateZ(25em);
-}
-.next, .prev {
-  position: absolute;
-  top: 80%;
-  right: 0;
-  width: 6em;
-  margin-top: -2.5em;
-  border-radius: 3px;
-  background-color: transparent;
-  text-align: center;
-  line-height: 3;
-  letter-spacing: 5px;
-  color: #ff6c25;
-  transform: translateY(-50%);
-  cursor: pointer;
-  font-size: 60px;
-}
-.prev:hover {
-   color: #fff;
-  opacity: .9;
-}
-.prev {
-  left: 25%;
-}
-.next:hover { 
-   
-  color: #fff;
-  opacity: .9;
-}
-.cf:before, .slides:before,
-.cf:after,
-.slides:after {
-  content: " ";
-  display: table;
-}
-.cf:after, .slides:after {
-  clear: both;
-}
-.cf, .slides {
-  *zoom: 1;
-}
-.col-md-3S{
-      flex: 0 0 20%;
-    max-width: 20%;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    background-color: transparent;
-}
-
-.page-item.active .page-link {
-    z-index: 3;
-    color: #fff;
-    background-color: #ffb700;
-    border-color: #ffb700;
-}
-.nav-link {
-    display: flex;
-    color: white;
-    
-}
-
-.btn-section {
-  color: #ffffff;
-  background-color: #ffb700;
-  border-color: white;
-  border-radius: 8px;
-
-  border-width: 2px;
-
-}
-
-.btn-section:hover {
-  color: white;
-  background-color: #ff0000;
-  border-color: white;
-}
-
-
 
 </style>
 
@@ -911,7 +19,9 @@ a {
         <link rel="shortcut icon" href="{{ asset('img/diseño/icono.png') }}" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="{{ asset('css/all.css?v=1.1') }}" rel="stylesheet"> <!--load all styles -->
+        <link href="{{ asset('css/animate.css?v=1.1') }}" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="{{ asset('css/owl.carousel.min.css?v=1.2') }}" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -942,297 +52,7 @@ a {
       /></noscript>
       <!-- End Facebook Pixel Code -->
         
-<style type="text/css">
-  .page-item.active .page-link {
-    z-index: 3;
-    color: #fff;
 
-    background-color: #ffb700;
-    border-color: #ffb700;
-}
-.nav-link {
-    display: flex;
-    background-color: transparent;
-    
-    align-items: flex-start;
-    
-}
-
-.nav-link2{
-  font-weight: bold;
-  color: #292e31;
-}
-.nav-link2:hover{
-  font-weight: bold;
-  color: black;
-}
-.redes__link{
-  color: black;
-
-  
-}
-.pad10{
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-size:16px;
-  color:#4b4b4b;
-  padding-left: 16px;
-}
-.colornill{
-  color:#4b4b4b
-}
-
-
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  cursor: pointer;
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-.pad10{
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-size:16px;
-  color:#4b4b4b;
-  padding-left: 16px;
-}
-.colornill{
-  color:#4b4b4b
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: red;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.show {
-  display: block;
-}
-
-.dropdown-item.active, .dropdown-item:active {
-    color: #fff;
-    text-decoration: none;
-    background-color: #003166;
-}
-
-
-
-.carousel-item:active{
-  width: 100%;
-}
-
-.partials-search{
-  padding-left: 15%;
-}
-.negrof{
-  color: black;
-
-}
-.lead{
-  color: black;
-}
-
-a:not([href]):hover {
-    color: #ffb700;
-    text-decoration: none;
-}
-
-.dropdown-item:focus, .dropdown-item:hover {
-    color: white;
-    text-decoration: none;
-    background-color: #ffb700;
-}
-.contener_snow
-{
-  position: fixed;
-  top: 70px;
-  left:0%;
-  margin-left:0px;
-}
-.contener_snow2
-{
-  position: fixed;
-  top: 70px;
-  right: 350px;
-  margin-left:0px;
-}
-.snowflakes {
-
-  top: 0px;
-  width: 100px;
-  right: 0;
-  -webkit-animation: snowflakes 3s linear infinite;
-  -moz-animation: snowflakes 3s linear infinite;
-  -ms-animation: snowflakes 3s linear infinite;
-  animation: snowflakes 3s linear infinite;
-}
-.snowflake {
-  background-color: #F0FFFF;
-  width: 10px; height: 10px;
-  border-radius: 50%;
-}
-.snowflakes .snowflake {
-  position: relative;
-}
-
-.snowflake:nth-child(1) {
-  -webkit-animation: snowflake 9s 0.2s ease-in-out infinite;
-  -moz-animation: snowflake 9s 0.2s ease-in-out infinite;
-  -ms-animation: snowflake 9s 0.2s ease-in-out infinite;
-  animation: snowflake 9s 0.2s ease-in-out infinite;
-  top: 20px;left: 50px;
-}
-.snowflake:nth-child(2) {
-  -webkit-animation: snowflake 9s 0.2s ease-in-out infinite reverse;
-  -moz-animation: snowflake 9s 0.2s ease-in-out infinite reverse;
-  -ms-animation: snowflake 9s 0.2s ease-in-out infinite reverse;
-  animation: snowflake 9s 0.2s ease-in-out infinite reverse;
-  top: -50px;left: -20px;
-}
-.snowflake:nth-child(3) {
-  -webkit-animation: snowflake 9s 0.2s ease-in-out infinite;
-  -moz-animation: snowflake 9s 0.2s ease-in-out infinite;
-  -ms-animation: snowflake 9s 0.2s ease-in-out infinite;
-  animation: snowflake 9s 0.2s ease-in-out infinite;
-  top: 20px;left: 60px;
-}
-.snowflake:nth-child(4) {
-  -webkit-animation: snowflake 9s 0.4s ease-in-out infinite reverse;
-  -moz-animation: snowflake 9s 0.4s ease-in-out infinite reverse;
-  -ms-animation: snowflake 9s 0.4s ease-in-out infinite reverse;
-  animation: snowflake 9s 0.4s ease-in-out infinite reverse;
-  top: -60px;left: -10px;
-}
-.snowflake:nth-child(5) {
-  -webkit-animation: snowflake 9s 0.3s ease-in-out infinite reverse;
-  -moz-animation: snowflake 9s 0.3s ease-in-out infinite reverse;
-  -ms-animation: snowflake 9s 0.3s ease-in-out infinite reverse;
-  animation: snowflake 9s 0.3s ease-in-out infinite reverse;
-  top: 30px;left: 30px;
-}
-.snowflake:nth-child(6) {
-  -webkit-animation: snowflake 9s 0.4s ease-in-out infinite reverse;
-  -moz-animation: snowflake 9s 0.4s ease-in-out infinite reverse;
-  -ms-animation: snowflake 9s 0.4s ease-in-out infinite reverse;
-  animation: snowflake 9s 0.4s ease-in-out infinite reverse;
-  top: 10px;left: 0px;
-}
-.snowflake:nth-child(7) {
-  -webkit-animation: snowflake 9s 0.2s ease-in-out infinite reverse;
-  -moz-animation: snowflake 9s 0.2s ease-in-out infinite reverse;
-  -ms-animation: snowflake 9s 0.2s ease-in-out infinite reverse;
-  animation: snowflake 9s 0.2s ease-in-out infinite reverse;
-  top: 60px;left: -50px;
-}
-.snowflake:nth-child(8) {
-  -webkit-animation: snowflake 9s 0.3s ease-in-out infinite reverse;
-  -moz-animation: snowflake 9s 0.3s ease-in-out infinite reverse;
-  -ms-animation: snowflake 9s 0.3s ease-in-out infinite reverse;
-  animation: snowflake 9s 0.3s ease-in-out infinite reverse;
-  top: -40px;left: 40px;
-}
-
-
-@-webkit-keyframes snowflakes {
-  from {-webkit-transform: translateY(0);opacity: 1;}
-  50% {opacity: 0.7;}
-  to {-webkit-transform: translateY(200px);opacity: 0;}
-}
-@-webkit-keyframes snowflake {
-  0% {-webkit-transform: translateX(0);}
-  25% {-webkit-transform: translateX(350px);}
-  50% {-webkit-transform: translateX(0);opacity: 1;}
-  75% {-webkit-transform: translateX(300px);}
-  100% {-webkit-transform: translateX(0);}
-}
-@-moz-keyframes snowflakes {
-  from {-moz-transform: translateY(0);opacity: 1;}
-  50% {opacity: 0.7;}
-  to {-moz-transform: translateY(200px);opacity: 0;}
-}
-@-moz-keyframes snowflake {
-  0% {-moz-transform: translateX(0);}
-  25% {-moz-transform: translateX(350px);}
-  50% {-moz-transform: translateX(0);opacity: 1;}
-  75% {-moz-transform: translateX(300px);}
-  100% {-moz-transform: translateX(0);}
-}
-@-ms-keyframes snowflakes {
-  from {-ms-transform: translateY(0);opacity: 1;}
-  50% {opacity: 0.7;}
-  to {-ms-transform: translateY(200px);opacity: 0;}
-}
-@-ms-keyframes snowflake {
-  0% {-ms-transform: translateX(0);}
-  25% {-ms-transform: translateX(350px);}
-  50% {-ms-transform: translateX(0);opacity: 1;}
-  75% {-ms-transform: translateX(300px);}
-  100% {-ms-transform: translateX(0);}
-}
-@keyframes snowflakes {
-  from {transform: translateY(0);opacity: 1;}
-  50% {opacity: 0.7;}
-  to {transform: translateY(200px);opacity: 0;}
-}
-@keyframes snowflake {
-  0% {transform: translateX(0);}
-  25% {transform: translateX(350px);}
-  50% {transform: translateX(0);opacity: 1;}
-  75% {transform: translateX(300px);}
-  100% {transform: translateX(0);}
-}
-
-
-
-
-</style>
 
     </head>
     <body style="background-color: white">
@@ -1284,480 +104,870 @@ a:not([href]):hover {
 
             <header >
               
-                <div class="top-nav " id="top-nav" style=" position: fixed;width: 100%" >
-
-                  
 
 
-             
-                
-                
 
-                    <div id="top-nav2" class="d-flex align-items-center" style="text-align: center; display: flex; margin: 5px 35px;  height:   70% ;">
-                      <a href="{{ url('/') }}/"><img src="{{ asset('img/diseño/logoweb2.png') }}" class="logoweb2" ></a>
-                      <a class="nav-link" id="nav-link"  href="{{ url('/') }}/">Inicio</a>
-                      
-                      <a class="nav-link" class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorías</a>
-                        <div  class="dropdown-menu " aria-labelledby="navbarDropdown" >
-                          <div style="display: grid; grid-template-columns: auto auto auto;">
-                            @foreach($categories as $category)
-                          <a class="dropdown-item" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
-                      
-                          
-                          @endforeach
-                          </div>
-                          
-
-                          
-                        </div>
-                        
-                      <!-- <a class="nav-link"  href="{{ url('/') }}/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>PRODUCTOS MÁS VENDIDOS</a> -->
-                      <a class="nav-link"  href="{{ url('/') }}/seguimiento">Tu Compra</a>
-                      <a class="nav-link" href="{{ url('/') }}/contacto">Contactar</a>
-
-                      <div class="partials-search" >
-                              @include('partials.search')
-                      </div>
-                      <div class="btn-group">
-  <a type="button" class="nav-link" class="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 27px;">
-    <i class="fa fa-user fa-3" aria-hidden="true"></i>
-  </a>
-  <div class="dropdown-menu">
-
-        @guest
-            <a class="dropdown-item" href="{{ route('register') }}">REGISTRARSE</a>
-            <a class="dropdown-item" href="{{ route('login') }}">INICIAR SESIÓN</a>
-        @else
-            <a class="dropdown-item" href="#">MI CUENTA</a>     
-            <a class="dropdown-item" href="{{ route('users.edit') }}">MI PERFIL</a></li>
-            <a class="dropdown-item" href="{{ route('orders.index') }}">MIS ORDENES</a></li>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="{{ route('logout') }}"
-                onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit();">
-                SALIR SESIÓN
-            </a>
-       
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-            {{ csrf_field() }}
-        </form>
-        @endguest
-
-
-    
-  </div>
-</div>
-
-<a style="font-size: 27px; align-items: baseline;" class="nav-link" href="{{ url('/') }}/cart"><i class="fas fa-shopping-cart"></i> @if (Cart::instance('default')->count() > 0)
-        <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
-        @endif</a>
-            
-                        
-                         
-                    </div>
-
-
-                </div> <!-- end top-nav -->
-
-<div id="carouselExampleIndicators" class="carousel slide carousel-home" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="{{ asset('img/diseño/slider1.jpg') }}" alt="First slide">
-    </div>
-     @foreach($banners as $banner)
-                    
-      <div class="carousel-item">
-        <img class="d-block w-100" src="{{ categoryImage($banner->imagen) }}" alt="Second slide">
-      </div>
-          
-      @endforeach
-    
-    
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-                
             </header>
 
 
 
 
-          
 
-    <section class="section_fuente" style="background-color:#ffffff;padding-top:50px;padding-bottom:90px;">
-      <div class="container">
-        <div class="col-md-12 text-center">
-          <h2 class="size-28 negro pb" style="padding-bottom: 15px;">SOMOS IMPORTADORES DIRECTOS</h2>
-          <p class="lead" style="padding-bottom: 25px; text-align: center">Tenemos la mejor variedad de juguetes y accesorios escolares con precios accesibles para mayoristas.</p>
-          <a  class="btn-section btn-lg " href="{{ url('/') }}/contacto">Más información</a>
-        </div>
-        
-      </div>
-    </section>
-
-
-
-
-    <section class="section_fuente pt-pb-e" style="background-color:#fbecd7">
-      <div class="container">
-        <div class="col-md-12 text-center">
-          <h2 class="size-28 negrof pb" style="padding-bottom: 15px;">TODO ESTO ES LO QUE HACEMOS PARA TI</h2>
-          <p class="lead" style="padding-bottom: 25px; text-align: center; ">Encuentra los mejores productos para abastecer tu negocio a los mejores precios. Realizamos ventas al por mayor y menor en todo el Perú.</p>
-        </div>
-        <div class="col-md-12 col-md-offset-1 text-center">
-          <div class="row">
-            <div data-wow-delay="0.2s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn; padding-bottom: 15px;">
-              <h3 class="negrof" style="padding-bottom: 10px;"><i class="fas fa-pager" style="font-size:70px;padding-bottom: 10px; color:#ffb700"></i><br>PAGO DE FORMA SEGURA
-              </h3><p style="color: black">En Micky nos importa tu seguridad, realiza los pagos a través de depositos o en efectivo.</p>
-            </div>
-
-            <div data-wow-delay="0.4s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn; padding-bottom: 15px;">
-              <h3 class="negrof" style="padding-bottom: 10px;"><i class="fas fa-truck-moving pb15" style="font-size:70px;padding-bottom: 10px;color:#ffb700"></i><br>ENVÍOS A TODO EL PERÚ
-              </h3><p style="color: black">Se realizan envíos a todo el Perú, y a través de la página web puedes conocer nuestros ultimos productos.</p>
-            </div>
-
-            <div data-wow-delay="0.6s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn; padding-bottom: 15px;">
-              <h3 class="negrof" style="padding-bottom: 10px;"><i class="fas fa-award pb15" style="font-size:70px;padding-bottom: 10px;color:#ffb700"></i><br>PRODUCTOS DE CALIDAD
-              </h3><p style="color: black">Ofrecemos productos de calidad y con garantía pensando siempre en ustedes.</p>
-            </div>
-
-            <div data-wow-delay="0.8s" class="col-lg-3 col-sm-6 wow fadeIn" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeIn; padding-bottom: 15px;">
-              <h3 class="negrof" style="padding-bottom: 10px;"><i class="fas fa-tags pb15" style="font-size:70px;padding-bottom: 10px;color:#ffb700"></i></i><br>LOS MEJORES PRECIOS
-              </h3>
-              <p style="color: black">Realizamos ventas por mayor y menor, puedes realizar tu cotización a traves de nuestra pagina web o con un asesor de venta.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-          <!--   <section class="section_definir section_fuente">
-  <div class="container-fluid">
-    <div class="row justify-content-md-center" >
-      
-      <div class="col-sm-6 col-md-6 pr-pl0 " style="padding-left: 0px;">
-        <img src="{{ asset('img/diseño/present.jpg') }}" alt="">
-      </div>
-      
-      <div class="col-sm-6 col-md-6 col-md-offset-2 text-center ">
-        <div class="col-md-12">
-          <h1 class="diseño_virtual" style="padding-top: 15px;"><strong>Bienvenidos a Litercorp</strong></h1><br>
-        </div> 
-        <h2 style="text-align: justify" class="wow fadeIn animated texto " data-wow-delay="0.2s"  >Somos una Empresa dedicada a la Distribución de productos de Ferretería 
-        a los sectores que lo requieren, mediante el innovador y permanente Servicio; generando Progreso y Estabilidad a las Personas que hacen posible la Existencia de 
-        esta Empresa, siendo así un aliado Estratégico de Nuestros Clientes, Proveedores y Colaboradores, comprometidos con el Bienestar de la Sociedad.</h2>
-
-        
-      </div>
-      
-
-      
-
-    </div>
-
-  </div>
-
-
-
-</section> -->
-
-           <div class="menu__responsive" >
-
-              <div class="logo__responsive">
-                <a href="{{ url('/') }}/"> <span class="cart-count"><img src="{{ asset('img/diseño/logoweb2.png') }}" class="logoweb2"></span></a>
-
-              </div>
-             
-            <div class="carrito_top" style=" padding-right: 15px;">
-
-              <li class="nav-item"><a class="navbar__link" href="{{ route('cart.index') }}"><i class="fas fa-shopping-cart"></i>
-              @if (Cart::instance('default')->count() > 0)
-              <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
-              @endif
-              </a>
-            </li>
-
-
-
-              {{-- @foreach($items as $menu_item)
-
-                  <li>
-                      <a href="{{ $menu_item->link() }}">
-                          {{ $menu_item->title }}
-                          @if ($menu_item->title === 'Cart')
-                              @if (Cart::instance('default')->count() > 0)
-                              <span class="cart-count"><span>{{ Cart::instance('default')->count() }}</span></span>
-                              @endif
-                          @endif
-                      </a>
-                  </li>
-                  @endforeach --}}
-                  <!-- <a class="navbar__link" href="{{ url('/')}}/mi-carrito"><i class="fas fa-shopping-cart"></i><span class="pl-2">(0)</span></a> -->
-                </div>
-                <div id="menu-icon-shape">
-
-                  <div id="menu-icon">
-                    <div id="top"></div>
-                    <div id="middle"></div>
-                    <div id="bottom"></div>
-                  </div>
-                </div>
-    </div>
-    <nav class="nav-drill">
-      <ul class="nav-items nav-level-1">
-        <li class="nav-item pad10">
-          <a class="nav-link nav-link2" href="{{ url('/us') }}">
-            QUIENES SOMOS
-          </a>
-        </li>
-        <li class="nav-item pad10">
-          <a class="nav-link nav-link2" href="{{ url('/seguimiento') }}">
-            SEGUIMIENTO DE TU COMPRA
-          </a>
-        </li>
-
-        <li class="nav-item pad10">
-          <a class="nav-link nav-link2" href="{{ url('/') }}/cart">
-            CARRITO  @if (Cart::instance('default')->count() > 0)
-        <span class="pl-2"><span>({{ Cart::instance('default')->count() }})</span></span>
-        @endif
-          </a>
-        </li>
-        <li class="nav-item nav-expand pad10">
-          <a class="nav-link nav-link2 nav-expand-link " href="#">
-            CATEGORÍAS
-          </a>
-          <ul class="nav-items nav-expand-content">
-          @foreach($categories as $category)
-                <li  class="nav-item"><a class="nav-link nav-link2" href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
-          <li>
-          @endforeach
-          </ul>
-        </li>
-        @guest
-        <li class="nav-item pad10 "><a class="nav-link nav-link2" href="{{ route('register') }}">REGISTRARSE</a></li>
-        <li class="nav-item pad10 "><a class="nav-link nav-link2" href="{{ route('login') }}">INICIAR SESIÓN</a></li>
-        @else
-        <li class="nav-item nav-expand pad10">
-            <a class="nav-link nav-link2 nav-expand-link " href="#">Mi cuenta</a>
-
-            <ul class="nav-items nav-expand-content">
-          
-                <li  class="nav-item"><a class="nav-link nav-link2" href="{{ route('users.edit') }}">Mi Perfil</a></li>
-                <li>
-
-                <li  class="nav-item"><a class="nav-link nav-link2" href="{{ route('orders.index') }}">Mis Órdenes</a></li>
-                <li>
-          </ul>
-        </li>
-        <li class="nav-item pad10">
-            <a class="nav-link nav-link2 colornill" href="{{ route('logout') }}"
-                onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit();">
-                Salir Sesión
-            </a>
-        </li>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-            {{ csrf_field() }}
-        </form>
-        @endguest
-        <li class="nav-item pad10 ">
-          <a class="nav-link nav-link2" href="{{ url('/') }}/contacto">
-            CONTACTAR
-          </a>
-        </li>
-      </ul>
-    </nav>
-    
-    
-
-
-     <div class="container">
-        @if (session()->has('success_message'))
-            <div class="alert alert-success">
-                {{ session()->get('success_message') }}
-            </div>
-        @endif
-
-        @if(count($errors) > 0)
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-    </div>
-
-  
-    <div class="contener_snow">
-      <div class="snowflakes">
-          <div class="snowflake">&nbsp;</div>
-          <div class="snowflake">&nbsp;</div>
-          <div class="snowflake">&nbsp;</div>
-          <div class="snowflake">&nbsp;</div>
-          <div class="snowflake">&nbsp;</div>
-          <div class="snowflake">&nbsp;</div>
-          <div class="snowflake">&nbsp;</div>
-          <div class="snowflake">&nbsp;</div>
-      </div>
-    </div>
-
-    <div class="contener_snow2">
-      <div class="snowflakes">
-          <div class="snowflake">&nbsp;</div>
-          <div class="snowflake">&nbsp;</div>
-          <div class="snowflake">&nbsp;</div>
-          <div class="snowflake">&nbsp;</div>
-          <div class="snowflake">&nbsp;</div>
-          <div class="snowflake">&nbsp;</div>
-          <div class="snowflake">&nbsp;</div>
-          <div class="snowflake">&nbsp;</div>
-      </div>
-    </div>
-    
-
-
-    <div class="products-section container">
-       
-        <div>
-            <div class="products-header">
-                <h1 class="stylish-heading">{{ $categoryName }}</h1>
-                <div>
-                    <strong>Precio: </strong>
-                    <a href="{{ route('shop.index', ['category'=> request()->category, 'sort' => 'low_high']) }}">Menor a mayor</a> |
-                    <a href="{{ route('shop.index', ['category'=> request()->category, 'sort' => 'high_low']) }}">Mayor a menor</a>
-
-                </div>
-            </div>
-
-            <div class="products text-center">
-                @forelse ($products as $product)
-                  @if($product->quantity > 0)
-                    <div class="product polaroid ">
-                        <div ><a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt="product"></a></div>
-                        <div ><a href="{{ route('shop.show', $product->slug) }}"><div class="product-name" style=" color: #333333;padding-top: 50px;">{{ $product->name }} </div></a>
-                        <div class="product-price" style="font-weight: bold; color: #003166;">{{ $product->presentPrice() }}</div></div>
+ <!-------------------------------------------------------- Top Bar Start -->
+        <div class="wrapper">
+            <!-- Top Bar Start -->
+            <div class="top-bar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <h1>JNP</h1>
+                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-calendar"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Horario de atención</h3>
+                                            <p>Mon - Fri, 8:00 - 9:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-call"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Llámanos</h3>
+                                            <p>+012 345 6789</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-send-mail"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Email</h3>
+                                            <p>info@example.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  @endif
-                @empty
-                    <div style="text-align: left">No items found</div>
-                @endforelse
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Nav Bar Start -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="{{ url('/') }}/" class="nav-item nav-link active">Inicio</a>
+                                <a href="{{ url('/') }}/us" class="nav-item nav-link">Nosotros</a>
+                                <a href="{{ url('/') }}/servicios" class="nav-item nav-link">Servicios</a>
+                                <a href="{{ url('/') }}/blog" class="nav-item nav-link">Artículos</a>
+                                <a href="{{ url('/') }}/especialidades" class="nav-item nav-link">Especialidades</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Especialidades</a>
+                                    <div class="dropdown-menu">
+                                        <a href="blog.html" class="dropdown-item">SOCIETARIO – CORPORATIVO</a>
+                                        <a href="single.html" class="dropdown-item">Single Page</a>
+                                        <a href="blog.html" class="dropdown-item">PATRIMONIAL – CONTRACTUAL</a>
+                                        <a href="single.html" class="dropdown-item">REGULATORIO</a>
+                                        <a href="blog.html" class="dropdown-item">INMOBILIARIO – INFRAESTRUCTURA</a>
+                                        <a href="single.html" class="dropdown-item">PENAL ECONÓMICO - EMPRESARIAL</a>
+                                        <a href="blog.html" class="dropdown-item">ARBITRAJE</a>
+                                        <a href="single.html" class="dropdown-item">ADMINISTRATIVO</a>
+                                    </div>
+                                </div>
+                                <a href="{{ url('/') }}/contacto" class="nav-item nav-link">Contacto</a>
+                            </div>
+                            <div class="ml-auto">
+                                <a class="btn" href="#"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
 
 
-               
+            <!-- Carousel Start -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{{ asset('img/car2.jpg') }}" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight">Somos Profesionales</p>
+                            <h1 class="animated fadeInLeft">Trabajamos en ti</h1>
+                            <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Contáctate</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="{{ asset('img/car1.jpg') }}" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight">Professional Builder</p>
+                            <h1 class="animated fadeInLeft">We Build Your Home</h1>
+                            <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="{{ asset('img/car3.jpg') }}" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight">We Are Trusted</p>
+                            <h1 class="animated fadeInLeft">For Your Dream Home</h1>
+                            <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- Carousel End -->
 
 
+            <!-- Feature Start-->
+            <div class="feature wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="feature-item">
+                            
+                                <div class="feature-text">
+                                    <h3>Expertos y Especialistas</h3>
+                                    <p>Somos profesionales de alto nivel dispuestos a ayudarte</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="feature-item">
+                              
+                                <div class="feature-text">
+                                    <h3>Trabajo de Calidad</h3>
+                                    <p>Priorizamos tu bienestar, nos encargamos de todo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="feature-item">
+                               
+                                <div class="feature-text">
+                                    <h3>Atención Inmediata</h3>
+                                    <p>Brindamos ayuda legal inmediata, no te quedes esperando</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature End-->
 
 
-            </div> <!-- end products -->
+            <!-- About Start -->
+            <div class="about wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-img">
+                                <img src="{{ asset('img/about2.jpg') }}" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="section-header text-left">
+                                <p>Ayuda Legal</p>
+                                <h2>5 Años de Experiencia</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                </p>
+                                <a class="btn" href="">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
 
-            <div class="spacer"></div>
-            {{ $products->appends(request()->input())->links() }}
+
+            <!-- Fact Start -->
+            <div class="fact">
+                <div class="container-fluid">
+                    <div class="row counters">
+                        <div class="col-md-6 fact-left wow slideInLeft">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="fact-icon">
+                                        <i class="flaticon-worker"></i>
+                                    </div>
+                                    <div class="fact-text">
+                                        <h2 data-toggle="counter-up">10</h2>
+                                        <p>Asesores Legales</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="fact-icon">
+                                        <i class="flaticon-building"></i>
+                                    </div>
+                                    <div class="fact-text">
+                                        <h2 data-toggle="counter-up">285</h2>
+                                        <p>Clientes Satisfechos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 fact-right wow slideInRight">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="fact-icon">
+                                        <i class="flaticon-address"></i>
+                                    </div>
+                                    <div class="fact-text">
+                                        <h2 data-toggle="counter-up">132</h2>
+                                        <p>Casos Resueltos</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="fact-icon">
+                                        <i class="flaticon-crane"></i>
+                                    </div>
+                                    <div class="fact-text">
+                                        <h2 data-toggle="counter-up">20</h2>
+                                        <p>Casos en Proceso</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fact End -->
+
+
+            <!-- Service Start -->
+            <div class="service">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Especialidades</p>
+                        <h2>Proveemos ayuda legal</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{ asset('img/serv1.jpg') }}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Cualquier operación en el ámbito empresarial requiere anticipar aspectos prácticos de carácter legal que surgirán con seguridad dada la naturaleza de cada negocio. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>SOCIETARIO – CORPORATIVO</h3>
+                                    <a class="btn" href="img/service-1.jpg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{ asset('img/serv2.jpg') }}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>House Renovation</h3>
+                                    <a class="btn" href="" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{ asset('img/serv3.jpg') }}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Architecture Design</h3>
+                                    <a class="btn" href="img/service-3.jpg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{ asset('img/serv4.jpg') }}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Interior Design</h3>
+                                    <a class="btn" href="img/service-4.jpg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{ asset('img/serv5.jpg') }}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Fixing & Support</h3>
+                                    <a class="btn" href="img/service-5.jpg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <img src="{{ asset('img/serv6.jpg') }}" alt="Image">
+                                    <div class="service-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="service-text">
+                                    <h3>Painting</h3>
+                                    <a class="btn" href="img/service-6.jpg" data-lightbox="service">+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service End -->
+
+
+            <!-- Video Start -->
+            <div class="video wow fadeIn" data-wow-delay="0.1s">
+                <div class="container">
+                    <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>        
+                            <!-- 16:9 aspect ratio -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Video End -->
+
+
+            <!-- Team Start -->
+            <div class="team">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Nuestro Equipo</p>
+                        <h2>Meet Our Engineer</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{{ asset('img/team1.jpg') }}" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Adam Phillips</h2>
+                                    <p>CEO & Founder</p>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{{ asset('img/team2.jpg') }}" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Dylan Adams</h2>
+                                    <p>Civil Engineer</p>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{{ asset('img/team3.jpg') }}" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Jhon Doe</h2>
+                                    <p>Interior Designer</p>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{{ asset('img/team4.jpg') }}" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Josh Dunn</h2>
+                                    <p>Painter</p>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team End -->
+            
+
+            <!-- FAQs Start -->
+            <div class="faqs">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Preguntas Frecuentes</p>
+                        <h2>¿Tienes alguna duda?</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="accordion-1">
+                                <div class="card wow fadeInLeft" data-wow-delay="0.1s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
+                                            ¿Dónde están ubicados?
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.2s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
+                                            ¿Én que se especializan?
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.3s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
+                                            ¿Qué servicios ofrecen?
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.4s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
+                                            ¿Realizan consultas online?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.5s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
+                                            ¿Cúales son sus tarifas?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="accordion-2">
+                                <div class="card wow fadeInRight" data-wow-delay="0.1s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
+                                           ¿Qué abogado atenderá mi caso?
+                                        </a>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.2s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
+                                            ¿Son un estudio de abogados?
+                                        </a>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
+                                            Cómo Me Mantienen Informado De Los Avances De Mi Asunto?
+                                        </a>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.4s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
+                                            ¿Pueden Asesorarme A Distancia?
+                                        </a>
+                                    </div>
+                                    <div id="collapseNine" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.5s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen">
+                                            Necesito De Sus Servicios ¿Qué Hago?
+                                        </a>
+                                    </div>
+                                    <div id="collapseTen" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQs End -->
+
+
+            <!-- Testimonial Start -->
+            <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="testimonial-slider-nav">
+                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
+                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="testimonial-slider">
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                                <div class="slider-item">
+                                    <h3>Customer Name</h3>
+                                    <h4>profession</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial End -->
+
+
+            <!-- Blog Start -->
+            <div class="blog">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Latest Blog</p>
+                        <h2>Latest From Our Blog</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <img src="img/blog-1.jpg" alt="Image">
+                                </div>
+                                <div class="blog-title">
+                                    <h3>Lorem ipsum dolor sit</h3>
+                                    <a class="btn" href="">+</a>
+                                </div>
+                                <div class="blog-meta">
+                                    <p>By<a href="">Admin</a></p>
+                                    <p>In<a href="">Construction</a></p>
+                                </div>
+                                <div class="blog-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <img src="img/blog-2.jpg" alt="Image">
+                                </div>
+                                <div class="blog-title">
+                                    <h3>Lorem ipsum dolor sit</h3>
+                                    <a class="btn" href="">+</a>
+                                </div>
+                                <div class="blog-meta">
+                                    <p>By<a href="">Admin</a></p>
+                                    <p>In<a href="">Construction</a></p>
+                                </div>
+                                <div class="blog-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <img src="img/blog-3.jpg" alt="Image">
+                                </div>
+                                <div class="blog-title">
+                                    <h3>Lorem ipsum dolor sit</h3>
+                                    <a class="btn" href="">+</a>
+                                </div>
+                                <div class="blog-meta">
+                                    <p>By<a href="">Admin</a></p>
+                                    <p>In<a href="">Construction</a></p>
+                                </div>
+                                <div class="blog-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog End -->
+
+
+            <!-- Footer Start -->
+            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <h2>Office Contact</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
+                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                                <p><i class="fa fa-envelope"></i>info@example.com</p>
+                                <div class="footer-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Services Areas</h2>
+                                <a href="">Building Construction</a>
+                                <a href="">House Renovation</a>
+                                <a href="">Architecture Design</a>
+                                <a href="">Interior Design</a>
+                                <a href="">Painting</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Useful Pages</h2>
+                                <a href="">About Us</a>
+                                <a href="">Contact Us</a>
+                                <a href="">Our Team</a>
+                                <a href="">Projects</a>
+                                <a href="">Testimonial</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="newsletter">
+                                <h2>Newsletter</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu
+                                </p>
+                                <div class="form">
+                                    <input class="form-control" placeholder="Email here">
+                                    <button class="btn">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>
-    </div>
 
 
 
-
-            @include('partials.footer')
-
-           
-
-        </div> <!-- end #app -->
         <script src="js/app.js"></script>
         <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
     <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
     <script src="{{ asset('js/algolia.js?v=1.2') }}"></script>
-    <script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
-
-<script type="text/javascript">
-console.clear();
-
-const navExpand = [].slice.call(document.querySelectorAll('.nav-expand'));
-const backLink = `<li class="nav-item">
-  <a class="nav-link nav-back-link" href="javascript:;">
-    Volver
-  </a>
-</li>`;
-
-navExpand.forEach(item => {
-  item.querySelector('.nav-expand-content').insertAdjacentHTML('afterbegin', backLink);
-  item.querySelector('.nav-link').addEventListener('click', () => item.classList.add('active'));
-  item.querySelector('.nav-back-link').addEventListener('click', () => item.classList.remove('active'));
-});
 
 
-// ---------------------------------------
-// not-so-important stuff starts here
-
-const ham = document.getElementById('menu-icon-shape');
-ham.addEventListener('click', function () {
-  document.body.classList.toggle('nav-is-toggled');
-});
-</script>
-
-<script type="text/javascript">
-
-/** Code By Webdevtrick ( https://webdevtrick.com ) **/
-var $carousel = $('.carousel2'),
-    currentSlide, nextSlide;
- 
-$('.next').click(function() {
-  currentSlide = $carousel.attr('data-slide');
-  nextSlide = +currentSlide === 4 ? 1 : +currentSlide + 1;
-  $carousel.attr('data-slide', nextSlide);
-});
- 
-$('.prev').click(function() {
-  currentSlide = $carousel.attr('data-slide');
-  nextSlide = +currentSlide === 1 ? 4 : +currentSlide - 1;
-  $carousel.attr('data-slide', nextSlide);
-});
-
-setInterval(function() {
-  currentSlide = $carousel.attr('data-slide');
-  nextSlide = +currentSlide === 4 ? 1 : +currentSlide + 1;
-  $carousel.attr('data-slide', nextSlide);
-},5000);
-</script>
     </body>
 </html>
 
@@ -1774,33 +984,149 @@ setInterval(function() {
   interval: 10
 })
 </script>
-<script>
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("top-nav").style.height = "65px";
-   document.getElementById("top-nav").style.backgroundColor = "#003166";
-   document.getElementById("top-nav").style.boxShadow = "0px 15px 15px 5px rgba(0,0,0,.2)";
-     document.getElementById("top-nav2").style.padding = "5px 20px";
-    
-    document.getElementById("top-nav2").style.color = "white";
-    
-    document.getElementById("top-nav2").style.margin = "5px 5px";
-    
+<script src="{{ asset('js/owl.carousel.min.js?v=1.2') }}"></script>
+<script type="text/javascript">
 
-  } else {
-    document.getElementById("top-nav").style.height = "90px";
-    document.getElementById("top-nav").style.boxShadow = "0 0px 0px 0px rgba(0,0,0,0)";
-    document.getElementById("top-nav2").style.padding = "0px 0px";
+
+(function ($) {
+    "use strict";
     
-    document.getElementById("top-nav2").style.margin = "5px 35px";
-    document.getElementById("top-nav").style.backgroundColor = "#003166";
-    document.getElementById("top-nav2").style.color = "white";
-   
-  }
-}
+    // Initiate the wowjs
+    new WOW().init();
+    
+    
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
+    });
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
+    
+    
+    // Sticky Navbar
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 90) {
+            $('.nav-bar').addClass('nav-sticky');
+            $('.carousel, .page-header').css("margin-top", "73px");
+        } else {
+            $('.nav-bar').removeClass('nav-sticky');
+            $('.carousel, .page-header').css("margin-top", "0");
+        }
+    });
+    
+    
+    // Dropdown on mouse hover
+    $(document).ready(function () {
+        function toggleNavbarMethod() {
+            if ($(window).width() > 992) {
+                $('.navbar .dropdown').on('mouseover', function () {
+                    $('.dropdown-toggle', this).trigger('click');
+                }).on('mouseout', function () {
+                    $('.dropdown-toggle', this).trigger('click').blur();
+                });
+            } else {
+                $('.navbar .dropdown').off('mouseover').off('mouseout');
+            }
+        }
+        toggleNavbarMethod();
+        $(window).resize(toggleNavbarMethod);
+    });
+    
+    
+    // jQuery counterUp
+    $('[data-toggle="counter-up"]').counterUp({
+        delay: 10,
+        time: 2000
+    });
+    
+    
+    // Modal Video
+    $(document).ready(function () {
+        var $videoSrc;
+        $('.btn-play').click(function () {
+            $videoSrc = $(this).data("src");
+        });
+        console.log($videoSrc);
+
+        $('#videoModal').on('shown.bs.modal', function (e) {
+            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+        })
+
+        $('#videoModal').on('hide.bs.modal', function (e) {
+            $("#video").attr('src', $videoSrc);
+        })
+    });
+
+
+    // Testimonial Slider
+    $('.testimonial-slider').slick({
+        infinite: true,
+        autoplay: true,
+        arrows: false,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.testimonial-slider-nav'
+    });
+    $('.testimonial-slider-nav').slick({
+        arrows: false,
+        dots: false,
+        focusOnSelect: true,
+        centerMode: true,
+        centerPadding: '22px',
+        slidesToShow: 3,
+        asNavFor: '.testimonial-slider'
+    });
+    $('.testimonial .slider-nav').css({"position": "relative", "height": "160px"});
+    
+    
+    // Blogs carousel
+    $(".related-slider").owlCarousel({
+        autoplay: true,
+        dots: false,
+        loop: true,
+        nav : true,
+        navText : [
+            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+        ],
+        responsive: {
+            0:{
+                items:1
+            },
+            576:{
+                items:1
+            },
+            768:{
+                items:2
+            }
+        }
+    });
+    
+    
+    // Portfolio isotope and filter
+    var portfolioIsotope = $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+    });
+
+    $('#portfolio-flters li').on('click', function () {
+        $("#portfolio-flters li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+
+        portfolioIsotope.isotope({filter: $(this).data('filter')});
+    });
+    
+})(jQuery);
+
+
 </script>
     </body>
 </html>

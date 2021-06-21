@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Product;
 use App\Banner;
 use App\Category;
+use App\Post;
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
@@ -17,6 +18,7 @@ class LandingPageController extends Controller
     public function index()
     {
         $products = Product::where('featured', true)->take(8)->inRandomOrder()->get();
+        $posts= Post::latest()->take(10)->get();
         $categories = Category::all();
         $pagination = 9;
         $categories = Category::all();
@@ -44,6 +46,7 @@ class LandingPageController extends Controller
             'categories' => $categories,
             'categoryName' => $categoryName,
             'banners' => $banners,
+            'posts' => $posts,
         ]);
 
     }
