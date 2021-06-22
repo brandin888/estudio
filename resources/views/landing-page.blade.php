@@ -16,7 +16,7 @@
         <meta name="description" content="">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
-        <link rel="shortcut icon" href="{{ asset('img/diseño/icono.png') }}" />
+        <link rel="shortcut icon" href="" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="{{ asset('css/all.css?v=1.1') }}" rel="stylesheet"> <!--load all styles -->
         <link href="{{ asset('css/animate.css?v=1.1') }}" rel="stylesheet">
