@@ -8,12 +8,18 @@
             <div class="top-bar">
                 <div class="container-fluid">
                     <div class="row align-items-center">
-                        <div class="col-lg-4 col-md-12">
+                        <div class="col-lg-4 col-md-12 center">
                             <div class="logo">
                                 <a href="index.html">
                                     <h1>JNP</h1>
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
+
                                 </a>
+                                <div class="vertical"></div>
+                                <div class="logomin"> 
+                                    <div> Abogados &</div>
+                                    <div> Consultores</div>
+                                 </div>        
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-7 d-none d-lg-block">
@@ -73,12 +79,12 @@
                                 <a href="{{ url('/') }}/us" class="nav-item nav-link">Nosotros</a>
                                 <a href="{{ url('/') }}/servicios" class="nav-item nav-link">Servicios</a>
                                 <a href="{{ url('/') }}/blog" class="nav-item nav-link">Artículos</a>
-                                <a href="{{ url('/') }}/especialidades" class="nav-item nav-link">Especialidades</a>
+
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Especialidades</a>
                                     <div class="dropdown-menu">
                                         <a href="blog.html" class="dropdown-item">SOCIETARIO – CORPORATIVO</a>
-                                        <a href="single.html" class="dropdown-item">Single Page</a>
+                                        
                                         <a href="blog.html" class="dropdown-item">PATRIMONIAL – CONTRACTUAL</a>
                                         <a href="single.html" class="dropdown-item">REGULATORIO</a>
                                         <a href="blog.html" class="dropdown-item">INMOBILIARIO – INFRAESTRUCTURA</a>
@@ -97,6 +103,7 @@
                 </div>
             </div>
             <!-- Nav Bar End -->
+
 <script type="text/javascript">
   //Active Menu
 
