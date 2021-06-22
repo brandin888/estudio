@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 
 
 
-class BlogController extends Controller
+class SpecialtyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -44,18 +44,18 @@ class BlogController extends Controller
     public function show($slug)
     {
 
-        $post = Post::where('slug', $slug)->firstOrFail();
+        $specialty = Specialty::where('slug', $slug)->firstOrFail();
 
     //    dd($product);
         $categories = Category::all();
         $posts= Post::all();
         $specialties = Specialty::all();
 
-        return view('post')->with([
+        return view('specialty')->with([
 
             'categories' => $categories,
             'posts' => $posts,
-            'post' => $post,
+            'specialty' => $specialty,
             'specialties' => $specialties,
         ]);
     }

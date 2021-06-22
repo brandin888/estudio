@@ -6,6 +6,7 @@ use App\Product;
 use App\Banner;
 use App\Category;
 use App\Post;
+use App\Specialty;
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
@@ -23,6 +24,7 @@ class LandingPageController extends Controller
         $pagination = 9;
         $categories = Category::all();
         $banners = Banner::all();
+        $specialties = Specialty::all();
         if (request()->category) {
             $products = Product::with('categories')->whereHas('categories', function ($query) {
                 $query->where('slug', request()->category);
@@ -47,6 +49,7 @@ class LandingPageController extends Controller
             'categoryName' => $categoryName,
             'banners' => $banners,
             'posts' => $posts,
+            'specialties' => $specialties,
         ]);
 
     }

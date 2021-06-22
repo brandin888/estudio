@@ -22,11 +22,10 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Especialidades</h2>
-                                <a href="">Especialidad1</a>
-                                <a href="">Especialidad1</a>
-                                <a href="">Especialidad1</a>
-                                <a href="">Especialidad1</a>
-                                <a href="">Especialidad1</a>
+                                @foreach($specialties as $specialty)
+                                <a href="{{ route('specialty.show', $specialty->slug) }}" >{{$specialty->name}}</a>
+                                @endforeach
+
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">

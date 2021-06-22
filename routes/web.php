@@ -11,7 +11,7 @@ Route::get('/shop', 'ShopController@index')->name('shop.index');
 Route::get('/blog', 'BlogController@index')->name('blog.index');
 Route::get('/blog/{post}', 'BlogController@show')->name('blog.show');
 Route::get('/shop/{product}', 'ShopController@show')->name('shop.show');
-
+Route::get('/specialty/{specialty}', 'SpecialtyController@show')->name('specialty.show');
 // Route::get('/password', 'SearchController@reset')->name('password');
 Route::get('/cart', 'CartController@index')->name('cart.index');
 Route::get('/cart/records', 'CartController@records');

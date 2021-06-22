@@ -31,7 +31,7 @@
                                         </div>
                                         <div class="top-bar-text">
                                             <h3>Horario de atención</h3>
-                                            <p>Mon - Fri, 8:00 - 9:00</p>
+                                            <p>Lun - Vie, 8:00 am - 6:00 pm</p>
                                         </div>
                                     </div>
                                 </div>
@@ -42,7 +42,7 @@
                                         </div>
                                         <div class="top-bar-text">
                                             <h3>Llámanos</h3>
-                                            <p>+012 345 6789</p>
+                                            <p>+51 989 218 856</p>
                                         </div>
                                     </div>
                                 </div>
@@ -52,8 +52,9 @@
                                             <i class="flaticon-send-mail"></i>
                                         </div>
                                         <div class="top-bar-text">
-                                            <h3>Email</h3>
-                                            <p>info@example.com</p>
+                                            <h3>Correo</h3>
+                                            <p>jnahuin@pucp.pe
+</p>
                                         </div>
                                     </div>
                                 </div>
@@ -83,20 +84,16 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Especialidades</a>
                                     <div class="dropdown-menu">
-                                        <a href="blog.html" class="dropdown-item">SOCIETARIO – CORPORATIVO</a>
+                                        @foreach($specialties as $specialty)
+                                        <a href="{{ route('specialty.show', $specialty->slug) }}" class="dropdown-item">{{$specialty->name}}</a>
+                                        @endforeach
                                         
-                                        <a href="blog.html" class="dropdown-item">PATRIMONIAL – CONTRACTUAL</a>
-                                        <a href="single.html" class="dropdown-item">REGULATORIO</a>
-                                        <a href="blog.html" class="dropdown-item">INMOBILIARIO – INFRAESTRUCTURA</a>
-                                        <a href="single.html" class="dropdown-item">PENAL ECONÓMICO - EMPRESARIAL</a>
-                                        <a href="blog.html" class="dropdown-item">ARBITRAJE</a>
-                                        <a href="single.html" class="dropdown-item">ADMINISTRATIVO</a>
                                     </div>
                                 </div>
                                 <a href="{{ url('/') }}/contacto" class="nav-item nav-link">Contacto</a>
                             </div>
                             <div class="ml-auto">
-                                <a class="btn" href="#"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+                                <a class="btn" href="https://wa.link/fqi71q"><i class="fab fa-whatsapp"></i> Whatsapp</a>
                             </div>
                         </div>
                     </nav>
