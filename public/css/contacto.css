@@ -28407,9 +28407,7 @@
   }
   
   @media (max-width: 991px) {
-    body {
-      margin-top: 58px;
-    }
+
   
     .menu__responsive {
       display: block;
