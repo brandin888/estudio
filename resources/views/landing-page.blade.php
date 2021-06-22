@@ -230,18 +230,18 @@
                     <div class="carousel-item">
                         <img src="{{ asset('img/car1.jpg') }}" alt="Carousel Image">
                         <div class="carousel-caption">
-                            <p class="animated fadeInRight">Professional Builder</p>
-                            <h1 class="animated fadeInLeft">We Build Your Home</h1>
-                            <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
+                            <p class="animated fadeInRight">Ayuda y Soporte Legal</p>
+                            <h1 class="animated fadeInLeft">Protegemos tus intereses</h1>
+                            <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Contáctate</a>
                         </div>
                     </div>
 
                     <div class="carousel-item">
                         <img src="{{ asset('img/car3.jpg') }}" alt="Carousel Image">
                         <div class="carousel-caption">
-                            <p class="animated fadeInRight">We Are Trusted</p>
-                            <h1 class="animated fadeInLeft">For Your Dream Home</h1>
-                            <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
+                            <p class="animated fadeInRight">Somos Confiables</p>
+                            <h1 class="animated fadeInLeft">Priorizamos tu bienestar</h1>
+                            <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Contáctate</a>
                         </div>
                     </div>
                 </div>
