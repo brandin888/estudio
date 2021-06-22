@@ -623,7 +623,7 @@
                                 <div class="card wow fadeInLeft" data-wow-delay="0.2s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                                            ¿Én que se especializan?
+                                            ¿En qué se especializan?
                                         </a>
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
@@ -699,7 +699,7 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.3s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
-                                            Cómo Me Mantienen Informado De Los Avances De Mi Asunto?
+                                            ¿Cómo me mantienen informado de los avances de mi asunto?
                                         </a>
                                     </div>
                                     <div id="collapseEight" class="collapse" data-parent="#accordion-2">
@@ -711,7 +711,7 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.4s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
-                                            ¿Pueden Asesorarme A Distancia?
+                                            ¿Pueden asesorarme a distancia?
                                         </a>
                                     </div>
                                     <div id="collapseNine" class="collapse" data-parent="#accordion-2">
@@ -723,7 +723,7 @@
                                 <div class="card wow fadeInRight" data-wow-delay="0.5s">
                                     <div class="card-header">
                                         <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen">
-                                            Necesito De Sus Servicios ¿Qué Hago?
+                                            Necesito de sus servicios. ¿Qué hago?
                                         </a>
                                     </div>
                                     <div id="collapseTen" class="collapse" data-parent="#accordion-2">
