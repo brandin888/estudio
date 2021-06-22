@@ -184,12 +184,12 @@
                                 <a href="{{ url('/') }}/us" class="nav-item nav-link">Nosotros</a>
                                 <a href="{{ url('/') }}/servicios" class="nav-item nav-link">Servicios</a>
                                 <a href="{{ url('/') }}/blog" class="nav-item nav-link">Artículos</a>
-                                <a href="{{ url('/') }}/especialidades" class="nav-item nav-link">Especialidades</a>
+
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Especialidades</a>
                                     <div class="dropdown-menu">
                                         <a href="blog.html" class="dropdown-item">SOCIETARIO – CORPORATIVO</a>
-                                        <a href="single.html" class="dropdown-item">Single Page</a>
+                                        
                                         <a href="blog.html" class="dropdown-item">PATRIMONIAL – CONTRACTUAL</a>
                                         <a href="single.html" class="dropdown-item">REGULATORIO</a>
                                         <a href="blog.html" class="dropdown-item">INMOBILIARIO – INFRAESTRUCTURA</a>
@@ -414,7 +414,7 @@
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <h3>House Renovation</h3>
+                                    <h3>Especialidades</h3>
                                     <a class="btn" href="" data-lightbox="service">+</a>
                                 </div>
                             </div>
@@ -430,7 +430,7 @@
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <h3>Architecture Design</h3>
+                                    <h3>Especialidades</h3>
                                     <a class="btn" href="img/service-3.jpg" data-lightbox="service">+</a>
                                 </div>
                             </div>
@@ -446,7 +446,7 @@
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <h3>Interior Design</h3>
+                                    <h3>Especialidades</h3>
                                     <a class="btn" href="img/service-4.jpg" data-lightbox="service">+</a>
                                 </div>
                             </div>
@@ -462,7 +462,7 @@
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <h3>Fixing & Support</h3>
+                                    <h3>Especialidades</h3>
                                     <a class="btn" href="img/service-5.jpg" data-lightbox="service">+</a>
                                 </div>
                             </div>
@@ -478,7 +478,7 @@
                                     </div>
                                 </div>
                                 <div class="service-text">
-                                    <h3>Painting</h3>
+                                    <h3>Especialidades</h3>
                                     <a class="btn" href="img/service-6.jpg" data-lightbox="service">+</a>
                                 </div>
                             </div>
@@ -761,45 +761,41 @@
                         <div class="col-12">
                             <div class="testimonial-slider">
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
+                                    <h3>Cliente1</h3>
                                     <h4>profession</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
                                 </div>
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
+                                    <h3>Cliente2</h3>
                                     <h4>profession</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
                                 </div>
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
+                                    <h3>Cliente3</h3>
                                     <h4>profession</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
                                 </div>
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
+                                    <h3>Cliente4</h3>
                                     <h4>profession</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
                                 </div>
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
+                                    <h3>Cliente5</h3>
                                     <h4>profession</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
                                 </div>
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
+                                    <h3>Cliente6</h3>
                                     <h4>profession</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
                                 </div>
                                 <div class="slider-item">
-                                    <h3>Customer Name</h3>
+                                    <h3>Cliente7</h3>
                                     <h4>profession</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
                                 </div>
-                                <div class="slider-item">
-                                    <h3>Customer Name</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
+
                             </div>
                         </div>
                     </div>

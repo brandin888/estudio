@@ -7,8 +7,8 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-contact">
                                 <h2>Oficina de Contacto</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                                <p><i class="fa fa-map-marker-alt"></i>Jr.Cotabambas 345 -Cercado de Lima</p>
+                                <p><i class="fa fa-phone-alt"></i>+51 999 999 999</p>
                                 <p><i class="fa fa-envelope"></i>info@example.com</p>
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
@@ -22,21 +22,20 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Especialidades</h2>
-                                <a href="">Building Construction</a>
-                                <a href="">House Renovation</a>
-                                <a href="">Architecture Design</a>
-                                <a href="">Interior Design</a>
-                                <a href="">Painting</a>
+                                <a href="">Especialidad1</a>
+                                <a href="">Especialidad1</a>
+                                <a href="">Especialidad1</a>
+                                <a href="">Especialidad1</a>
+                                <a href="">Especialidad1</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Accesos Directos</h2>
-                                <a href="">About Us</a>
-                                <a href="">Contact Us</a>
-                                <a href="">Our Team</a>
-                                <a href="">Projects</a>
-                                <a href="">Testimonial</a>
+                                <a href="">Nosotros</a>
+                                <a href="">Contáctanos</a>
+                                <a href="">Blog</a>
+                               
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
@@ -45,10 +44,7 @@
                                 <p>
                                     Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu
                                 </p>
-                                <div class="form">
-                                    <input class="form-control" placeholder="Email here">
-                                    <button class="btn">Submit</button>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -65,10 +61,10 @@
                 <div class="container copyright">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
+                            <p>&copy; <a href="#">JNP Abogados</a>, Todos los derechos reservados.</p>
                         </div>
                         <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                            <p>Diseñado por <a href="https://raumiweb.com">Raumi</a></p>
                         </div>
                     </div>
                 </div>
