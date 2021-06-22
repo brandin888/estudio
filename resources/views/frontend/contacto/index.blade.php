@@ -75,18 +75,18 @@
           <!-- <img src="{{ asset('img/contacto02.png') }}" class="contacto__img" alt=""> -->
           <h4><strong style="color: #292e31;">Información de Contacto</strong></h4>
           <ul>
-            <li style="color: #292e31;">Jr.Inambari 763 -Cercado de Lima <br>
+            <li style="color: #292e31;">Jr.Cotabambas 345 -Cercado de Lima <br>
                   Lima - Perú<br>
                   <br>
-                  Oficina: 013016088<br>
-                  <img src="{{ asset('img/wasa.png') }}" width="20" height="19" alt="Whatsapp Litercorp"> <a href="https://api.whatsapp.com/send?phone=+51994084591&amp;text=Solicite%20su%20Cotización" target="_blank" style="color:#11950b"> <b> Whatsapp +51 994 084 591</b> </a><br>
+                  Oficina: 403<br>
+                  <img src="{{ asset('img/wasa.png') }}" width="20" height="19" alt="Whatsapp Litercorp"> <a href="https://api.whatsapp.com/send?phone=+51994084591&amp;text=Solicite%20su%20Cotización" target="_blank" style="color:#11950b"> <b> Whatsapp +51 999 999 999</b> </a><br>
                   <br>
               <h4><strong style="color: #292e31;">Horario de Atención</strong></h4>
               Lunes a Viernes de 9:00AM a 8:00PM<br>
-              <a href="mailto:info@litercorp.com"><i class="fas fa-envelope"></i> distribuidoramicky@gmail.com</a><br><br>
+              <a href="mailto:info@litercorp.com"><i class="fas fa-envelope"></i> aquivaelcorreo@gmail.com</a><br><br>
 
               <h4><strong style="color: #292e31;">Redes Sociales</strong></h4>
-              <a href="https://www.facebook.com/distribuidoramicky" target="_blank" style="color: #3b5998 "><i class="fab fa-facebook"></i> Micky SRL</a>
+              <a href="https://www.facebook.com/distribuidoramicky" target="_blank" style="color: #3b5998 "><i class="fab fa-facebook"></i> Aquivaelfacebook</a>
               
             </li>
         </ul>
