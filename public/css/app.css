@@ -4846,3 +4846,14 @@ a:focus {
         text-align: center;
     }
 }
+
+
+.fonttop {
+font-family: 'Cinzel Decorative', cursive;
+
+}
+.whatsapp{
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+}

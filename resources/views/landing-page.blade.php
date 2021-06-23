@@ -16,6 +16,9 @@
         <meta name="description" content="">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Viaoda+Libre&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="{{ asset('css/all.css?v=1.1') }}" rel="stylesheet"> <!--load all styles -->
@@ -62,7 +65,7 @@
 
 
         <div>
-          <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51989218856&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios">
+          <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51989218856&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales">
             <img src="{{ asset('img/whatsapp.png') }}" alt="whatsapp">
           </a> 
         </div>
@@ -130,10 +133,15 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="{{ asset('img/car2.jpg') }}" alt="Carousel Image">
+
                         <div class="carousel-caption">
-                            <p class="animated fadeInRight">Somos Profesionales</p>
+                            <div class="row">
+                                <div class="col-lg-4"><a target="_blanck" href="https://api.whatsapp.com/send?phone=51989218856&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales"><img class="whatsapp" style="object-fit: contain;" src="{{ asset('img/whatsapp.png') }}"></a></div>
+                                <div class="col-lg-6">                            <p class="animated fadeInRight">Somos Profesionales</p>
                             <h1 class="animated fadeInLeft">Trabajamos en ti</h1>
-                            <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Contáctate</a>
+                            <a class="btn animated fadeInUp" href="https://api.whatsapp.com/send?phone=51989218856&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales">Contáctate</a></div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -142,7 +150,7 @@
                         <div class="carousel-caption">
                             <p class="animated fadeInRight">Ayuda y Soporte Legal</p>
                             <h1 class="animated fadeInLeft">Protegemos tus intereses</h1>
-                            <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Contáctate</a>
+                            <a class="btn animated fadeInUp" href="https://api.whatsapp.com/send?phone=51989218856&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales">Contáctate</a>
                         </div>
                     </div>
 
@@ -151,7 +159,7 @@
                         <div class="carousel-caption">
                             <p class="animated fadeInRight">Somos Confiables</p>
                             <h1 class="animated fadeInLeft">Priorizamos tu bienestar</h1>
-                            <a class="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Contáctate</a>
+                            <a class="btn animated fadeInUp" href="https://api.whatsapp.com/send?phone=51989218856&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales">Contáctate</a>
                         </div>
                     </div>
                 </div>

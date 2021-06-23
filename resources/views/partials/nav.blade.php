@@ -11,12 +11,12 @@
                         <div class="col-lg-4 col-md-12 center">
                             <div class="logo">
                                 <a href="index.html">
-                                    <h1>JNP</h1>
+                                    <h1 class="fonttop">JNP</h1>
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
 
                                 </a>
                                 <div class="vertical"></div>
-                                <div class="logomin"> 
+                                <div class="logomin fonttop"> 
                                     <div> Abogados &</div>
                                     <div> Consultores</div>
                                  </div>        

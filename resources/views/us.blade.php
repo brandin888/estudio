@@ -36,22 +36,22 @@ CONSULTORES</h2>
                     <div class="row align-items-center">
                         <div class="col-lg-5 col-md-6">
                             <div class="about-img">
-                                <img src="img/about.jpg" alt="Image">
+                                <img src="{{ asset('img/about2.jpg') }}" alt="Image">
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="section-header text-left">
-                                <p>Welcome to Builderz</p>
-                                <h2>25 Years Experience</h2>
+                                <p>JNP Abogados & Consultores</p>
+                                <h2>Quienes Somos</h2>
                             </div>
                             <div class="about-text">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                    Firma peruana que brinda asesoría y consultoría en asuntos legales en el Perú y en el extranjero. 
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-                                </p>
-                                <a class="btn" href="">Learn More</a>
+                                <p>Nuestra trayectoria nos permite desarrollar estrategias que arriban a resultados en cortos y medianos plazos. </p>
+                                <p>JNP Abogados & Consultores permanentemente reconforma de forma dinámica su equipo de abogados, los cuales en base a sus cualidades y sobre todo a su experiencia en litigios civiles laborales y administrativos brindan el mejor servicio y atención a cada uno de sus clientes. </p>
+
+                                <a class="btn" href="">Nosotros</a>
                             </div>
                         </div>
                     </div>
@@ -71,8 +71,8 @@ CONSULTORES</h2>
                                         <i class="flaticon-worker"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">109</h2>
-                                        <p>Expert Workers</p>
+                                        <h2 data-toggle="counter-up">10</h2>
+                                        <p>Asesores Legales</p>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -80,8 +80,8 @@ CONSULTORES</h2>
                                         <i class="flaticon-building"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">485</h2>
-                                        <p>Happy Clients</p>
+                                        <h2 data-toggle="counter-up">285</h2>
+                                        <p>Clientes Satisfechos</p>
                                     </div>
                                 </div>
                             </div>
@@ -93,8 +93,8 @@ CONSULTORES</h2>
                                         <i class="flaticon-address"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">789</h2>
-                                        <p>Completed Projects</p>
+                                        <h2 data-toggle="counter-up">132</h2>
+                                        <p>Casos Resueltos</p>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -102,8 +102,8 @@ CONSULTORES</h2>
                                         <i class="flaticon-crane"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">890</h2>
-                                        <p>Running Projects</p>
+                                        <h2 data-toggle="counter-up">20</h2>
+                                        <p>Casos en Proceso</p>
                                     </div>
                                 </div>
                             </div>
