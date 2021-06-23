@@ -43,7 +43,9 @@
                                         <div class="top-bar-text">
                                             <h3>Llámanos</h3>
                                             <p>+51 989 218 856</p>
+                                            <p>+51 997 287 614</p>
                                         </div>
+
                                     </div>
                                 </div>
                                 <div class="col-4">
