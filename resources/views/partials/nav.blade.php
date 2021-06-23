@@ -10,7 +10,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-4 col-md-12 center">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="{{ url('/') }}/">
                                     <h1 class="fonttop">JNP</h1>
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
 
@@ -71,7 +71,7 @@
             <div class="nav-bar">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                        <a href="#" class="navbar-brand">MENU</a>
+                        <a href="{{ url('/') }}/" class="navbar-brand">MENU</a>
                         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>

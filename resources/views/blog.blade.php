@@ -21,8 +21,8 @@
                             <h2>Artículos y Noticias</h2>
                         </div>
                         <div class="col-12">
-                            <a href="">Inicio</a>
-                            <a href="">Nuestro Blog</a>
+                            <a href="{{ url('/') }}/">Inicio</a>
+                            <a href="{{ url('/blog') }}/">Nuestro Blog</a>
                         </div>
                     </div>
                 </div>
@@ -34,8 +34,8 @@
             <div class="blog">
                 <div class="container">
                     <div class="section-header text-center">
-                        <p>Latest Blog</p>
-                        <h2>Latest From Our Blog</h2>
+                        <p>Últimos Artículos</p>
+                        <h2>Visita Nuestro Blog</h2>
                     </div>
                     <div class="row blog-page">
                         @forelse ($posts as $post)

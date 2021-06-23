@@ -21,8 +21,8 @@
 CONSULTORES</h2>
                         </div>
                         <div class="col-12">
-                            <a href="">Inicio</a>
-                            <a href="">Nosotros</a>
+                            <a href="{{ url('/') }}/">Inicio</a>
+                            <a href="{{ url('/') }}/us">Nosotros</a>
                         </div>
                     </div>
                 </div>

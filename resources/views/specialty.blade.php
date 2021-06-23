@@ -18,8 +18,8 @@
                             <h2>{{ $specialty->name }}</h2>
                         </div>
                         <div class="col-12">
-                            <a href="">Inicio</a>
-                            <a href="">Artículos</a>
+                            <a href="{{ url('/') }}/">Inicio</a>
+                            <a href="{{ route('specialty.show', $specialty->slug) }}">Especialidades</a>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                                 <p>
                                     {!! $specialty->description !!} 
                                 </p>
-                                <a class="btn" href="">Contáctate</a>
+                                <a class="btn" href="https://api.whatsapp.com/send?phone=51989218856&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales">Contáctate</a>
                             </div>
                         </div>
                     </div>

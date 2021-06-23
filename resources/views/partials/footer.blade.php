@@ -8,8 +8,9 @@
                             <div class="footer-contact">
                                 <h2>Oficina de Contacto</h2>
                                 <p><i class="fa fa-map-marker-alt"></i>Jr.Cotabambas 345 -Cercado de Lima</p>
-                                <p><i class="fa fa-phone-alt"></i>+51 999 999 999</p>
-                                <p><i class="fa fa-envelope"></i>info@example.com</p>
+                                <p><i class="fa fa-phone-alt"></i>+51 989 218 856</p>
+                                <p><i class="fa fa-phone-alt"></i>+51 997 287 614</p>
+                                <p><i class="fa fa-envelope"></i>jnahuin@pucp.pe</p>
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -31,9 +32,9 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Accesos Directos</h2>
-                                <a href="">Nosotros</a>
-                                <a href="">Contáctanos</a>
-                                <a href="">Blog</a>
+                                <a href="{{ url('/') }}/us">Nosotros</a>
+                                <a href="{{ url('/') }}/contacto">Contáctanos</a>
+                                <a href="{{ url('/') }}/blog">Blog</a>
                                
                             </div>
                         </div>
