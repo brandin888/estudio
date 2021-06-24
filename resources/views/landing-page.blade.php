@@ -255,58 +255,6 @@
             <!-- About End -->
 
 
-            <!-- Fact Start -->
-            <div class="fact">
-                <div class="container-fluid">
-                    <div class="row counters">
-                        <div class="col-md-6 fact-left wow slideInLeft">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                        <i class="flaticon-worker"></i>
-                                    </div>
-                                    <div class="fact-text">
-                                        <h2 data-toggle="counter-up">10</h2>
-                                        <p>Asesores Legales</p>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                        <i class="flaticon-building"></i>
-                                    </div>
-                                    <div class="fact-text">
-                                        <h2 data-toggle="counter-up">285</h2>
-                                        <p>Clientes Satisfechos</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 fact-right wow slideInRight">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                        <i class="flaticon-address"></i>
-                                    </div>
-                                    <div class="fact-text">
-                                        <h2 data-toggle="counter-up">132</h2>
-                                        <p>Casos Resueltos</p>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                        <i class="flaticon-crane"></i>
-                                    </div>
-                                    <div class="fact-text">
-                                        <h2 data-toggle="counter-up">20</h2>
-                                        <p>Casos en Proceso</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Fact End -->
 
 
             <!-- Service Start -->
@@ -523,6 +471,8 @@
 
 
 @include('partials.latest')
+
+<div style="width: 100%; height: 400px"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Jir%C3%B3n%20Cotabambas%20355,%20Cercado%20de%20Lima+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
 
 @include('partials.footer')
         </div>

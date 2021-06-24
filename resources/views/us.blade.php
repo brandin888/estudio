@@ -66,7 +66,7 @@ CONSULTORES</h2>
                     <div class="row counters">
                         <div class="col-md-6 fact-left wow slideInLeft">
                             <div class="row">
-                                <div class="col-10">
+                                <div class="col-12">
      
                                     <div class="fact-text">
               
@@ -79,7 +79,7 @@ CONSULTORES</h2>
                         </div>
                         <div class="col-md-6 fact-right wow slideInRight">
                             <div class="row">
-                                <div class="col-10">
+                                <div class="col-12">
 
                                     <div class="fact-text">
   
