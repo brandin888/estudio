@@ -8,10 +8,10 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>JNP | Abogados & Consultores</title>
-        <meta name="theme-color" content="#353535" />
-        <meta name="description" content="">
-
+        <title>@yield('title') | JNP Abogados & Consultores </title>
+        <meta name="theme-color" content="#343a40" />
+        <meta name="description" content="@yield('meta_destription'). Somos una firma peruana que brinda asesoría y consultoría en asuntos legales en el Perú y en el extranjero.">
+        <meta name="keywords" content="@yield('keywords')">
         <link rel="shortcut icon" href="" />
 
         <!-- Fonts -->

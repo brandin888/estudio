@@ -11,9 +11,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#353535" />
+        <meta name="theme-color" content="#343a40" />
         <title>JNP | Abogados & Consultores</title>
-        <meta name="description" content="">
+        <meta name="description" content="Firma peruana que brinda asesoría y consultoría en asuntos legales en el Perú y en el extranjero.">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -1,6 +1,8 @@
 @extends('layout')
 
 @section('title', $post->title)
+@section('meta_destription', $post->meta_description)
+@section('keywords', $post->meta_keywords)
 
 @section('extra-css')
     <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">

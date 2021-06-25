@@ -223,7 +223,7 @@ section#action, section#action-transparent {
             </div> <!-- end products -->
 
             <div class="spacer"></div>
-           {{ $posts->links() }}
+            {{ $products->appends(request()->input())->links() }}
         </div>
     </div>
 
