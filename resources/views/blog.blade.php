@@ -6,7 +6,7 @@
 
 @extends('layout')
 
-@section('title', 'Products')
+@section('title', 'Artículos y Noticias')
 
 @section('extra-css')
     <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
