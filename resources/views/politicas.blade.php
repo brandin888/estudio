@@ -18,11 +18,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h2>Servicios</h2>
+                            <h2>Políticas de Privacidad</h2>
                         </div>
                         <div class="col-12">
                             <a href="{{ url('/') }}/">Inicio</a>
-                            <a href="{{ url('/Servicios') }}/">Servicios</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -33,29 +33,17 @@
             <!-- Service Start -->
             <div class="service">
                 <div class="container">
-                    <div class="section-header text-center">
-                        <p>Especialidades</p>
-                        <h2>Asesoramiento en controversias jurídicas</h2>
-                    </div>
+
                     <div class="row">
-                            @foreach($specialties as $specialty)
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="service-item">
-                                <div class="service-img">
-                                    <img src="{{ postImage($specialty->image) }}" alt="Image">
-                                    <div class="service-overlay">
-                                        <p>
-                                            {{$specialty->meta_description}}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="service-text">
-                                    <h3>{{$specialty->name}}</h3>
-                                    <a class="btn" href="{{ route('specialty.show', $specialty->slug) }}" data-lightbox="service">+</a>
-                                </div>
-                            </div>
-                        </div>                                        
-                            @endforeach
+                        <p>Cómo manejamos la Información Recolectada
+Requerimos esta información para comprender sus necesidades y brindarle un mejor servicio, y en particular por las siguientes razones:
+
+Mantenimiento de registros internos.
+Podemos utilizar la información para mejorar nuestros  servicios
+Es posible que enviemos periódicamente correos electrónicos promocionales sobre nuevos productos, ofertas especiales u otra información que creemos que puede resultarle interesante utilizando la dirección de correo electrónico que ha proporcionado.
+De vez en cuando, también podemos utilizar su información para comunicarnos con usted con fines de investigación de mercado. Podemos comunicarnos con usted por correo electrónico, teléfono, fax o correo. Podemos utilizar la información para personalizar el sitio web de acuerdo con sus intereses.
+Seguridad
+Estamos comprometidos a garantizar que su información esté segura. Para evitar el acceso o la divulgación no autorizados, hemos implementado procedimientos físicos, electrónicos y administrativos adecuados para salvaguardar y asegurar la información que recopilamos en línea.</p>
                         
 
                     </div>
@@ -64,9 +52,6 @@
             <!-- Service End -->
     
             
-            <!-- FAQs Start -->
-            @include('partials.faq')
-            <!-- FAQs End -->
 
 @endsection
 
