@@ -65,3 +65,7 @@ Route::resource('contacto', 'ContactoController');
 
 Route::get('cargar-mapa/{id}', 'ContactoController@cargar');
 Route::get('sitemap.xml','SitemapController@index');
+Route::get('/servicios', 'ServiceController@index')->name('servicios.index');
+Route::get('/politicas', 'PoliticasController@index')->name('politicas.index');
+Route::get('/cookies', 'FaqsController@index')->name('cookies.index');
+Route::get('/faqs', 'CookiesController@index')->name('faqs.index');

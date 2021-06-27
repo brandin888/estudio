@@ -8,4 +8,12 @@
             <priority>0.6</priority>
         </url>
     @endforeach
+    @foreach ($specialties as $specialty)
+        <url>
+            <loc>{{url($specialty->slug)}}</loc>
+            <lastmod>{{ gmdate('Y-m-d\TH:i:s\Z',strtotime($specialty->updated_at)) }}</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+        </url>
+    @endforeach
 </urlset>

@@ -35,15 +35,15 @@
                                 <a href="{{ url('/') }}/us">Nosotros</a>
                                 <a href="{{ url('/') }}/contacto">Contáctanos</a>
                                 <a href="{{ url('/') }}/blog">Blog</a>
-                               
+                               <a href="{{ url('/') }}/servicios">Servicios</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            <div class="newsletter">
+                            <div class="footer-link">
                                 <h2>Contáctate</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu
-                                </p>
+                                
+                                    <a href="tel:+51989218856">Comunícate aqui</a>
+                                
 
                             </div>
                         </div>
@@ -51,11 +51,9 @@
                 </div>
                 <div class="container footer-menu">
                     <div class="f-menu">
-                        <a href="">Términos de uso</a>
-                        <a href="">Política de privacidad</a>
-                        <a href="">Cookies</a>
-                        
-                        <a href="">FQAs</a>
+                        <a href="{{ url('/') }}/politicas">Política de privacidad</a>
+                        <a href="{{ url('/') }}/cookies">Cookies</a>                     
+                        <a href="{{ url('/') }}/faqs">FQAs</a>
                     </div>
                 </div>
                 <div class="container copyright">
