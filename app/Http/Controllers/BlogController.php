@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use App\Category;
+use App\Categories;
 use App\Post;
 use App\Specialty;
 use Illuminate\Http\Request;
@@ -20,16 +21,28 @@ class BlogController extends Controller
     public function index()
     {
         $pagination = 9;
-        $categories = Category::all();
+        $categories = Categories::all();
         $specialties = Specialty::all();
 
      
-        $posts = Post::paginate(5);    
+        
 
+        if (request()->category) {
+            $posts = Post::where('category_id', request()->category)->paginate(6); 
+            
+
+            $categoryName = optional($categories->where('id', request()->category)->first())->name;
+        } else {
+            
+            $posts = Post::paginate(6);  
+            $categoryName  = "Todos Los Artículos";
+        }
+
+         
         return view('blog')->with([
 
             'categories' => $categories,
-
+            'categoryName' => $categoryName,
             'posts' => $posts,
             'specialties' => $specialties,
         ]);

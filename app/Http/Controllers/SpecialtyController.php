@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Product;
 use App\Category;
 use App\Post;
+use App\Categories;
 use App\Specialty;
 use Illuminate\Http\Request;
 
@@ -22,7 +23,7 @@ class SpecialtyController extends Controller
         $pagination = 9;
         $categories = Category::all();
         $specialties = Specialty::all();
-
+        $categories = Categories::all();
      
         $posts = Post::paginate(5);    
 

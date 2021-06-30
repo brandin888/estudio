@@ -14,5 +14,6 @@ class Categories extends Model
     protected $fillable = ['post_id', 'categories_id'];
     public function posts()
     {
-        return $this->belongsToMany('App\Posts');
+        return $this->hasMany('App\Posts');
+    }
 }

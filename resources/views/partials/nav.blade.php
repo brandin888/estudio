@@ -81,7 +81,21 @@
                                 <a href="{{ url('/') }}/" class="nav-item nav-link active">Inicio</a>
                                 <a href="{{ url('/') }}/us" class="nav-item nav-link">Nosotros</a>
                                 <a href="{{ url('/') }}/servicios" class="nav-item nav-link">Servicios</a>
-                                <a href="{{ url('/') }}/blog" class="nav-item nav-link">Artículos</a>
+                                
+
+                                <div class="nav-item dropdown">
+                                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Artículos</a>
+                                    <div class="dropdown-menu">
+                                      <a href="{{ url('/') }}/blog" class="dropdown-item">Todos</a>
+                                      <hr>
+                                        @foreach($categories as $category)
+                                        <a href="{{ route('blog.index', ['category'=> $category->id]) }}" class="dropdown-item">{{ $category->name }}</a>
+                                        @endforeach
+                                        
+                                    </div>
+                                </div>
+                                        
+     
 
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Especialidades</a>

@@ -35,7 +35,7 @@
                 <div class="container">
                     <div class="section-header text-center">
                         <p>Últimos Artículos</p>
-                        <h2>Visita Nuestro Blog</h2>
+                        <h2>{{$categoryName }}</h2>
                     </div>
                     <div class="row blog-page">
                         @forelse ($posts as $post)
@@ -62,11 +62,11 @@
                         @empty
                     <div style="">No se encontraron artículos</div>
                         @endforelse
-                       
+             
                     </div>
                     <div class="spacer"></div>
-                     {{ $posts->links() }}
-                    
+                     {{ $posts->appends(request()->input())->links() }}
+                   
                 </div>
             </div>
             <!-- Blog End -->

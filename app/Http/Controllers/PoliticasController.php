@@ -7,6 +7,7 @@ use App\Banner;
 use App\Category;
 use App\Post;
 use App\Specialty;
+use App\Categories;
 use Illuminate\Http\Request;
 
 class PoliticasController extends Controller
@@ -22,7 +23,7 @@ class PoliticasController extends Controller
         $posts= Post::latest()->take(3)->get();
         $categories = Category::all();
         $pagination = 9;
-        $categories = Category::all();
+        $categories = Categories::all();
         $banners = Banner::all();
         $specialties = Specialty::all();
         if (request()->category) {

@@ -17,6 +17,7 @@ use App\Helpers\Frontend\EnviosCorreo as HelperCorreo;
 use App\Category;
 use App\Product;
 use App\Specialty;
+use App\Categories;
 class ContactoController extends Controller
 {
 
@@ -24,7 +25,7 @@ class ContactoController extends Controller
     {
         //$pulseras = Pulsera::where('estado', 1)->orderBy('orden')->get();
         $locales = Local::where('estado', 1)->get();
-        $categories = Category::all();
+        $categories = Categories::all();
         $specialties = Specialty::all();
         if (request()->category) {
             $products = Product::with('categories')->whereHas('categories', function ($query) {

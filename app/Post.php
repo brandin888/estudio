@@ -10,5 +10,8 @@ class Post extends Model
       'title', 'seo_title', 'excerpt', 'body', 'image',
       'slug', 'meta_description', 'status', 'featured', 'created_at','updated_at'
   ];
-
+    public function categories()
+    {
+        return $this->belongsTo('App\Categories');
+    }
 }

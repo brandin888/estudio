@@ -7,6 +7,7 @@ use App\Banner;
 use App\Category;
 use App\Post;
 use App\Specialty;
+use App\Categories;
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
@@ -20,9 +21,9 @@ class LandingPageController extends Controller
     {
         $products = Product::where('featured', true)->take(8)->inRandomOrder()->get();
         $posts= Post::latest()->take(3)->get();
-        $categories = Category::all();
+        $categories = Categories::all();
         $pagination = 9;
-        $categories = Category::all();
+        
         $banners = Banner::all();
         $specialties = Specialty::all();
         if (request()->category) {
@@ -42,6 +43,9 @@ class LandingPageController extends Controller
         } else {
             $products = $products->paginate($pagination);
         }
+
+
+
         // dd($products);
         return view('landing-page')->with([
             'products' => $products,
