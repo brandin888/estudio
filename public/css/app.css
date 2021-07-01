@@ -2690,7 +2690,7 @@ a:focus {
 .top-bar {
     position: relative;
     height: 90px;
-    background: #fdbe33;
+    background: white;
 }
 
 .top-bar .logo {
@@ -2772,7 +2772,7 @@ a:focus {
 /**********************************/
 .nav-bar {
     position: relative;
-    background: #fdbe33;
+    background: #343a40;
     transition: .3s;
 }
 
@@ -2833,7 +2833,7 @@ a:focus {
     }
     
     .nav-bar .navbar {
-        padding: 20px;
+        padding: 10px;
     }
     
     .nav-bar .navbar-brand {
