@@ -49,8 +49,8 @@
                                     <a class="btn" href="{{ route('blog.show', $post->slug) }}">+</a>
                                 </div>
                                 <div class="blog-meta">
-                                    <p>By<a href="">{{ $post->updated_at }}</a></p>
-                                    <p>In<a href="">Construction</a></p>
+                                    <p>{{ $post->updated_at }}</p>
+                                    
                                 </div>
                                 <div class="blog-text">
                                     <p>

@@ -326,74 +326,27 @@
                         <h2>Conoce a nuestros profesionales</h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="{{ asset('img/team1.jpg') }}" alt="Team Image">
-                                </div>
-                                <div class="team-text">
-                                    <h2>Adam Phillips</h2>
-                                    <p>CEO & Founder</p>
-                                </div>
-                                <div class="team-social">
-                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                        @foreach($coworkers as $coworker)
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                             <div class="team-item">
                                 <div class="team-img">
                                     <img src="{{ asset('img/team2.jpg') }}" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2>Dylan Adams</h2>
-                                    <p>Civil Engineer</p>
+                                    <h2>{{$coworker->name}}</h2>
+                                    <p>{{$coworker->rol}}</p>
                                 </div>
                                 <div class="team-social">
-                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="social-tw" href="{{$coworker->twitter}}"><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href="{{$coworker->facebook}}"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-li" href="{{$coworker->linkedin}}"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="social-in" href="{{$coworker->instagram}}"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="{{ asset('img/team3.jpg') }}" alt="Team Image">
-                                </div>
-                                <div class="team-text">
-                                    <h2>Jhon Doe</h2>
-                                    <p>Interior Designer</p>
-                                </div>
-                                <div class="team-social">
-                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="{{ asset('img/team4.jpg') }}" alt="Team Image">
-                                </div>
-                                <div class="team-text">
-                                    <h2>Josh Dunn</h2>
-                                    <p>Painter</p>
-                                </div>
-                                <div class="team-social">
-                                    <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                        </div>               
+                        @endforeach
+                       
+                        
                     </div>
                 </div>
             </div>

@@ -8,6 +8,7 @@ use App\Category;
 use App\Post;
 use App\Specialty;
 use App\Categories;
+use App\Coworker;
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
@@ -23,7 +24,7 @@ class LandingPageController extends Controller
         $posts= Post::latest()->take(3)->get();
         $categories = Categories::all();
         $pagination = 9;
-        
+        $coworkers = Coworker::latest()->take(4)->get();
         $banners = Banner::all();
         $specialties = Specialty::all();
         if (request()->category) {
@@ -54,6 +55,7 @@ class LandingPageController extends Controller
             'banners' => $banners,
             'posts' => $posts,
             'specialties' => $specialties,
+            'coworkers' => $coworkers,
         ]);
 
     }
