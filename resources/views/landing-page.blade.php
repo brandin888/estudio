@@ -330,7 +330,7 @@
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="{{ asset('img/team2.jpg') }}" alt="Team Image">
+                                    <img src="{{ postImage($coworker->image) }}" alt="Team Image">
                                 </div>
                                 <div class="team-text">
                                     <h2>{{$coworker->name}}</h2>

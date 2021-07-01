@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Coworker extends Model
 {
     protected $fillable = [
-        'name', 'rol', 'password','twitter','linkedin','instagram',
+        'name', 'rol', 'password','twitter','linkedin','instagram','image',
     ];
 }
