@@ -10,16 +10,19 @@
                     <div class="row align-items-center">
                         <div class="col-lg-4 col-md-12 center">
                             <div class="logo">
+                              <div>
+                                 <img src="{{ asset('img/favi.png') }}" alt="Logo">
+                               <h1></h1>
+                              </div>
+                              <div ><h2 style="display: table-caption;line-height: initial;text-align: left;margin-bottom: 0px;padding-left: 5px;padding-top: 5px;">JÑP ABOGADOS</h2></div>
+                              
                                 <a href="{{ url('/') }}/">
-                                    <h1 class="fonttop">JNP</h1>
-                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                                    
+                                   
 
                                 </a>
-                                <div class="vertical"></div>
-                                <div class="logomin fonttop"> 
-                                    <div> Abogados &</div>
-                                    <div> Consultores</div>
-                                 </div>        
+                                
+                                 
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-7 d-none d-lg-block">
@@ -86,8 +89,8 @@
                                 <div class="nav-item dropdown">
                                     <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Artículos</a>
                                     <div class="dropdown-menu">
-                                      <a href="{{ url('/') }}/blog" class="dropdown-item">Todos</a>
-                                      <hr>
+                                      <a href="{{ url('/') }}/blog" class="dropdown-item">Recientes</a>
+                                      
                                         @foreach($categories as $category)
                                         <a href="{{ route('blog.index', ['category'=> $category->id]) }}" class="dropdown-item">{{ $category->name }}</a>
                                         @endforeach

@@ -12,7 +12,7 @@
         <meta name="theme-color" content="#343a40" />
         <meta name="description" content="@yield('meta_destription'). Somos una firma peruana que brinda asesoría y consultoría en asuntos legales en el Perú y en el extranjero.">
         <meta name="keywords" content="@yield('keywords')">
-        <link rel="shortcut icon" href="" />
+        <link rel="shortcut icon" href="{{ asset('img/favi.png') }}" />
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">

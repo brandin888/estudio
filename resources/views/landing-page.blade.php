@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Viaoda+Libre&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="" />
+        <link rel="shortcut icon" href="{{ asset('img/favi.png') }}" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="{{ asset('css/all.css?v=1.1') }}" rel="stylesheet"> <!--load all styles -->
         <link href="{{ asset('css/animate.css?v=1.1') }}" rel="stylesheet">
