@@ -21,7 +21,7 @@ class SpecialtyController extends Controller
     public function index()
     {
         $pagination = 9;
-        $categories = Category::all();
+        
         $specialties = Specialty::all();
         $categories = Categories::all();
      
@@ -48,7 +48,7 @@ class SpecialtyController extends Controller
         $specialty = Specialty::where('slug', $slug)->firstOrFail();
 
     //    dd($product);
-        $categories = Category::all();
+        $categories = Categories::all();
         $posts= Post::all();
         $specialties = Specialty::all();
 

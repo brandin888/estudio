@@ -28,13 +28,13 @@ class BlogController extends Controller
         
 
         if (request()->category) {
-            $posts = Post::where('category_id', request()->category)->paginate(6); 
+            $posts = Post::where('category_id', request()->category)->orderBy('updated_at', 'desc')->paginate(6); 
             
 
             $categoryName = optional($categories->where('id', request()->category)->first())->name;
         } else {
             
-            $posts = Post::paginate(6);  
+            $posts = Post::orderBy('updated_at', 'desc')->paginate(6);  
             $categoryName  = "Todos Los Artículos";
         }
 
