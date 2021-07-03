@@ -59,7 +59,7 @@
                 <div class="container copyright">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>&copy; <a href="#">JNP Abogados</a>, Todos los derechos reservados.</p>
+                            <p>&copy; <a href="#">JÑP Abogados</a>, Todos los derechos reservados.</p>
                         </div>
                         <div class="col-md-6">
                             <p>Diseñado por <a href="https://raumiweb.com">Raumi</a></p>

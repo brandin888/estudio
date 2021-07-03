@@ -17,8 +17,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h2>JNP ABOGADOS & 
-CONSULTORES</h2>
+                            <h2>JÑP ABOGADOS</h2>
                         </div>
                         <div class="col-12">
                             <a href="{{ url('/') }}/">Inicio</a>
@@ -41,7 +40,7 @@ CONSULTORES</h2>
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="section-header text-left">
-                                <p>JNP Abogados & Consultores</p>
+                                <p>JÑP Abogados </p>
                                 <h2>Quienes Somos</h2>
                             </div>
                             <div class="about-text">
@@ -49,7 +48,7 @@ CONSULTORES</h2>
                                     Firma peruana que brinda asesoría y consultoría en asuntos legales en el Perú y en el extranjero. 
                                 </p>
                                 <p>Nuestra trayectoria nos permite desarrollar estrategias que arriban a resultados en cortos y medianos plazos. </p>
-                                <p>JNP Abogados & Consultores permanentemente reconforma de forma dinámica su equipo de abogados, los cuales en base a sus cualidades y sobre todo a su experiencia en litigios civiles laborales y administrativos brindan el mejor servicio y atención a cada uno de sus clientes. </p>
+                                <p>JÑP Abogados permanentemente reconforma de forma dinámica su equipo de abogados, los cuales en base a sus cualidades y sobre todo a su experiencia en litigios civiles laborales y administrativos brindan el mejor servicio y atención a cada uno de sus clientes. </p>
 
                                 <a class="btn" href="https://api.whatsapp.com/send?phone=51989218856&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales">Contáctate</a>
                             </div>
@@ -114,7 +113,7 @@ CONSULTORES</h2>
                                     Abogado egresado de la Universidad Nacional Federico Villarreal en 2009 y miembro del Ilustre Colegio de Abogados de Lima desde 2013. Asimismo, cuenta con estudios de posgrado en Derecho Procesal en la Pontificia Universidad Católica del Perú (2015-2016). Asimismo, desde el año 2008 se desempeñó como Secretario Judicial en el Poder Judicialde la Sala Transitoria Laboral permaneciendo hasta el año 2014; asimismo, en el año 2015 y 2016 se desempeñó como Secretario Judicial en el Juzgados Tributarios y de Propiedad Intelectual.  
                                 </p>
                                 <p>Su experiencia dentro del ámbito jurisdiccional le ha permitido conocer desde dentro el funcionamiento de la impartición de justicia en diversas áreas del derecho, lo cual le ha servido para actualmente litigar con éxito en la actualidad.  </p>
-                                <p>Es Socio Fundador y Director Gerente de JNP ABOGADOS& CONSULTORES. </p>
+                                <p>Es Socio Fundador y Director Gerente de JÑP ABOGADOS. </p>
 
                                 <a class="btn" href="https://api.whatsapp.com/send?phone=51989218856&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales">Contáctate</a>
                             </div>

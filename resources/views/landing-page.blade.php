@@ -12,7 +12,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#343a40" />
-        <title>JNP | Abogados & Consultores</title>
+        <title>JÑP | Abogados</title>
         <meta name="description" content="Firma peruana que brinda asesoría y consultoría en asuntos legales en el Perú y en el extranjero.">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
@@ -236,7 +236,7 @@
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="section-header text-left">
-                                <p>JNP Abogados & Consultores</p>
+                                <p>JÑP Abogados</p>
                                 <h2>Quienes Somos</h2>
                             </div>
                             <div class="about-text">
@@ -244,7 +244,7 @@
                                     Firma peruana que brinda asesoría y consultoría en asuntos legales en el Perú y en el extranjero. 
                                 </p>
                                 <p>Nuestra trayectoria nos permite desarrollar estrategias que arriban a resultados en cortos y medianos plazos. </p>
-                                <p>JNP Abogados & Consultores permanentemente reconforma de forma dinámica su equipo de abogados, los cuales en base a sus cualidades y sobre todo a su experiencia en litigios civiles laborales y administrativos brindan el mejor servicio y atención a cada uno de sus clientes. </p>
+                                <p>JÑP Abogados permanentemente reconforma de forma dinámica su equipo de abogados, los cuales en base a sus cualidades y sobre todo a su experiencia en litigios civiles laborales y administrativos brindan el mejor servicio y atención a cada uno de sus clientes. </p>
 
                                 <a class="btn" href="">Nosotros</a>
                             </div>
