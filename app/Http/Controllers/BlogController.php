@@ -6,6 +6,7 @@ use App\Product;
 use App\Category;
 use App\Categories;
 use App\Post;
+use App\Service;
 use App\Specialty;
 use Illuminate\Http\Request;
 
@@ -23,7 +24,7 @@ class BlogController extends Controller
         $pagination = 9;
         $categories = Categories::all();
         $specialties = Specialty::all();
-
+        $services = Service::all();
      
         
 
@@ -45,6 +46,7 @@ class BlogController extends Controller
             'categoryName' => $categoryName,
             'posts' => $posts,
             'specialties' => $specialties,
+            'services' => $services,
         ]);
     }
 

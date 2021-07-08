@@ -6,6 +6,7 @@ use App\Product;
 use App\Category;
 use App\Post;
 use App\Categories;
+use App\Service;
 use App\Specialty;
 use Illuminate\Http\Request;
 
@@ -24,7 +25,7 @@ class SpecialtyController extends Controller
         
         $specialties = Specialty::all();
         $categories = Categories::all();
-     
+        $services = Service::all();
         $posts = Post::paginate(5);    
 
         return view('blog')->with([
@@ -33,6 +34,7 @@ class SpecialtyController extends Controller
 
             'posts' => $posts,
             'specialties' => $specialties,
+            'services' => $services,
         ]);
     }
 

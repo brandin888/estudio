@@ -16,6 +16,7 @@ use Mail;
 use App\Helpers\Frontend\EnviosCorreo as HelperCorreo;
 use App\Category;
 use App\Product;
+use App\Service;
 use App\Specialty;
 use App\Categories;
 class ContactoController extends Controller
@@ -27,6 +28,7 @@ class ContactoController extends Controller
         $locales = Local::where('estado', 1)->get();
         $categories = Categories::all();
         $specialties = Specialty::all();
+        $services = Service::all();
         if (request()->category) {
             $products = Product::with('categories')->whereHas('categories', function ($query) {
                 $query->where('slug', request()->category);
@@ -39,7 +41,7 @@ class ContactoController extends Controller
 
         //$banner = Banner::where('estado', 1)->where('seccion', 'contacto')->first();
         //return view('frontend.contacto.index',compact('banner', 'locales'));
-        return view('frontend.contacto.index',compact('locales','categories','categoryName','specialties'));
+        return view('frontend.contacto.index',compact('locales','categories','categoryName','specialties','services'));
     }
 
     // public function suscripcion(Request $request)

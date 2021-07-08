@@ -8,6 +8,7 @@ use App\Category;
 use App\Post;
 use App\Specialty;
 use App\Categories;
+use App\Service;
 use Illuminate\Http\Request;
 
 class PoliticasController extends Controller
@@ -26,6 +27,7 @@ class PoliticasController extends Controller
         $categories = Categories::all();
         $banners = Banner::all();
         $specialties = Specialty::all();
+        $services = Service::all();
         if (request()->category) {
             $products = Product::with('categories')->whereHas('categories', function ($query) {
                 $query->where('slug', request()->category);
@@ -51,6 +53,7 @@ class PoliticasController extends Controller
             'banners' => $banners,
             'posts' => $posts,
             'specialties' => $specialties,
+            'services' => $services,
         ]);
 
     }

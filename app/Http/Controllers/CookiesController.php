@@ -7,6 +7,7 @@ use App\Banner;
 use App\Category;
 use App\Post;
 use App\Specialty;
+use App\Service;
 use Illuminate\Http\Request;
 
 class CookiesController extends Controller
@@ -25,6 +26,7 @@ class CookiesController extends Controller
         $categories = Category::all();
         $banners = Banner::all();
         $specialties = Specialty::all();
+        $services = Service::all();
         if (request()->category) {
             $products = Product::with('categories')->whereHas('categories', function ($query) {
                 $query->where('slug', request()->category);
@@ -50,6 +52,7 @@ class CookiesController extends Controller
             'banners' => $banners,
             'posts' => $posts,
             'specialties' => $specialties,
+            'services' => $services,
         ]);
 
     }

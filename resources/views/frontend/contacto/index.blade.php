@@ -1,9 +1,9 @@
 @extends('layout')
 @section('extra-css')
-
+<link href="{{ asset('css/owl.carousel.min.css?v=1.2') }}" rel="stylesheet">
 <link href="{{ asset('css/contacto.css?v=1.0') }}" rel="stylesheet">
 <link href="{{ asset('css/algolia.css?v=1.0') }}" rel="stylesheet">
-
+<link href="{{ asset('css/all.css?v=1.0') }}" rel="stylesheet">
 <!-- 
 <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="js/jquery.form.js"></script>
@@ -75,18 +75,17 @@
           <!-- <img src="{{ asset('img/contacto02.png') }}" class="contacto__img" alt=""> -->
           <h4><strong style="color: #292e31;">Información de Contacto</strong></h4>
           <ul>
-            <li style="color: #292e31;">Jr.Cotabambas 345 -Cercado de Lima <br>
+            <li style="color: #292e31;">Jr.Cotabambas 345 - Oficina: 403 - Cercado de Lima <br>
                   Lima - Perú<br>
-                  <br>
-                  Oficina: 403<br>
-                  <img src="{{ asset('img/wasa.png') }}" width="20" height="19" alt="Whatsapp Litercorp"> <a href="https://api.whatsapp.com/send?phone=+51994084591&amp;text=Solicite%20su%20Cotización" target="_blank" style="color:#11950b"> <b> Whatsapp +51 999 999 999</b> </a><br>
+                  
+                  <img src="{{ asset('img/wasa.png') }}" width="20" height="19" alt="Whatsapp Litercorp"> <a href="https://api.whatsapp.com/send?phone=+51989218856&amp;text=Solicite%20su%20Cotización" target="_blank" style="color:#11950b"> <b> Whatsapp +51 989 218 856</b> </a><br>
                   <br>
               <h4><strong style="color: #292e31;">Horario de Atención</strong></h4>
               Lunes a Viernes de 9:00AM a 8:00PM<br>
-              <a href="mailto:info@litercorp.com"><i class="fas fa-envelope"></i> aquivaelcorreo@gmail.com</a><br><br>
+              <a href="mailto:jnahuin@pucp.pe"><i class="fas fa-envelope"></i> jnahuin@pucp.pe</a><br><br>
 
               <h4><strong style="color: #292e31;">Redes Sociales</strong></h4>
-              <a href="https://www.facebook.com/distribuidoramicky" target="_blank" style="color: #3b5998 "><i class="fab fa-facebook"></i> Aquivaelfacebook</a>
+              <a href="https://www.facebook.com/J%C3%91P-Abogados-102888812057143" target="_blank" style="color: #3b5998 "><i class="fab fa-facebook"></i>  JÑP Abogados</a>
               
             </li>
         </ul>

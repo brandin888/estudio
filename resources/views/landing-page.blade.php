@@ -38,21 +38,7 @@
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
       <!-- Facebook Pixel Code -->
-      <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '395300288287838');
-      fbq('track', 'PageView');
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=395300288287838&ev=PageView&noscript=1"
-      /></noscript>
+     
       <!-- End Facebook Pixel Code -->
         
 
@@ -71,37 +57,37 @@
         </div>
         <!-- end Whatsapp -->
         
-        <!-- Load Facebook SDK for JavaScript -->
-    <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v9.0'
-          });
-        };
+ 
 
-        (function(d, s, id) {
+
+
+      <!-- Messenger plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "102888812057143");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
         js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="108475807377339"
-  logged_in_greeting="¿En qué podemos ayudarte?"
-  logged_out_greeting="¿En qué podemos ayudarte?">
-      </div>
-     
-       <!-- Your Chat Plugin code -->
-
-
-      
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
         <div >
 
@@ -189,31 +175,31 @@
 
 
             <!-- Feature Start-->
-            <div class="feature wow fadeInUp" data-wow-delay="0.1s">
+            <div class="feature2 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="col-lg-4 col-md-12">
-                            <div class="feature-item">
+                            <div class="feature-item2">
                             
-                                <div class="feature-text">
+                                <div class="feature-text2">
                                     <h3>Expertos y Especialistas</h3>
                                     <p>Somos profesionales de alto nivel dispuestos a ayudarte</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12">
-                            <div class="feature-item">
+                            <div class="feature-item2">
                               
-                                <div class="feature-text">
+                                <div class="feature-text2">
                                     <h3>Trabajo de Calidad</h3>
                                     <p>Priorizamos tu bienestar, nos encargamos de todo</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12">
-                            <div class="feature-item">
+                            <div class="feature-item2">
                                
-                                <div class="feature-text">
+                                <div class="feature-text2">
                                     <h3>Atención Inmediata</h3>
                                     <p>Brindamos ayuda legal inmediata, no te quedes esperando</p>
                                 </div>

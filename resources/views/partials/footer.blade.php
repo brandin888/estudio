@@ -7,13 +7,13 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-contact">
                                 <h2>Oficina de Contacto</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>Jr.Cotabambas 345 -Cercado de Lima</p>
+                                <p><i class="fa fa-map-marker-alt"></i>Jr.Cotabambas 345 - Oficina: 403 - Cercado de Lima - Perú</p>
                                 <p><i class="fa fa-phone-alt"></i>+51 989 218 856</p>
                                 <p><i class="fa fa-phone-alt"></i>+51 997 287 614</p>
                                 <p><i class="fa fa-envelope"></i>jnahuin@pucp.pe</p>
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.facebook.com/J%C3%91P-Abogados-102888812057143"><i class="fab fa-facebook-f"></i></a>
                                     <a href=""><i class="fab fa-youtube"></i></a>
                                     <a href=""><i class="fab fa-instagram"></i></a>
                                     <a href=""><i class="fab fa-linkedin-in"></i></a>

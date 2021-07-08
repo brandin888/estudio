@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use App\Banner;
+use App\Service;
 use App\Category;
 use App\Post;
 use App\Specialty;
@@ -26,6 +27,7 @@ class FaqsController extends Controller
         $categories = Categories::all();
         $banners = Banner::all();
         $specialties = Specialty::all();
+        $services = Service::all();
         if (request()->category) {
             $products = Product::with('categories')->whereHas('categories', function ($query) {
                 $query->where('slug', request()->category);
@@ -51,6 +53,7 @@ class FaqsController extends Controller
             'banners' => $banners,
             'posts' => $posts,
             'specialties' => $specialties,
+            'services' => $services,
         ]);
 
     }

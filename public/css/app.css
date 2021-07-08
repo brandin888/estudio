@@ -3116,14 +3116,34 @@ a:focus {
 .feature .col-md-12 {
     background: #030f27;
 }
+.feature2 {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.feature2 .col-md-12 {
+    background: #ddd;
+    color: black;
+}
     
 .feature .col-md-12:nth-child(2n) {
     color: #030f27;
     background: #fdbe33;
 }
+.feature2 .col-md-12:nth-child(2n) {
+    background: #ddd;
+    color: black;
+}
 
 .feature .feature-item {
     min-height: 250px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.feature2 .feature-item2 {
+    min-height: 170px;
     padding: 30px;
     display: flex;
     align-items: center;
@@ -3182,6 +3202,13 @@ a:focus {
 .feature .feature-text h3 {
     margin: 0 0 10px 0;
     color: #fdbe33;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.feature2 .feature-text2 h3 {
+    margin: 0 0 10px 0;
+    color: black;
     font-size: 25px;
     font-weight: 600;
 }

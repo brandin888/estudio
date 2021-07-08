@@ -6,6 +6,7 @@ use App\Product;
 use App\Banner;
 use App\Category;
 use App\Post;
+use App\Service;
 use App\Specialty;
 use App\Categories;
 use Illuminate\Http\Request;
@@ -26,6 +27,7 @@ class ServiceController extends Controller
         $categories = Categories::all();
         $banners = Banner::all();
         $specialties = Specialty::all();
+        $services = Service::all();
         if (request()->category) {
             $products = Product::with('categories')->whereHas('categories', function ($query) {
                 $query->where('slug', request()->category);
@@ -51,6 +53,7 @@ class ServiceController extends Controller
             'banners' => $banners,
             'posts' => $posts,
             'specialties' => $specialties,
+            'services' => $services,
         ]);
 
     }
@@ -129,6 +132,27 @@ class ServiceController extends Controller
             'specialties' => $specialties,
         ]);
 
+    }
+    public function show($slug)
+    {
+
+        $service = Service::where('slug', $slug)->firstOrFail();
+
+    //    dd($product);
+        $categories = Categories::all();
+        $posts= Post::all();
+        $specialties = Specialty::all();
+        $services = Service::all();
+
+        return view('servicios')->with([
+
+            'categories' => $categories,
+            'posts' => $posts,
+            
+            'specialties' => $specialties,
+            'services' => $services,
+            'service' => $service,
+        ]);
     }
 
         public function faqs()

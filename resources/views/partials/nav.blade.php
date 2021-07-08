@@ -83,7 +83,17 @@
                             <div class="navbar-nav mr-auto">
                                 <a href="{{ url('/') }}/" class="nav-item nav-link active">Inicio</a>
                                 <a href="{{ url('/') }}/us" class="nav-item nav-link">Nosotros</a>
-                                <a href="{{ url('/') }}/servicios" class="nav-item nav-link">Servicios</a>
+                                <div class="nav-item dropdown">
+                                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Servicios</a>
+                                    <div class="dropdown-menu">
+                                      
+                                      
+                                        @foreach($services as $service)
+                                        <a href="{{ route('service.show',$service->slug ) }}" class="dropdown-item">{{ $service->name }}</a>
+                                        @endforeach
+                                        
+                                    </div>
+                                </div>
                                 
 
                                 <div class="nav-item dropdown">

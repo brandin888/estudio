@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Product;
 use App\Banner;
 use App\Category;
+use App\Service;
 use App\Post;
 use App\Specialty;
 use App\Categories;
@@ -27,6 +28,7 @@ class LandingPageController extends Controller
         $coworkers = Coworker::latest()->take(4)->get();
         $banners = Banner::all();
         $specialties = Specialty::all();
+        $services = Service::all();
         if (request()->category) {
             $products = Product::with('categories')->whereHas('categories', function ($query) {
                 $query->where('slug', request()->category);
@@ -56,6 +58,7 @@ class LandingPageController extends Controller
             'posts' => $posts,
             'specialties' => $specialties,
             'coworkers' => $coworkers,
+            'services' => $services,
         ]);
 
     }

@@ -29,6 +29,36 @@
             </div>
             <!-- Page Header End -->
 
+            <!-- About Start -->
+            <div class="about wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-img">
+                                <img src="{{ postImage($service->image) }}" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="section-header text-left">
+                                <p>JÑP Abogados </p>
+                                <h2>{{$service->name }}</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    {!! $service->description !!}  </p>
+
+                                <a class="btn" href="https://api.whatsapp.com/send?phone=51989218856&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales">Contáctate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->    
+
+
+
+
+
 
             <!-- Service Start -->
             <div class="service">

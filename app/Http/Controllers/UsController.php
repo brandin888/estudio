@@ -5,6 +5,7 @@ use App\Product;
 use App\Category;
 use App\Categories;
 use App\Specialty;
+use App\Service;
 use Illuminate\Http\Request;
 
 class UsController extends Controller
@@ -15,6 +16,7 @@ class UsController extends Controller
         
         $specialties = Specialty::all();
         $categories = Categories::all();
+        $services = Service::all();
         if (request()->category) {
             $products = Product::with('categories')->whereHas('categories', function ($query) {
                 $query->where('slug', request()->category);
@@ -38,6 +40,7 @@ class UsController extends Controller
             'categories' => $categories,
             'categoryName' => $categoryName,
             'specialties' => $specialties,
+            'services' => $services,
         ]);
     }
 }
