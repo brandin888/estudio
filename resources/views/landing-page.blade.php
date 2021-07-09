@@ -118,7 +118,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ asset('img/car2.jpg') }}" alt="Carousel Image">
+                        <img src="{{ asset('img/car1.jpeg') }}" alt="Carousel Image">
 
                         <div class="carousel-caption">
                             <div class="row">
@@ -134,7 +134,7 @@
                     </div>
 
                     <div class="carousel-item">
-                        <img src="{{ asset('img/car1.jpg') }}" alt="Carousel Image">
+                        <img src="{{ asset('img/car2.jpeg') }}" alt="Carousel Image">
                         <div class="carousel-caption">
                             <div class="row">
                                  <div class="col-lg-4"><a target="_blanck" href="https://api.whatsapp.com/send?phone=51989218856&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales"><img class="whatsapp" style="object-fit: contain;" src="{{ asset('img/whatsapp.png') }}"></a></div>
@@ -152,14 +152,7 @@
                         </div>
                     </div>
 
-                    <div class="carousel-item">
-                        <img src="{{ asset('img/car3.jpg') }}" alt="Carousel Image">
-                        <div class="carousel-caption">
-                            <p class="animated fadeInRight">Somos Confiables</p>
-                            <h1 class="animated fadeInLeft">Priorizamos tu bienestar</h1>
-                            <a class="btn animated fadeInUp" href="https://api.whatsapp.com/send?phone=51989218856&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales">Contáctate</a>
-                        </div>
-                    </div>
+                   
                 </div>
 
                 <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
