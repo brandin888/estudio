@@ -99,7 +99,7 @@
                                 <div class="nav-item dropdown">
                                     <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Artículos</a>
                                     <div class="dropdown-menu">
-                                      <a href="{{ url('/') }}/blog" class="dropdown-item">Recientes</a>
+                                      <a href="{{ url('/') }}/blog" class="dropdown-item">Publicaciones</a>
                                       
                                         @foreach($categories as $category)
                                         <a href="{{ route('blog.index', ['category'=> $category->id]) }}" class="dropdown-item">{{ $category->name }}</a>
