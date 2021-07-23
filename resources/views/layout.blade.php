@@ -78,7 +78,7 @@
   
     <!-- Load Whatsapp -->
     <div>
-      <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51994084591&Hola&nbsp;MickySRL&nbsp;quisiera&nbsp;cotizar&nbsp;el&nbsp;siguiente&nbsp;producto">
+      <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=5199728761&Hola&nbsp;MickySRL&nbsp;quisiera&nbsp;cotizar&nbsp;el&nbsp;siguiente&nbsp;producto">
         <img src="{{ asset('img/whatsapp.png') }}" alt="whatsapp">
       </a> 
     </div>

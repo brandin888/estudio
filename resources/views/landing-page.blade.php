@@ -51,7 +51,7 @@
 
 
         <div>
-          <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51989218856&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales">
+          <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51997287614&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales">
             <img src="{{ asset('img/whatsapp.png') }}" alt="whatsapp">
           </a> 
         </div>

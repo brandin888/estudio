@@ -65,6 +65,7 @@ class BlogController extends Controller
         $categories = Category::all();
         $posts= Post::all();
         $specialties = Specialty::all();
+        $services = Service::all();
 
         return view('post')->with([
 
@@ -72,6 +73,7 @@ class BlogController extends Controller
             'posts' => $posts,
             'post' => $post,
             'specialties' => $specialties,
+            'services' => $services,
         ]);
     }
 
