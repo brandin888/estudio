@@ -9,6 +9,10 @@ use App\Post;
 use App\Service;
 use App\Specialty;
 use App\Categories;
+use App\Home;
+use App\Us;
+use App\Question;
+use App\Testimonial;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -28,6 +32,11 @@ class ServiceController extends Controller
         $banners = Banner::all();
         $specialties = Specialty::all();
         $services = Service::all();
+        $home =Home::all();
+        $us =Us::all();
+        $questions =Question::all();
+        $testimonials =Testimonial::all();
+
         if (request()->category) {
             $products = Product::with('categories')->whereHas('categories', function ($query) {
                 $query->where('slug', request()->category);
@@ -54,6 +63,10 @@ class ServiceController extends Controller
             'posts' => $posts,
             'specialties' => $specialties,
             'services' => $services,
+            'home' => $home,
+            'us' => $us,
+            'questions' => $questions,
+            'testimonials' => $testimonials,
         ]);
 
     }
@@ -143,6 +156,10 @@ class ServiceController extends Controller
         $posts= Post::all();
         $specialties = Specialty::all();
         $services = Service::all();
+        $home =Home::all();
+        $us =Us::all();
+        $questions =Question::all();
+        $testimonials =Testimonial::all();
 
         return view('servicios')->with([
 
@@ -152,6 +169,10 @@ class ServiceController extends Controller
             'specialties' => $specialties,
             'services' => $services,
             'service' => $service,
+            'home' => $home,
+            'us' => $us,
+            'questions' => $questions,
+            'testimonials' => $testimonials,
         ]);
     }
 

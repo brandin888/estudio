@@ -34,8 +34,8 @@ class LandingPageController extends Controller
         $banners = Banner::all();
         $specialties = Specialty::all();
         $services = Service::all();
-        $homes =Home::all();
-        $uss =Us::all();
+        $home =Home::all();
+        $us =Us::all();
         $questions =Question::all();
         $testimonials =Testimonial::all();
 
@@ -69,8 +69,8 @@ class LandingPageController extends Controller
             'specialties' => $specialties,
             'coworkers' => $coworkers,
             'services' => $services,
-            'homes' => $homes,
-            'uss' => $uss,
+            'home' => $home,
+            'us' => $us,
             'questions' => $questions,
             'testimonials' => $testimonials,
         ]);

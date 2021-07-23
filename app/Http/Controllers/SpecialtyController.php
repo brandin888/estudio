@@ -8,6 +8,10 @@ use App\Post;
 use App\Categories;
 use App\Service;
 use App\Specialty;
+use App\Home;
+use App\Us;
+use App\Question;
+use App\Testimonial;
 use Illuminate\Http\Request;
 
 
@@ -35,6 +39,7 @@ class SpecialtyController extends Controller
             'posts' => $posts,
             'specialties' => $specialties,
             'services' => $services,
+
         ]);
     }
 
@@ -53,13 +58,22 @@ class SpecialtyController extends Controller
         $categories = Categories::all();
         $posts= Post::all();
         $specialties = Specialty::all();
-
+        $services = Service::all();
+        $home =Home::all();
+        $us =Us::all();
+        $questions =Question::all();
+        $testimonials =Testimonial::all();
         return view('specialty')->with([
 
             'categories' => $categories,
             'posts' => $posts,
             'specialty' => $specialty,
             'specialties' => $specialties,
+            'services' => $services,
+            'home' => $home,
+            'us' => $us,
+            'questions' => $questions,
+            'testimonials' => $testimonials,
         ]);
     }
 

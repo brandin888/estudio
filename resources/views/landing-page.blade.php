@@ -343,55 +343,25 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="testimonial-slider-nav">
-                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
-                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
-                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
-                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
-                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
-                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
-                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
-                                <div class="slider-nav"><img src="{{ asset('img/test1.jpg') }}" alt="Testimonial"></div>
+                                @foreach($testimonials as $testimonial)
+                                 <div class="slider-nav"><img src="{{ postImage($testimonial->image) }}" alt="Testimonial"></div>
+                                @endforeach
+                              
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
                             <div class="testimonial-slider">
+                                @foreach($testimonials as $testimonial)
                                 <div class="slider-item">
-                                    <h3>Cliente1</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                                    <h3>{{$testimonial->name}}</h3>
+                                    <h4>{{$testimonial->profesion}}</h4>
+                                    <p>{{$testimonial->description}}</p>
                                 </div>
-                                <div class="slider-item">
-                                    <h3>Cliente2</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
-                                <div class="slider-item">
-                                    <h3>Cliente3</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
-                                <div class="slider-item">
-                                    <h3>Cliente4</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
-                                <div class="slider-item">
-                                    <h3>Cliente5</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
-                                <div class="slider-item">
-                                    <h3>Cliente6</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
-                                <div class="slider-item">
-                                    <h3>Cliente7</h3>
-                                    <h4>profession</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                                </div>
+                                @endforeach
+                               
+
 
                             </div>
                         </div>
