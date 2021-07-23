@@ -27,7 +27,8 @@
 
                             @endforeach
                             
-
+                            </div>
+                        </div>
                         <div class="col-md-6">
                             <div id="accordion-2">
                             @foreach($questions as $key => $question)
