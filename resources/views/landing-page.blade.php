@@ -175,8 +175,8 @@
                             <div class="feature-item2">
                             
                                 <div class="feature-text2">
-                                    <h3>Expertos y Especialistas</h3>
-                                    <p>Somos profesionales de alto nivel dispuestos a ayudarte</p>
+                                    <h3>{{$home->feature-title1}}</h3>
+                                    <p>{{$home->feature-text1}}</p>
                                 </div>
                             </div>
                         </div>
@@ -184,8 +184,8 @@
                             <div class="feature-item2">
                               
                                 <div class="feature-text2">
-                                    <h3>Trabajo de Calidad</h3>
-                                    <p>Priorizamos tu bienestar, nos encargamos de todo</p>
+                                    <h3>{{$home->feature-title2}}</h3>
+                                    <p>{{$home->feature-text2}}</p>
                                 </div>
                             </div>
                         </div>
@@ -193,8 +193,8 @@
                             <div class="feature-item2">
                                
                                 <div class="feature-text2">
-                                    <h3>Atención Inmediata</h3>
-                                    <p>Brindamos ayuda legal inmediata, no te quedes esperando</p>
+                                    <h3>{{$home->feature-title3}}</h3>
+                                    <p>{{$home->feature-text3}}</p>
                                 </div>
                             </div>
                         </div>
@@ -215,17 +215,13 @@
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="section-header text-left">
-                                <p>JÑP Abogados</p>
-                                <h2>Quienes Somos</h2>
+                                <p>{{$home->description-subtitle}}</p>
+                                <h2>{{$home->description-title}}</h2>
                             </div>
                             <div class="about-text">
-                                <p>
-                                    Firma peruana que brinda asesoría y consultoría en asuntos legales en el Perú y en el extranjero. 
-                                </p>
-                                <p>Nuestra trayectoria nos permite desarrollar estrategias que arriban a resultados en cortos y medianos plazos. </p>
-                                <p>JÑP Abogados permanentemente reconforma de forma dinámica su equipo de abogados, los cuales en base a sus cualidades y sobre todo a su experiencia en litigios civiles laborales y administrativos brindan el mejor servicio y atención a cada uno de sus clientes. </p>
+                                <p>{{$home->description-text}}</p>
 
-                                <a class="btn" href="">Nosotros</a>
+                                <a class="btn" href="https://api.whatsapp.com/send?phone=51997287614&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales">Whatsapp</a>
                             </div>
                         </div>
                     </div>
