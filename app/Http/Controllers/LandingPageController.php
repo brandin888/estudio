@@ -10,6 +10,11 @@ use App\Post;
 use App\Specialty;
 use App\Categories;
 use App\Coworker;
+use App\Home;
+use App\Us;
+use App\Question;
+use App\Testimonial;
+
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
@@ -29,6 +34,11 @@ class LandingPageController extends Controller
         $banners = Banner::all();
         $specialties = Specialty::all();
         $services = Service::all();
+        $homes =Home::all();
+        $uss =Us::all();
+        $questions =Question::all();
+        $testimonials =Testimonial::all();
+
         if (request()->category) {
             $products = Product::with('categories')->whereHas('categories', function ($query) {
                 $query->where('slug', request()->category);
@@ -59,6 +69,10 @@ class LandingPageController extends Controller
             'specialties' => $specialties,
             'coworkers' => $coworkers,
             'services' => $services,
+            'homes' => $homes,
+            'uss' => $uss,
+            'questions' => $questions,
+            'testimonials' => $testimonials,
         ]);
 
     }
