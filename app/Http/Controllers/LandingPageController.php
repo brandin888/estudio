@@ -34,7 +34,7 @@ class LandingPageController extends Controller
         $banners = Banner::all();
         $specialties = Specialty::all();
         $services = Service::all();
-        $home =Home::where('id', 1)->first();
+        $home =Home::latest()->take(1)->get();
         $us =Us::all();
         $questions =Question::all();
         $testimonials =Testimonial::all();
