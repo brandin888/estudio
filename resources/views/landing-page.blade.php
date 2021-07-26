@@ -383,7 +383,7 @@
 
 @include('partials.latest')
 
-<div style="width: 100%; height: 400px"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Jir%C3%B3n%20Cotabambas%20355,%20Cercado%20de%20Lima+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+<div style="width: 100%; height: 400px"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Jir%C3%B3n%20Cotabambas%20345,%20Cercado%20de%20Lima+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
 
 @include('partials.footer')
         </div>
