@@ -15,17 +15,17 @@ class CreateUsTable extends Migration
     {
         Schema::create('us', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('description-subtitle');
-            $table->text('description-title');
-            $table->text('description-text');
+            $table->text('descsub');
+            $table->text('desct');
+            $table->text('descrtxt');
 
-            $table->text('vision-text');
-            $table->text('mision-text');
+            $table->text('vision');
+            $table->text('mision');
 
 
-            $table->text('ceo-description-subtitle');
-            $table->text('ceo-description-title');
-            $table->text('ceo-description-text');
+            $table->text('ceodesc1');
+            $table->text('ceodesc2');
+            $table->text('ceodesc3');
             $table->timestamps();
         });
     }

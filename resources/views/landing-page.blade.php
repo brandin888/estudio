@@ -227,7 +227,7 @@
                                 <p>
                                     {{$home->description3}} </p>
 
-                                <a class="btn" href="">Nosotros</a>
+                                <a class="btn" href="https://api.whatsapp.com/send?phone=51989218856&Hola&&nbsp;solicito&nbsp;información&nbsp;de&nbsp;sus&nbsp;servicios&nbsp;legales">Nosotros</a>
                             </div>
                             @endforeach
                         </div>

@@ -21,8 +21,8 @@ class UsController extends Controller
         $specialties = Specialty::all();
         $categories = Categories::all();
         $services = Service::all();
-                $home =Home::all();
-        $us =Us::all();
+        $home =Home::all();
+        $uss =Us::all();
         $questions =Question::all();
         $testimonials =Testimonial::all();
         if (request()->category) {
@@ -50,7 +50,7 @@ class UsController extends Controller
             'specialties' => $specialties,
             'services' => $services,
              'home' => $home,
-            'us' => $us,
+            'uss' => $uss,
             'questions' => $questions,
             'testimonials' => $testimonials,
         ]);
