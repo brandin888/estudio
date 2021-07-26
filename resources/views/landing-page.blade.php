@@ -171,12 +171,15 @@
             <div class="feature2 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container-fluid">
                     <div class="row align-items-center">
+                        @foreach($homes as $home)
+                                 
+                        
                         <div class="col-lg-4 col-md-12">
                             <div class="feature-item2">
                             
                                 <div class="feature-text2">
-                                    <h3>Expertos y Especialistas</h3>
-                                    <p>Somos profesionales de alto nivel dispuestos a ayudarte</p>
+                                    <h3>{{$home->feature12}}</h3>
+                                    <p>{{$home->feature11}}</p>
                                 </div>
                             </div>
                         </div>
@@ -184,8 +187,8 @@
                             <div class="feature-item2">
                               
                                 <div class="feature-text2">
-                                    <h3>Trabajo de Calidad</h3>
-                                    <p>Priorizamos tu bienestar, nos encargamos de todo</p>
+                                    <h3>{{$home->feature21}}</h3>
+                                    <p>{{$home->feature22}}</p>
                                 </div>
                             </div>
                         </div>
@@ -193,11 +196,12 @@
                             <div class="feature-item2">
                                
                                 <div class="feature-text2">
-                                    <h3>Atención Inmediata</h3>
-                                    <p>Brindamos ayuda legal inmediata, no te quedes esperando</p>
+                                    <h3>{{$home->feature31}}</h3>
+                                    <p>{{$home->feature32}}</p>
                                 </div>
                             </div>
                         </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -214,19 +218,18 @@
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-6">
+                            @foreach($homes as $home)
                             <div class="section-header text-left">
-                                <p>JÑP Abogados</p>
-                                <h2>Quienes Somos</h2>
+                                <p>{{$home->description1}}</p>
+                                <h2>{{$home->description2}}</h2>
                             </div>
                             <div class="about-text">
                                 <p>
-                                    Firma peruana que brinda asesoría y consultoría en asuntos legales en el Perú y en el extranjero. 
-                                </p>
-                                <p>Nuestra trayectoria nos permite desarrollar estrategias que arriban a resultados en cortos y medianos plazos. </p>
-                                <p>JÑP Abogados permanentemente reconforma de forma dinámica su equipo de abogados, los cuales en base a sus cualidades y sobre todo a su experiencia en litigios civiles laborales y administrativos brindan el mejor servicio y atención a cada uno de sus clientes. </p>
+                                    {{$home->description3}} </p>
 
                                 <a class="btn" href="">Nosotros</a>
                             </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -273,9 +276,15 @@
             <!-- Video Start -->
             <div class="video wow fadeIn" data-wow-delay="0.1s">
                 <div class="container">
-                    <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                    @foreach($homes as $home)
+                            
+                                
+                        <button type="button" class="btn-play" data-toggle="modal" data-src="{{$home->video}}" data-target="#videoModal">
                         <span></span>
                     </button>
+                              
+                    @endforeach
+
                 </div>
             </div>
             

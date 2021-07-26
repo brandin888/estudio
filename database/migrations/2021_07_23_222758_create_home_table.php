@@ -15,15 +15,15 @@ class CreateHomeTable extends Migration
     {
         Schema::create('home', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('feature-title1');
-            $table->text('feature-text1');
-            $table->text('feature-title2');
-            $table->text('feature-text2');
-            $table->text('feature-title3');
-            $table->text('feature-text3');
-            $table->text('description-subtitle');
-            $table->text('description-title');
-            $table->text('description-text');
+            $table->text('feature11');
+            $table->text('feature12');
+            $table->text('feature21');
+            $table->text('feature22');
+            $table->text('feature31');
+            $table->text('feature32');
+            $table->text('description1');
+            $table->text('description2');
+            $table->text('description3');
             $table->string('video')->nullable();
 
             $table->timestamps();
